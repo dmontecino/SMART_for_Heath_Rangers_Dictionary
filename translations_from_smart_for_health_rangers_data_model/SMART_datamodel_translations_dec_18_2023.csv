@@ -1,0 +1,346 @@
+"smart_key","icon_key","en","es","lo","km"
+"category:environmentalspecimensandsamples_whn.","","Environmental Specimen and Samples","Especimen Ambiental y Muestras",,
+"category:animalandsamples_whn.","","Animal and Samples","Animal y Muestras","ສັດ ແລະ ຕົວຢ່າງ",
+"category:livestockdomesticspecies_whn.","","Livestock - Domestic Species","Ganado - Especies Domesticas","ສັດລ້ຽງ - ຊະນິດສັດບ້ານ","ប្រភេទសត្វស្រុកចិញ្ចឹម"
+"category:wildlife_whn.","","Wildlife","Fauna Silvestre","ສັດປ່າ","សត្វព្រៃ"
+"category:sitedescription_whn.","","Site Description","Hallazgos en el Lugar","ອະທິບາຍສະຖານທີ່","ពណ៌នាអំពីទីតាំង"
+"attribute:ageofanimal_whn","","Age of Animal","Edad del Animal","ອາຍຸຂອງສັດ",
+"attributelist:ageofanimal_whn:adult_whn","","Adult","Adulto","ໂຕເຕັມໄວ",
+"attributelist:ageofanimal_whn:juvenile_whn","","Juvenile","Juvenil","ໂຕໄວໜຸ່ມ",
+"attributelist:ageofanimal_whn:fetus_whn","","Fetus","Feto","ໂຕອ່ອນຢູ່ໃນທ້ອງ",
+"attributelist:ageofanimal_whn:unknown_whn","","Unknown","Desconocido","ບໍ່ຮູ້",
+"attribute:animalid_whn","","Animal ID","Identificador Individuo","ລະຫັດໝາຍສັດ",
+"attribute:animalsobservedperspecies_whn","","Animals Observed per Species","Animales Observados por Especie","ສັດທີ່ໄດ້ສັງເກດຕໍ່ຊະນິດ",
+"attributelist:animalsobservedperspecies_whn:adultunknownsex_whn","","Adult Unknown Sex","Adulto de Sexo Desconocido","ໂຕເຕັມໄວ ບໍ່ຮູ້ເພດ",
+"attributelist:animalsobservedperspecies_whn:fetus_whn","","Fetus","Feto","ໂຕອ່ອນຢູ່ໃນທ້ອງ",
+"attributelist:animalsobservedperspecies_whn:adultfemale_whn","","Adult Female","Hembra Adulta","ໂຕເຕັມໄວ ເພດແມ່",
+"attributelist:animalsobservedperspecies_whn:juvenile_whn","","Juvenile","Juvenil","ໂຕໄວໜຸ່ມ",
+"attributelist:animalsobservedperspecies_whn:adultmale_whn","","Adult Male","Macho Adulto","ໂຕເຕັມໄວ ເພດຜູ້",
+"attributelist:animalsobservedperspecies_whn:unknownsexandage_whn","","Unknown Sex and Age","Sexo y Edad Desconocidos","ບໍ່ຮູ້ເພດ ບໍ່ຮູ້ອາຍຸ",
+"attribute:anomaliesindeadanimals_whn","","Anomalies in Dead Animals","Problemas en Animales Muertos",,"សភាពធម្មតានៃសត្វស្លាប់"
+"attributelist:anomaliesindeadanimals_whn:abnormalbehavior_whn","","Abnormal Behavior","Comportamiento Anormal",,"អាកប្បកិរិយាខុសប្រក្រតី"
+"attributelist:anomaliesindeadanimals_whn:abnormalgascontent_whn","","Abnormal Gas Content","Acumulacion Anormal de Gas",,"ភាពខុសប្រក្រតីនៃ ហ្គាស (ហើមពោះ)"
+"attributelist:anomaliesindeadanimals_whn:badsmell_whn","","Bad Smell","Mal Olor",,"ធុំក្លិនអាក្រក់"
+"attributelist:anomaliesindeadanimals_whn:bleedingwoundbruises_whn","","Bleeding, Wound, Bruises","Sangramiento, Heridas, Moretones",,"ហូរឈាម របួស និង ជាំឈាម"
+"attributelist:anomaliesindeadanimals_whn:bodypartmissing_whn","","Body Part Missing","Perdida de Parte del Cuerpo",,"បាត់ផ្នែកខ្លះនៃរាងកាយ"
+"attributelist:anomaliesindeadanimals_whn:diarrheaorvomiting_whn","","Diarrhea or Vomiting","Diarrea o Vomito",,"រាក ឬ ក្អួត"
+"attributelist:anomaliesindeadanimals_whn:difficultbreathingorcoughing_whn","","Difficult Breathing Coughing","Respiracion Dificultosa Tos",,"ពិបាកដកដង្ហើម ក្អក"
+"attributelist:anomaliesindeadanimals_whn:fracturedeformationinflamationprolapse_whn","","Fracture, Deformation, Inflamation, Prolapse","Fractura, Deformacion, Inflamacion, Prolapso",,"បាក់ឆ្អឹង ខួចទ្រង់ទ្រាយ រលាក ហើម"
+"attributelist:anomaliesindeadanimals_whn:lossofhairandfeathers_whn","","Loss of Hair and Feathers","Perdida de Pelo o Plumas",,"បាត់(ជ្រុះរលេះ)រោម និងរោម(ស្លាប)"
+"attributelist:anomaliesindeadanimals_whn:noobviousanomalies_whn","","No Obvious Anomalies","Sin Problemas Obvios",,"គ្មានសភាពមិនប្រក្រតី"
+"attributelist:anomaliesindeadanimals_whn:oiledcoveredbysubstance_whn","","Oiled/Covered by Substance","Empetrolado o Cubierto por Sustancia",,"ខ្លាញ/គ្របឬប្រឡាក់ឬស្រោបដោយសារធាតុអ្វីមួយ"
+"attributelist:anomaliesindeadanimals_whn:other_whn","","Other","Otro",,"ផ្សេងៗ"
+"attributelist:anomaliesindeadanimals_whn:problemstandingwalkingflying_whn","","Problem Standing Walking Flying","Problema para Pararse, Caminar, o Volar",,"មានបញ្ហាក្នុងការឈរ ដើរ និង ហើរ"
+"attributelist:anomaliesindeadanimals_whn:reddishyellowdischarge_whn","","Reddish, Yellow Discharge","Fluido Rojizo o Amarillento",,"មានហូរទឹករងៃពណ៌ក្រហមស្រាល / លឿង"
+"attributelist:anomaliesindeadanimals_whn:skinabnormality_whn","","Skin Abnormality","Piel Anormal",,"សភាពមិនប្រក្រតីនៃស្បែក"
+"attributelist:anomaliesindeadanimals_whn:thinorskinny_whn","","Thin or Skinny","Muy Delgado o Desnutrido",,"ស្គម ឬ ស្បែកដណ្ដប់ឆ្អឹង"
+"attribute:anomaliesinsickinjuredordeadanimals_whn","","Anomalies in Sick, Injured, or Dead Animals","Problemas en Animales Enfermos, Lesionados, o Muertos","ຄວາມຜິດປົກກະຕິ ທີ່ພົບຢູ່ນໍາສັດທີ່ເຈັບປ່ວຍ, ບາດເຈັບ ຫຼື ຕາຍ","ភាពមិនប្រក្រតីសត្វឈឺ របួស ឬស្លាប់"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:abnormalbehavior_whn","","Abnormal Behavior","Comportamiento Anormal","ມີພຶດຕິກໍາຜິດປົກກະຕິ","អាកប្បកិរិយាខុសប្រក្រតី"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:abnormalgascontent_whn","","Abnormal Gas Content","Acumulacion Anormal de Gas","ມີແກັດໃນທ້ອງ","ភាពខុសប្រក្រតីនៃ ហ្គាស (ហើមពោះ)"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:badsmell_whn","","Bad Smell","Mal Olor",,"ក្លិនអាក្រក់"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:bleedingwoundbruises_whn","","Bleeding, Wound, Bruises","Sangramiento, Heridas, Moretones","ເລືອດໄຫຼ, ບາດແຜ, ຮອຍຊໍ້າ","ហូរឈាម របួស និង ជាំឈាម"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:bodypartmissing_whn","","Body Part Missing","Perdida de Parte del Cuerpo","ບໍ່ເຫັນພາກສ່ວນຂອງຮ່າງກາຍ","បាត់ផ្នែកខ្លះនៃរាងកាយ"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:diarrheaorvomiting_whn","","Diarrhea or Vomiting","Diarrea o Vomito","ຖອກທ້ອງ ຫຼື ຮາກ","រាក ឬ ក្អួត"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:difficultbreathingorcoughing_whn","","Difficult Breathing Coughing","Respiracion Dificultosa Tos","ຫາຍໃຈຍາກ ຫຼື ໄອ","ពិបាកដកដង្ហើម ក្អក"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:fracturedeformationinflamationprolapse_whn","","Fracture, Deformation, Inflamation, Prolapse","Fractura, Deformacion, Inflamacion, Prolapso","ກະດູກຫັກ, ພິການ, ໄຄ່, ມີອະໄວຍະວະເພດຍ້ອນ","បាក់ឆ្អឹង ខួចទ្រង់ទ្រាយ រលាក ហើម"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:lossofhairandfeathers_whn","","Loss of Hair and Feathers","Perdida de Pelo o Plumas","ຂົນຫຼົ່ນ ຫຼື ຫຼຸດອອກ","បាត់បង់រោម និងស្លាប"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:oiledcoveredbysubstance_whn","","Oiled/Covered by Substance","Empetrolado o Cubierto con Sustancia","ສັດຖືກໂອບ/ເຄືອບ ດ້ວຍຄາບນໍ້າມັນ, ຂີ້ຕົມ ຫຼື ອື່ນໆ","ខ្លាញ់/គ្របដណ្ដប់ដោយខ្លាញ់"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:other_whn","","Other","Otro",,"ផ្សេងៗ"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:problemstandingwalkingflying_whn","","Problem Standing Walking Flying","Problema para Pararse, Caminar, o Volar","ມີບັນຫາໃນການ ຢືນ, ຍ່າງ, ບິນ","បញ្ហាក្នុងការឈរ ដើរ ហើរ"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:whitishreddishyellowishdischarge_whn","","Whitish, Reddish, Yellow Discharge","Fluido Rojizo o Amarillento","ມີທາດແຫຼວສີອອກແດງ/ເຫຼືອງ ໄຫຼອອກມາ","ហូរឈាម របួស និង ជាំឈាម"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:skinabnormality_whn","","Skin Abnormality","Piel Anormal","ຜິວໜັງຜິດປົກກະຕິ","ភាពខុសប្រក្រតីនៃស្បែក"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:thinorskinny_whn","","Thin Or Skinny","Muy Delgado o Desnutrido","ຈ່ອຍຜອມ","ស្គម ឬ ស្បែកដណ្ដប់ឆ្អឹង"
+"attributelist:anomaliesinsickinjuredordeadanimals_whn:noobviousanomalies_whn","","No Obvious Anomalies",,,"គ្មានសភាពមិនប្រក្រតី"
+"attribute:anomaliesinsickorinjuredanimals_whn","","Anomalies in Sick or Injured Animals","Problemas en Animales Enfermos o Lesionados",,"ភាពមិនប្រក្រតីនៃសត្វឈឺ ឬរបួស"
+"attributelist:anomaliesinsickorinjuredanimals_whn:abnormalbehavior_whn","","Abnormal Behavior","Comportamiento Anormal",,"អាកប្បកិរិយាខុសប្រក្រតី"
+"attributelist:anomaliesinsickorinjuredanimals_whn:abnormalgascontent_whn","","Abnormal Gas Content","Acumulacion Anormal de Gas",,"ភាពខុសប្រក្រតីនៃ ហ្គាស (ហើមពោះ)"
+"attributelist:anomaliesinsickorinjuredanimals_whn:badsmell_whn","","Bad Smell","Mal Olor",,"ក្លិនអាក្រក់"
+"attributelist:anomaliesinsickorinjuredanimals_whn:bleedingwoundbruises_whn","","Bleeding, Wound, Bruises","Sangramiento, Heridas, Moretones",,"ហូរឈាម របួស និង ជាំឈាម"
+"attributelist:anomaliesinsickorinjuredanimals_whn:bodypartmissing_whn","","Body Part Missing","Perdida de Parte del Cuerpo",,"បាត់ផ្នែកខ្លះនៃរាងកាយ"
+"attributelist:anomaliesinsickorinjuredanimals_whn:diarrheaorvomiting_whn","","Diarrhea or Vomiting","Diarrea o Vomito",,"រាក ឬ ក្អួត"
+"attributelist:anomaliesinsickorinjuredanimals_whn:difficultbreathingorcoughing_whn","","Difficult Breathing Coughing","Respiracion Dificultosa Tos",,"ពិបាកដកដង្ហើម ក្អក"
+"attributelist:anomaliesinsickorinjuredanimals_whn:fracturedeformationinflamationprolapse_whn","","Fracture, Deformation, Inflamation, Prolapse","Fractura, Deformacion, Inflamacion, Prolapso",,"បាក់ឆ្អឹង ខួចទ្រង់ទ្រាយ រលាក ហើម"
+"attributelist:anomaliesinsickorinjuredanimals_whn:lossofhairandfeathers_whn","","Loss of Hair and Feathers","Perdida de Pelo o Plumas",,"បាត់បង់រោម និងស្លាប"
+"attributelist:anomaliesinsickorinjuredanimals_whn:noobviousanomalies_whn","","No Obvious Anomalies","Sin Problemas Obvios",,"គ្មានសភាពមិនប្រក្រតី"
+"attributelist:anomaliesinsickorinjuredanimals_whn:oiledcoveredbysubstance_whn","","Oiled/Covered by Substance","Empetrolado o Cubierto por Sustancia",,"ខ្លាញ់/គ្របដណ្ដប់ដោយខ្លាញ់"
+"attributelist:anomaliesinsickorinjuredanimals_whn:other_whn","","Other","Otro",,"ផ្សេងៗ"
+"attributelist:anomaliesinsickorinjuredanimals_whn:problemstandingwalkingflying_whn","","Problem Standing Walking Flying","Problema para Pararse, Caminar, o Volar",,"បញ្ហាក្នុងការឈរ ដើរ ហើរ"
+"attributelist:anomaliesinsickorinjuredanimals_whn:reddishyellowdischarge_whn","","Reddish, Yellow Discharge","Fluido Rojizo o Amarillento",,"ហូរឈាម របួស និង ជាំឈាម"
+"attributelist:anomaliesinsickorinjuredanimals_whn:skinabnormality_whn","","Skin Abnormality","Piel Anormal",,"ភាពខុសប្រក្រតីនៃស្បែក"
+"attributelist:anomaliesinsickorinjuredanimals_whn:thinorskinny_whn","","Thin or Skinny","Muy Delgado o Desnutrido",,"ស្គម ឬ ស្បែកដណ្ដប់ឆ្អឹង"
+"attribute:captivitycategory_whn","","Captivity Category","Categoria de Cautiverio","ຮູບແບບການຈັບສັດ",
+"attributelist:captivitycategory_whn:farm_whn","","Farm","Granja","ຟາມ",
+"attributelist:captivitycategory_whn:freeranging_whn","","Free-ranging","Vida Libre","ຢູ່ຕາມທໍາມະຊາດ",
+"attributelist:captivitycategory_whn:household_whn","","Household","Habitacion Domiciliaria","ຄົວເຮືອນ",
+"attributelist:captivitycategory_whn:huntedanddisplaced_whn","","Hunted And Displaced","Cazado y Desplazado","ຖຶກລ່າ ແລະ ຖືກເຄື່ອນຍ້າຍແລ້ວ",
+"attributelist:captivitycategory_whn:huntednotdisplaced_whn","","Hunted and Not Displaced","Cazado y No Desplazado","ຖຶກລ່າ ແລະ ຍັງບໍ່ທັນຖືກເຄື່ອນຍ້າຍ",
+"attributelist:captivitycategory_whn:market_whn","","Market","Mercado","ຕະຫຼາດ",
+"attributelist:captivitycategory_whn:rescuerehabilitationcenter_whn","","Rescue/Rehabilitation Center","Centro de Rehabilitacion/Rescate","ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ",
+"attributelist:captivitycategory_whn:researchorconservationcapture_whn","","Research or Conservation Capture","Investigacion o Captura de Conservacion","ການຈັບສັດ ເພື່ອການຄົ້ນຄວ້າ ຫຼື ອະນຸລັກ",
+"attributelist:captivitycategory_whn:tradepost_whn","","Tradepost","Puesto de Venta","ຈຸດຊື່ຂາຍສັດ",
+"attribute:carnivoreattack_whn","","Carnivore Attack","Ataque de Carnivoro","ການໂຈມຕີຂອງສັດກິນຊີ້ນ","វាយប្រហារដោយសត្វស៊ីសាច់ជាអាហារ"
+"attributelist:carnivoreattack_whn:wildcarnivore_whn","","Wild Carnivore","Carnivoro Silvestre","ສັດປ່າຈໍາພວກກິນຊີ້ນ","សត្វព្រៃដែលស៊ីសាច់ជាអាហារ"
+"attributelist:carnivoreattack_whn:cat_whn","","Cat","Gato","ແມວ","ឆ្មា"
+"attributelist:carnivoreattack_whn:dog_whn","","Dog","Perro","ໝາ","ឆ្កែ"
+"attributelist:carnivoreattack_whn:yesbutunknowncarnivore_whn","","Yes, But Unknown Carnivore","Si Pero Carnivoro Desconocido","ແມ່ນ, ແຕ່ບໍ່ຮູ້ແມ່ນສັດກິນຊີ້ນປະເພດໃດ","បាទ/ចាស​ ប៉ុន្តែមិនស្គាល់សត្វដែលស៊ីសាច់ជាអាហារ"
+"attributelist:carnivoreattack_whn:no_whn","","No","No",,"ទេ"
+"attribute:collecteddirectlyfromanimal_whn","","Collected Directly From Animal","Colectado Directamente del Animal","ເກັບເອົາຈາກໂຕສັດໂດຍກົງ","ប្រមូលដោយផ្ទាល់ពីសត្វ"
+"attributelist:collecteddirectlyfromanimal_whn:no_whn","","No","No","ບໍ່","ទេ"
+"attributelist:collecteddirectlyfromanimal_whn:yes_whn","","Yes","Si","ແມ່ນ","បាទ​/ចាស"
+"attribute:conditiondeadanimals_whn","","Condition Dead Animals","Condicion Animales Muertos","ສະພາບສັດຕາຍ","ស្ថានភាពសត្វងាប់"
+"attributelist:conditiondeadanimals_whn:freshcarcasses_whn","","Fresh Carcasses","Cadaveres Frescos","ຊາກສັດຕາຍໃໝ່","សាកសពស្រស់"
+"attributelist:conditiondeadanimals_whn:advanceddecomposition_whn","","Advanced Decomposition","Descomposicion Avanzada","ເນົ່າເປື່ອຍ","រលួយខ្លាំង"
+"attributelist:conditiondeadanimals_whn:earlydecomposition_whn","","Early Descomposition","Descomposicion Temprana","ເລີ່ມໄຄ່ບວມ","ចាប់ផ្ដើមរលួយ"
+"attributelist:conditiondeadanimals_whn:leatheredskinandbones_whn","","Leathered Skin and Bones","Piel Seca y Huesos","ເຫຼືອແຕ່ໜັງແຫ້ງ ແລະ ກະດູກ","ស្បែក និង ឆ្អឹង"
+"attribute:conditionfound_whn","","Condition Found","Condicion al Hallazgo","ສະພາບສັດຕອນພົບເຫັນ",
+"attributelist:conditionfound_whn:founddead_whn","","Found Dead","Encontrado Muerto","ຕາຍ",
+"attributelist:conditionfound_whn:foundlivesickorinjured_whn","","Found Live Sick or Injured","Encontrado Vivo Enfermo o Herido","ພໍເຫັືມີຊີວິດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ",
+"attributelist:conditionfound_whn:foundlivehealthy_whn","","Found Live Healthy","Encontrado Vivo y Sano","ພົບມີຊີວິດແຂງແຮງດີ",
+"attributelist:conditionfound_whn:animalparts_whn","","Animal Parts","Partes de Animal","ຊິ້ນສ່ວນສັດ",
+"attribute:context_whn","","Context","Contexto",,"បរិបទ"
+"attributelist:context_whn:huntedanddisplaced_whn","","Hunted and Displaced","Cazado y Desplazado",,"បរបាញ់ និង ផ្លាស់ទីលំនៅ"
+"attributelist:context_whn:huntednotdisplaced_whn","","Hunted and Not Displaced","Cazado y No Desplazado",,"បរបាញ់ និង មិនផ្លាស់ទីលំនៅ"
+"attributelist:context_whn:rescuerehabilitationcenter_whn","","Rescue/Rehabilitation Center","Centro de Rescate/Rehabilitacion",,"មជ្ឈមណ្ឌលសង្គ្រោះ/ស្តារនីតិសម្បទា"
+"attributelist:context_whn:freeranging_whn","","Free-ranging","De Vida Libre",,"ចិញ្ចឹមប្រលែង"
+"attributelist:context_whn:farm_whn","","Farm","Granja",,"កសិដ្ឋាន"
+"attributelist:context_whn:household_whn","","Household","Habitacion Domiciliaria",,"លក្ខណគ្រួសារ"
+"attributelist:context_whn:researchorconservationcapture_whn","","Research or Conservation Capture","Investigacion o Captura de Conservacion",,"ចាប់បានដោយការស្រាវជ្រាវ ឬ ការអភិរក្ស"
+"attributelist:context_whn:market_whn","","Market","Mercado",,"ទីផ្សារ"
+"attributelist:context_whn:tradepost_whn","","Tradepost","Puesto de Venta",,"កន្លែងជួញដូរឬដោះដូរ"
+"attribute:findings_whn","","Findings","Hallazgos","ສິ່ງທີ່ພົບເຫັນ","ការរកឃើញ"
+"attributelist:findings_whn:floodedarea_whn","","Flooded Area","Area Inundada","ພື້ນທີ່ຖືກນໍ້າຖ້ວມ","តំបន់លិចទឹក"
+"attributelist:findings_whn:garbage_whn","","Garbage","Basura","ຂີ້ເຫຍື້ອ","សំរាម"
+"attributelist:findings_whn:burning_whn","","Burning","Quema","ການຈູດປ່າ","ដុត"
+"attributelist:findings_whn:carcassdisposal_whn","","Carcass disposal","Deposito de Cadaveres","ການຖິ້ມຊາກສັດ","ការចោលសាកសព"
+"attributelist:findings_whn:sewagedischarge_whn","","Sewage discharge","Descarga de Aguas Servidas","ການປ່ອຍນໍ້າເສຍ","ការបញ្ចេញទឹកស្អុយ"
+"attributelist:findings_whn:fertilizers_whn","","Fertilizers","Fertilizantes","ການໃສ່ປຸຍ","ជី"
+"attributelist:findings_whn:chemicals_whn","","Chemicals","Quimicos","ສານເຄມີ","គីមី"
+"attributelist:findings_whn:smokeorsmog_whn","","Smoke or smog","Humo o Smog","ຄວັນ ຫຼື ໝອກຄວັນ","ផ្សែងឬអ័ព្ទ"
+"attributelist:findings_whn:logging_whn","","Logging","Tala","ການຕັດໄມ້","ការកាប់ឈើ"
+"attributelist:findings_whn:nofindings_whn","","No Findings","No Hay Hallazgos","ບໍ່ພົບເຫັນສິ່ງຜິດປົກກະຕິ","មិនមានការរកឃើញ"
+"attributelist:findings_whn:otherfindings_whn","","Other Findings","Otros Hallazgos",,"ការរកឃើញផ្សេងទៀត"
+"attribute:numberdead_whn","","Number Dead Animals","Numero Animales Muertos","ຈໍານວນສັດຕາຍ","ចំនួនសត្វស្លាប់"
+"attribute:numberhealthy_whn","","Number Healthy Animals","Numero Animales Sanos","ຈໍານວນສັດທີ່ແຂງແຮງ","ចំនួនសត្វមានសុខភាពល្អ"
+"attribute:numbersickorinjured_whn","","Number Sick or Injured Animals","Numero Animales Enfermos o Lesionados","ຈໍານວນສັດທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ","ចំនួនសត្វដេលឈឺ ឬ សត្វដែលមានរបួស"
+"attribute:otheranomalies_whn","","Other Anomalies","Otras Anomalias","ຄວາມຜິດປົກກະຕິອື່ນໆ","ភាពមិនប្រក្រតីផ្សេងទៀត"
+"attribute:otheranomaliesdead_whn","","Other Anomalies Dead","Otras Anomalias Animales Muertos",,"ភាពមិនប្រក្រតីផ្សេងទៀតចំពោះសត្វស្លាប់"
+"attribute:otheranomaliessickorinjured_whn","","Other Anomalies Sick or Injured","Otras Anomalias En Enfermos o Lesionados",,"ភាពមិនប្រក្រដីផ្សេងតៀតចំពោះសត្វឈឺ"
+"attribute:otherfindings_whn","","Other Findings","Otros Hallazgos","ສິ່ງທີ່ພົບເຫັນອື່ນໆ","ការរកឃើញផ្សេងទៀត"
+"attribute:otherinformation_whn","","Other Information","Otra Informacion",,"ព័ត៌មានផ្សេងទៀត"
+"attribute:otherrelevantinformation_whn","","Other Relevant Information","Otra Informacion Relevante","ຂໍ້ມູນອື່ນທີ່ກ່ຽວຂ້ອງ","ព័ត៌មានដែលពាក់ព័ន្ធផ្សេងទៀត"
+"attribute:potentialcausedeath_whn","","Potential Cause Death","Causa Potencial de Muerte",,"មូលហេតុនៃការស្លាប់ដែលអាចកើតមាន"
+"attributelist:potentialcausedeath_whn:dehydration_whn","","Dehydration",,,"ប្រភេទសត្វ"
+"attributelist:potentialcausedeath_whn:drowned_whn","","Drowned","Ahogado",,"លង់ទឹក"
+"attributelist:potentialcausedeath_whn:electrocution_whn","","Electrocution","Golpe Electrico",,"ការឆក់ដោយអគ្គីសនី​"
+"attributelist:potentialcausedeath_whn:entangled_whn","","Entangled","Enredado o Enmallado",,"ផ្អើល​"
+"attributelist:potentialcausedeath_whn:fishinggear_whn","","Fishing Gear","Equipo de Pesca",,"ឧបករណ៍នេសាទ"
+"attributelist:potentialcausedeath_whn:illegalhunting_whn","","Illegal Hunting","Caza Ilegal",,"ការបរបាញ់ខុសច្បាប់"
+"attributelist:potentialcausedeath_whn:infectiousdisease_whn","","Infectious Disease","Enfermedad Infecciosa",,"ជំងឺឆ្លង"
+"attributelist:potentialcausedeath_whn:legalhunting_whn","","Legal Hunting","Caza Legal",,"ការបរបាញ់ស្របច្បាប់"
+"attributelist:potentialcausedeath_whn:oldage_whn","","Old Age","Edad Avanzada",,"អាយុច្រើន (ចាស់)"
+"attributelist:potentialcausedeath_whn:othernoninfectiousdisease_whn","","Other Non-infectious Disease","Otra Enfermedad No Infecciosa",,"ជំងឺមិនឆ្លងផ្សេងទៀត"
+"attributelist:potentialcausedeath_whn:poisonortoxin_whn","","Poison or Toxin","Veneno o Toxina",,"ការបំពុល ឬ ជាតិពុល​"
+"attributelist:potentialcausedeath_whn:predation_whn","","Predation","Depredacion",,"ការប្រមាញ់"
+"attributelist:potentialcausedeath_whn:starvation_whn","","Starvation",,,"Starvation"
+"attributelist:potentialcausedeath_whn:stranded_whn","","Stranded","Varamiento",,"ការជាប់គាំង"
+"attributelist:potentialcausedeath_whn:traporsnare_whn","","Trap or Snare","Trampa",,"អន្ទាក់ ឬអន្ទាក់"
+"attributelist:potentialcausedeath_whn:traumaorcollision_whn","","Trauma or Collision","Trauma o Colision",,"ការប៉ះទង្គិច"
+"attributelist:potentialcausedeath_whn:unknown_whn","","Unknown","Desconocido",,"មិនដឹង"
+"attributelist:potentialcausedeath_whn:vehicleaccident_whn","","Vehicle Accident","Accidente Vehicular",,"គ្រោះថ្នាក់ចរាចរណ៍"
+"attribute:potentialcausediseaseorinjury_whn","","Potential Cause Disease or Injury","Causa Potencial de Enfermedad o Lesion",,"មូលហេតុដែលអាចកើតមានជំងឺ ឬរបួស"
+"attributelist:potentialcausediseaseorinjury_whn:dehydration_whn","","Dehydration",,,"ការខ្សោះជាតិទឹក"
+"attributelist:potentialcausediseaseorinjury_whn:drowned_whn","","Drowned",,,"Drowned"
+"attributelist:potentialcausediseaseorinjury_whn:electrocution_whn","","Electrocution","Golpe Electrico",,"ការឆក់ដោយអគ្គីសនី​"
+"attributelist:potentialcausediseaseorinjury_whn:entangled_whn","","Entangled","Enredado o Enmallado",,"ផ្អើល​"
+"attributelist:potentialcausediseaseorinjury_whn:fishinggear_whn","","Fishing Gear","Equipo de Pesca",,"ឧបករណ៍នេសាទ"
+"attributelist:potentialcausediseaseorinjury_whn:infectiousdisease_whn","","Infectious Disease","Enfermedad Infecciosa",,"ជំងឺឆ្លង"
+"attributelist:potentialcausediseaseorinjury_whn:oldage_whn","","Old Age","Edad Avanzada",,"ចាស់ (អាយុ)"
+"attributelist:potentialcausediseaseorinjury_whn:othernoninfectiousdisease_whn","","Other Non-Infectious Disease","Otra Enfermedad No Infecciosa",,"ជំងឺមិនឆ្លងផ្សេងៗ"
+"attributelist:potentialcausediseaseorinjury_whn:poisonortoxin_whn","","Poison or Toxin","Veneno o Toxina",,"ការបំពុល ឬ ជាតិពុល​"
+"attributelist:potentialcausediseaseorinjury_whn:predation_whn","","Predation","Depredacion",,"ការប្រមាញ់ (ស៊ីឬសម្លាប់ដោយសត្វផ្សេង)"
+"attributelist:potentialcausediseaseorinjury_whn:starvation_whn","","Starvation",,,"Starvation"
+"attributelist:potentialcausediseaseorinjury_whn:stranded_whn","","Stranded","Varamiento",,"ការជាប់គាំង (សត្វគើងជាប់លើគោក សត្វជាប់ខ្សែឬគៀបជាប់អ្វីមួយ)"
+"attributelist:potentialcausediseaseorinjury_whn:traporsnare_whn","","Trap or Snare","Trampa",,"ជាប់អន្ទាក់"
+"attributelist:potentialcausediseaseorinjury_whn:traumaorcollision_whn","","Trauma or Collision","Trauma o Colision",,"ការប៉ះទង្គិច"
+"attributelist:potentialcausediseaseorinjury_whn:unknown_whn","","Unknown","Desconocido",,"មិនដឹង"
+"attributelist:potentialcausediseaseorinjury_whn:vehicleaccident_whn","","Vehicle Accident","Accidente Vehicular",,"គ្រោះថ្នាក់រថយន្ត"
+"attribute:potentialcauseofdeathdiseaseorinjury_whn","","Potential Cause of Death Disease or Injury","Causa Potencial de Enfermedad, Lesion, o Muerte","ສາເຫດເປັນໄປໄດ້ ທີ່ເຮັດໃຫ້ສັດຕາຍ, ເປັນພະຍາດ, ຫຼື ບາດເຈັບ","មូលហេតុធ្វើឲ្យរបូស ឬស្លាប់"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:dehydration_whn","","Dehydration",,,"ការខ្សោះជាតិទឹក"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:drowned_whn","","Drowned","Ahogado","ຈົມນໍ້າຕາຍ","លង់ទឹក"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:electrocution_whn","","Electrocution","Golpe Electrico","ໄຟຟ້າຊ໋ອດ","ការឆក់ដោយអគ្គីសនី"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:entangled_whn","","Entangled","Enredado o Enmallado","ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ","ផ្អើល"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:fishinggear_whn","","Fishing Gear","Equipo de Pesca","ອຸປະກອນຫາປາ","ឧបករណ៍នេសាទ"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:gunshot","","Gunshot",,,"ត្រូវគ្រាប់កាំភ្លើង"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:infectiousdisease_whn","","Infectious Disease","Enfermedad Infecciosa","ພະຍາດຕິດຕໍ່","ជំងឺឆ្លង"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:oldage_whn","","Old Age","Edad Avanzada","ອາຍຸແກ່","ចាស់ (អាយុ)"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:othernoninfectiousdisease_whn","","Other Non-Infectious Disease","Otra Enfermedad No Infecciosa","ພະຍາດບໍ່ຕິດຕໍ່ອື່ນໆ","ជំងឺមិនឆ្លងផ្សេងៗ"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:poisonortoxin_whn","","Poison or Toxin","Veneno o Toxina","ທາດເບື່ອ ຫຼື ສານຜິດ","ការបំពុល ឬ ជាតិពុល"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:predation_whn","","Predation","Depredacion","ການລ່າເຫຍື່ອ","ការប្រមាញ់ (ស៊ីឬសម្លាប់ដោយសត្វផ្សេង)"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:starvation_whn","","Starvation",,,"Starvation"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:stranded_whn","","Stranded","Varamiento","ຕິດຄ້າງຢູ່ດອນ ຫຼື ເກາະ","ការជាប់គាំង (សត្វគើងជាប់លើគោក សត្វជាប់ខ្សែឬគៀបជាប់អ្វីមួយ)"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:traditionalweapon_whn","","Traditional weapon",,,"ឧបករណ៍បរបាញ់បុរាណ"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:traporsnare_whn","","Trap or Snare","Trampa","ກັບດັກ ຫຼື ແຮ້ວ","ជាប់អន្ទាក់"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:traumaorcollision_whn","","Trauma or Collision","Trauma o Colision","ບາດແຜ ຫຼື ການຕໍ່ສູ້ກັນ","ការប៉ះទង្គិច"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:unknown_whn","","Unknown","Desconocido","ບໍ່ຮູ້","មិនដឹង"
+"attributelist:potentialcauseofdeathdiseaseorinjury_whn:vehicleaccident_whn","","Vehicle Accident","Accidente Vehicular","ອຸບັດຕິເຫດລົດຕໍາ","គ្រោះថ្នាក់រថយន្ត"
+"attribute:providespeciesnotlisted_whn","","Provide Species Not Listed","Escriba Especie No Listada","ລະບຸຊື່ຊະນິດທີ່ບໍ່ມີຢູ່ໃນລາຍການ","ប្រភេទសត្វដែលមិនមានក្នុងបញ្ជី"
+"attribute:sampleid_whn","","Sample ID","Identificador de Muestra","ລະຫັດໝາຍຕົວຢ່າງ",
+"attribute:sampletype_whn","","Sample Type","Tipo de Muestra","ປະເພດຕົວຢ່າງ",
+"attributelist:sampletype_whn:abscess_whn","","Abscess","Abceso","ຝີ",
+"attributelist:sampletype_whn:adrenalgland_whn","","Adrenal Gland","Glandula Adrenal","ຕ່ອມໝວກໄຕ",
+"attributelist:sampletype_whn:airsac_whn","","Air Sac","Saco Aereo","ຖົງອາກາດ",
+"attributelist:sampletype_whn:bloodclot_whn","","Bloodclot","Coagulo","ກ້ອນເລືອດກ້າມ",
+"attributelist:sampletype_whn:fluidbodycavity_whn","","Body Cavity Fluid","Fluido Cavidad Corporal","ນໍ້າ (ຊ່ອງທ້ອງ)",
+"attributelist:sampletype_whn:bone_whn","","Bone","Hueso","ກະດູກ",
+"attributelist:sampletype_whn:bonemarrow_whn","","Bone Marrow","Medula Osea","ແອ້ກະດູກ/ມວນກະດູກ",
+"attributelist:sampletype_whn:brain_whn","","Brain","Cerebro","ສະໝອງ",
+"attributelist:sampletype_whn:cerebrospinalfluid","","Cerebrospinal Fluid","Cerebrospinal Fluid","ນໍ້າຫຼໍ່ລ້ຽງສະໝອງ ແລະ ໄຂສັນຫຼັງ",
+"attributelist:sampletype_whn:chemicalsubstance_whn","","Chemical Substance","Sustancia Quimica","ສານເຄມີ (e.g. ຢາຂ້າແມງໄມ້ປົນເປື່ອນໃນແຫ່ງນໍ້າ)",
+"attributelist:sampletype_whn:cropcontents_whn","","Crop Contents","Contenido Buche","ພືດໃນກະເພາະ",
+"attributelist:sampletype_whn:dryfeces_whn","","Dry Feces","Fecas Secas","ອາຈົມແຫ້ງ",
+"attributelist:sampletype_whn:drymeat_whn","","Dry Meat","Carne Seca","ຊີ້ນແຫ້ງ",
+"attributelist:sampletype_whn:esophagus_whn","","Esoohagus","Esofago","ຫຼອດອາຫານ",
+"attributelist:sampletype_whn:eye_whn","","Eye","Ojo","ຕາ",
+"attributelist:sampletype_whn:feather_whn","","Feather","Pluma","ຂົນສັດປີກ",
+"attributelist:sampletype_whn:fetus_whn","","Fetus","Feto","ໂຕອ່ອນ",
+"attributelist:sampletype_whn:filterpaper_whn","","Filter Paper","Papel filtro","ເຈ້ຍກັ້ນຕອງ",
+"attributelist:sampletype_whn:fleas_whn","","Fleas","Pulgas","ໝັດ, ໄຮ",
+"attributelist:sampletype_whn:freshfeces_whn","","Fresh Feces","Fecas Frescas","ອາຈົມສົດ",
+"attributelist:sampletype_whn:freshmeat_whn","","Fresh Meat","Carne Fresca","ຊີ້ນສົດ",
+"attributelist:sampletype_whn:gallbladder_whn","","Gall Bladder","Vesicula Biliar","ຖົງບີ",
+"attributelist:sampletype_whn:gastriccontents_whn","","Gastric Contents","Contenido Gastrico","ອາຫານ ຫຼື ນໍ້າຍ່ອຍໃນກະເພາະ",
+"attributelist:sampletype_whn:hair_whn","","Hair","Pelo","ຜົມ",
+"attributelist:sampletype_whn:heart_whn","","Heart","Corazon","ຫົວໃຈ",
+"attributelist:sampletype_whn:jointfluid_whn","","Joint Fluid","Fluido Articular","ນໍ້າໃນຂໍ້ຕໍ່",
+"attributelist:sampletype_whn:kidney_whn","","Kidney","Rinon","ໝາກໄຂ່ຫຼັງ",
+"attributelist:sampletype_whn:largeintestine_whn","","Large Intestine","Intestino Grueso","ລໍາໄສ້ໃຫຍ່",
+"attributelist:sampletype_whn:lice_whn","","Lice","Piojos","ເຫົາ",
+"attributelist:sampletype_whn:liver_whn","","Liver","Higado","ຕັບ",
+"attributelist:sampletype_whn:lung_whn","","Lung","Pulmon","ປອດ",
+"attributelist:sampletype_whn:lymphnode_whn","","Lymphnode","Linfonodo","ຕ່ອມນໍ້າເຫຼືອງ",
+"attributelist:sampletype_whn:mammarygland_whn","","Mammary Gland","Glandula Mamaria","ຕ່ອມຜະລິດນໍ້ານົມ",
+"attributelist:sampletype_whn:milk_whn","","Milk","Leche","ນໍ້ານົມ",
+"attributelist:sampletype_whn:mites_whn","","Mites","Acaros","ໄຮອ່ອນ",
+"attributelist:sampletype_whn:mixedtissue_whn","","Mixed Tissue","Mix de Tejidos","ຊິ້ນສ່ວນລວມ",
+"attributelist:sampletype_whn:nasalswab_whn","","Nasal Swab","Hisopado Nasal","ສະແວ໋ບທາງຮູດັງ",
+"attributelist:sampletype_whn:nerve_whn","","Nerve","Nervio","ເສັ້ນປະສາດ",
+"attributelist:sampletype_whn:oralswab_whn","","Oral Swab","Hisopado Oral","ສະແວ໋ບທາງປາກ",
+"attributelist:sampletype_whn:oronasalswab_whn","","Oronasal Swab","Hisopado Oronasal","ສະແວ໋ບທາງປາກ-ດັງ",
+"attributelist:sampletype_whn:othertissue_whn","","Other Tissue","Otro Tejido","ຊິ້ນສ່ວນອື່ນໆ",
+"attributelist:sampletype_whn:ovary_whn","","Ovary","Ovario","ຮວຍໄຂ່",
+"attributelist:sampletype_whn:pancreas_whn","","Pancreas","Pancreas","ຕັບອ່ອນ",
+"attributelist:sampletype_whn:plasma_whn","","Plasma","Plasma","ປລາສມາ",
+"attributelist:sampletype_whn:platyhelminths","","Platyhelminths","Platelmintos","ພະຍາດໂຕແບນ",
+"attributelist:sampletype_whn:poison_whn","","Poison","Veneno",,
+"attributelist:sampletype_whn:rectalcloacalswab_whn","","Rectal or Cloacal Swab","Hisopado Rectal o Cloacal","ສະແວ໋ບທາງຮູທະວານ",
+"attributelist:sampletype_whn:roundworms_whn","","Round Worms","Gusanos Redondos","ພະຍາດໂຕກົມ",
+"attributelist:sampletype_whn:saltedmeat_whn","","Salted Meat","Carne Salada","ຊີ້ນໝັກ",
+"attributelist:sampletype_whn:sediment_whn","","Sediment","Sedimento","ຂີ້ຕົມ",
+"attributelist:sampletype_whn:serum_whn","","Serum","Suero","ເຊຣໍາ/ເລືອດໃສ",
+"attributelist:sampletype_whn:skin_whn","","Skin","Piel","ໜັງ",
+"attributelist:sampletype_whn:smallintestine_whn","","Small Intestine","Intestino Delgado","ລໍາໄສ້ນ້ອຍ",
+"attributelist:sampletype_whn:soil_whn","","Soil","Suelo","ດິນ",
+"attributelist:sampletype_whn:spinalcord_whn","","Spinal Cord","Columna Vertebral","ໄຂສັນຫຼັງ",
+"attributelist:sampletype_whn:spleen_whn","","Spleen","Bazo","ມ້າມ",
+"attributelist:sampletype_whn:stomach_whn","","Stomach","Estomago","ກະເພາະອາຫານ",
+"attributelist:sampletype_whn:testes_whn","","Testes","Testiculos","ໄຂ່ຫໍາ",
+"attributelist:sampletype_whn:thyroidgland_whn","","Thyroid Gland","Glandula Tiroides","ຕ່ອມຄໍຫອຍ",
+"attributelist:sampletype_whn:ticks_whn","","Ticks","Garrapatas","ເຫັບ",
+"attributelist:sampletype_whn:tongue_whn","","Tongue","Lengua","ລີ້ນ",
+"attributelist:sampletype_whn:tooth_whn","","Tooth","Diente","ແຂ້ວ",
+"attributelist:sampletype_whn:trachea_whn","","Trachea","Traquea","ຫຼອດລົມ",
+"attributelist:sampletype_whn:umbilicus_whn","","Umbilicus","Ombligo","ສະປື",
+"attributelist:sampletype_whn:unclassifiedparasite_whn","","Unclassified Parasite","Parasito Sin Clasificar","ແມ່ກາຟາກທີ່ບໍ່ສາມາດຈໍາແນກໄດ້",
+"attributelist:sampletype_whn:urine_whn","","Urine","Orina","ນໍ້າຍ່ຽວ",
+"attributelist:sampletype_whn:urinarybladder_whn","","Urinary Bladder","Vejiga Urinaria","ພົກຍ່ຽວ",
+"attributelist:sampletype_whn:urogenitalswab_whn","","Urogenital Swab","Hisopado Urogenital","ສະແວ໋ບທາງທໍ່ຍ່ຽວ",
+"attributelist:sampletype_whn:uterus_whn","","Uterus","Utero","ມົດລູກ",
+"attributelist:sampletype_whn:vomitus_whn","","Vomitus","Vomito","ຮາກ",
+"attributelist:sampletype_whn:water_whn","","Water","Agua","ນໍ້າ",
+"attributelist:sampletype_whn:wholeblood_whn","","Whole Blood","Sangre Entera","ເລືອດລວມ",
+"attribute:sexofanimal_whn","","Sex of Animal","Sexo del Animal","ເພດຂອງສັດ",
+"attributelist:sexofanimal_whn:unknown_whn","","Unknown","Desconocido","ບໍ່ຮູ້",
+"attributelist:sexofanimal_whn:female_whn","","Female","Hembra","ໂຕແມ່",
+"attributelist:sexofanimal_whn:male_whn","","Male","Macho","ໂຕຜູ້",
+"attribute:livestockdomesticspecies_whn","","Species","Especie","ຊະນິດ","ប្រភេទសត្វ"
+"attributelist:livestockdomesticspecies_whn:cow_whn","","Cow","Vaca","ງົວ","គោ​"
+"attributelist:livestockdomesticspecies_whn:domesticduck_whn","","Domestic Duck","Pato Domestico","ເປັດລ້ຽງ","ទាស្រុក"
+"attributelist:livestockdomesticspecies_whn:goat_whn","","Goat","Cabra","ແບ້","ពពែ"
+"attributelist:livestockdomesticspecies_whn:horse_whn","","Horse","Caballo","ມ້າ","សេះ"
+"attributelist:livestockdomesticspecies_whn:pig_whn","","Pig","Cerdo","ໝູ","ជ្រូក"
+"attributelist:livestockdomesticspecies_whn:poultry_whn","","Poultry","Gallina Pollo","ໄກ່","បក្សី"
+"attributelist:livestockdomesticspecies_whn:sheep_whn","","Sheep","Oveja","ແກະ","ចៀម"
+"attributelist:livestockdomesticspecies_whn:dog_whn","","Dog","Perro","ໝາ","ឆ្កែ"
+"attributelist:livestockdomesticspecies_whn:cat_whn","","Cat","Gato","ແມວ","ឆ្មា"
+"attributelist:livestockdomesticspecies_whn:othermammal_whn","","Other Mammal","Otro Especie Domestica","ສັດລ້ຽງລູກດ້ວຍນໍ້ານົມອື່ນ","ថនិកសត្វផ្សេងទៀត"
+"attributelist:livestockdomesticspecies_whn:otherfowlspecies_whn","","Other Fowl Species","Otra Especie Ave","ສັດປີກອື່ນ","ប្រភេទសត្វស្លាបផ្សេងទៀត"
+"attribute:species_whn","","Species","Especie","ຊະນິດ","ប្រភេទសត្វ"
+"attributelist:species_whn:speciesnotlisted_whn","","Species Not Listed","Especie No Listada","ຊະນິດທີ່ບໍ່ມີຢູ່ໃນລາຍການ","ប្រភេទសត្វមិនមានក្នុងបញ្ជី"
+"attributelist:species_whn:abiotic_whn","","Abiotic","Abiotico",,"abiotic"
+"attribute:suspectcauseofdeathdiseaseorinjury_whn","","Suspect Cause of Death, Disease, or Injury","Causa Potential de Muerte, Enfermedad, o Lesion","ສາເຫດສົງໄສ ທີ່ເຮັດໃຫ້ສັດ ຕາຍ, ເປັນພະຍາດ ຫຼື ບາດເຈັບ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:unknown_whn.","","Unknown","Desconocido","ບໍຮູ້",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:predation_whn.","","Predation","Depredacion","ການລ່າເຫຍື່ອ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:predation_whn.yesbutunknowncarnivore_whn.","","Yes, But Unknown Carnivore","Si, Pero Carnivoro Desconocido","ແມ່ນ, ແຕ່ບໍ່ຮູ້ແມ່ນສັດກິນຊີ້ນປະເພດໃດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:predation_whn.wildcarnivore_whn.","","Wild Carnivore","Carnivoro Silvestre","ສັດປ່າຈໍາພວກກິນຊີ້ນ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:predation_whn.dog_whn.","","Dog","Perro","ໝາ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:predation_whn.cat_whn.","","Cat","Gato","ແມວ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:poisoningortoxin_whn.","","Poisoning or Toxin","Veneno o Toxina","ທາດເບື່ອ ຫຼື ສານພິດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:oldage_whn.","","Old Age","Edad Avanzada","ອາຍຸແກ່",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:infectiousdisease_whn.","","Infectious Disease","Enfermedad Infecciosa","ພະຍາດຕິດຕໍ່",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.","","Hunt or Control","Caza o Control","ລ່າ ຫຼື ຄວບຄຸມ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.trapsnare_whn.","","Trap or Snare","Trampa","ກັບດັກ/ແຮ້ວ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.traditionalhunting_whn.","","Traditional Hunting","Caza Traditional","ປະເພນີການລ່າສັດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.sporthunting_whn.","","Sport Hunting","Caza Deportiva","ກິລາລ່າສັດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.problemanimalcontrol_whn.","","Problem Animal Control","Control de Animal Problematico","ບັນຫາການຄວບຄຸມປະຊາກອນສັດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.otherweapon_whn.","","Other Weapon","Otra Arma","ອາວຸດອື່ນໆ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.net_whn.","","Net","Red","ຕາໜ່າງ ຫຼື ມອງ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.gunshot_whn.","","Gunshot","Disparo de Arma","ປືນຍິງ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:huntorcontrol_whn.culling_whn.","","Culling","Sacrificio","ການຫຼຸດຈໍານວນປະຊາກອນສັດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:healthyanimal_whn.","","Healthy Animal","Individuo Sano","ສັດມີຊີວິດແຂງແຮງດີ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:euthanasia_whn.","","Euthanasia","Eutanasia","ການຂ້າເພື່ອຢຸດຄວາມເຈັບປວດທໍລະມານ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:emaciation_whn.","","Emaciation","Emaciacion","ການຂາດສານອາຫານ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:dehydration_whn.","","Dehydration",,,
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.","","Accident","Accidente","ອຸປະຕິເຫດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.stranded_whn.","","Stranded","Varamiento","ຕິດຄ້າງຢູ່ດອນ ຫຼື ເກາະ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.runoverbyavehicle_whn.","","Run Over By A Vehicle","Atropellado por Automovil","ລົດຢຽບ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.problemwithcaptureorimmobilization_whn.","","Problem Wth Capture Or Immobilization","Problema con la Captura o Inmovilizacion","ມີບັນຫາ ໃນຕອນຈັບສັດ ຫຼື ລ໋ອກການເໜັງຕີງຂອງສັດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.othertrauma_whn.","","Other Trauma","Otro Trauma","ບາດແຜອື່ນໆ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.net_whn.","","Net","Red","ຕາໜ່າງ ຫຼື ມອງ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.fishinggear_whn.","","Fishing Gear","Equipo de Pesca","ອຸປະກອນຕຶກປາ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.entangled_whn.","","Entangled","Enredado o enmallado","ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.electrocuted_whn.","","Electrocuted","Electrocutado","ໄຟຟ້າຊ໋ອດ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.drowned_whn.","","Drowned","Ahogado","ຈົມນໍ້າ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.buildingorstructure_whn.","","Building or Structure","Edificio o Estructura","ອາຄານ ຫຼື ໂຄງສ້າງ",
+"attributenode:suspectcauseofdeathdiseaseorinjury_whn:accident_whn.boatstrike_whn.","","Boat Strike","Golpeado por Bote","ເຮືອຕໍາ",
+"attribute:typeoflandscape_whn","","Type of Landscape","Tipo de Habitat","ປະເພດຂອງພູມສັນຖານ","ប្រភេទនៃតំបន់ទេសភាព"
+"attributelist:typeoflandscape_whn:agriculturalland_whn","","Agricutural Land","Agricola","ທີ່ດິນກະສິກຳ","ដីកសិកម្ម"
+"attributelist:typeoflandscape_whn:alpine_whn","","Alpine","Alpino",,"តំបន់ជួរភ្នំ"
+"attributelist:typeoflandscape_whn:beach_whn","","Beach","Playa","ຫາດຊາຍ","ឆ្នេរ"
+"attributelist:typeoflandscape_whn:cave_whn","","Cave","Cueva o Caverna","ຖໍ້າ","រូងភ្នំ"
+"attributelist:typeoflandscape_whn:clearedforest_whn","","Cleared Forest","Bosque Talado","ປ່າໂຄກຫ່າງ","ព្រៃ​ឈូស​ឆាយ"
+"attributelist:typeoflandscape_whn:deciduousforest_whn","","Deciduous Forest","Bosque Deciduo","ປ່າໄມ້ຜັດໃບ(ປ່າໄມ້ຫຼົ່ນໃບຍາມແລ້ງ)","ព្រៃរបោះ"
+"attributelist:typeoflandscape_whn:degragdedforest_whn","","Degraded Forest","Bosque Degradado","ປ່າຊຸດໂຊມ","ព្រៃ​ដែល​បាត់បង់"
+"attributelist:typeoflandscape_whn:evergreenforest_whn","","Evergreen Forest","Bosque Siempreverde","ປ່າດົງດິບ","ព្រៃស្រោង"
+"attributelist:typeoflandscape_whn:farm_whn","","Farm","Granja","ຟາມ","កសិដ្ឋាន"
+"attributelist:typeoflandscape_whn:floodedplain_whn","","Flooded Plain","Planicie Inundada","ເຂດທົ່ງພຽງຖືກນໍ້າຖ້ວມ","វាលទំនាបលិចទឹក"
+"attributelist:typeoflandscape_whn:grassland_whn","","Grassland","Pradera","ທົ່ງຫຍ້າຂະໜາດໃຫຍ່","វាលស្មៅ (ស្មៅសុទ្ធ)"
+"attributelist:typeoflandscape_whn:household_whn","","Household","Habitacion Humana","ຄົວເຮືອນ","លក្ខណគ្រួសារ"
+"attributelist:typeoflandscape_whn:lake_whn","","Lake","Lago","ທະເລສາບ","បឹង"
+"attributelist:typeoflandscape_whn:market_whn","","Market","Mercado","ຕະຫຼາດ","ផ្សារ"
+"attributelist:typeoflandscape_whn:meadow_whn","","Meadow","Pradera","ທົ່ງຫຍ້າຂະໜາດນ້ອຍ-ກາງ (ອາດມີໄມ້ຟຸ້ມ/ດອກໄມ້ປ່າ)","វាលផ្កាស្មៅ"
+"attributelist:typeoflandscape_whn:montane_whn","","Montane","Montana","ປ່າເຂດພູສູງ","តំបន់ភ្នំ"
+"attributelist:typeoflandscape_whn:ocean_whn","","Ocean","Oceanico","ມະຫາສະໝຸດ","សមុទ្រ"
+"attributelist:typeoflandscape_whn:oceanshore_whn","","Ocean Shore","Costa Oceanica","ແຄມມະຫາສະໝຸດ","ឆ្នេរសមុទ្រ"
+"attributelist:typeoflandscape_whn:peatbog_whn","","Peatbog","Turbera","ພື້ນທີ່ນໍ້າຂັງ","តំបន់វាលភក់"
+"attributelist:typeoflandscape_whn:periurbanrural_whn","","Periurban/Rural","Periurbano/Rural","ເຂດນອກເມືອງ/ຊົນນະບົດ","តំបនជាយក្រុង/ជនបទ​"
+"attributelist:typeoflandscape_whn:river_whn","","River","Rio","ແມ່ນໍ້າ","ទន្លេ"
+"attributelist:typeoflandscape_whn:rural_whn","","Rural","Rural","ຊົນນະບົດ","ជនបទ"
+"attributelist:typeoflandscape_whn:steppe_whn","","Steppe","Estepa",,"តំបន់វាលរាប"
+"attributelist:typeoflandscape_whn:subalpine_whn","","Sub-Alpine","Sub-Alpino",,"ព្រៃតាមរដូវកាលក្នុងរយៈកំពស់ខ្ពស់"
+"attributelist:typeoflandscape_whn:urban_whn","","Urban","Urbano","ເຂດເທດສະບານ","ទីក្រុង​"
+"attributelist:typeoflandscape_whn:wetland_whn","","Wetland","Humedal","ບຶງ ຫຼື ໜອງນໍ້າ","តំបន់ដីសើម"
+"attributelist:typeoflandscape_whn:zoorescuecenter_whn","","Zoo/Rescue Center","Zoo/Centro de Rescate","ສວນສັດ/ສູນຊ່ວຍເຫຼືອສັດ","សួនសត្វ/មជ្ឈមណ្ឌលសង្គ្រោះសត្វ"
+"attribute:wasthecarcasscollected_whn","","Was The  Carcass Collected","Se Recolecto el Cadaver","ຊາກສັດໄດ້ຖືກເກັບບໍ່",
+"attributelist:wasthecarcasscollected_whn:theanimalisnotdead_whn","","The Animal Is Not Dead","El Animal No Esta Muerto","ບໍ່ແມ່ນສັດຕາຍ",
+"attributelist:wasthecarcasscollected_whn:no_whn","","No","No","ບໍ່",
+"attributelist:wasthecarcasscollected_whn:yes_whn","","Yes","Si","ແມ່ນ",
