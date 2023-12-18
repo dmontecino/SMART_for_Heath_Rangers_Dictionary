@@ -45,6 +45,7 @@ create_abs_lang_link <- function(path, base_link) {
 }
 
 
+#run the function
 
 create_abs_lang_link(path = "docs", base_link = "https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary")
 

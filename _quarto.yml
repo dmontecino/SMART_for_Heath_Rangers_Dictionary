@@ -9,10 +9,6 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
 
 format:
   html:
@@ -22,16 +18,11 @@ babelquarto:
   languagecodes:
   - name: es
     text: "Version en español"
-  - name: fr
-    text: "Version in fr"
   - name: en
     text: "Version in english"
   mainlanguage: 'en'
-  languages: ['es', 'fr']
+  languages: ['es']
 title-es: Dictionario SMART para Salud - Guardaparques
-title-fr: title in fr
 description-es: Descripcion
-description-fr: description in fr
 author-es: Autor
-author-fr: author in fr
 lang: en
