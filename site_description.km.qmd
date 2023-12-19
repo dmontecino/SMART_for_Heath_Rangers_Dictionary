@@ -1,4 +1,4 @@
-# ອະທິບາຍສະຖາ {.unnumbered}
+# ពណ៌នាអំពីទីតាំង {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
