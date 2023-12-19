@@ -8,7 +8,7 @@ book:
   date: "12/18/2023"
   chapters:
     - index.qmd
-    - intro.qmd
+    - site_description.qmd
 
 format:
   html:
@@ -17,12 +17,12 @@ format:
 babelquarto:
   languagecodes:
   - name: es
-    text: "Version en español"
+    text: "Versión en español"
   - name: en
     text: "Version in english"
   mainlanguage: 'en'
   languages: ['es']
-title-es: Dictionario SMART para Salud - Guardaparques
+title-es: Diccionario SMART para Salud - Guardaparques
 description-es: Descripción
 author-es: Autor
 lang: en

@@ -1,0 +1,67 @@
+# Descripción del Sitio {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+
+es<-
+SMARTeR::flat_conf_model(
+  language_interest = "es",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+site_description_es<-  
+  es %>% 
+  dplyr::filter(cat_label_level_1=="Hallazgos en el Lugar" &
+                  att_label!="Tipo de Habitat") %>% 
+  dplyr::select(att_label, att_type, option_label) %>% 
+  dplyr::rename("Atributo" = "att_label") %>% 
+  dplyr::rename("Opción" = "option_label") %>% 
+  dplyr::rename("Tipo" = "att_type") %>% 
+  dplyr::mutate(Definición=
+                  c(
+                  rep("Selecciones uno o más ítemes que estan presentes en el Incidente. Si hay otras características relevantes en el Incidente que no esten en la lista de opciones y que puedan estar asociadas a enfermedad o muerte, es possible seleccionar la opción 'Otros Hallazgos' y un cuadro de texto aparecerá para describirlos", 
+                      es %>% dplyr::filter(att_label=="Hallazgos") %>% nrow()),
+                      "Describa otras características relevantes no mencionadas en lista de 'Hallazgos' que puedan tener implicancias de enfermedad o muerte"))
+
+    
+        
+# map(data_dictionary, \(x) do.call(rbind,x)) %>% list_rbind()
+    
+# data_dictionary<-map(data_dictionary, \(x) do.call(rbind,x)) 
+# 
+# for(i in seq_along(data_dictionary)){
+#   data_dictionary[[i]]$Component<-names(data_dictionary[i])}
+# 
+# data_dictionary<-data_dictionary %>% 
+#   list_rbind() %>% 
+#   select(Component, Variable, Label, Definition, Type, Mandatory)
+
+# need to find how to change the font size to improve the column width
+
+  # kableExtra::kable(data_dictionary, booktabs = TRUE)%>%
+  # kable_styling(bootstrap_options = c("basic"), font_size = 2) %>% 
+  #   kableExtra::column_spec(column = 1:5, border_right = T) 
+
+  
+  out<-  
+  flextable(site_description_es) %>% 
+  merge_v(j="Atributo") %>% 
+  merge_v(j="Tipo") %>% 
+  merge_v(j="Definición") %>% 
+  theme_box() %>% 
+  width(j = "Opción", width=4.5, unit = "cm") %>% 
+  width(j = "Definición", width=7, unit = "cm")
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
