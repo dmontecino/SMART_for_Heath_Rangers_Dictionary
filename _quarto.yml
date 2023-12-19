@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - site_description.qmd
+    - wildlife.qmd
 
 format:
   html:
