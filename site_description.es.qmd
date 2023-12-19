@@ -1,4 +1,4 @@
-# Descripción del Sitio {.unnumbered}
+# Hallazgos en el Lugar {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
@@ -26,7 +26,7 @@ site_description_es<-
   dplyr::rename("Tipo" = "att_type") %>% 
   dplyr::mutate(Definición=
                   c(
-                  rep("Selecciones uno o más ítemes que estan presentes en el Incidente. Si hay otras características relevantes en el Incidente que no esten en la lista de opciones y que puedan estar asociadas a enfermedad o muerte, es possible seleccionar la opción 'Otros Hallazgos' y un cuadro de texto aparecerá para describirlos", 
+                  rep("Seleccione uno o más ítemes que estan presentes en el Incidente. Si hay otras características relevantes en el Incidente que no esten en la lista de opciones y que puedan estar asociadas a enfermedad o muerte, es possible seleccionar la opción 'Otros Hallazgos' y un cuadro de texto aparecerá para describirlos", 
                       es %>% dplyr::filter(att_label=="Hallazgos") %>% nrow()),
                       "Describa otras características relevantes no mencionadas en lista de 'Hallazgos' que puedan tener implicancias de enfermedad o muerte"))
 
