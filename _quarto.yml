@@ -22,12 +22,17 @@ babelquarto:
     text: "Version in English"
   - name: lo
     text: "Version in Laotian"
+  - name: km
+    text: "Version in Khmer"
   mainlanguage: 'en'
-  languages: ['es', 'lo']
+  languages: ['es', 'lo', 'km']
 title-es: Diccionario SMART para Salud - Guardaparques
-description-es: Descripción
-author-es: Autor
 title-lo: Dictionary SMART for Health - Rangers
+title-km: Dictionary SMART for Health - Rangers
+description-es: Descripción
 description-lo: Description
+description-km: Description
+author-es: Autor
 author-lo: Autor
+author-km: Autor
 lang: en
