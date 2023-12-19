@@ -1,0 +1,127 @@
+# Fauna Silvestre {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+
+es<-
+SMARTeR::flat_conf_model(
+  language_interest = "es",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+wildlife_es<-  
+  es %>% 
+  dplyr::filter(cat_key_level_1=="wildlife_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("La especie de fauna silvestre observada en el Incidente", nrow(en[en$att_key=="species_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Un campo de texto para escribir la especie observada en el Incidente si es que no esta en las opciones del Atributo 'Especie'", nrow(en[en$att_key=="providespeciesnotlisted_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("El contexto en cual se encuentran los animales de la especie correspondiente. Múltiples opciones pueden ser elegidas", nrow(en[en$att_key=="context_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("El número de animales sanos de la especie correspondiente en el Incidente", nrow(en[en$att_key=="numberhealthy_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("El número de animales enfermos o lesionados de la especie correspondiente en el Incidente", nrow(en[en$att_key=="numbersickorinjured_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Las anomalías en los animales enfermos o heridos de las especie correspondiente observada en el Incidente. Múltiples opciones pueden ser elegidas", nrow(en[en$att_key=="anomaliesinsickorinjuredanimals_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Un campo de texto para incluir anomalías observadas en los animales enfermos o lesionados de la especie correspondiente observada en el Incidente si es que que no esta en las opciones del Atributo 'Anomalías en Animales Enfermos y Lesionados'", nrow(en[en$att_key=="otheranomaliessickorinjured_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Las potential causa de enfermedad o lesión de los animales enfermos o lesionados de la especie correspondiente observada en el Incidente. Múltiples opciones pueden ser elegidas", nrow(en[en$att_key=="potentialcausediseaseorinjury_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("El número de animales muertos de la especie correspondiente observada en el Incidente", nrow(en[en$att_key=="numberdead_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    
+                    rep("La condición de los animales muertos de la especie correspondiente observados en el Incidente. Múltiples opciones pueden ser elegidas", nrow(en[en$att_key=="conditiondeadanimals_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Las anomalías en los animales muertos de la especie correspondiente observada en el Incidente. Múltiples opciones pueden ser elegidas", nrow(en[en$att_key=="anomaliesindeadanimals_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                   rep("Un campo de texto para incluir anomalías observadas en los animales muertos de la especie correspondiente observada en el Incidente si es que que no esta en las opciones del Atributo 'Anomalías en Animales Muertos'", nrow(en[en$att_key=="otheranomaliesdead_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Las potential causa de muerte de los animales muertos de la especie correspondiente observada en el Incidente. Múltiples opciones pueden ser elegidas", nrow(en[en$att_key=="potentialcausedeath_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("El tipo de carnívoro asociado asociado a la depredación si entre las causas potenciales de lesión o muerte se ha elegido la opción 'Depredación'", nrow(en[en$att_key=="carnivoreattack_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Un campo de text para entregar otra información relevante respecto a los animales de la especie de fauna silvestre correspondiente", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="wildlife_whn",])))) 
+  
+    wildlife_es<-
+    wildlife_es %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           option_label)
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    wildlife_es<-
+    wildlife_es %>% dplyr::mutate(
+      
+      option_def=c("Seleccione esta opción si la especie en el Incidente no esta en la lista",  # Species
+                   "", # Provide Species not listed
+                   #context
+                    "Animales de la especie correspondiente registrados en el Incidente que están cazados o capturados al momento de la observación; sin embargo, han sido desplazados de la ubicación donde fueron cazados o capturados. Por ejemplo, animales enjaulados en posesión de un cazador que va caminando por un área protegida", #Hunted and Displaced             
+                   "Animales de la especie correspondiente registrados en el Incidente que están cazados o capturados al momento de la observación; sin embargo, no han sido desplazados desde la ubicación donde fueron cazados o capturados. Por ejemplo, animales observados en una trampa de un cazador", #Hunted and not Displaced  
+                  "Animales de la especie correspondiente registrados en el Incidente son mantenidos en un centro de rehabilitación/rescate", # Rescue/Rehabilitation Center
+                  "Animales de la especie correspondiente registrados en el Incidente son observados en su hábitat y no están cazados, capturados, en cautiverio, o restringidos. Estos animales pueden ser capturados por motivos de vigilancia sanitaria y ser considerados 'De vida libre'", # free-ranging
+                  "Animales de la especie correspondiente registrados en el Incidente son mantenidos en una granja", # farm
+                  "Animales de la especie correspondiente registrados en el Incidente son mantenidos en una habitación domiciliaria", # farm
+                  "Animales de la especie correspondiente registrados en el Incidente son capturados por razones de investigación o conservación no relacionada con vigilancia sanitaria", # Research or conservation capture
+                  "Animales de la especie correspondiente registrados en el Incidente estan en un mercado", # market
+                  "Animales de la especie correspondiente registrados en el Incidente estan en un puesto de venta",
+                  "", # Number healthy animals
+                  "", # Number sick or injured animals
+                  rep("", nrow(wildlife_es[wildlife_es$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
+                  "", # Other anomalies sick or injured     
+                  rep("", nrow(wildlife_es[wildlife_es$att_key=="potentialcausediseaseorinjury_whn",])),    
+                  "", # numberdead_whn     
+                  rep("", nrow(wildlife_es[wildlife_es$att_key=="conditiondeadanimals_whn",])), # conditiondeadanimals_whn     
+                  rep("", nrow(wildlife_es[wildlife_es$att_key=="anomaliesindeadanimals_whn",])), #Anomalies in Dead Animals
+                  "", # otheranomaliesdead_whn     
+                  rep("", nrow(wildlife_es[wildlife_es$att_key=="potentialcausedeath_whn",])), # potentialcausedeath_whn
+                  rep("", nrow(wildlife_es[wildlife_es$att_key=="carnivoreattack_whn",])), # carnivore attack
+                   ""))#other relevatn information
+                  
+                  
+    wildlife_es<-
+    wildlife_es %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("Attribute" = "att_label") %>% 
+    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("Option\nDefinition" = "option_def") 
+
+
+  
+  out<-  
+  flextable(wildlife_es) %>% 
+  merge_v(j="Attribute") %>% 
+  merge_v(j="Type") %>% 
+  merge_v(j="Attribute\nDefinition") %>% 
+  theme_box() %>% 
+  width(j = "Option", width=4.5, unit = "cm") %>% 
+  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
+  width(j = "Option\nDefinition", width=7, unit = "cm")
+
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
