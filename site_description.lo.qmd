@@ -27,7 +27,7 @@ site_description_la<-
   dplyr::mutate(Definition=
                   c(
                   rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
-                      en %>% dplyr::filter(att_key=="findings_whn") %>% nrow()),
+                      la %>% dplyr::filter(att_key=="findings_whn") %>% nrow()),
                       "Describe other relevant features at the Incident not provided in the 
                       'Findings' list that could have     
                       disease or death implications"))

@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  site-url: https://example.com
-  title: "Dictionary SMART for Health for Rangers"
+  site-url: https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary
+  title: "Dictionary SMART for Health - Rangers"
   author: "Diego Montecino"
   date: "12/18/2023"
   chapters:
@@ -17,12 +17,17 @@ format:
 babelquarto:
   languagecodes:
   - name: es
-    text: "Versión en español"
+    text: "Versión en Español"
   - name: en
-    text: "Version in english"
+    text: "Version in English"
+  - name: lo
+    text: "Version in Laotian"
   mainlanguage: 'en'
-  languages: ['es']
+  languages: ['es', 'lo']
 title-es: Diccionario SMART para Salud - Guardaparques
 description-es: Descripción
 author-es: Autor
+title-lo: Dictionary SMART for Health - Rangers
+description-lo: Description
+author-lo: Autor
 lang: en
