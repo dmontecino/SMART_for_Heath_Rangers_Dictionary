@@ -6,7 +6,7 @@
 # Create Dictionary #
 # ------------------#
 
-#library(SMARTeR)
+library(SMARTeR)
 library(flextable)
 source(file = "temp_flat_conf_model.R")
 
