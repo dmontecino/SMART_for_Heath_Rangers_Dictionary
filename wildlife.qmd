@@ -74,15 +74,15 @@ wildlife_en<-
       option_def=c("Select this option if the species at the Incident is not in the list",  # Species
                    "", # Provide Species not listed
                    #context
-                    "Animals of the corresponding species registered at the Event are hunted or captured at the time of the observation; however, they have been displaced from the original place of hunt or capture. For example, caged animals in posession of a walking hunter in a protected area", #Hunted and Displaced             
-                   "Animals of the corresponding species registered at the Event are hunted or captured at the time of the observation; however, they have not been displaced from the original place of hunt or capture. For example, animals observed in the trap set by a hunter", #Hunted and not Displaced  
-                  "Animals of the corresponding species registered at the Event are kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
-                  "Animals of the corresponding species registered at the Event are observed in their habitat and not hunted, captured, captive, or restricted. These animals could be captured for health surveillance purposes and still be considered 'free-ranging'", # free-ranging
-                  "Animals of the corresponding species registered at the Event are kept in a farm", # farm
-                  "Animals of the corresponding species registered at the Event are kept in a household", # farm
+                    "Animals of the corresponding species registered at the Incident are hunted or captured at the time of the observation; however, they have been displaced from the original place of hunt or capture. For example, caged animals in posession of a walking hunter in a protected area", #Hunted and Displaced             
+                   "Animals of the corresponding species registered at the Incident are hunted or captured at the time of the observation; however, they have not been displaced from the original place of hunt or capture. For example, animals observed in the trap set by a hunter", #Hunted and not Displaced  
+                  "Animals of the corresponding species registered at the Incident are kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
+                  "Animals of the corresponding species registered at the Incident are observed in their habitat and not hunted, captured, captive, or restricted. These animals could be captured for health surveillance purposes and still be considered 'free-ranging'", # free-ranging
+                  "Animals of the corresponding species registered at the Incident are kept in a farm", # farm
+                  "Animals of the corresponding species registered at the Incident are kept in a household", # farm
                   "Animals of the corresponding species are registered as part of a research or conservation capture not related with health surveillance", # Research or conservation capture
-                  "Animals of the corresponding species registered at the Event are kept in a market", # market
-                  "Animals of the corresponding species registered at the Event are kept in a trade post",
+                  "Animals of the corresponding species registered at the Incident are kept in a market", # market
+                  "Animals of the corresponding species registered at the Incident are kept in a trade post",
                   "", # Number healthy animals
                   "", # Number sick or injured animals
                   rep("", nrow(wildlife_en[wildlife_en$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
