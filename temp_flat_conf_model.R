@@ -7,7 +7,7 @@
 
 temp_flat_conf_model<-function(
     path_conf_model,
-    language_interest="en",
+    language_interest="km",
     only_active=TRUE){
   
   
@@ -53,7 +53,7 @@ temp_flat_conf_model<-function(
     lapply(seq_along(cat_hkeys), function(k) 
       xml2::xml_find_all(conf_model, paste0(".//*[@categoryHkey[contains(., '", cat_hkeys[k], "')]]")))
   
-  
+  nodeset<-nodeset[1:3]
   #> list to store the names pf the parent nodes through the category levels
   result<-vector(mode = "list", length = length(nodeset))
   
@@ -138,6 +138,8 @@ temp_flat_conf_model<-function(
   
   
   cat_keys<-dplyr::bind_rows(cat_keys) 
+  
+  cat_keys<-cat_keys[1:3,]
   
   names(cat_keys)<-paste0("cat_key_level_", seq(ncol(cat_keys)))
   
