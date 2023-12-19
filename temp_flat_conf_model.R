@@ -1,3 +1,9 @@
+#>  This function is to et the flat conf model but avoiding the
+#>  animal and samples node because most translations in Khmer and Laotian are
+#>  not ready yet. So I will add them in SMART Rangers data bae once I have them
+#>  and then I will change the "temp_flat_conf_model" for the "flat_conf_model"
+#>  in SMARTeR
+
 
 temp_flat_conf_model<-function(
     path_conf_model,
