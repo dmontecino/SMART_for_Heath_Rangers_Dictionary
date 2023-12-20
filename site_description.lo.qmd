@@ -28,9 +28,7 @@ site_description_la<-
                   c(
                   rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
                       la %>% dplyr::filter(att_key=="findings_whn") %>% nrow()),
-                      "Describe other relevant features at the Incident not provided in the 
-                      'Findings' list that could have     
-                      disease or death implications"))
+                      "ການອະທິບາຍ​ກ່ຽວ​ກັບ​ລັກ​ສະ​ນະພົ້ນເດັ່ນອື່ນໆ​ທີ່ອາດມີຄວາມກ່ຽວຂ້ອງ ຊຶ່ງພົບເຫັນຢູ່ບໍລິເວນພື້ນທີ່ພົບເຫດການ  ທີ່​ສາ​ມາດ​ເກີດ​ຜົນ​ກະ​ທົບທາງ​ລະ​ບາດ​ວິທະຍາ"))
 
     
         
