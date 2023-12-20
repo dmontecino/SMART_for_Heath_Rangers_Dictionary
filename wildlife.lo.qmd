@@ -115,7 +115,8 @@ wildlife_lo<-
   merge_v(j="Type") %>% 
   merge_v(j="Attribute\nDefinition") %>% 
   theme_box() %>% 
-  width(j = "Option", width=4.5, unit = "cm") %>% 
+  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Option", width=7, unit = "cm") %>% 
   width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
   width(j = "Option\nDefinition", width=7, unit = "cm")
 

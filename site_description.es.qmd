@@ -56,7 +56,8 @@ site_description_es<-
   merge_v(j="Tipo") %>% 
   merge_v(j="Definición") %>% 
   theme_box() %>% 
-  width(j = "Opción", width=4.5, unit = "cm") %>% 
+  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Option", width=7, unit = "cm") %>% 
   width(j = "Definición", width=7, unit = "cm")
   
 
