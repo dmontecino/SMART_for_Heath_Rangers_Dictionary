@@ -1,4 +1,4 @@
-# Fauna Silvestre {.unnumbered}
+# ສັດປ່າ {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
