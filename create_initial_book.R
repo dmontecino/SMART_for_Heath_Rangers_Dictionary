@@ -9,7 +9,7 @@ babelquarto::quarto_multilingual_book(parent_dir = parent_dir, project_dir = pro
 
 fs::dir_tree(file.path(project_dir))
 
-babelquarto::render_book(file.path(project_dir))
+# babelquarto::render_book(file.path(project_dir))
 
 usethis::use_github()
 
@@ -45,12 +45,14 @@ create_abs_lang_link <- function(path, base_link) {
 }
 
 
+babelquarto::render_book(file.path(project_dir))
+
+#move the files in _book to docs
+
 #run the function
 
-create_abs_lang_link(path = "docs", base_link = "https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary")
+create_abs_lang_link(path = "docs", base_link = "")
 
-# then just create the github page following these instructions 
-# https://www.youtube.com/watch?v=uimdXPZc40I&ab_channel=JoshuaFrench
 
 
 # finally, 
@@ -60,6 +62,9 @@ create_abs_lang_link(path = "docs", base_link = "https://dmontecino.github.io/SM
 # to
 # https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/es/index.es and the same
 # for other languages
+
+# then just create the github page following these instructions 
+# https://www.youtube.com/watch?v=uimdXPZc40I&ab_channel=JoshuaFrench
 
 # Then, just create the website again in github
 
