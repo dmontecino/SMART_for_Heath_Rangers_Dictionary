@@ -72,18 +72,18 @@ wildlife_lo<-
     wildlife_lo<-
     wildlife_lo %>% dplyr::mutate(
       
-      option_def=c("Add definition 1",  # Species
-                   "", # Provide Species not listed
+      option_def=c("ໃຊ້ໂຕເລືອກນີ້, ຖ້າສັດນັ້ນສາມາດຈັດຈໍາແນກຊື່ ໄດ້ຮອດລະດັບຊະນິດ, ແຕ່ຊະນິດດັ່ງກ່າວຍັງບໍ່ເຫັນມີຢູ່ໃນບັນຊີລາຍຊື່ຊະນິດສັດ ທີ່ຢູ່ໃນໂຄງຮ່າງການຈັດຈໍາແນກນັ້ນ",  # Species not listed
+                   "Add definition 2", # Provide Species not listed
                    #context
-                  "Add definition 2", #Hunted and Displaced             
-                  "Add definition 3", #Hunted and not Displaced  
-                  "Add definition 4", # Rescue/Rehabilitation Center
-                  "Add definition 5", # free-ranging
-                  "Add definition 6", # farm
-                  "Add definition 7", # farm
-                  "Add definition 8", # Research or conservation capture
-                  "Add definition 9", # market
-                  "Add definition 10",
+                  "ສັດຂອງຊະນິດທີ່ບັນທຶກ ໄດ້ຖືກລ່າໃນເວລາສັງເກດ; ແນວໃດກໍ່ຕາມ, ພວກມັນໄດ້ຖືກເຄື່ອນຍ້າຍໂດຍນາຍພານ ຈາກສະຖານທີ່ເດີມທີ່ສັດໄດ້ຖືກລ່າ. ຕົວຢ່າງ, ສັດຖືກຂັງໄວ້ຢູ່ໃນກົງ ທີ່ພົບໃນເຂດປ່າສະຫງວນ", #Hunted and Displaced             
+                  "ສັດຂອງຊະນິດທີ່ບັນທຶກ ໄດ້ຖືກລ່າໃນເວລາສັງເກດ; ແນວໃດກໍ່ຕາມ, ພວກມັນຍັງບໍ່ໄດ້ຖືກເຄື່ອນຍ້າຍໂດຍນາຍພານ ຈາກສະຖານທີ່ເດີມທີ່ສັດໄດ້ຖືກລ່າ. ຕົວຢ່າງ, ສັດທີ່ຍັງຄາຢູ່ກັບດັກສັດ ທີ່ຮ່າງໄວ້ໂດຍນາຍພານ", #Hunted and not Displaced  
+                  "ສັດ ຂອງຊະນິດທີ່ສັງເກດການ ແມ່ນສັດຢູ່ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ", # Rescue/Rehabilitation Center
+                  "ສັດຂອງຊະນິດທີ່ບັນທຶກ ໄດ້ຖືກພົບເຫັນໃນຖິ່ນອາໄສທໍາມະຊາດຂອງພວກມັນ ແລະ ບໍ່ໄດ້ຖືກລ່າ ຫຼື ຖືກຈັບມາ. ສັດເຫຼົ້ານີ້ ອາດຖືກຈັບມາ ເພື່ອຈຸດປະສົງການເຝົ້າລະວັງ", # free-ranging
+                  "ສັດ ຂອງຊະນິດທີ່ສັງເກດການ ແມ່ນສັດທີ່ຢູ່ໃນຟາມ", # farm
+                  "ສັດ ຂອງຊະນິດທີ່ສັງເກດການ ແມ່ນສັດຢູ່ເຮືອນ", # household
+                  "ສັດ ຂອງຊະນິດທີ່ສັງເກດການ ແມ່ນສັດຢູ່ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ", # Research or conservation capture
+                  "ສັດ ຂອງຊະນິດທີ່ສັງເກດການ ແມ່ນສັດຢູ່ຕະຫຼາດ", # market
+                  "ສັດ ຂອງຊະນິດທີ່ສັງເກດການ ແມ່ນສັດຢູ່ຈຸດຊື້ຂາຍແລກປ່ຽນ", # tradepost
                   "", # Number healthy animals
                   "", # Number sick or injured animals
                   rep("", nrow(wildlife_lo[wildlife_lo$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
