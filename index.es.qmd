@@ -1,5 +1,5 @@
-# Preface {.unnumbered}
+# Introduccion {.unnumbered}
 
-This is a Quarto book.
+Este es el Diccionario de SMART para Salud - Guardaparques
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Para ver la definición de un Atributo u Opción en particular, por favor seleccione el lenguaje en la esquina superior izquierda y luego seleccione la Categoría que contiene el Atributo y la Opción a revisar.
