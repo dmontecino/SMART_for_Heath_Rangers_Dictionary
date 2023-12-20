@@ -1,0 +1,129 @@
+# Fauna Silvestre {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+
+lo<-
+SMARTeR::flat_conf_model(
+  language_interest = "lo",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+wildlife_lo<-  
+  lo %>% 
+  dplyr::filter(cat_key_level_1=="wildlife_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("Add definition 1", nrow(lo[lo$att_key=="species_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 2", nrow(lo[lo$att_key=="providespeciesnotlisted_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 3", nrow(lo[lo$att_key=="context_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 4", nrow(lo[lo$att_key=="numberhealthy_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 5", nrow(lo[lo$att_key=="numbersickorinjured_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 6", nrow(lo[lo$att_key=="anomaliesinsickorinjuredanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 7", nrow(lo[lo$att_key=="otheranomaliessickorinjured_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 8", nrow(lo[lo$att_key=="potentialcausediseaseorinjury_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 9", nrow(lo[lo$att_key=="numberdead_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    
+                    rep("Add definition 10", nrow(lo[lo$att_key=="conditiondeadanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 11", nrow(lo[lo$att_key=="anomaliesindeadanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                   rep("Add definition 12", nrow(lo[lo$att_key=="otheranomaliesdead_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 13", nrow(lo[lo$att_key=="potentialcausedeath_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 14", nrow(lo[lo$att_key=="carnivoreattack_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("Add definition 15", nrow(lo[lo$att_key=="otherrelevantinformation_whn" & lo$cat_key_level_1=="wildlife_whn",])))) 
+  
+    
+    wildlife_lo<-
+    wildlife_lo %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           option_label)
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    wildlife_lo<-
+    wildlife_lo %>% dplyr::mutate(
+      
+      option_def=c("Add definition 1",  # Species
+                   "", # Provide Species not listed
+                   #context
+                  "Add definition 2", #Hunted and Displaced             
+                  "Add definition 3", #Hunted and not Displaced  
+                  "Add definition 4", # Rescue/Rehabilitation Center
+                  "Add definition 5", # free-ranging
+                  "Add definition 6", # farm
+                  "Add definition 7", # farm
+                  "Add definition 8", # Research or conservation capture
+                  "Add definition 9", # market
+                  "Add definition 10",
+                  "", # Number healthy animals
+                  "", # Number sick or injured animals
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
+                  "", # Other anomalies sick or injured     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="potentialcausediseaseorinjury_whn",])),    
+                  "", # numberdead_whn     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="conditiondeadanimals_whn",])), # conditiondeadanimals_whn     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="anomaliesindeadanimals_whn",])), #Anomalies in Dead Animals
+                  "", # otheranomaliesdead_whn     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="potentialcausedeath_whn",])), # potentialcausedeath_whn
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="carnivoreattack_whn",])), # carnivore attack
+                   ""))#other relevatn information
+                  
+                  
+    wildlife_lo<-
+    wildlife_lo %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("Attribute" = "att_label") %>% 
+    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("Option\nDefinition" = "option_def") 
+
+
+  
+  out<-  
+  flextable(wildlife_lo) %>% 
+  merge_v(j="Attribute") %>% 
+  merge_v(j="Type") %>% 
+  merge_v(j="Attribute\nDefinition") %>% 
+  theme_box() %>% 
+  width(j = "Option", width=4.5, unit = "cm") %>% 
+  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
+  width(j = "Option\nDefinition", width=7, unit = "cm")
+
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
+
