@@ -112,11 +112,12 @@ wildlife_es<-
   flextable(wildlife_es) %>% 
   merge_v(j="Atributo") %>% 
   merge_v(j="Tipo") %>% 
-  merge_v(j="Definición") %>% 
+  merge_v(j="Definición\nAtributo") %>% 
   theme_box() %>% 
   width(j = "Atributo", width=5, unit = "cm") %>% 
   width(j = "Opción", width=7, unit = "cm") %>% 
-  width(j = "Definición", width=7, unit = "cm")
+  width(j = "Definición\nAtributo", width=7, unit = "cm") %>% 
+  width(j = "Definición\nOpción", width=7, unit = "cm")
 
   
 
