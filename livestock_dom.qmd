@@ -49,7 +49,7 @@ livestock_en<-
                     
                     rep("The potential causes of death in the dead animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="potentialcausedeath_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("A text field to provide any other relevant information regarding the animals of the corresponding wildlife species", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+                    rep("A text field to provide any other relevant information regarding the animals of the corresponding species", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
   
     livestock_en<-
     livestock_en %>% dplyr::select(

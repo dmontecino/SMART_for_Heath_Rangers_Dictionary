@@ -24,32 +24,32 @@ livestock_la<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("The livestock or domestic species observed at the Incident", nrow(en[en$att_key=="livestockdomesticspecies_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Add definiton 1", nrow(la[la$att_key=="livestockdomesticspecies_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The context in which the animals of the corresponding species are found. Multiple options can be selected", nrow(en[en$att_key=="context_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Add definiton 2", nrow(la[la$att_key=="context_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The number of healthy animals of the corresponding species at the Incident", nrow(en[en$att_key=="numberhealthy_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຍັງມີຊີວິດແຂງແຮງດີ", nrow(la[la$att_key=="numberhealthy_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The number of sick or injured animals of the corresponding species at the Incident", nrow(en[en$att_key=="numbersickorinjured_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ", nrow(la[la$att_key=="numbersickorinjured_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The anomalies observed in the sick or injured animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="anomaliesinsickorinjuredanimals_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Add definiton 3", nrow(la[la$att_key=="anomaliesinsickorinjuredanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("A text field to provide anomalies observed in the sick or injured animals of the corresponding species observed at the Incident not given in the 'Anomalies in Sick or Injured Animals' Attribute", nrow(en[en$att_key=="otheranomaliessickorinjured_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Add definiton 4", nrow(la[la$att_key=="otheranomaliessickorinjured_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The potential causes of disease or injury in the sick or injured animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="potentialcausediseaseorinjury_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Add definiton 5", nrow(la[la$att_key=="potentialcausediseaseorinjury_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The number of dead animals of the corresponding species at the Incident", nrow(en[en$att_key=="numberdead_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຕາຍ", nrow(la[la$att_key=="numberdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
                     
-                    rep("The condition of the dead animals of he corresponding species found at the Incident. Multiple options can be selected", nrow(en[en$att_key=="conditiondeadanimals_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ຄວາມສົດໃໝ່ຂອງຊາກສັດທີ່ຖືກສັງເກດການ ຊຶ່ງສອດຄ່ອງກັນກັບຊະນິດສັດທີ່ໄດ້ຖືກບັນທຶກ. ສາມາດເລືອກໄດ້ຫຼາຍກວ່າໜຶ່ງໂຕເລືອກ. ໃຫ້ເລືອກເອົາ 'ບໍ່ມີສັດຕາຍ' ຖ້າຊະນິດສັດທີ່ສັງເກດການນັ້ນບໍ່ແມ່ນສັດຕາຍ", nrow(la[la$att_key=="conditiondeadanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The anomalies observed in the dead animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="anomaliesindeadanimals_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Add definiton 6", nrow(la[la$att_key=="anomaliesindeadanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                   rep("A text field to provide anomalies observed in the dead animals of the corresponding species observed at the Incident not given in the 'Anomalies in Dead Animals' Attribute", nrow(en[en$att_key=="otheranomaliesdead_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                   rep("Add definiton 7", nrow(la[la$att_key=="otheranomaliesdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The potential causes of death in the dead animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="potentialcausedeath_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Add definiton 8", nrow(la[la$att_key=="potentialcausedeath_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("A text field to provide any other relevant information regarding the animals of the corresponding wildlife species", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+                    rep("ຂໍ້ມູນກ່ຽວຂ້ອງອື່ນທີ່ມີຄວາມກ່ຽວຂ້ອງກັບຊະນິດທີ່ຖືກສັງເກດການ", nrow(la[la$att_key=="otherrelevantinformation_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
   
     livestock_la<-
     livestock_la %>% dplyr::select(

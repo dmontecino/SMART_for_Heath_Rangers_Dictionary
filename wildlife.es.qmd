@@ -54,7 +54,7 @@ wildlife_es<-
                     
                     rep("El tipo de carnívoro asociado asociado a la depredación si entre las causas potenciales de lesión o muerte se ha elegido la opción 'Depredación'", nrow(es[es$att_key=="carnivoreattack_whn" & es$cat_key_level_1=="wildlife_whn",])),
                     
-                    rep("Un campo de text para entregar otra información relevante respecto a los animales de la especie de fauna silvestre correspondiente", nrow(es[es$att_key=="otherrelevantinformation_whn" & es$cat_key_level_1=="wildlife_whn",])))) 
+                    rep("Un campo de text para entregar otra información relevante respecto a los animales de la especie correspondiente", nrow(es[es$att_key=="otherrelevantinformation_whn" & es$cat_key_level_1=="wildlife_whn",])))) 
   
     wildlife_es<-
     wildlife_es %>% dplyr::select(

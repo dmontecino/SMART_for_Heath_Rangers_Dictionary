@@ -31,9 +31,9 @@ wildlife_lo<-
                     
                     rep("Add definition 3", nrow(lo[lo$att_key=="context_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
-                    rep("Add definition 4", nrow(lo[lo$att_key=="numberhealthy_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຍັງມີຊີວິດແຂງແຮງດີ", nrow(lo[lo$att_key=="numberhealthy_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
-                    rep("Add definition 5", nrow(lo[lo$att_key=="numbersickorinjured_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ", nrow(lo[lo$att_key=="numbersickorinjured_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
                     rep("Add definition 6", nrow(lo[lo$att_key=="anomaliesinsickorinjuredanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
@@ -41,10 +41,10 @@ wildlife_lo<-
                     
                     rep("Add definition 8", nrow(lo[lo$att_key=="potentialcausediseaseorinjury_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
-                    rep("Add definition 9", nrow(lo[lo$att_key=="numberdead_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຕາຍ", nrow(lo[lo$att_key=="numberdead_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
                     
-                    rep("Add definition 10", nrow(lo[lo$att_key=="conditiondeadanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    rep("ຄວາມສົດໃໝ່ຂອງຊາກສັດທີ່ຖືກສັງເກດການ ຊຶ່ງສອດຄ່ອງກັນກັບຊະນິດສັດທີ່ໄດ້ຖືກບັນທຶກ. ສາມາດເລືອກໄດ້ຫຼາຍກວ່າໜຶ່ງໂຕເລືອກ. ໃຫ້ເລືອກເອົາ 'ບໍ່ມີສັດຕາຍ' ຖ້າຊະນິດສັດທີ່ສັງເກດການນັ້ນບໍ່ແມ່ນສັດຕາຍ" , nrow(lo[lo$att_key=="conditiondeadanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
                     rep("Add definition 11", nrow(lo[lo$att_key=="anomaliesindeadanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
@@ -54,7 +54,7 @@ wildlife_lo<-
                     
                     rep("Add definition 14", nrow(lo[lo$att_key=="carnivoreattack_whn" & lo$cat_key_level_1=="wildlife_whn",])),
                     
-                    rep("Add definition 15", nrow(lo[lo$att_key=="otherrelevantinformation_whn" & lo$cat_key_level_1=="wildlife_whn",])))) 
+                    rep("ຂໍ້ມູນກ່ຽວຂ້ອງອື່ນທີ່ມີຄວາມກ່ຽວຂ້ອງກັບຊະນິດທີ່ຖືກສັງເກດການ", nrow(lo[lo$att_key=="otherrelevantinformation_whn" & lo$cat_key_level_1=="wildlife_whn",])))) 
   
     
     wildlife_lo<-

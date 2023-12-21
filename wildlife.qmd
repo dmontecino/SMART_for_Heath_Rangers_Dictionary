@@ -54,7 +54,7 @@ wildlife_en<-
                     
                     rep("The type of carnivore associated with predation if among the potential cause of injury or death the 'Predation' option selected", nrow(en[en$att_key=="carnivoreattack_whn" & en$cat_key_level_1=="wildlife_whn",])),
                     
-                    rep("A text field to provide any other relevant information regarding the animals of the corresponding wildlife species", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="wildlife_whn",])))) 
+                    rep("A text field to provide any other relevant information regarding the animals of the corresponding species", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="wildlife_whn",])))) 
   
     wildlife_en<-
     wildlife_en %>% dplyr::select(
