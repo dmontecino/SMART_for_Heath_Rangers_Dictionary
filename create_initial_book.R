@@ -2,21 +2,22 @@
 
 library(remotes)
 install_github("https://github.com/ropensci-review-tools/babelquarto")
+library(babelquarto)
 
 parent_dir <- "/Users/DMontecino/OneDrive - Wildlife Conservation Society/DICTIONARIES"
 project_dir <- "/Users/DMontecino/OneDrive - Wildlife Conservation Society/DICTIONARIES/SMART_for_Heath_Rangers_Dictionary/"
 babelquarto::quarto_multilingual_book(parent_dir = parent_dir, project_dir = project_dir)
 
-fs::dir_tree(file.path(project_dir))
+#fs::dir_tree(file.path(project_dir))
 
 # babelquarto::render_book(file.path(project_dir))
 
-usethis::use_github()
+#usethis::use_github()
 
 #Create a directory docs in the parent directory of blop 
 #and then copy all the contents of _book in the docs directory.
 
-dir.create(path = "/Users/DMontecino/OneDrive - Wildlife Conservation Society/DICTIONARIES/SMART_for_Heath_Rangers_Dictionary/docs")
+#dir.create(path = "/Users/DMontecino/OneDrive - Wildlife Conservation Society/DICTIONARIES/SMART_for_Heath_Rangers_Dictionary/docs")
 
 
 # functions from https://github.com/shafayetShafee/babelquarto1?tab=readme-ov-file#user-content-fn-1-93b118cd6837299bf4cbf2089e2340f7
