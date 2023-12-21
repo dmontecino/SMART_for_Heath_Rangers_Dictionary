@@ -1,0 +1,125 @@
+# ប្រភេទសត្វស្រុកចិញ្ចឹម {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+source(file = "temp_flat_conf_model.R")
+
+kh<-
+#SMARTeR::flat_conf_model(
+  temp_flat_conf_model(  
+  language_interest = "km",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+livestock_kh<-  
+  kh %>% 
+  dplyr::filter(cat_key_level_1=="livestockdomesticspecies_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("Add definition 1", nrow(kh[kh$att_key=="livestockdomesticspecies_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add defibition 2", nrow(kh[kh$att_key=="context_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add definition 3", nrow(kh[kh$att_key=="numberhealthy_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add definition 4", nrow(kh[kh$att_key=="numbersickorinjured_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add definition 5", nrow(kh[kh$att_key=="anomaliesinsickorinjuredanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add definitio 6", nrow(kh[kh$att_key=="otheranomaliessickorinjured_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add definition 7", nrow(kh[kh$att_key=="potentialcausediseaseorinjury_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add definition 8", nrow(kh[kh$att_key=="numberdead_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    
+                    rep("Add Definition 9", nrow(kh[kh$att_key=="conditiondeadanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add Definition 10", nrow(kh[kh$att_key=="anomaliesindeadanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                   rep("Add Definition 11", nrow(kh[kh$att_key=="otheranomaliesdead_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add Definition 12", nrow(kh[kh$att_key=="potentialcausedeath_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("Add Definition 13", nrow(kh[kh$att_key=="otherrelevantinformation_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+  
+    livestock_kh<-
+    livestock_kh %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           option_label)
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    livestock_kh<-
+    livestock_kh %>% dplyr::mutate(
+      
+      option_def=c(rep("", nrow(livestock_kh[livestock_kh$att_key=="livestockdomesticspecies_whn",])),  # Species
+                   #context
+                    "Add definition 1", #Hunted and Displaced             
+                   "Add definition 2", #Hunted and not Displaced  
+                  "Add definition 3", # Rescue/Rehabilitation Center
+                  "Add definition 4", # free-ranging
+                  "Add definition 5", # farm
+                  "Add definition 6", # houshold
+                  "Add definition 7", # Research or conservation capture
+                  "Add definition 8", # market
+                  "Add definition 9", #tradepost
+                  "", # Number healthy animals
+                  " ", # Number sick or injured animals
+                  rep("", nrow(livestock_kh[livestock_kh$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
+                  " ", # Other anomalies sick or injured     
+                  rep("", nrow(livestock_kh[livestock_kh$att_key=="potentialcausediseaseorinjury_whn",])),    
+                  " ", # numberdead_whn     
+                  rep("", nrow(livestock_kh[livestock_kh$att_key=="conditiondeadanimals_whn",])), # conditiondeadanimals_whn     
+                  rep("  ", nrow(livestock_kh[livestock_kh$att_key=="anomaliesindeadanimals_whn",])), #Anomalies in Dead Animals
+                  "", # otheranomaliesdead_whn     
+                  rep(" ", nrow(livestock_kh[livestock_kh$att_key=="potentialcausedeath_whn",])), # potentialcausedeath_whn
+                   ""))#other relevatn information
+                  
+                  
+    livestock_kh<-
+    livestock_kh %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("Attribute" = "att_label") %>% 
+    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("Option\nDefinition" = "option_def") 
+
+
+  
+  out<-  
+  flextable(livestock_kh) %>% 
+  merge_v(j="Attribute") %>% 
+  merge_v(j="Type") %>% 
+  merge_v(j="Attribute\nDefinition") %>% 
+  merge_v(j="Option\nDefinition") %>%
+  theme_box() %>% 
+  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
+  width(j = "Option\nDefinition", width=7, unit = "cm")
+
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
+
