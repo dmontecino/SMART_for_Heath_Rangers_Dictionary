@@ -1,0 +1,123 @@
+# Livesotck - Domestic Animals {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+
+en<-
+SMARTeR::flat_conf_model(
+  language_interest = "en",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+livestock_en<-  
+  en %>% 
+  dplyr::filter(cat_key_level_1=="livestockdomesticspecies_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("The livestock or domestic species observed at the Incident", nrow(en[en$att_key=="livestockdomesticspecies_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The context in which the animals of the corresponding species are found. Multiple options can be selected", nrow(en[en$att_key=="context_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The number of healthy animals of the corresponding species at the Incident", nrow(en[en$att_key=="numberhealthy_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The number of sick or injured animals of the corresponding species at the Incident", nrow(en[en$att_key=="numbersickorinjured_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The anomalies observed in the sick or injured animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="anomaliesinsickorinjuredanimals_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("A text field to provide anomalies observed in the sick or injured animals of the corresponding species observed at the Incident not given in the 'Anomalies in Sick or Injured Animals' Attribute", nrow(en[en$att_key=="otheranomaliessickorinjured_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The potential causes of disease or injury in the sick or injured animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="potentialcausediseaseorinjury_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The number of dead animals of the corresponding species at the Incident", nrow(en[en$att_key=="numberdead_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    
+                    rep("The condition of the dead animals of he corresponding species found at the Incident. Multiple options can be selected", nrow(en[en$att_key=="conditiondeadanimals_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The anomalies observed in the dead animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="anomaliesindeadanimals_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                   rep("A text field to provide anomalies observed in the dead animals of the corresponding species observed at the Incident not given in the 'Anomalies in Dead Animals' Attribute", nrow(en[en$att_key=="otheranomaliesdead_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("The potential causes of death in the dead animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="potentialcausedeath_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("A text field to provide any other relevant information regarding the animals of the corresponding wildlife species", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+  
+    livestock_en<-
+    livestock_en %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           option_label)
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    livestock_en<-
+    livestock_en %>% dplyr::mutate(
+      
+      option_def=c(rep("", nrow(livestock_en[livestock_en$att_key=="livestockdomesticspecies_whn",])),  # Species
+                   #context
+                    "Animals of the corresponding species registered at the Incident are hunted or captured at the time of the observation; however, they have been displaced from the original place of hunt or capture. For example, caged animals in posession of a walking hunter in a protected area", #Hunted and Displaced             
+                   "Animals of the corresponding species registered at the Incident are hunted or captured at the time of the observation; however, they have not been displaced from the original place of hunt or capture. For example, animals observed in the trap set by a hunter", #Hunted and not Displaced  
+                  "Animals of the corresponding species registered at the Incident are kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
+                  "Animals of the corresponding species registered at the Incident are observed in their habitat and not hunted, captured, captive, or restricted. These animals could be captured for health surveillance purposes and still be considered 'free-ranging'", # free-ranging
+                  "Animals of the corresponding species registered at the Incident are kept in a farm", # farm
+                  "Animals of the corresponding species registered at the Incident are kept in a household", # houshold
+                  "Animals of the corresponding species are registered as part of a research or conservation capture not related with health surveillance", # Research or conservation capture
+                  "Animals of the corresponding species registered at the Incident are kept in a market", # market
+                  "Animals of the corresponding species registered at the Incident are kept in a trade post", #tradepost
+                  "", # Number healthy animals
+                  " ", # Number sick or injured animals
+                  rep("", nrow(livestock_en[livestock_en$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
+                  " ", # Other anomalies sick or injured     
+                  rep("", nrow(livestock_en[livestock_en$att_key=="potentialcausediseaseorinjury_whn",])),    
+                  " ", # numberdead_whn     
+                  rep("", nrow(livestock_en[livestock_en$att_key=="conditiondeadanimals_whn",])), # conditiondeadanimals_whn     
+                  rep("  ", nrow(livestock_en[livestock_en$att_key=="anomaliesindeadanimals_whn",])), #Anomalies in Dead Animals
+                  "", # otheranomaliesdead_whn     
+                  rep(" ", nrow(livestock_en[livestock_en$att_key=="potentialcausedeath_whn",])), # potentialcausedeath_whn
+                   ""))#other relevatn information
+                  
+                  
+    livestock_en<-
+    livestock_en %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("Attribute" = "att_label") %>% 
+    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("Option\nDefinition" = "option_def") 
+
+
+  
+  out<-  
+  flextable(livestock_en) %>% 
+  merge_v(j="Attribute") %>% 
+  merge_v(j="Type") %>% 
+  merge_v(j="Attribute\nDefinition") %>% 
+  merge_v(j="Option\nDefinition") %>%
+  theme_box() %>% 
+  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
+  width(j = "Option\nDefinition", width=7, unit = "cm")
+
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
