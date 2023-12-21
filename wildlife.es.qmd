@@ -100,11 +100,11 @@ wildlife_es<-
     wildlife_es<-
     wildlife_es %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
-    dplyr::rename("Type" = "att_type") %>% 
-    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
-    dplyr::rename("Option" = "option_label") %>% 
-    dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("Atributo" = "att_label") %>% 
+    dplyr::rename("Tipo" = "att_type") %>% 
+    dplyr::rename("Definición\nAtributo" = "attr_def") %>% 
+    dplyr::rename("Opción" = "option_label") %>% 
+    dplyr::rename("Definición\nOpción" = "option_def") 
 
 
   
