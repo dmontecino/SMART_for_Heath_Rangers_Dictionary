@@ -146,7 +146,9 @@ animals_samples_en<-
   width(j = "Attribute", width=5, unit = "cm") %>% 
   width(j = "Option", width=7, unit = "cm") %>% 
   width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Option\nDefinition", width=7, unit = "cm")
+  width(j = "Option\nDefinition", width=7, unit = "cm") %>% 
+  width(j = "Tree Root", width=7, unit = "cm") %>% 
+
 
   
 
