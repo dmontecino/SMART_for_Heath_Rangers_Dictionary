@@ -8,10 +8,12 @@
 
 library(SMARTeR)
 library(flextable)
+source(file = "temp_flat_conf_model.R")
 
 kh<-
-SMARTeR::flat_conf_model(
-  language_interest = "lo",
+#SMARTeR::flat_conf_model(
+  temp_flat_conf_model(
+  language_interest = "km",
   path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
     only_active = T)
 
