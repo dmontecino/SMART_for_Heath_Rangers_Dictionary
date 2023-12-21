@@ -77,12 +77,12 @@ wildlife_kh<-
       option_def=c("Add definition 1",  # Species
                    "", # Provide Species not listed
                    #context
-                  "Add definition 2", #Hunted and Displaced             
-                  "Add definition 3", #Hunted and not Displaced  
-                  "Add definition 4", # Rescue/Rehabilitation Center
-                  "Add definition 5", # free-ranging
+                  "Add definition 2", #free-ranging             
+                  "Add definition 3", # Hunted and Displaced  
+                  "Add definition 4", # Hunted and not Displaced
+                  "Add definition 5", # Rescue/Rehabilitation Center
                   "Add definition 6", # farm
-                  "Add definition 7", # farm
+                  "Add definition 7", # household
                   "Add definition 8", # Research or conservation capture
                   "Add definition 9", # market
                   "Add definition 10",

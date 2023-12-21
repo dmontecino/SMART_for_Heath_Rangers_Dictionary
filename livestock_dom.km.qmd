@@ -70,10 +70,10 @@ livestock_kh<-
       
       option_def=c(rep("", nrow(livestock_kh[livestock_kh$att_key=="livestockdomesticspecies_whn",])),  # Species
                    #context
-                    "Add definition 1", #Hunted and Displaced             
-                   "Add definition 2", #Hunted and not Displaced  
-                  "Add definition 3", # Rescue/Rehabilitation Center
-                  "Add definition 4", # free-ranging
+                    "Add definition 1", #free-ranging
+                   "Add definition 2", #Hunted and Displaced          
+                  "Add definition 3", # Hunted and not Displaced  
+                  "Add definition 4", # Rescue/Rehabilitation Center
                   "Add definition 5", # farm
                   "Add definition 6", # houshold
                   "Add definition 7", # Research or conservation capture
