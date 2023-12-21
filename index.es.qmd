@@ -1,6 +1,6 @@
-# Introduccion {.unnumbered}
+# Introducción {.unnumbered}
 
 Este es el Diccionario de SMART para Salud - Guardaparques
 
-Para ver la definición de un Atributo u Opción en particular, por favor seleccione el lenguaje a la izquierda y luego seleccione la Categoría que contiene el Atributo y la Opción a revisar en el menú que esta abajo de la lista de versiones en distintos lenguajes.
+Para ver la definición de un Atributo u Opción en particular, por favor seleccione el lenguaje a la izquierda y luego seleccione la Categoría que contiene el Atributo y la Opción a revisar desde el menú con la lista de versiones en distintos lenguajes.
 
