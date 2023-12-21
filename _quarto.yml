@@ -11,6 +11,7 @@ book:
     - site_description.qmd
     - wildlife.qmd
     - livestock_dom.qmd
+    - animals_samples.qmd
 
 format:
   html:
