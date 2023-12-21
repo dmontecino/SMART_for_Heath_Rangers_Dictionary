@@ -24,7 +24,7 @@ livestock_es<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("La especie de ganado o doméstica observada en el Incidente", nrow(en[en$att_key=="livestockdomesticspecies_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("La especie de ganado o doméstica observada en el Incidente", nrow(es[es$att_key=="livestockdomesticspecies_whn" & en$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
                     rep("El contexto en cual se encuentran los animales de la especie correspondiente. Múltiples opciones pueden ser elegidas", nrow(es[es$att_key=="context_whn" & es$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
