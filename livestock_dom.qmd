@@ -1,4 +1,4 @@
-# Livesotck - Domestic Animals {.unnumbered}
+# Livestock - Domestic Animals {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
