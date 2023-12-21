@@ -1,0 +1,158 @@
+# Animal and Samples {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+
+en<-SMARTeR::flat_conf_model(
+  language_interest = "en",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+animals_samples_en<-  
+  en %>% 
+  dplyr::filter(cat_key_level_1=="animalandsamples_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, root_label, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("The species of the animal observed at the Incident", nrow(en[en$att_key=="species_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("A text field to provide the species of the animal observed at the Incident if it is not given in the 'Species' Attribute", nrow(en[en$att_key=="providespeciesnotlisted_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("The code to identify the animal observed at the Incident individually", nrow(en[en$att_key=="animalid_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("The captivity category of the animal observed at the Incident", nrow(en[en$att_key=="captivitycategory_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("The health condition in which the animal is found at the Incident", nrow(en[en$att_key=="conditionfound_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("The age of the animal observed at the Incident", nrow(en[en$att_key=="ageofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("The sex of the animal observed at the Incident", nrow(en[en$att_key=="sexofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("The anomalies observed in the animal observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="anomaliesinsickinjuredordeadanimals_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    "A text field to provide anomalies observed in the animal found at the Incident not given in the 'Anomalies in Sick, Injured, or Dead Animals' Attribute", 
+                    
+                    rep("The potential cause of death, disease, or injury in the animal observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("Answer to the question 'was the carcass of the animal observed at the Incident collected?", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    
+                    rep("The code to identify each sample collected from the animal observed at the Incident individually", nrow(en[en$att_key=="sampleid_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("The type of each sample collected from the animal observed at the Incident", nrow(en[en$att_key=="sampletype_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                     rep("Answer to the question 'was the sample collected directly from the animal observed at the Incident?", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("A text field to provide any other relevant information regarding the animal observed at the Incident", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="animalandsamples_whn",])))) 
+  
+    animals_samples_en<-
+    animals_samples_en %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           root_label,
+                           option_label)
+    
+    
+# Add the root definition. Also just add the translations 
+    
+    animals_samples_en<-
+    animals_samples_en %>% dplyr::mutate(
+        
+      root_label=c(" ", # species
+                 "",  # provie species not listed
+                 " ",  # animal id
+                 #captivity category
+                 rep("", nrow(en[en$att_key=="captivitycategory_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                 rep(" ", nrow(en[en$att_key=="conditionfound_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # condition found
+                 rep("", nrow(en[en$att_key=="ageofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # age of animal
+                 rep(" ", nrow(en[en$att_key=="sexofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # sex of animal
+                 rep("", nrow(en[en$att_key=="anomaliesinsickinjuredordeadanimals_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # anomalies sick injured dead
+                 " ", #other anomalies
+                 en[en$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & en$cat_key_level_1=="animalandsamples_whn",]$root_label,
+                 rep("", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # was the carcass collected
+                 " ", # sample id
+                 rep("", nrow(en[en$att_key=="sampletype_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # sample type
+                 rep(" ", nrow(en[en$att_key=="collecteddirectlyfromanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                 "" # othe relevant information
+      ))
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    animals_samples_en<-
+    animals_samples_en %>% dplyr::mutate(
+      
+      option_def=c("Select this option if the species at the Incident is not in the list",  # Species
+                   "", # Provide Species not listed
+                   " ",#animalid_whn
+                   
+                   #captivity category
+                   "The animal of the corresponding species registered at the Incident is observed in its habitat and not hunted, captured, captive, or restricted. The animal could be captured for health surveillance purposes and still be considered 'free-ranging'", # free-ranging
+                   "The animal of the corresponding species registered at the Incident is hunted or captured at the time of the observation; however, it has been displaced from the original place of hunt or capture. For example, a caged animal in posession of a walking hunter in a protected area", #Hunted and Displaced             
+                   "The animal of the corresponding species registered at the Incident is hunted or captured at the time of the observation; however, it has not been displaced from the original place of hunt or capture. For example, an animal observed in the trap set by a hunter", #Hunted and not Displaced  
+                  "The animal of the corresponding species registered at the Incident is kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
+                  
+                  "The animal of the corresponding species registered at the Incident is kept in a farm", # farm
+                  "The animal of the corresponding species registered at the Incident is kept in a household", # household
+                  "The animal of the corresponding species is registered as part of a research or conservation capture not related with health surveillance", # Research or conservation capture
+                  "The animal of the corresponding species registered at the Incident is kept in a market", # market
+                  "The animal of the corresponding species registered at the Incident is kept in a trade post", #tradepost
+                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="conditionfound_whn",])), #Condition found
+                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="ageofanimal_whn",])),  #  Age of Animal
+                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="sexofanimal_whn",])),  #  Sex of Animal
+                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="anomaliesinsickinjuredordeadanimals_whn",])), #Anomalies in Sick injured or dead animal
+                  "", # other anomalies 
+                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="suspectcauseofdeathdiseaseorinjury_whn",])), # suspect cause of death disease or injury                   
+                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="wasthecarcasscollected_whn",])), # was the carcass collected
+                  " ", # sample id  
+                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="sampletype_whn",])), # sample type
+                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="collecteddirectlyfromanimal_whn",])),
+                  "" #other relevatn infomrmation
+                  ))
+                  
+                  
+    animals_samples_en<-
+    animals_samples_en %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("Attribute" = "att_label") %>% 
+    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("Tree Root" = "root_label") %>%   
+    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("Option\nDefinition" = "option_def") 
+
+
+  
+  out<-  
+  flextable(animals_samples_en) %>% 
+  merge_v(j="Attribute") %>% 
+  merge_v(j="Type") %>% 
+  merge_v(j="Attribute\nDefinition") %>% 
+  merge_v(j="Tree Root") %>% 
+  theme_box() %>% 
+  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
+  width(j = "Option\nDefinition", width=7, unit = "cm")
+
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
+
