@@ -1,7 +1,7 @@
 # following https://github.com/ropensci-review-tools/babelquarto
 
-library(remotes)
-install_github("https://github.com/ropensci-review-tools/babelquarto")
+# library(remotes)
+# install_github("https://github.com/ropensci-review-tools/babelquarto")
 library(babelquarto)
 
 parent_dir <- "/Users/DMontecino/OneDrive - Wildlife Conservation Society/DICTIONARIES"
