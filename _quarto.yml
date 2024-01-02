@@ -20,13 +20,13 @@ format:
 babelquarto:
   languagecodes:
   - name: es
-    text: "Versión en Español"
+    text: "Español"
   - name: en
-    text: "Version in English"
+    text: "English"
   - name: lo
-    text: "Version in Laotian"
+    text: "ຊາວລາວ"
   - name: km
-    text: "Version in Khmer"
+    text: "ខ្មែរ"
   mainlanguage: 'en'
   languages: ['es', 'lo', 'km']
 title-es: Diccionario SMART para Salud - Guardaparques
