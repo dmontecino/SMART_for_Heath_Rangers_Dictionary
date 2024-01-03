@@ -4,7 +4,7 @@ project:
 book:
   site-url: https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary
   title: "Dictionary SMART for Health - Rangers"
-  author: "Diego Montecino"
+  author: "Wildlife Conservation Society - Health Program"
   date: "12/18/2023"
   chapters:
     - index.qmd
@@ -30,12 +30,12 @@ babelquarto:
   mainlanguage: 'en'
   languages: ['es', 'lo', 'km']
 title-es: Diccionario SMART para Salud - Guardaparques
-title-lo: Dictionary SMART for Health - Rangers
-title-km: Dictionary SMART for Health - Rangers
-description-es: Descripción
-description-lo: Description
-description-km: Description
-author-es: Autor
-author-lo: Autor
-author-km: Autor
+title-lo: ປະທານຸກົມ SMART for Health - ນັກຮົບ
+title-km: វចនានុក្រម SMART for Health - អនុរក្សឧទ្យាន
+# description-es: Descripción
+# description-lo: Description
+# description-km: Description
+author-es: Wildlife Conservation Society - Health Program
+author-lo: Wildlife Conservation Society - Health Program
+author-km: Wildlife Conservation Society - Health Program
 lang: en
