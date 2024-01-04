@@ -127,6 +127,7 @@ animals_samples_lo<-
                   
     animals_samples_lo<-
     animals_samples_lo %>% 
+    dplyr::select(-att_key) %>% 
     dplyr::rename("Attribute" = "att_label") %>% 
     dplyr::rename("Type" = "att_type") %>% 
     dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
