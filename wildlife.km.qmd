@@ -103,22 +103,34 @@ wildlife_kh<-
     wildlife_kh<-
     wildlife_kh %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
-    dplyr::rename("Type" = "att_type") %>% 
+    # dplyr::rename("Attribute" = "att_label") %>% 
+    # dplyr::rename("Type" = "att_type") %>% 
+    # dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    # dplyr::rename("Option" = "option_label") %>% 
+    # dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("ព័ត៌មាន" = "att_label") %>% 
+    dplyr::rename("ប្រភេទនៃព័ត៌មាន" = "att_type") %>% 
     dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
-    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("ជម្រើស" = "option_label") %>% 
     dplyr::rename("Option\nDefinition" = "option_def") 
-
 
   
   out<-  
   flextable(wildlife_kh) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
+  # merge_v(j="Attribute") %>% 
+  # merge_v(j="Type") %>% 
+  # merge_v(j="Attribute\nDefinition") %>% 
+  # theme_box() %>% 
+  # width(j = "Attribute", width=5, unit = "cm") %>% 
+  # width(j = "Option", width=7, unit = "cm") %>% 
+  # width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
+  # width(j = "Option\nDefinition", width=7, unit = "cm")
+  merge_v(j="ព័ត៌មាន") %>% 
+  merge_v(j="ប្រភេទនៃព័ត៌មាន") %>% 
   merge_v(j="Attribute\nDefinition") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "ព័ត៌មាន", width=5, unit = "cm") %>% 
+  width(j = "ជម្រើស", width=7, unit = "cm") %>% 
   width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
   width(j = "Option\nDefinition", width=7, unit = "cm")
 

@@ -23,9 +23,9 @@ site_description_kh<-
   dplyr::filter(cat_label_level_1=="ពណ៌នាអំពីទីតាំង" &
                   att_label!="ប្រភេទនៃតំបន់ទេសភាព") %>% 
   dplyr::select(att_label, att_type, option_label) %>% 
-  dplyr::rename("Attribute" = "att_label") %>% 
-  dplyr::rename("Option" = "option_label") %>% 
-  dplyr::rename("Type" = "att_type") %>% 
+  dplyr::rename("ព័ត៌មាន" = "att_label") %>% 
+  dplyr::rename("ជម្រើស" = "option_label") %>% 
+  dplyr::rename("ប្រភេទនៃព័ត៌មាន" = "att_type") %>% 
   dplyr::mutate(Definition=
                   c(
                   rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
@@ -56,12 +56,12 @@ site_description_kh<-
   
   out<-  
   flextable(site_description_kh) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
+  merge_v(j="ព័ត៌មាន") %>% 
+  merge_v(j="ប្រភេទនៃព័ត៌មាន") %>% 
   merge_v(j="Definition") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "ព័ត៌មាន", width=5, unit = "cm") %>% 
+  width(j = "ជម្រើស", width=7, unit = "cm") %>% 
   width(j = "Definition", width=7, unit = "cm")
   
   

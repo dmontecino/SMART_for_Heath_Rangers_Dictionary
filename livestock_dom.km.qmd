@@ -95,27 +95,39 @@ livestock_kh<-
     livestock_kh<-
     livestock_kh %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
-    dplyr::rename("Type" = "att_type") %>% 
+    # dplyr::rename("Attribute" = "att_label") %>% 
+    # dplyr::rename("Type" = "att_type") %>% 
+    # dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    # dplyr::rename("Option" = "option_label") %>% 
+    # dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("ព័ត៌មាន" = "att_label") %>% 
+    dplyr::rename("ប្រភេទនៃព័ត៌មាន" = "att_type") %>% 
     dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
-    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("ជម្រើស" = "option_label") %>% 
     dplyr::rename("Option\nDefinition" = "option_def") 
-
 
   
   out<-  
   flextable(livestock_kh) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
+  # merge_v(j="Attribute") %>% 
+  # merge_v(j="Type") %>% 
+  # merge_v(j="Attribute\nDefinition") %>% 
+  # merge_v(j="Option\nDefinition") %>%
+  # theme_box() %>% 
+  # width(j = "Attribute", width=5, unit = "cm") %>% 
+  # width(j = "Option", width=7, unit = "cm") %>% 
+  # width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
+  # width(j = "Option\nDefinition", width=7, unit = "cm")
+  merge_v(j="ព័ត៌មាន") %>% 
+  merge_v(j="ប្រភេទនៃព័ត៌មាន") %>% 
   merge_v(j="Attribute\nDefinition") %>% 
-  merge_v(j="Option\nDefinition") %>%
+  merge_v(j="Option\nDefinition") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "ព័ត៌មាន", width=5, unit = "cm") %>% 
+  width(j = "ជម្រើស", width=7, unit = "cm") %>% 
   width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
   width(j = "Option\nDefinition", width=7, unit = "cm")
 
-  
 
   out
 # write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
