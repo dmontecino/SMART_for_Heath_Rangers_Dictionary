@@ -12,7 +12,7 @@ library(flextable)
 la<-
 SMARTeR::flat_conf_model(
   language_interest = "lo",
-  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Final_conf_model_smart_for_health_rangers.xml",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
     only_active = T)
 
 ## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
