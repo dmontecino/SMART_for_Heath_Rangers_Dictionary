@@ -38,9 +38,9 @@ animals_samples_en<-
                     
                     rep("The sex of the animal observed at the Incident", nrow(en[en$att_key=="sexofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The anomalies observed in the animal observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="anomaliesinsickinjuredordeadanimals_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("The anomalies in the animal observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="anomaliesinsickinjuredordeadanimals_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    "A text field to provide anomalies observed in the animal found at the Incident not given in the 'Anomalies in Sick, Injured, or Dead Animals' Attribute", 
+                    "A text field to register the anomalies in the animal observed at the Incident that are not present in the 'Anomalies in Sick, Injured, or Dead Animals' Attribute", 
                     
                     rep("The potential cause of death, disease, or injury in the animal observed at the Incident. Multiple options can be selected", nrow(en[en$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
@@ -49,11 +49,11 @@ animals_samples_en<-
                     
                     rep("The code to identify each sample collected from the animal observed at the Incident individually", nrow(en[en$att_key=="sampleid_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The type of each sample collected from the animal observed at the Incident", nrow(en[en$att_key=="sampletype_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("The type of sample collected from the animal observed at the Incident", nrow(en[en$att_key=="sampletype_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
-                     rep("Answer to the question 'was the sample collected directly from the animal observed at the Incident?", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                     rep("Answer to the question 'was the sample collected directly from the animal observed at the Incident?'", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("A text field to provide any other relevant information regarding the animal observed at the Incident", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="animalandsamples_whn",])))) 
+                    rep("A text field to provide any other relevant information regarding the sample collected from the animal observed at the Incident", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="animalandsamples_whn",])))) 
   
     animals_samples_en<-
     animals_samples_en %>% dplyr::select(
@@ -95,21 +95,21 @@ animals_samples_en<-
     animals_samples_en<-
     animals_samples_en %>% dplyr::mutate(
       
-      option_def=c("Select this option if the species at the Incident is not in the list",  # Species
+      option_def=c("Select this option if the species of the animal observed at the Incident is not in the list",  # Species
                    "", # Provide Species not listed
                    " ",#animalid_whn
                    
                    #captivity category
-                   "The animal of the corresponding species registered at the Incident is observed in its habitat and not hunted, captured, captive, or restricted. The animal could be captured for health surveillance purposes and still be considered 'free-ranging'", # free-ranging
-                   "The animal of the corresponding species registered at the Incident is hunted or captured at the time of the observation; however, it has been displaced from the original place of hunt or capture. For example, a caged animal in posession of a walking hunter in a protected area", #Hunted and Displaced             
-                   "The animal of the corresponding species registered at the Incident is hunted or captured at the time of the observation; however, it has not been displaced from the original place of hunt or capture. For example, an animal observed in the trap set by a hunter", #Hunted and not Displaced  
-                  "The animal of the corresponding species registered at the Incident is kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
+                   "The animal observed at the Incident is found in its habitat and not hunted, captured, captive, or restricted. The animal captured for health surveillance purposes is considered 'free-ranging'", # free-ranging
+                   "The animal observed at the Incident is hunted or captured at the time of the observation; however, it has been displaced from the original place of hunt or capture. For example, a caged animal in posession of a walking hunter in a protected area", #Hunted and Displaced             
+                   "The animal observed at the Incident is hunted or captured at the time of the observation; however, it has not been displaced from the original place of hunt or capture. For example, an animal observed in the trap set by a hunter", #Hunted and not Displaced  
+                  "The animal observed at the Incident is kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
                   
-                  "The animal of the corresponding species registered at the Incident is kept in a farm", # farm
-                  "The animal of the corresponding species registered at the Incident is kept in a household", # household
-                  "The animal of the corresponding species is registered as part of a research or conservation capture not related with health surveillance", # Research or conservation capture
-                  "The animal of the corresponding species registered at the Incident is kept in a market", # market
-                  "The animal of the corresponding species registered at the Incident is kept in a trade post", #tradepost
+                  "The animal observed at the Incident is kept in a farm", # farm
+                  "The animal observed at the Incident is kept in a household", # household
+                  "The animal observed at the Incident is captured as part of a research or conservation initiative not related with health surveillance", # Research or conservation capture
+                  "The animal observed at the Incident is kept in a market", # market
+                  "The animal observed at the Incident is kept in a trade post", #tradepost
                   rep("", nrow(animals_samples_en[animals_samples_en$att_key=="conditionfound_whn",])), #Condition found
                   rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="ageofanimal_whn",])),  #  Age of Animal
                   rep("", nrow(animals_samples_en[animals_samples_en$att_key=="sexofanimal_whn",])),  #  Sex of Animal
