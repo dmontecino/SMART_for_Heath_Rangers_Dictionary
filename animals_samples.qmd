@@ -123,7 +123,7 @@ animals_samples_en<-
                   "" #other relevatn infomrmation
                   ))
                   
-    animals_samples_en[is.na(animals_samples_en$Option),]$Option<-""
+    animals_samples_en[is.na(animals_samples_en$option_label),]$option_label<-""
               
     animals_samples_en<-
     animals_samples_en %>% 
