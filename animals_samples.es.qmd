@@ -24,39 +24,39 @@ animals_samples_es<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("La especie del animal observado en el Incidente", nrow(en[en$att_key=="species_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("La especie del animal observado en el Incidente", nrow(es[es$att_key=="species_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("Un campo de texto para ingresar la especie del animal observado en el Incidente si es que no esta en la lista del Atributo 'Especie'", nrow(en[en$att_key=="providespeciesnotlisted_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Un campo de texto para ingresar la especie del animal observado en el Incidente si es que no esta en la lista del Atributo 'Especie'", nrow(es[es$att_key=="providespeciesnotlisted_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("El codigo para identficar el animal observado en el Incidente individualmente", nrow(en[en$att_key=="animalid_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("El codigo para identficar el animal observado en el Incidente individualmente", nrow(es[es$att_key=="animalid_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("La categoría de cautiverio del animal observado en el Incidente", nrow(en[en$att_key=="captivitycategory_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("La categoría de cautiverio del animal observado en el Incidente", nrow(es[es$att_key=="captivitycategory_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("El estatus sanitario del animal observado en el Incidente cuando es encontrado", nrow(en[en$att_key=="conditionfound_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("El estatus sanitario del animal observado en el Incidente cuando es encontrado", nrow(es[es$att_key=="conditionfound_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("La edad del animal observado en el Incidente", nrow(en[en$att_key=="ageofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("La edad del animal observado en el Incidente", nrow(es[es$att_key=="ageofanimal_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("El sexo del animal observado en el Incidente", nrow(en[en$att_key=="sexofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("El sexo del animal observado en el Incidente", nrow(es[es$att_key=="sexofanimal_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("Las anomalías presentes en el animal observado en el Incidente. Varias opciones pueden ser seleccionadas", nrow(en[en$att_key=="anomaliesinsickinjuredordeadanimals_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Las anomalías presentes en el animal observado en el Incidente. Varias opciones pueden ser seleccionadas", nrow(es[es$att_key=="anomaliesinsickinjuredordeadanimals_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
                     "Un campo de texto para registrar anomalías observadas en el animal encontrado en el Incidente no presentes en el Atributo 'Anomalías en Animales Enfermos, Heridos, o Muerto", 
                     
-                    rep("La potencial causa de muerte, enfermedad, o lesion en el animal observado en el Incidente. Multiples opciones pueden ser seleccionadas", nrow(en[en$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("La potencial causa de muerte, enfermedad, o lesion en el animal observado en el Incidente. Multiples opciones pueden ser seleccionadas", nrow(es[es$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("Responda a la pregunta '¿Fue el cadáver del animal observado en el Incidente colectado?", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Responda a la pregunta '¿Fue el cadáver del animal observado en el Incidente colectado?", nrow(es[es$att_key=="wasthecarcasscollected_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
                     
-                    rep("El código para identificar cada muestra colectada desde el animal observado en el  Incidente de manera individual", nrow(en[en$att_key=="sampleid_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("El código para identificar cada muestra colectada desde el animal observado en el  Incidente de manera individual", nrow(es[es$att_key=="sampleid_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("El tipo de muestra colectado del animal observado en el Incidente", nrow(en[en$att_key=="sampletype_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("El tipo de muestra colectado del animal observado en el Incidente", nrow(es[es$att_key=="sampletype_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                     rep("Responda a la pregunta 'Fue la muestra colectada directamente desde el animal observado en el Incidente?'", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                     rep("Responda a la pregunta 'Fue la muestra colectada directamente desde el animal observado en el Incidente?'", nrow(es[es$att_key=="wasthecarcasscollected_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("Un campoo de texto para entregar cualquier otra información relevante en relación al animal observado en el Incidente", nrow(en[en$att_key=="otherrelevantinformation_whn" & en$cat_key_level_1=="animalandsamples_whn",])))) 
+                    rep("Un campoo de texto para entregar cualquier otra información relevante en relación al animal observado en el Incidente", nrow(es[es$att_key=="otherrelevantinformation_whn" & es$cat_key_level_1=="animalandsamples_whn",])))) 
   
-    animals_samples_en<-
-    animals_samples_en %>% dplyr::select(
+    animals_samples_es<-
+    animals_samples_es %>% dplyr::select(
                            att_key,
                            att_label,
                            att_type,
@@ -67,24 +67,24 @@ animals_samples_es<-
     
 # Add the root definition. Also just add the translations 
     
-    animals_samples_en<-
-    animals_samples_en %>% dplyr::mutate(
+    animals_samples_es<-
+    animals_samples_es %>% dplyr::mutate(
         
       root_label=c(" ", # species
                  "",  # provie species not listed
                  " ",  # animal id
                  #captivity category
-                 rep("", nrow(en[en$att_key=="captivitycategory_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
-                 rep(" ", nrow(en[en$att_key=="conditionfound_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # condition found
-                 rep("", nrow(en[en$att_key=="ageofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # age of animal
-                 rep(" ", nrow(en[en$att_key=="sexofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # sex of animal
-                 rep("", nrow(en[en$att_key=="anomaliesinsickinjuredordeadanimals_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # anomalies sick injured dead
+                 rep("", nrow(es[es$att_key=="captivitycategory_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
+                 rep(" ", nrow(es[es$att_key=="conditionfound_whn" & es$cat_key_level_1=="animalandsamples_whn",])), # condition found
+                 rep("", nrow(es[es$att_key=="ageofanimal_whn" & es$cat_key_level_1=="animalandsamples_whn",])), # age of animal
+                 rep(" ", nrow(es[es$att_key=="sexofanimal_whn" & es$cat_key_level_1=="animalandsamples_whn",])), # sex of animal
+                 rep("", nrow(es[es$att_key=="anomaliesinsickinjuredordeadanimals_whn" & es$cat_key_level_1=="animalandsamples_whn",])), # anomalies sick injured dead
                  " ", #other anomalies
-                 en[en$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & en$cat_key_level_1=="animalandsamples_whn",]$root_label,
-                 rep("", nrow(en[en$att_key=="wasthecarcasscollected_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # was the carcass collected
+                 es[es$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & es$cat_key_level_1=="animalandsamples_whn",]$root_label,
+                 rep("", nrow(es[es$att_key=="wasthecarcasscollected_whn" & es$cat_key_level_1=="animalandsamples_whn",])), # was the carcass collected
                  " ", # sample id
-                 rep("", nrow(en[en$att_key=="sampletype_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # sample type
-                 rep(" ", nrow(en[en$att_key=="collecteddirectlyfromanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                 rep("", nrow(es[es$att_key=="sampletype_whn" & es$cat_key_level_1=="animalandsamples_whn",])), # sample type
+                 rep(" ", nrow(es[es$att_key=="collecteddirectlyfromanimal_whn" & es$cat_key_level_1=="animalandsamples_whn",])),
                  "" # othe relevant information
       ))
     
@@ -92,8 +92,8 @@ animals_samples_es<-
 # Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
     
     
-    animals_samples_en<-
-    animals_samples_en %>% dplyr::mutate(
+    animals_samples_es<-
+    animals_samples_es %>% dplyr::mutate(
       
       option_def=c("Seleccione esta opción si la especie del animal observado en el Incidente no esta en la lista",  # Species
                    "", # Provide Species not listed
@@ -110,22 +110,22 @@ animals_samples_es<-
                   "El animal observado en el Incidente es capturado como parrte de una iniciativa de conservación o investigación no relacionada con vigilancia sanitaria", # Research or conservation capture
                   "El animal observado en el Incidente se encuentra en un mercado", # market
                   "El animal observado en el Incidente es mantenido en un puesto de venta", #tradepost
-                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="conditionfound_whn",])), #Condition found
-                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="ageofanimal_whn",])),  #  Age of Animal
-                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="sexofanimal_whn",])),  #  Sex of Animal
-                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="anomaliesinsickinjuredordeadanimals_whn",])), #Anomalies in Sick injured or dead animal
+                  rep("", nrow(animals_samples_es[animals_samples_es$att_key=="conditionfound_whn",])), #Condition found
+                  rep(" ", nrow(animals_samples_es[animals_samples_es$att_key=="ageofanimal_whn",])),  #  Age of Animal
+                  rep("", nrow(animals_samples_es[animals_samples_es$att_key=="sexofanimal_whn",])),  #  Sex of Animal
+                  rep(" ", nrow(animals_samples_es[animals_samples_es$att_key=="anomaliesinsickinjuredordeadanimals_whn",])), #Anomalies in Sick injured or dead animal
                   "", # other anomalies 
-                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="suspectcauseofdeathdiseaseorinjury_whn",])), # suspect cause of death disease or injury                   
-                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="wasthecarcasscollected_whn",])), # was the carcass collected
+                  rep(" ", nrow(animals_samples_es[animals_samples_es$att_key=="suspectcauseofdeathdiseaseorinjury_whn",])), # suspect cause of death disease or injury                   
+                  rep("", nrow(animals_samples_es[animals_samples_es$att_key=="wasthecarcasscollected_whn",])), # was the carcass collected
                   " ", # sample id  
-                  rep("", nrow(animals_samples_en[animals_samples_en$att_key=="sampletype_whn",])), # sample type
-                  rep(" ", nrow(animals_samples_en[animals_samples_en$att_key=="collecteddirectlyfromanimal_whn",])),
+                  rep("", nrow(animals_samples_es[animals_samples_es$att_key=="sampletype_whn",])), # sample type
+                  rep(" ", nrow(animals_samples_es[animals_samples_es$att_key=="collecteddirectlyfromanimal_whn",])),
                   "" #other relevatn infomrmation
                   ))
                   
                   
-    animals_samples_en<-
-    animals_samples_en %>% 
+    animals_samples_es<-
+    animals_samples_es %>% 
     dplyr::select(-att_key) %>% 
     dplyr::rename("Attribute" = "att_label") %>% 
     dplyr::rename("Type" = "att_type") %>% 
@@ -137,7 +137,7 @@ animals_samples_es<-
 
   
   out<-  
-  flextable(animals_samples_en) %>% 
+  flextable(animals_samples_es) %>% 
   merge_v(j="Attribute") %>% 
   merge_v(j="Type") %>% 
   merge_v(j="Attribute\nDefinition") %>% 
