@@ -127,27 +127,27 @@ animals_samples_es<-
     animals_samples_es<-
     animals_samples_es %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
-    dplyr::rename("Type" = "att_type") %>% 
-    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
-    dplyr::rename("Tree Root" = "root_label") %>%   
-    dplyr::rename("Option" = "option_label") %>% 
-    dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("Atributo" = "att_label") %>% 
+    dplyr::rename("Tipo" = "att_type") %>% 
+    dplyr::rename("Definición\nAtributo" = "attr_def") %>% 
+    dplyr::rename("Raíz\nÁrbol" = "root_label") %>%   
+    dplyr::rename("Opción" = "option_label") %>% 
+    dplyr::rename("Definición\nOpción" = "option_def") 
 
 
   
   out<-  
   flextable(animals_samples_es) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
-  merge_v(j="Attribute\nDefinition") %>% 
-  merge_v(j="Tree Root") %>% 
+  merge_v(j="Atributo") %>% 
+  merge_v(j="Tipo") %>% 
+  merge_v(j="Definición\nAtributo") %>% 
+  merge_v(j="Raíz\nÁrbol") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
-  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Option\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Tree Root", width=7, unit = "cm") 
+  width(j = "Atributo", width=5, unit = "cm") %>% 
+  width(j = "Opción", width=7, unit = "cm") %>% 
+  width(j = "Definición\nAtributo", width=7, unit = "cm") %>% 
+  width(j = "Definición\nOpción", width=7, unit = "cm") %>% 
+  width(j = "Raíz\nÁrbol", width=7, unit = "cm") 
 
 
   
