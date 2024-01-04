@@ -123,7 +123,7 @@ animals_samples_lo<-
                   "" #other relevatn infomrmation
                   ))
                   
-    animals_samples_lo[animals_samples_lo$option_label=="NA",]$option_label<-""
+    animals_samples_lo[which(animals_samples_lo$option_label=="NA"),]$option_label<-""
                   
     animals_samples_lo<-
     animals_samples_lo %>% 
