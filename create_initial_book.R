@@ -6,7 +6,7 @@ library(babelquarto)
 
 parent_dir <- "/Users/DMontecino/OneDrive - Wildlife Conservation Society/DICTIONARIES"
 project_dir <- "/Users/DMontecino/OneDrive - Wildlife Conservation Society/DICTIONARIES/SMART_for_Heath_Rangers_Dictionary/"
-babelquarto::quarto_multilingual_book(parent_dir = parent_dir, project_dir = project_dir)
+# babelquarto::quarto_multilingual_book(parent_dir = parent_dir, project_dir = project_dir)
 
 #fs::dir_tree(file.path(project_dir))
 
