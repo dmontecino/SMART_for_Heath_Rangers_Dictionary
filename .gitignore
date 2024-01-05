@@ -3,4 +3,6 @@
 .RData
 .Ruserdata
 
+
 /.quarto/
+/.Partial_dictionaries/
