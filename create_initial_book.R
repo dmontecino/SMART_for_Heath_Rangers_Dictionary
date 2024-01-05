@@ -55,18 +55,39 @@ babelquarto::render_book(file.path(project_dir))
 create_abs_lang_link(path = "docs", base_link = "")
 
 
-
-# finally, 
-# edit manually the SMART_for_Heath_Rangers_Dictionary/docs/index.html to
-# change 
-# "https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionaryhttps://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionaryhttps://example.com/es/index.es.html" id="language-link-es"
-# to
-# https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/es/index.es and the same
-# for other languages
-
 # then just create the github page following these instructions 
 # https://www.youtube.com/watch?v=uimdXPZc40I&ab_channel=JoshuaFrench
 
 # Then, just create the website again in github
 
+
+# Export the flextable objects as xlsx. 
+
+#1. Create each "out" object using the chapters' qmd files. 
+
+# library(devtools)
+
+# Then install and load the YesSiR package
+# devtools::install_github("Sebastien-Le/YesSiR")
+# library(YesSiR)
+
+# the chapters in english
+names_chapter_english<-c("site_description", "wildlife", "livestock_dom", "animals_samples")
+
+# Execute the R code within each .qmd file
+
+for(i in names_chapter_english){
+rmd <- parsermd::parse_rmd(paste0(project_dir, i, ".qmd"))
+rmd<-parsermd::rmd_select(rmd, i) %>% parsermd::as_document()
+chunk <- rmd[-grep("```", rmd)]
+chunk
+#> [1] "library(tidyr)"   "library(stringr)" ""                
+
+eval(parse(text = chunk))
+
+YesSiR::exportxlsx(table=out, 
+                   # filename ="site_description", 
+                   path = paste0(project_dir, "Partial_dictionaries_lao_khmer/Reference_english/", i, ".xlsx"))
+
+}
 

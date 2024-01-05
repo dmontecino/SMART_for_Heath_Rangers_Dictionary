@@ -1,6 +1,6 @@
 # Site Description {.unnumbered}
 
-```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+```{r site_description, echo=FALSE, eval=T, message=FALSE, cache=T}
 
 # ------------------#
 # Create Dictionary #

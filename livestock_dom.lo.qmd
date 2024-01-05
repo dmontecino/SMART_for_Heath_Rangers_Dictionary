@@ -1,6 +1,6 @@
 # ສັດລ້ຽງ - ຊະນິດສັດບ້ານ {.unnumbered}
 
-```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+```{r livestock_dom, echo=FALSE, eval=T, message=FALSE, cache=T}
 
 # ------------------#
 # Create Dictionary #
