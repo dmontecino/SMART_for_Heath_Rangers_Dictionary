@@ -71,8 +71,13 @@ create_abs_lang_link(path = "docs", base_link = "")
 # devtools::install_github("Sebastien-Le/YesSiR")
 # library(YesSiR)
 
-# the chapters in english
+
+
+
+# The chapters in english
 names_chapter_english<-c("site_description", "wildlife", "livestock_dom", "animals_samples")
+
+
 
 # Execute the R code within each .qmd file
 
@@ -91,3 +96,50 @@ YesSiR::exportxlsx(table=out,
 
 }
 
+
+
+# The chapters in lao
+names_chapter_lao<-c("site_description", "wildlife", "livestock_dom", "animals_samples")
+
+
+
+# Execute the R code within each .qmd file
+
+for(i in names_chapter_lao){
+  rmd <- parsermd::parse_rmd(paste0(project_dir, i, ".lo.qmd"))
+  rmd<-parsermd::rmd_select(rmd, i) %>% parsermd::as_document()
+  chunk <- rmd[-grep("```", rmd)]
+  chunk
+  #> [1] "library(tidyr)"   "library(stringr)" ""                
+  
+  eval(parse(text = chunk))
+  
+  YesSiR::exportxlsx(table=out, 
+                     # filename ="site_description", 
+                     path = paste0(project_dir, "Partial_dictionaries_lao_khmer/Lao/", i, "_lao.xlsx"))
+  
+}
+
+
+
+# The chapters in kh
+names_chapter_kh<-c("site_description", "wildlife", "livestock_dom", "animals_samples")
+
+
+
+# Execute the R code within each .qmd file
+
+for(i in names_chapter_kh){
+  rmd <- parsermd::parse_rmd(paste0(project_dir, i, ".km.qmd"))
+  rmd<-parsermd::rmd_select(rmd, i) %>% parsermd::as_document()
+  chunk <- rmd[-grep("```", rmd)]
+  chunk
+  #> [1] "library(tidyr)"   "library(stringr)" ""                
+  
+  eval(parse(text = chunk))
+  
+  YesSiR::exportxlsx(table=out, 
+                     # filename ="site_description", 
+                     path = paste0(project_dir, "Partial_dictionaries_lao_khmer/Cambodia/", i, "_khmer.xlsx"))
+  
+}
