@@ -30,8 +30,8 @@ babelquarto:
   mainlanguage: 'en'
   languages: ['es', 'lo', 'km']
 title-es: Diccionario SMART para Salud - Guardaparques
-title-lo: ປະທານຸກົມ SMART for Health - ນັກຮົບ
-title-km: វចនានុក្រម SMART for Health - អនុរក្សឧទ្យាន
+title-lo: ວັດຈະນານຸກົມ SMART for Health - ທີມງານລາດຕະເວນ
+title-km: វចនានុក្រម SMART for ສໍາລັບແຜນງານສຸຂະພາບ - អនុរក្សឧទ្យាន
 # description-es: Descripción
 # description-lo: Description
 # description-km: Description

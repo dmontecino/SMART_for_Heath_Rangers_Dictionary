@@ -1,5 +1,5 @@
-# Introduction {.unnumbered}
+# ພາກສະເໜີ {.unnumbered}
 
-This is the Dictionary of SMART for Health - Rangers.
+ນີ້ແມ່ນວັດຈະນານຸກົມຂອງ SMART ສໍາລັບແຜນງານສຸຂະພາບ - ທີມງານລາດຕະເວນ.
 
-To view the definition of an Attribute or Option in particular, please select the appropriate language on left corner and then select the Category containing the Attribute(s) and the Option(s) to check from the menu below the list of versions in different languages.
+ເພື່ອເບິ່ງຄໍານິຍາມຂອງ ຄຸນລັກສະນະ ຫຼື ຕົວເລືອກໂດຍສະເພາະ, ກະລຸນາເລືອກພາສາທີ່ເຫມາະສົມຢູ່ມຸມເບື້ອງຊ້າຍ ແລະ ຫຼັງຈາກນັ້ນ, ເລືອກປະເພດຄຸນລັກສະນະ ແລະ ຕົວເລືອກ ເພື່ອກວດເບິ່ງຄໍາອະທິບາຍໃນສະບັບພາສາຕ່າງໆຈາກເມນູດ້ານລຸ່ມນີ້.
