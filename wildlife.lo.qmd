@@ -102,22 +102,22 @@ wildlife_lo<-
     wildlife_lo<-
     wildlife_lo %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
-    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+    dplyr::rename("ປະເພດ" = "att_type") %>% 
     dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
-    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
     dplyr::rename("Option\nDefinition" = "option_def") 
 
 
   
   out<-  
   flextable(wildlife_lo) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
   merge_v(j="Attribute\nDefinition") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
   width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
   width(j = "Option\nDefinition", width=7, unit = "cm")
 

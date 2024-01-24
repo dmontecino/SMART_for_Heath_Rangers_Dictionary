@@ -94,23 +94,23 @@ livestock_la<-
     livestock_la<-
     livestock_la %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
-    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+    dplyr::rename("ປະເພດ" = "att_type") %>% 
     dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
-    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
     dplyr::rename("Option\nDefinition" = "option_def") 
 
 
   
   out<-  
   flextable(livestock_la) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
   merge_v(j="Attribute\nDefinition") %>% 
   merge_v(j="Option\nDefinition") %>%
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
   width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
   width(j = "Option\nDefinition", width=7, unit = "cm")
 
