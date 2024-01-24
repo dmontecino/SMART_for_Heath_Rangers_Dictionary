@@ -1,6 +1,7 @@
 # ອະທິບາຍສະຖານທີ່ຖາ {.unnumbered}
 
-```{r site_description, echo=FALSE, eval=T, message=FALSE, cache=T}
+```{r site_description_lo, echo=FALSE, eval=T, message=FALSE, cache=T}
+#| tbl-cap: ""
 
 # ------------------#
 # Create Dictionary #
