@@ -1,4 +1,4 @@
-# ອະທິບາຍສະຖາ {.unnumbered}
+# ອະທິບາຍສະຖານທີ່ {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
@@ -21,14 +21,15 @@ site_description_la<-
   dplyr::filter(cat_label_level_1=="ອະທິບາຍສະຖານທີ່" &
                   att_label!="ປະເພດຂອງພູມສັນຖານ") %>% 
   dplyr::select(att_label, att_type, option_label) %>% 
-  dplyr::rename("Attribute" = "att_label") %>% 
-  dplyr::rename("Option" = "option_label") %>% 
-  dplyr::rename("Type" = "att_type") %>% 
+  dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+  dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
+  dplyr::rename("ປະເພດ" = "att_type") %>% 
   dplyr::mutate(Definition=
                   c(
-                  rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
+                  rep("ເລືອກໜຶ່ງ ຫຼື ຫຼາຍລາຍການທີ່ມີຢູ່ໃນເຫດການ. ຖ້າມີຈຸດເດັ່ນອື່ນໆທີ່ກ່ຽວຂ້ອງກັບເຫດການທີ່ບໍ່ມີໃນຕົວເລືອກ ທີ່ອາດພົບ ມີພະຍາດ ຫຼື ສົ່ງຜົນເຮັດໃຫ້ເສຍຊີວິດ, ທ່ານສາມາດເລືອກ 'ການຄົ້ນພົບອື່ນໆ' ແລະ ບ່ອນຕື່ມຂໍ້ມູນຈະປະກົດຂຶ້ນເພື່ອໃຫ້ຂຽນຄໍາອະທິບາຍ", 
                       la %>% dplyr::filter(att_key=="findings_whn") %>% nrow()),
-                      "ການອະທິບາຍ​ກ່ຽວ​ກັບ​ລັກ​ສະ​ນະພົ້ນເດັ່ນອື່ນໆ​ທີ່ອາດມີຄວາມກ່ຽວຂ້ອງ ຊຶ່ງພົບເຫັນຢູ່ບໍລິເວນພື້ນທີ່ພົບເຫດການ  ທີ່​ສາ​ມາດ​ເກີດ​ຜົນ​ກະ​ທົບທາງ​ລະ​ບາດ​ວິທະຍາ"))
+                      "ການອະທິບາຍ​ກ່ຽວ​ກັບ​ລັກ​ສະ​ນະພົ້ນເດັ່ນອື່ນໆ​ທີ່ອາດມີຄວາມກ່ຽວຂ້ອງ ຊຶ່ງພົບເຫັນຢູ່ບໍລິເວນພື້ນທີ່ພົບເຫດການ  ທີ່​ສາ​ມາດ​ເກີດ​ຜົນ​ກະ​ທົບທາງ​ລະ​ບາດ​ວິທະຍາ")) %>% 
+  dplyr::rename("ຄໍານິຍາມ" = "Definition")  
 
     
         
@@ -52,13 +53,13 @@ site_description_la<-
   
   out<-  
   flextable(site_description_la) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
-  merge_v(j="Definition") %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
+  merge_v(j="ຄໍານິຍາມ") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
-  width(j = "Definition", width=7, unit = "cm")
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມ", width=7, unit = "cm")
   
   
 
