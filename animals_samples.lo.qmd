@@ -1,6 +1,7 @@
 # ສັດ ແລະ ຕົວຢ່າງ {.unnumbered}
 
-```{r animals_samples, echo=FALSE, eval=T, message=FALSE, cache=T}
+```{r animals_samples_lo, echo=FALSE, eval=T, message=FALSE, cache=FALSE}
+#| tbl-cap: ""
 
 # ------------------#
 # Create Dictionary #
@@ -24,36 +25,36 @@ animals_samples_lo<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("The species of the animal observed at the Incident", nrow(lo[lo$att_key=="species_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="species_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("A text field to provide the species of the animal observed at the Incident if it is not given in the 'Species' Attribute", nrow(lo[lo$att_key=="providespeciesnotlisted_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນຊື່ຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຢູ່ໃນລາຍການຄຸນລັັກສະນະຂອງ “ຊະນິດ”", nrow(lo[lo$att_key=="providespeciesnotlisted_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The code to identify the animal observed at the Incident individually", nrow(lo[lo$att_key=="animalid_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ລະຫັດ ເພື່ອໝາຍສັດທີ່ພົບເຫັນຢູ່ໃນແຕ່ລະເຫດການ", nrow(lo[lo$att_key=="animalid_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The captivity category of the animal observed at the Incident", nrow(lo[lo$att_key=="captivitycategory_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ຮູບແບບການຈັບສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="captivitycategory_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The health condition in which the animal is found at the Incident", nrow(lo[lo$att_key=="conditionfound_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ສະພາບຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="conditionfound_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The age of the animal observed at the Incident", nrow(lo[lo$att_key=="ageofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ອາຍຸຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="ageofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The sex of the animal observed at the Incident", nrow(lo[lo$att_key=="sexofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ເພດຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="sexofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The anomalies in the animal observed at the Incident. Multiple options can be selected", nrow(lo[lo$att_key=="anomaliesinsickinjuredordeadanimals_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ຄວາມຜິດປົກກະຕິໃນຕົວສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="anomaliesinsickinjuredordeadanimals_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    "A text field to register the anomalies in the animal observed at the Incident that are not present in the 'Anomalies in Sick, Injured, or Dead Animals' Attribute", 
+                    "ຄວາມຜິດປົກກະຕິໃນຕົວສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", 
                     
-                    rep("The potential cause of death, disease, or injury in the animal observed at the Incident. Multiple options can be selected", nrow(lo[lo$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ສາເຫດສົງໄສ ທີ່ເຮັດໃຫ້ສັດ ຕາຍ, ເປັນພະຍາດ ຫຼື ບາດເຈັບ ໃນສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("Answer to the question 'was the carcass of the animal observed at the Incident collected?", nrow(lo[lo$att_key=="wasthecarcasscollected_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ຈົ່ງຕອບຄໍາຖາມ “ຊາກສັດທີ່ພົບເຫັນໃນເຫດການ ໄດ້ຖືກເກັບມາຫຼືບໍ່?”", nrow(lo[lo$att_key=="wasthecarcasscollected_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
                     
-                    rep("The code to identify each sample collected from the animal observed at the Incident individually", nrow(lo[lo$att_key=="sampleid_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ລະຫັດ ເພື່ອໝາຍຕົວຢ່າງທີ່ເກັບຈາກສັດທີ່ພົບເຫັນຢູ່ໃນແຕ່ລະເຫດການ", nrow(lo[lo$att_key=="sampleid_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The type of sample collected from the animal observed at the Incident", nrow(lo[lo$att_key=="sampletype_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ປະເພດຕົວຢ່າງທີ່ເກັບຈາກສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="sampletype_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                     rep("Answer to the question 'was the sample collected directly from the animal observed at the Incident?'", nrow(lo[lo$att_key=="wasthecarcasscollected_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                     rep("ຈົ່ງຕອບຄໍາຖາມ “ໄດ້ເກັບຕົວຢ່າງໂດຍກົງຈາກໂຕສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການຫຼືບໍ່?”", nrow(lo[lo$att_key=="wasthecarcasscollected_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("A text field to provide any other relevant information regarding the sample collected from the animal observed at the Incident", nrow(lo[lo$att_key=="otherrelevantinformation_whn" & lo$cat_key_level_1=="animalandsamples_whn",])))) 
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນອື່ນໆທີ່ກ່ຽວຂ້ອງກັບຕົວຢ່າງທີ່ໄດ້ເກັບຈາກສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="otherrelevantinformation_whn" & lo$cat_key_level_1=="animalandsamples_whn",])))) 
   
     animals_samples_lo<-
     animals_samples_lo %>% dplyr::select(
@@ -95,21 +96,21 @@ animals_samples_lo<-
     animals_samples_lo<-
     animals_samples_lo %>% dplyr::mutate(
       
-      option_def=c("Select this option if the species of the animal observed at the Incident is not in the list",  # Species
+      option_def=c("ເລືອກຕົວເລືອກນີ້, ຫາກຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ບໍ່ມີຢູ່ໃນລາຍການ",  # Species
                    "", # Provide Species not listed
                    " ",#animalid_whn
                    
                    #captivity category
-                   "The animal observed at the Incident is found in its habitat and not hunted, captured, captive, or restricted. The animal captured for health surveillance purposes is considered 'free-ranging'", # free-ranging
-                   "The animal observed at the Incident is hunted or captured at the time of the observation; however, it has been displaced from the original place of hunt or capture. For example, a caged animal in posession of a walking hunter in a protected area", #Hunted and Displaced             
-                   "The animal observed at the Incident is hunted or captured at the time of the observation; however, it has not been displaced from the original place of hunt or capture. For example, an animal observed in the trap set by a hunter", #Hunted and not Displaced  
-                  "The animal observed at the Incident is kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
+                   "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ທີ່ພົບຢູ່ຖິ່ນອາໄສຂອງມັນເອງ ຫຼື ບໍ່ຖືກລ່າ, ຖືກຈັບ, ຖືກຂັງ ຫຼື ຖືກຈໍາກັດໃດໆ. ສັດທີ່ຖືກຈັບເພື່ອຈຸດປະສົງໃນການເຝົ້າລະວັງດ້ານສຸຂະພາບແມ່ນຖືເປັນ “ການລ້ຽງແບບປ່ອຍອິດສະລະ”", # free-ranging
+                   "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຖືກຈັບ ໃນເວລາທີ່ພົບເຫັນ; ເຖິງຢ່າງໃດກໍຕາມ, ຖ້າວ່າມັນໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກຖິ່ນອາໄສເດີມ ດ້ວຍການລ່າ ຫຼື ຈັບ ເຊັ່ນ: ສັດທີ່ຖືກຂັງຢູ່ໃນກົງຂອງນາຍພານທີ່ຍ່າງຢູ່ໃນພື້ນທີ່ປ່າສະຫງວນ", #Hunted and Displaced             
+                   "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຖືກຈັບ ໃນເວລາທີ່ພົບເຫັນ; ເຖິງຢ່າງໃດກໍຕາມ, ຖ້າວ່າມັນບໍ່ໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກຖິ່ນອາໄສເດີມ ດ້ວຍການລ່າ ຫຼື ຈັບ ເຊັ່ນ: ພົບເຫັນສັດຕິດຢູ່ໃນກັບດັກທີ່ນາຍພາຍວາງໄວ້", #Hunted and not Displaced  
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ", # Rescue/Rehabilitation Center
                   
-                  "The animal observed at the Incident is kept in a farm", # farm
-                  "The animal observed at the Incident is kept in a household", # household
-                  "The animal observed at the Incident is captured as part of a research or conservation initiative not related with health surveillance", # Research or conservation capture
-                  "The animal observed at the Incident is kept in a market", # market
-                  "The animal observed at the Incident is kept in a trade post", #tradepost
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຟາມ", # farm
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບຮັກສາໃນຄົວເຮືອນ", # household
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກຈັບມາເປັນສ່ວນໜຶ່ງຂອງການຄົ້້ນຄວ້າ ຫຼື ອະນຸລັກ ທີ່ບໍ່ກ່ຽວຂ້ອງກັບການເຝົ້າລະວັງດ້ານສຸຂະພາບ", # Research or conservation capture
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຕະຫຼາດ", # market
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຈຸດທີ່ມີການຄ້າຂາຍ", #tradepost
                   rep("", nrow(animals_samples_lo[animals_samples_lo$att_key=="conditionfound_whn",])), #Condition found
                   rep(" ", nrow(animals_samples_lo[animals_samples_lo$att_key=="ageofanimal_whn",])),  #  Age of Animal
                   rep("", nrow(animals_samples_lo[animals_samples_lo$att_key=="sexofanimal_whn",])),  #  Sex of Animal
@@ -128,24 +129,24 @@ animals_samples_lo<-
     animals_samples_lo<-
     animals_samples_lo %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
-    dplyr::rename("Type" = "att_type") %>% 
+    dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+    dplyr::rename("ປະເພດ" = "att_type") %>% 
     dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
     dplyr::rename("Tree Root" = "root_label") %>%   
-    dplyr::rename("Option" = "option_label") %>% 
+    dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
     dplyr::rename("Option\nDefinition" = "option_def") 
 
 
   
   out<-  
   flextable(animals_samples_lo) %>% 
-  merge_v(j="Attribute") %>% 
-  merge_v(j="Type") %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
   merge_v(j="Attribute\nDefinition") %>% 
   merge_v(j="Tree Root") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
-  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
   width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
   width(j = "Option\nDefinition", width=7, unit = "cm") %>% 
   width(j = "Tree Root", width=7, unit = "cm") 
