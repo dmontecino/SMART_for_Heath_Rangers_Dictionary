@@ -1,6 +1,6 @@
 # ສັດປ່າ {.unnumbered}
 
-```{r wildlife, echo=FALSE, eval=T, message=FALSE, cache=T}
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
 # ------------------#
 # Create Dictionary #

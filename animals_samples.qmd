@@ -1,6 +1,6 @@
 # Animal and Samples {.unnumbered}
 
-```{r animals_samples, echo=FALSE, eval=T, message=FALSE, cache=T}
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
 # ------------------#
 # Create Dictionary #

@@ -1,6 +1,6 @@
 # ប្រភេទសត្វស្រុកចិញ្ចឹម {.unnumbered}
 
-```{r livestock_dom, echo=FALSE, eval=T, message=FALSE, cache=T}
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
 # ------------------#
 # Create Dictionary #
