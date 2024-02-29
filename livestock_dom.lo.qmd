@@ -24,32 +24,31 @@ livestock_la<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("Add definiton 1", nrow(la[la$att_key=="livestockdomesticspecies_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ສັດລ້ຽງ ຫຼື ຊະນິດສັດບ້ານ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(la[la$att_key=="livestockdomesticspecies_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definiton 2", nrow(la[la$att_key=="context_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ບໍລິບົດຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="context_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
                     rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຍັງມີຊີວິດແຂງແຮງດີ", nrow(la[la$att_key=="numberhealthy_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
                     rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ", nrow(la[la$att_key=="numbersickorinjured_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definiton 3", nrow(la[la$att_key=="anomaliesinsickorinjuredanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ຄວາມຜິດປົກກະຕິທີ່ພົບນໍາສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="anomaliesinsickorinjuredanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definiton 4", nrow(la[la$att_key=="otheranomaliessickorinjured_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອລະບຸ ຄວາມຜິດປົກກະຕິທີ່ພົບນໍາສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ຢູ່ໃນເຫດການ ທີ່ບໍ່ມີຢູ່ໃນລາຍການຂອງ 'ຄວາມຜິດປົກກະຕິອື່ນໆທີ່ພົບນໍາສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ' ", nrow(la[la$att_key=="otheranomaliessickorinjured_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definiton 5", nrow(la[la$att_key=="potentialcausediseaseorinjury_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ສາເຫດທີ່ອາດເຮັດໃຫ້ສັດເປັນພະຍາດ ຫຼື ບາດເຈັບ ໃນສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="potentialcausediseaseorinjury_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຕາຍ", nrow(la[la$att_key=="numberdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
-                    
+                    rep("ຈໍານວນຂອງສັດທີ່ຕາຍ ທີ່ພົບເຫັນຢູ່ໃນເຫດການກດການ ທີ່ຕາຍ", nrow(la[la$att_key=="numberdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
                     rep("ຄວາມສົດໃໝ່ຂອງຊາກສັດທີ່ຖືກສັງເກດການ ຊຶ່ງສອດຄ່ອງກັນກັບຊະນິດສັດທີ່ໄດ້ຖືກບັນທຶກ. ສາມາດເລືອກໄດ້ຫຼາຍກວ່າໜຶ່ງໂຕເລືອກ. ໃຫ້ເລືອກເອົາ 'ບໍ່ມີສັດຕາຍ' ຖ້າຊະນິດສັດທີ່ສັງເກດການນັ້ນບໍ່ແມ່ນສັດຕາຍ", nrow(la[la$att_key=="conditiondeadanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definiton 6", nrow(la[la$att_key=="anomaliesindeadanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ຄວາມຜິດປົກກະຕິທີ່ພົບນໍາສັດທີ່ຕາຍ ທີ່ຢູ່ໃນເຫດການ  ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="anomaliesindeadanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                   rep("Add definiton 7", nrow(la[la$att_key=="otheranomaliesdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                   rep("ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອລະບຸ ຄວາມຜິດປົກກະຕິອື່ນໆທີ່ພົບນໍາສັດຕາຍ ຢູ່ໃນເຫດການ ທີ່ບໍ່ມີຢູ່ໃນລາຍການຂອງ 'ຄວາມຜິດປົກກະຕິທີ່ພົບໃນສັດຕາຍ' ", nrow(la[la$att_key=="otheranomaliesdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definiton 8", nrow(la[la$att_key=="potentialcausedeath_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ສາເຫດທີ່ອາດເຮັດໃຫ້ສັດຕາຍ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="potentialcausedeath_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("ຂໍ້ມູນກ່ຽວຂ້ອງອື່ນທີ່ມີຄວາມກ່ຽວຂ້ອງກັບຊະນິດທີ່ຖືກສັງເກດການ", nrow(la[la$att_key=="otherrelevantinformation_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອລະບຸຂໍ້ມູນອື່ນໆທີ່ກ່ຽວຂ້ອງກັບສັດທີ່ພົບເຫັນບຊະນິດທີ່ຖືກສັງເກດການ", nrow(la[la$att_key=="otherrelevantinformation_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
   
     livestock_la<-
     livestock_la %>% dplyr::select(
@@ -68,18 +67,26 @@ livestock_la<-
       
       option_def=c(rep("", nrow(livestock_la[livestock_la$att_key=="livestockdomesticspecies_whn",])),  # Species
                    #context
-                    "ສັດ ຂອງຊະນິດທີ່ຖືກບັນທຶກ ຊຶ່ງຖືກພົບເຫັນໃນຖິ່ນອາໄສທໍາມະຊາດ ແລະ ບໍ່ໄດ້ຖືກລ່າ ຫຼື ຖືກຈັບ. ສັດເຫຼົ້ານີ້ ອາດຖືກຈັບມາ ເພື່ອຈຸດປະສົງການເຝົ້າລະວັງ", # free-ranging
-                 
-                    "ສັດ ຂອງຊະນິດທີ່ຖືກບັນທຶກ ໄດ້ຖືກລ່າ, ແຕ່ພວກມັນໄດ້ຖືກເຄື່ອນຍ້າຍຈາກຈຸດເດີມບ່ອນທີ່ມັນຖືກລ່າ. ຕົວຢ່າງ, ສັດທີ່ຖືກນາຍພານຈັບໃສ່ຄອກໄວ້ຢູ່ເຂດປ່າສະຫງວນ", #Hunted and Displaced             
-                   "ສັດ ຂອງຊະນິດທີ່ຖືກບັນທຶກ ໄດ້ຖືກລ່າ, ແຕ່ພວກມັນຍັງບໍ່ທັນໄດ້ຖືກນາຍພານເຄື່ອນຍ້າຍຈາກຈຸດເດີມບ່ອນທີ່ສັດຖືກລ່າ. ຕົວຢ່າງ, ສັດທີ່ ຍັງຕິດຢູ່ກັບດັກ ທີ່ນາຍພານໃສ່ໄວ້", #Hunted and not Displaced  
-                  "ສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການນັ້ນ ແມ່ນສັດທີ່ຢູ່ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ", # Rescue/Rehabilitation Center
-                  "ສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການນັ້ນ ແມ່ນສັດທີ່ຢູ່ໃນຟາມ", # farm
-                  "ສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການນັ້ນ ແມ່ນສັດທີ່ຢູ່ຄົວເຮືອນ", # houshold
-                  "", # Research or conservation capture
-                  "ສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການນັ້ນ ແມ່ນສັດທີ່ຢູ່ຕະຫຼາດ", # market
-                  "ສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການນັ້ນ ແມ່ນສັດທີ່ຢູ່ຈຸດຊື້ຂາຍສັດປ່າ", #tradepost
+                    "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກພົບເຫັນຢູ່ໃນຖິ່ນອາໄສຂອງພວກມັນ ແລະ ບໍ່ໄດ້ຖືກລ່າ, ຈັບ, ກັກຂັງ ຫຼື ຈໍາກັດໃດໆ. ສັດເຫຼົ່ານີ້ ຖືກຈັບມາ ເພື່ອຈຸດປະສົງການເຝົ້າລະວັງດ້ານສຸຂະພາບ ແລະ ຍັງຖືວ່າເປັນການ'ປ່ອຍອິດສະລະ", # free-ranging'
+                   
+                    "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຈັບ ໃນເວລາສັງເກດການ. ເຖິງຢ່າງໃດກໍຕາມ, ພວກມັນໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກສະຖານທີ່ເດີມທີ່ສັດຖືກລ່າ ຫຼື ຈັບ. ຕົວຢ່າງ: ພົບເຫັນມີສັດຖືກຂັງໄວ້ຢູ່ໃນກົງຂອງນັກລ່າທີ່ກຳລັງຍ່າງຢູ່ໃນເຂດປ່າສະຫງວນ", #Hunted and Displaced             
+                   
+                   "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຈັບ ໃນເວລາສັງເກດການ. ເຖິງຢ່າງໃດກໍຕາມ, ພວກມັນຍັງບໍ່ໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກສະຖານທີ່ເດີມທີ່ສັດຖືກລ່າ ຫຼື ຈັບ. ຕົວຢ່າງ: ພົບເຫັນມີສັດຕິດກັບດັກ ຫຼື ຖືກແຮ້ວ ທີ່ນັກລ່າໄດ້ວາງກັບດັກ ຫຼື ແຮ້ວ ໄວ້", #Hunted and not Displaced  
+                   
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນສູນຟື້ນຟູ/ສູນຊ່ວຍເຫຼືອສັດ", # Rescue/Rehabilitation Center
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຟາມ", # farm
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຄົວເຮືອນ", # houshold
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກຈັບມາເພື່ອເປັນສ່ວນໜຶ່ງຂອງການຄົ້ນຄວ້າ ຫຼື ການອະນຸລັກ ທີ່ບໍ່ກ່ຽວຂ້ອງກັບການເຝົ້າລະວັງດ້ານສຸຂະພາບ", # Research or conservation capture
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຕະຫຼາດ", # market
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ຈຸດທີ່ມີການຄ້າຂາຍ", #tradepost
+                  
                   "", # Number healthy animals
-                  " ", # Number sick or injured animals
+                  "", # Number sick or injured animals
                   rep("", nrow(livestock_la[livestock_la$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
                   " ", # Other anomalies sick or injured     
                   rep("", nrow(livestock_la[livestock_la$att_key=="potentialcausediseaseorinjury_whn",])),    
@@ -96,9 +103,9 @@ livestock_la<-
     dplyr::select(-att_key) %>% 
     dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
     dplyr::rename("ປະເພດ" = "att_type") %>% 
-    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຄຸນລັກສະນະ" = "attr_def") %>% 
     dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
-    dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("ຄໍານິຍາມຂອງຕົວເລືອກ" = "option_def") 
 
 
   
@@ -106,13 +113,13 @@ livestock_la<-
   flextable(livestock_la) %>% 
   merge_v(j="ຄຸນລັກສະນະ") %>% 
   merge_v(j="ປະເພດ") %>% 
-  merge_v(j="Attribute\nDefinition") %>% 
-  merge_v(j="Option\nDefinition") %>%
+  merge_v(j="ຄໍານິຍາມຂອງຄຸນລັກສະນະ") %>% 
+  merge_v(j="ຄໍານິຍາມຂອງຕົວເລືອກ") %>%
   theme_box() %>% 
   width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
   width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
-  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Option\nDefinition", width=7, unit = "cm")
+  width(j = "ຄໍານິຍາມຂອງຄຸນລັກສະນະ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຕົວເລືອກ", width=7, unit = "cm")
 
   
 

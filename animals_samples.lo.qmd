@@ -24,9 +24,9 @@ animals_samples_lo<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("ຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ.", nrow(lo[lo$att_key=="species_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="species_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("ບ່ອນຕື່ມຂໍ້ມູນຊື່ຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຢູ່ໃນລາຍການຄຸນລັັກສະນະຂອງ “ຊະນິດ”", nrow(lo[lo$att_key=="providespeciesnotlisted_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນເພື່ອລະບຸຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຕົວເລືອກຢູ່ໃນລາຍການຂອງ 'ຊະນິດສັດ' ຂອງ 'ຊະນິດ'", nrow(lo[lo$att_key=="providespeciesnotlisted_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
                     rep("ລະຫັດ ເພື່ອໝາຍສັດທີ່ພົບເຫັນຢູ່ໃນແຕ່ລະເຫດການ", nrow(lo[lo$att_key=="animalid_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
@@ -42,7 +42,7 @@ animals_samples_lo<-
                     
                     "ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອບັນທຶກຄວາມຜິດປົກກະຕິໃນຕົວສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຢູ່ໃນລາຍການຂອງ “ຄວາມຜິດປົກກະຕິ ທີ່ພົບຢູ່ນໍາສັດທີ່ເຈັບປ່ວຍ, ບາດເຈັບ ຫຼື ຕາຍ”", 
                     
-                    rep("ສາເຫດສົງໄສ ທີ່ເຮັດໃຫ້ສັດ ຕາຍ, ເປັນພະຍາດ ຫຼື ບາດເຈັບ ໃນສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ສາເຫດສົງໄສ ທີ່ອາດເຮັດໃຫ້ສັດຕາຍ, ເປັນພະຍາດ ຫຼື ເຈັບປ່ວຍ ທີ່ທ່ານພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
                     rep("ຈົ່ງຕອບຄໍາຖາມ “ຊາກສັດທີ່ພົບເຫັນໃນເຫດການ ໄດ້ຖືກເກັບມາຫຼືບໍ່?”", nrow(lo[lo$att_key=="wasthecarcasscollected_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
                     
@@ -130,10 +130,10 @@ animals_samples_lo<-
     dplyr::select(-att_key) %>% 
     dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
     dplyr::rename("ປະເພດ" = "att_type") %>% 
-    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຄຸນລັກສະນະ" = "attr_def") %>% 
     dplyr::rename("Tree Root" = "root_label") %>%   
     dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
-    dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("ຄໍານິຍາມຂອງຕົວເລືອກ" = "option_def") 
 
 
   
@@ -141,13 +141,13 @@ animals_samples_lo<-
   flextable(animals_samples_lo) %>% 
   merge_v(j="ຄຸນລັກສະນະ") %>% 
   merge_v(j="ປະເພດ") %>% 
-  merge_v(j="Attribute\nDefinition") %>% 
+  merge_v(j="ຄໍານິຍາມຂອງຄຸນລັກສະນະ") %>% 
   merge_v(j="Tree Root") %>% 
   theme_box() %>% 
   width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
   width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
-  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Option\nDefinition", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຄຸນລັກສະນະ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຕົວເລືອກເລືອກn", width=7, unit = "cm") %>% 
   width(j = "Tree Root", width=7, unit = "cm") 
 
 
