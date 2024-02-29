@@ -147,7 +147,7 @@ animals_samples_lo<-
   width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
   width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
   width(j = "ຄໍານິຍາມຂອງຄຸນລັກສະນະ", width=7, unit = "cm") %>% 
-  width(j = "ຄໍານິຍາມຂອງຕົວເລືອກເລືອກn", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຕົວເລືອກ", width=7, unit = "cm") %>% 
   width(j = "Tree Root", width=7, unit = "cm") 
 
 
