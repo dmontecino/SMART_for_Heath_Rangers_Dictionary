@@ -24,7 +24,7 @@ babelquarto:
   - name: en
     text: "English"
   - name: lo
-    text: "ຊາວລາວ"
+    text: "ລາວ"
   - name: km
     text: "ខ្មែរ"
   mainlanguage: 'en'

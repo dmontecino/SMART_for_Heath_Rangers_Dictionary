@@ -131,7 +131,7 @@ animals_samples_lo<-
     dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
     dplyr::rename("ປະເພດ" = "att_type") %>% 
     dplyr::rename("ຄໍານິຍາມຂອງຄຸນລັກສະນະ" = "attr_def") %>% 
-    dplyr::rename("Tree Root" = "root_label") %>%   
+    dplyr::rename("ໝວດ" = "root_label") %>%   
     dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
     dplyr::rename("ຄໍານິຍາມຂອງຕົວເລືອກ" = "option_def") 
 
@@ -142,13 +142,13 @@ animals_samples_lo<-
   merge_v(j="ຄຸນລັກສະນະ") %>% 
   merge_v(j="ປະເພດ") %>% 
   merge_v(j="ຄໍານິຍາມຂອງຄຸນລັກສະນະ") %>% 
-  merge_v(j="Tree Root") %>% 
+  merge_v(j="ໝວດ") %>% 
   theme_box() %>% 
   width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
   width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
   width(j = "ຄໍານິຍາມຂອງຄຸນລັກສະນະ", width=7, unit = "cm") %>% 
   width(j = "ຄໍານິຍາມຂອງຕົວເລືອກ", width=7, unit = "cm") %>% 
-  width(j = "Tree Root", width=7, unit = "cm") 
+  width(j = "ໝວດ", width=7, unit = "cm") 
 
 
   
