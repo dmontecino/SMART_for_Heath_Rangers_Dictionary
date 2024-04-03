@@ -28,11 +28,10 @@ site_description_kh<-
   dplyr::rename("ប្រភេទនៃព័ត៌មាន" = "att_type") %>% 
   dplyr::mutate(Definition=
                   c(
-                  rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
+                  rep("ជ្រើសរើសជម្រើសមួយ ឬច្រើនដែលនៅកន្លែងកើតហេតុ។ ប្រសិនបើមានលក្ខណៈពិសេសពាក់ព័ន្ធផ្សេងទៀតនៅកន្លែងកើតហេតុដែលមិនបានផ្តល់ឱ្យនៅក្នុងជម្រើសដែលអាចមានផលប៉ះពាល់ដល់ជំងឺ ឬងាប់ នោះអ្នកអាចជ្រើសរើសជម្រើស 'ការរកឃើញផ្សេងទៀត' ហើយប្រអប់បរិយាយនឹងលេចឡើងដើម្បីពណ៌នាអំពីពួកវា។", 
                       kh %>% dplyr::filter(att_key=="findings_whn") %>% nrow()),
-                      "Describe other relevant features at the Incident not provided in the 
-                      'Findings' list that could have     
-                      disease or death implications"))
+                      "បរិយាយអំពីលក្ខណៈដែលពាក់ព័ន្ធផ្សេងទៀតនៅកន្លែងកើតហេតុដែលមិនត្រូវបានផ្តល់ឱ្យនៅក្នុងបញ្ជី'ការរកឃើញ' ដែលអាចមានផលវិបាកនៃជំងឺឬងាប់")) %>% 
+  dplyr::rename("និយមន័យ" = "Definition")  
 
     
         
@@ -58,11 +57,11 @@ site_description_kh<-
   flextable(site_description_kh) %>% 
   merge_v(j="ព័ត៌មាន") %>% 
   merge_v(j="ប្រភេទនៃព័ត៌មាន") %>% 
-  merge_v(j="Definition") %>% 
+  merge_v(j="និយមន័យ") %>% 
   theme_box() %>% 
   width(j = "ព័ត៌មាន", width=5, unit = "cm") %>% 
   width(j = "ជម្រើស", width=7, unit = "cm") %>% 
-  width(j = "Definition", width=7, unit = "cm")
+  width(j = "និយមន័យ", width=7, unit = "cm")
   
   
 
