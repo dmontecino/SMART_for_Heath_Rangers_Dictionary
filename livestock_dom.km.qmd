@@ -26,32 +26,32 @@ livestock_kh<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("Add definition 1", nrow(kh[kh$att_key=="livestockdomesticspecies_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("សត្វចិញ្ចឹមឬប្រភេទសត្វក្នុងស្រុកដែលត្រូវបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="livestockdomesticspecies_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add defibition 2", nrow(kh[kh$att_key=="context_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ស្ថានភាពប្រភេទសត្វដូចគ្នាត្រូវបានរកឃើញ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="context_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definition 3", nrow(kh[kh$att_key=="numberhealthy_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ចំនួនសត្វដែលមានសុខភាពល្អនៃប្រភេទដូចគ្នានៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="numberhealthy_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definition 4", nrow(kh[kh$att_key=="numbersickorinjured_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ចំនួនសត្វដែលឈឺឬរបួសនៃប្រភេទដូចគ្នានៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="numbersickorinjured_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definition 5", nrow(kh[kh$att_key=="anomaliesinsickorinjuredanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ភាពមិនប្រក្រតីដែលបានសង្កេតឃើញចំពោះសត្វឈឺ ឬរបួសនៃប្រភេទដូចគ្នាបានសង្កេតឃើញនៅកន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="anomaliesinsickorinjuredanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definitio 6", nrow(kh[kh$att_key=="otheranomaliessickorinjured_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("បរិយាយដើម្បីផ្តល់នូវភាពមិនប្រក្រតីដែលបានសង្កេតឃើញចំពោះសត្វឈឺ ឬរបួសនៃប្រភេទដូចគ្នាដែលបានសង្កេតនៅកន្លែងកើតហេតុ ដែលមិនត្រូវបានផ្តល់ឱ្យនៅក្នុងប្រអប់ព័ត៌មាន 'ភាពមិនប្រក្រតីសត្វឈឺ ឬរបួស'", nrow(kh[kh$att_key=="otheranomaliessickorinjured_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definition 7", nrow(kh[kh$att_key=="potentialcausediseaseorinjury_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("មូលហេតុដែលអាចកើតមានជំងឺ ឬរបួសចំពោះសត្វឈឺ ឬរបួសនៃប្រភេទសត្វដូចគ្នាដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="potentialcausediseaseorinjury_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add definition 8", nrow(kh[kh$att_key=="numberdead_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ចំនួនសត្វងាប់នៃប្រភេទដូចគ្នានៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="numberdead_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
                     
-                    rep("Add Definition 9", nrow(kh[kh$att_key=="conditiondeadanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("ស្ថានភាព​សត្វ​ងាប់នៃប្រភេទដូច​​គ្នា​ដែល​បាន​រក​ឃើញ​នៅ​កន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="conditiondeadanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add Definition 10", nrow(kh[kh$att_key=="anomaliesindeadanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("សភាពមិនប្រក្រតីដែលបានសង្កេតចំពោះសត្វងាប់នៃប្រភេទដូចគ្នាដែលបានសង្កេតនៅកន្លែងកើតហេតុ។  ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="anomaliesindeadanimals_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                   rep("Add Definition 11", nrow(kh[kh$att_key=="otheranomaliesdead_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                   rep("បរិយាយពីភាពមិនប្រក្រតីដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុចំពោះសត្វងាប់នៃប្រភេទសត្វដូចគ្នាដែលមិនត្រូវបានផ្តល់ឱ្យនៅក្នុងប្រអប់ព័ត៌មាន 'ភាពមិនប្រក្រតីចំពោះសត្វស្លាប់'", nrow(kh[kh$att_key=="otheranomaliesdead_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add Definition 12", nrow(kh[kh$att_key=="potentialcausedeath_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("មូលហេតុដែលធ្វើអោយសត្វងាប់ដែលអាចយកបាននៃប្រភេទដូចគ្នាដែលបានសង្កេតនៅកន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="potentialcausedeath_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("Add Definition 13", nrow(kh[kh$att_key=="otherrelevantinformation_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+                    rep("បរិយាយដើម្បីផ្តល់ព័ត៌មានពាក់ព័ន្ធផ្សេងទៀតទាក់ទងនឹងប្រភេទសត្វដូចគ្នា", nrow(kh[kh$att_key=="otherrelevantinformation_whn" & kh$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
   
     livestock_kh<-
     livestock_kh %>% dplyr::select(
@@ -70,15 +70,15 @@ livestock_kh<-
       
       option_def=c(rep("", nrow(livestock_kh[livestock_kh$att_key=="livestockdomesticspecies_whn",])),  # Species
                    #context
-                    "Add definition 1", #free-ranging
-                   "Add definition 2", #Hunted and Displaced          
-                  "Add definition 3", # Hunted and not Displaced  
-                  "Add definition 4", # Rescue/Rehabilitation Center
-                  "Add definition 5", # farm
-                  "Add definition 6", # houshold
-                  "Add definition 7", # Research or conservation capture
-                  "Add definition 8", # market
-                  "Add definition 9", #tradepost
+                    "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជី ត្រូវបានសង្កេតឃើញនៅកន្លែងកើតហេតុ នៅក្នុងទីជម្រករបស់ពួកវា ហើយមិនត្រូវបានបរបាញ់ ចាប់ ជាប់ឃុំ ឬកំណត់ដែន។ សត្វទាំងនេះអាចត្រូវបានគេចាប់សម្រាប់គោលបំណងតាមដានសុខភាព ហើយនៅតែត្រូវបានចាត់ទុកថា 'រស់នៅដោយសេរី'", #free-ranging
+                   "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជី ត្រូវបានសង្កេតឃើញនៅកន្លែងកើតហេតុដែលត្រូវបានបរបាញ់ឬចាប់។ទោះយ៉ាងណាក៏ដោយ ពួកវាត្រូវបានផ្លាស់ទីពីកន្លែងបរបាញ់ ឬចាប់ដើម។ ឧទាហរណ៍ សត្វ​ដែល​ជាប់ក្នុង​ទ្រុង​ដោយព្រានព្រៃនៅ​ក្នុង​តំបន់​ការពារ", #Hunted and Displaced          
+                  "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជី ត្រូវបានសង្កេតឃើញនៅកន្លែងកើតហេតុដែលត្រូវបានបរបាញ់ឬចាប់។ទោះយ៉ាងណាក៏ដោយ ពួកវាមិនត្រូវបានផ្លាស់ទីពីកន្លែងបរបាញ់ ឬចាប់ដើមនោះទេ។ជាឧទាហរណ៍ សត្វមួយក្បាលឃើញនៅជាប់អន្ទាក់ដែលបានដាក់ដោយព្រានព្រៃ។", # Hunted and not Displaced  
+                  "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជី នៅកន្លែងកើតហេតុត្រូវបានរក្សាទុកនៅក្នុងមជ្ឈមណ្ឌលសង្គ្រោះសត្វ", # Rescue/Rehabilitation Center
+                  "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជី នៅកន្លែងកើតហេតុត្រូវបានរក្សាទុកនៅក្នុងកសិដ្ឋាន។", # farm
+                  "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជី នៅកន្លែងកើតហេតុត្រូវបានរក្សាទុកនៅផ្ទះ។", # houshold
+                  "ប្រភេទសត្វដូចគ្នាត្រូវបានចុះក្នុងបញ្ជីជាផ្នែកមួយនៃការស្រាវជ្រាវ ឬការអភិរក្សដែលមិនទាក់ទងនឹងការតាមដានសុខភាព", # Research or conservation capture
+                  "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជីនៅកន្លែងកើតហេតុត្រូវបានរក្សាទុកនៅក្នុងទីផ្សារ", # market
+                  "ប្រភេទសត្វដូចគ្នាដែលបានចុះក្នុងបញ្ជីនៅកន្លែងកើតហេតុត្រូវបានរក្សាទុកនៅក្នុងកន្លែងជួញដូរឬដោះដូរ", #tradepost
                   "", # Number healthy animals
                   " ", # Number sick or injured animals
                   rep("", nrow(livestock_kh[livestock_kh$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
@@ -102,9 +102,9 @@ livestock_kh<-
     # dplyr::rename("Option\nDefinition" = "option_def") 
     dplyr::rename("ព័ត៌មាន" = "att_label") %>% 
     dplyr::rename("ប្រភេទនៃព័ត៌មាន" = "att_type") %>% 
-    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("និយមន័យប្រអប់ព័ត៌មាន" = "attr_def") %>% 
     dplyr::rename("ជម្រើស" = "option_label") %>% 
-    dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("និយមន័យជម្រើស" = "option_def") 
 
   
   out<-  
@@ -120,13 +120,13 @@ livestock_kh<-
   # width(j = "Option\nDefinition", width=7, unit = "cm")
   merge_v(j="ព័ត៌មាន") %>% 
   merge_v(j="ប្រភេទនៃព័ត៌មាន") %>% 
-  merge_v(j="Attribute\nDefinition") %>% 
-  merge_v(j="Option\nDefinition") %>% 
+  merge_v(j="និយមន័យប្រអប់ព័ត៌មាន") %>% 
+  merge_v(j="និយមន័យជម្រើស") %>% 
   theme_box() %>% 
   width(j = "ព័ត៌មាន", width=5, unit = "cm") %>% 
   width(j = "ជម្រើស", width=7, unit = "cm") %>% 
-  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Option\nDefinition", width=7, unit = "cm")
+  width(j = "និយមន័យប្រអប់ព័ត៌មាន", width=7, unit = "cm") %>% 
+  width(j = "និយមន័យជម្រើស", width=7, unit = "cm")
 
 
   out
