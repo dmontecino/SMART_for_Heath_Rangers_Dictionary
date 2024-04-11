@@ -1,5 +1,6 @@
-# Introduction {.unnumbered}
+# សេចក្តីផ្តើម៖  {.unnumbered}
 
-This is the Dictionary of SMART for Health - Rangers.
+នេះជាវចនានុក្រមរបស់កម្មវិធី SMART សម្រាប់សុខភាពសត្វ  - ក្រុមល្បាត។
 
-To view the definition of an Attribute or Option in particular, please select the appropriate language on left corner and then select the Category containing the Attribute(s) and the Option(s) to check from the menu below the list of versions in different languages.
+ដើម្បីពិនិត្យមើលនិយមន័យប្រអប់ព័ត៌មាន ឬក៏ប្រអប់ជម្រើសដោយឡែកពីគ្នា។  សូមជ្រើសរើសភាសាដែលត្រូវ នៅជ្រុងខាងឆ្វេង បន្ទាប់មកជ្រើសរើសជម្រើសដែលមានក្នុង ប្រអប់ព័ត៌មាន និងប្រអប់ជម្រើសដើម្បីពិនិត្យមីនុយខាងក្រោមដែលជាបញ្ជី កំណែភាសាផ្សេងៗគ្នា។
+
