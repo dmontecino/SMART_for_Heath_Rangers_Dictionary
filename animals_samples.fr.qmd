@@ -156,7 +156,7 @@ animals_samples_fr<-
 out
  
  # write_csv(out, file = "animal_samples_fr.csv")
-# exportxlsx(out, path = "animal_samples_fr.csv")
+exportxlsx(out, path = "animal_samples_fr.csv")
 ```
 
 
