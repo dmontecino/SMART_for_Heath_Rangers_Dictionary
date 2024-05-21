@@ -119,7 +119,7 @@ livestock_fr<-
 
   out
 # write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
-#exportxlsx(out, path = "livestock_dom_fr.csv")
+exportxlsx(out, path = "livestock_dom_fr.csv")
   
 ```
 
