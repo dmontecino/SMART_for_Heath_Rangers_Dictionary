@@ -1,9 +1,4 @@
----
-title: "wildlife french"
-editor: visual
----
-
-# Wildlife {.unnumbered}
+# Faune {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 

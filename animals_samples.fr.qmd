@@ -1,4 +1,4 @@
-# Animal and Samples {.unnumbered}
+# Animal et Echantillons {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 

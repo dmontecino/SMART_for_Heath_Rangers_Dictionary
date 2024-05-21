@@ -1,4 +1,4 @@
-# Livestock - Domestic Animals {.unnumbered}
+# Bétail et Animaux Domestiques {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
