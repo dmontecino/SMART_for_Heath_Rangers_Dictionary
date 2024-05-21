@@ -61,6 +61,22 @@ create_abs_lang_link(path = "docs", base_link = "")
 # Then, just create the website again in github
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Export the flextable objects as xlsx. 
 
 #1. Create each "out" object using the chapters' qmd files. 
