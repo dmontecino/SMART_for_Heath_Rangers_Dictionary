@@ -1,0 +1,71 @@
+# Site Description {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+library(YesSiR)
+
+fr<-
+SMARTeR::flat_conf_model(
+  language_interest = "fr",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+site_description_fr<-  
+  fr %>% 
+  dplyr::filter(cat_label_level_1=="Description du Site" &
+                  att_label!="Type of Landscape") %>% 
+  dplyr::select(att_label, att_type, option_label) %>% 
+  dplyr::rename("Attribute" = "att_label") %>% 
+  dplyr::rename("Option" = "option_label") %>% 
+  dplyr::rename("Type" = "att_type") %>% 
+  dplyr::mutate(Definition=
+                  c(
+                  rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
+                      fr %>% dplyr::filter(att_label=="Résultats") %>% nrow()),
+                      "Describe other relevant features at the Incident not provided in the 
+                      'Findings' list that could have     
+                      disease or death implications"))
+
+    
+        
+# map(data_dictionary, \(x) do.call(rbind,x)) %>% list_rbind()
+    
+# data_dictionary<-map(data_dictionary, \(x) do.call(rbind,x)) 
+# 
+# for(i in seq_along(data_dictionary)){
+#   data_dictionary[[i]]$Component<-names(data_dictionary[i])}
+# 
+# data_dictionary<-data_dictionary %>% 
+#   list_rbind() %>% 
+#   select(Component, Variable, Label, Definition, Type, Mandatory)
+
+# need to find how to change the font size to improve the column width
+
+  # kableExtra::kable(data_dictionary, booktabs = TRUE)%>%
+  # kable_styling(bootstrap_options = c("basic"), font_size = 2) %>% 
+  #   kableExtra::column_spec(column = 1:5, border_right = T) 
+
+  
+  out<-  
+  flextable(site_description_fr) %>% 
+  merge_v(j="Attribute") %>% 
+  merge_v(j="Type") %>% 
+  merge_v(j="Definition") %>% 
+  theme_box() %>% 
+  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Option", width=7, unit = "cm") %>% 
+  width(j = "Definition", width=7, unit = "cm")
+  
+
+  out
+# write_csv(out, file = "data_dictionary_June_30_2023.csv")
+#exportxlsx(out, path = "site_description_fr.csv")
+
+```
