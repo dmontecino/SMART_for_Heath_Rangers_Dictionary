@@ -22,10 +22,10 @@ site_description_fr<-
   dplyr::filter(cat_label_level_1=="Description du Site" &
                   att_label!="Type of Landscape") %>% 
   dplyr::select(att_label, att_type, option_label) %>% 
-  dplyr::rename("Attribute" = "att_label") %>% 
+  dplyr::rename("Attribut" = "att_label") %>% 
   dplyr::rename("Option" = "option_label") %>% 
   dplyr::rename("Type" = "att_type") %>% 
-  dplyr::mutate(Definition=
+  dplyr::mutate(Définition=
                   c(
                   rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
                       fr %>% dplyr::filter(att_label=="Résultats") %>% nrow()),
@@ -55,13 +55,13 @@ site_description_fr<-
   
   out<-  
   flextable(site_description_fr) %>% 
-  merge_v(j="Attribute") %>% 
+  merge_v(j="Attribut") %>% 
   merge_v(j="Type") %>% 
-  merge_v(j="Definition") %>% 
+  merge_v(j="Définition") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Attribut", width=5, unit = "cm") %>% 
   width(j = "Option", width=7, unit = "cm") %>% 
-  width(j = "Definition", width=7, unit = "cm")
+  width(j = "Définition", width=7, unit = "cm")
   
 
   out

@@ -25,36 +25,36 @@ animals_samples_fr<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("The species of the animal observed at the Incident", nrow(fr[fr$att_key=="species_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Espèce d'animal observé lors de l'Incident", nrow(fr[fr$att_key=="species_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("A text field to provide the species of the animal observed at the Incident if it is not given in the 'Species' Attribute", nrow(fr[fr$att_key=="providespeciesnotlisted_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Un champ de texte pour fournir l'espèce de l'animal observé lors de l'Incident si elle n'est pas donnée dans l'Attribut 'Espèce'", nrow(fr[fr$att_key=="providespeciesnotlisted_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The code to identify the animal observed at the Incident individually", nrow(fr[fr$att_key=="animalid_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Le code permettant d'identifier individuellement l'animal observé lors de l'Incident", nrow(fr[fr$att_key=="animalid_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The captivity category of the animal observed at the Incident", nrow(fr[fr$att_key=="captivitycategory_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("La catégorie de captivité de l'animal observé lors de l'Incident", nrow(fr[fr$att_key=="captivitycategory_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The health condition in which the animal is found at the Incident", nrow(fr[fr$att_key=="conditionfound_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("L'état de santé dans lequel se trouve l'animal lors de l'Incident", nrow(fr[fr$att_key=="conditionfound_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The age of the animal observed at the Incident", nrow(fr[fr$att_key=="ageofanimal_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("L'âge de l'animal observé lors de l'Incident", nrow(fr[fr$att_key=="ageofanimal_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The sex of the animal observed at the Incident", nrow(fr[fr$att_key=="sexofanimal_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Le sexe de l'animal observé lors de l'Incident", nrow(fr[fr$att_key=="sexofanimal_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The anomalies in the animal observed at the Incident. Multiple options can be selected", nrow(fr[fr$att_key=="anomaliesinsickinjuredordeadanimals_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Les anomalies chez l'animal observé lors de l'Incident. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="anomaliesinsickinjuredordeadanimals_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    "A text field to register the anomalies in the animal observed at the Incident that are not present in the 'Anomalies in Sick, Injured, or Dead Animals' Attribute", 
+                    "Un champ de texte pour enregistrer les anomalies chez l'animal observées lors de l'incident qui ne sont pas présentes dans l'attribut 'Anomalies chez les animaux malades, blessés ou morts'", 
                     
-                    rep("The potential cause of death, disease, or injury in the animal observed at the Incident. Multiple options can be selected", nrow(fr[fr$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("La cause potentielle du décès, de la maladie ou de la blessure chez l'animal observée lors de l'Incident. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("Answer to the question 'was the carcass of the animal observed at the Incident collected?", nrow(fr[fr$att_key=="wasthecarcasscollected_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Réponse à la question « la carcasse de l'animal observé lors de l'Incident a-t-elle été collectée?", nrow(fr[fr$att_key=="wasthecarcasscollected_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
                     
-                    rep("The code to identify each sample collected from the animal observed at the Incident individually", nrow(fr[fr$att_key=="sampleid_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Le code permettant d'identifier individuellement chaque échantillon prélevé sur l'animal observé lors de l'Incident.", nrow(fr[fr$att_key=="sampleid_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The type of sample collected from the animal observed at the Incident", nrow(fr[fr$att_key=="sampletype_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("Le type d'échantillon prélevé sur l'animal observé lors de l'Incident", nrow(fr[fr$att_key=="sampletype_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                     rep("Answer to the question 'was the sample collected directly from the animal observed at the Incident?'", nrow(fr[fr$att_key=="wasthecarcasscollected_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
+                     rep("Réponse à la question 'l'échantillon a-t-il été prélevé directement sur l'animal observé lors de l'Incident?'»", nrow(fr[fr$att_key=="wasthecarcasscollected_whn" & fr$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("A text field to provide any other relevant information regarding the sample collected from the animal observed at the Incident", nrow(fr[fr$att_key=="otherrelevantinformation_whn" & fr$cat_key_level_1=="animalandsamples_whn",])))) 
+                    rep("Un champ de texte pour fournir toute autre information pertinente concernant l'échantillon prélevé sur l'animal observé lors de l'Incident.", nrow(fr[fr$att_key=="otherrelevantinformation_whn" & fr$cat_key_level_1=="animalandsamples_whn",])))) 
   
     animals_samples_fr<-
     animals_samples_fr %>% dplyr::select(
@@ -96,21 +96,21 @@ animals_samples_fr<-
     animals_samples_fr<-
     animals_samples_fr %>% dplyr::mutate(
       
-      option_def=c("Select this option if the species of the animal observed at the Incident is not in the list",  # Species
+      option_def=c("Sélectionnez cette option si l'espèce de l'animal observée lors de l'Incident ne figure pas dans la liste",  # Species
                    "", # Provide Species not listed
                    " ",#animalid_whn
                    
                    #captivity category
-                   "The animal observed at the Incident is found in its habitat and not hunted, captured, captive, or restricted. The animal captured for health surveillance purposes is considered 'free-ranging'", # free-ranging
-                   "The animal observed at the Incident is hunted or captured at the time of the observation; however, it has been displaced from the original place of hunt or capture. For example, a caged animal in posession of a walking hunter in a protected area", #Hunted and Displaced             
-                   "The animal observed at the Incident is hunted or captured at the time of the observation; however, it has not been displaced from the original place of hunt or capture. For example, an animal observed in the trap set by a hunter", #Hunted and not Displaced  
-                  "The animal observed at the Incident is kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
+                   "L'animal observé lors de l'Incident se trouve dans son habitat et n'est pas chassé, capturé, captif ou restreint. L'animal capturé à des fins de surveillance sanitaire est considéré comme 'en liberté'", # free-ranging
+                   "L'animal observé lors de l'Incident est chassé ou capturé au moment de l'observation ; cependant, il a été déplacé de son lieu de chasse ou de capture d'origine. Par exemple, un animal en cage en possession d'un chasseur ambulant dans une zone protégée", #Hunted and Displaced             
+                   "L'animal observé lors de l'Incident est chassé ou capturé au moment de l'observation ; cependant, il a été déplacé de son lieu de chasse ou de capture d'origine. Par exemple, un animal en cage en possession d'un chasseur ambulant dans une zone protégée", #Hunted and not Displaced  
+                  "L'animal observé lors de l'Incident est gardé dans un centre de rééducation/secours", # Rescue/Rehabilitation Center
                   
-                  "The animal observed at the Incident is kept in a farm", # farm
-                  "The animal observed at the Incident is kept in a household", # household
-                  "The animal observed at the Incident is captured as part of a research or conservation initiative not related with health surveillance", # Research or conservation capture
-                  "The animal observed at the Incident is kept in a market", # market
-                  "The animal observed at the Incident is kept in a trade post", #tradepost
+                  "L'animal observé lors de l'Incident est gardé dans une ferme", # farm
+                  "L'animal observé lors de l'Incident est gardé dans un foyer", # household
+                  "L'animal observé lors de l'Incident est capturé dans le cadre d'une initiative de recherche ou de conservation non liée à la surveillance sanitaire.", # Research or conservation capture
+                  "L'animal observé lors de l'incident est gardé dans un marché", # market
+                  "L'animal observé lors de l'incident est gardé dans un poste de traite", #tradepost
                   rep("", nrow(animals_samples_fr[animals_samples_fr$att_key=="conditionfound_whn",])), #Condition found
                   rep(" ", nrow(animals_samples_fr[animals_samples_fr$att_key=="ageofanimal_whn",])),  #  Age of Animal
                   rep("", nrow(animals_samples_fr[animals_samples_fr$att_key=="sexofanimal_whn",])),  #  Sex of Animal
@@ -129,12 +129,12 @@ animals_samples_fr<-
     animals_samples_fr<-
     animals_samples_fr %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
+    dplyr::rename("Attribut" = "att_label") %>% 
     dplyr::rename("Type" = "att_type") %>% 
-    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
-    dplyr::rename("Tree Root" = "root_label") %>%   
+    dplyr::rename("Définition\nd'Attribut" = "attr_def") %>% 
+    dplyr::rename("Racine\nd'Arbre" = "root_label") %>%   
     dplyr::rename("Option" = "option_label") %>% 
-    dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("Définition\nd'Option" = "option_def") 
 
 
   
@@ -142,21 +142,21 @@ animals_samples_fr<-
   flextable(animals_samples_fr) %>% 
   merge_v(j="Attribute") %>% 
   merge_v(j="Type") %>% 
-  merge_v(j="Attribute\nDefinition") %>% 
-  merge_v(j="Tree Root") %>% 
+  merge_v(j="Définition\nd'Attribut") %>% 
+  merge_v(j="Racine\nd'Arbre") %>% 
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Attribut", width=5, unit = "cm") %>% 
   width(j = "Option", width=7, unit = "cm") %>% 
-  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Option\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Tree Root", width=7, unit = "cm") 
+  width(j = "Définition\nd'Attribut", width=7, unit = "cm") %>% 
+  width(j = "Définition\nd'Option", width=7, unit = "cm") %>% 
+  width(j = "Racine\nd'Arbre", width=7, unit = "cm") 
 
 
   
 out
  
  # write_csv(out, file = "animal_samples_fr.csv")
-exportxlsx(out, path = "animal_samples_fr.csv")
+# exportxlsx(out, path = "animal_samples_fr.csv")
 ```
 
 

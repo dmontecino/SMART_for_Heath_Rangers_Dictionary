@@ -25,32 +25,32 @@ livestock_fr<-
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("The livestock or domestic species observed at the Incident", nrow(fr[fr$att_key=="livestockdomesticspecies_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Le cheptel ou les espèces domestiques observés lors de l'Incident", nrow(fr[fr$att_key=="livestockdomesticspecies_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The context in which the animals of the corresponding species are found. Multiple options can be selected", nrow(fr[fr$att_key=="context_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Le contexte dans lequel se trouvent les animaux des espèces correspondantes. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="context_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The number of healthy animals of the corresponding species at the Incident", nrow(fr[fr$att_key=="numberhealthy_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Le nombre d'animaux sains de l'espèce correspondante au moment de l'Incident", nrow(fr[fr$att_key=="numberhealthy_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The number of sick or injured animals of the corresponding species at the Incident", nrow(fr[fr$att_key=="numbersickorinjured_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Le nombre d'animaux malades ou blessés de l'espèce correspondante lors de l'Incident", nrow(fr[fr$att_key=="numbersickorinjured_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The anomalies observed in the sick or injured animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(fr[fr$att_key=="anomaliesinsickorinjuredanimals_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Les anomalies observées chez les animaux malades ou blessés des espèces correspondantes observées lors de l'Incident. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="anomaliesinsickorinjuredanimals_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("A text field to provide anomalies observed in the sick or injured animals of the corresponding species observed at the Incident not given in the 'Anomalies in Sick or Injured Animals' Attribute", nrow(fr[fr$att_key=="otheranomaliessickorinjured_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Un champ de texte pour fournir les anomalies observées chez les animaux malades ou blessés de l'espèce correspondante observées lors de l'Incident et non indiquées dans l'Attribut 'Anomalies chez les animaux malades ou blessés'", nrow(fr[fr$att_key=="otheranomaliessickorinjured_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The potential causes of disease or injury in the sick or injured animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(fr[fr$att_key=="potentialcausediseaseorinjury_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Les causes potentielles de maladie ou de blessure chez les animaux malades ou blessés de l'espèce correspondante observées lors de l'Incident. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="potentialcausediseaseorinjury_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The number of dead animals of the corresponding species at the Incident", nrow(fr[fr$att_key=="numberdead_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Le nombre d'animaux morts de l'espèce correspondante lors de l'Incident", nrow(fr[fr$att_key=="numberdead_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
                     
-                    rep("The condition of the dead animals of he corresponding species found at the Incident. Multiple options can be selected", nrow(fr[fr$att_key=="conditiondeadanimals_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("L'état des animaux morts des espèces correspondantes trouvés lors de l'Incident. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="conditiondeadanimals_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The anomalies observed in the dead animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(fr[fr$att_key=="anomaliesindeadanimals_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Les anomalies observées chez les animaux morts des espèces correspondantes observées lors de l'incident. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="anomaliesindeadanimals_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                   rep("A text field to provide anomalies observed in the dead animals of the corresponding species observed at the Incident not given in the 'Anomalies in Dead Animals' Attribute", nrow(fr[fr$att_key=="otheranomaliesdead_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                   rep("Un champ de texte pour fournir les anomalies observées chez les animaux morts de l'espèce correspondante observées lors de l'incident non renseignées dans l'attribut 'Anomalies chez les animaux morts'", nrow(fr[fr$att_key=="otheranomaliesdead_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("The potential causes of death in the dead animals of the corresponding species observed at the Incident. Multiple options can be selected", nrow(fr[fr$att_key=="potentialcausedeath_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    rep("Les causes potentielles de décès des animaux morts des espèces correspondantes observées lors de l'Incident. Plusieurs options peuvent être sélectionnées", nrow(fr[fr$att_key=="potentialcausedeath_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])),
                     
-                    rep("A text field to provide any other relevant information regarding the animals of the corresponding species", nrow(fr[fr$att_key=="otherrelevantinformation_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+                    rep("Un champ de texte pour fournir toute autre information pertinente concernant les animaux de l'espèce correspondante", nrow(fr[fr$att_key=="otherrelevantinformation_whn" & fr$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
   
     livestock_fr<-
     livestock_fr %>% dplyr::select(
@@ -69,16 +69,16 @@ livestock_fr<-
       
       option_def=c(rep("", nrow(livestock_fr[livestock_fr$att_key=="livestockdomesticspecies_whn",])),  # Species
                    #context
-                   "Animals of the corresponding species registered at the Incident are observed in their habitat and not hunted, captured, captive, or restricted. These animals could be captured for health surveillance purposes and still be considered 'free-ranging'", # free-ranging
-                    "Animals of the corresponding species registered at the Incident are hunted or captured at the time of the observation; however, they have been displaced from the original place of hunt or capture. For example, caged animals in posession of a walking hunter in a protected area", #Hunted and Displaced             
-                   "Animals of the corresponding species registered at the Incident are hunted or captured at the time of the observation; however, they have not been displaced from the original place of hunt or capture. For example, animals observed in the trap set by a hunter", #Hunted and not Displaced  
-                  "Animals of the corresponding species registered at the Incident are kept in a rehabilitation/rescue center", # Rescue/Rehabilitation Center
+                   "Les animaux des espèces correspondantes enregistrées lors de l'Incident sont observés dans leur habitat et ne sont pas chassés, capturés, captifs ou restreints. Ces animaux pourraient être capturés à des fins de surveillance sanitaire tout en étant considérés comme 'en liberté'", # free-ranging
+                    "Les animaux des espèces correspondantes enregistrés lors de l'Incident sont chassés ou capturés au moment de l'observation ; cependant, ils ont été déplacés de leur lieu de chasse ou de capture d'origine. Par exemple, les animaux en cage en possession d'un chasseur ambulant dans une zone protégée", #Hunted and Displaced             
+                   "Les animaux des espèces correspondantes enregistrés lors de l'Incident sont chassés ou capturés au moment de l'observation ; cependant, ils n’ont pas été déplacés de leur lieu de chasse ou de capture d’origine. Par exemple, les animaux observés dans le piège tendu par un chasseur", #Hunted and not Displaced  
+                  "Les animaux des espèces correspondantes enregistrés lors de l'Incident sont gardés dans un centre de réhabilitation/sauvetage", # Rescue/Rehabilitation Center
                   
-                  "Animals of the corresponding species registered at the Incident are kept in a farm", # farm
-                  "Animals of the corresponding species registered at the Incident are kept in a household", # houshold
-                  "Animals of the corresponding species are registered as part of a research or conservation capture not related with health surveillance", # Research or conservation capture
-                  "Animals of the corresponding species registered at the Incident are kept in a market", # market
-                  "Animals of the corresponding species registered at the Incident are kept in a trade post", #tradepost
+                  "Les animaux des espèces correspondantes enregistrés lors de l'Incident sont gardés dans une ferme", # farm
+                  "Les animaux des espèces correspondantes enregistrés lors de l'Incident sont gardés dans un foyer", # houshold
+                  "Les animaux des espèces correspondantes sont enregistrés dans le cadre d'une capture de recherche ou de conservation sans lien avec la surveillance sanitaire.", # Research or conservation capture
+                  "Les animaux des espèces correspondantes enregistrées lors de l'incident sont détenus dans un marché", # market
+                  "Les animaux des espèces correspondantes enregistrés lors de l'incident sont gardés dans un poste de traite", #tradepost
                   "", # Number healthy animals
                   " ", # Number sick or injured animals
                   rep("", nrow(livestock_fr[livestock_fr$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
@@ -95,31 +95,30 @@ livestock_fr<-
     livestock_fr<-
     livestock_fr %>% 
     dplyr::select(-att_key) %>% 
-    dplyr::rename("Attribute" = "att_label") %>% 
+    dplyr::rename("Attribut" = "att_label") %>% 
     dplyr::rename("Type" = "att_type") %>% 
-    dplyr::rename("Attribute\nDefinition" = "attr_def") %>% 
+    dplyr::rename("Définition\nd'Attribut" = "attr_def") %>% 
     dplyr::rename("Option" = "option_label") %>% 
-    dplyr::rename("Option\nDefinition" = "option_def") 
+    dplyr::rename("Définition\nd'Option" = "option_def") 
 
 
   
   out<-  
   flextable(livestock_fr) %>% 
-  merge_v(j="Attribute") %>% 
+  merge_v(j="Attribut") %>% 
   merge_v(j="Type") %>% 
-  merge_v(j="Attribute\nDefinition") %>% 
-  merge_v(j="Option\nDefinition") %>%
+  merge_v(j="Définition\nd'Attribut") %>% 
+  merge_v(j="Définition\nd'Option") %>%
   theme_box() %>% 
-  width(j = "Attribute", width=5, unit = "cm") %>% 
+  width(j = "Attribut", width=5, unit = "cm") %>% 
   width(j = "Option", width=7, unit = "cm") %>% 
-  width(j = "Attribute\nDefinition", width=7, unit = "cm") %>% 
-  width(j = "Option\nDefinition", width=7, unit = "cm")
+  width(j = "Définition\nd'Attribut", width=7, unit = "cm") %>% 
+  width(j = "Définition\nd'Option", width=7, unit = "cm")
 
-  
 
   out
 # write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
-exportxlsx(out, path = "livestock_dom_fr.csv")
+#exportxlsx(out, path = "livestock_dom_fr.csv")
   
 ```
 
