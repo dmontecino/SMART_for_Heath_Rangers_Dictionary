@@ -27,11 +27,9 @@ site_description_fr<-
   dplyr::rename("Type" = "att_type") %>% 
   dplyr::mutate(Définition=
                   c(
-                  rep("Select one or more items that are present at the Incident. If there are other relevant features at the Incident not provided in the options that could have disease or death implications, it is possible to select the option 'Other Findings' and a text box will pop-up to describe them", 
+                  rep("Sélectionnez un ou plusieurs éléments présents lors de l'incident. S'il existe d'autres caractéristiques pertinentes lors de l'incident non fournies dans les options et qui pourraient avoir des implications en matière de maladie ou de décès, il est possible de sélectionner l'option 'Autres résultats' et une zone de texte apparaîtra pour les décrire", 
                       fr %>% dplyr::filter(att_label=="Résultats") %>% nrow()),
-                      "Describe other relevant features at the Incident not provided in the 
-                      'Findings' list that could have     
-                      disease or death implications"))
+                      "Décrivez d'autres caractéristiques pertinentes de l'incident non fournies dans la liste des ' Résultats' qui pourraient avoir des implications en matière de maladie ou de décès"))
 
     
         
@@ -66,6 +64,6 @@ site_description_fr<-
 
   out
 # write_csv(out, file = "data_dictionary_June_30_2023.csv")
-#exportxlsx(out, path = "site_description_fr.csv")
+# exportxlsx(out, path = "site_description_fr.csv")
 
 ```

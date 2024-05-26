@@ -140,7 +140,7 @@ animals_samples_fr<-
   
   out<-  
   flextable(animals_samples_fr) %>% 
-  merge_v(j="Attribute") %>% 
+  merge_v(j="Attribut") %>% 
   merge_v(j="Type") %>% 
   merge_v(j="Définition\nd'Attribut") %>% 
   merge_v(j="Racine\nd'Arbre") %>% 
