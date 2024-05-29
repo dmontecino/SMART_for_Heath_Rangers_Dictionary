@@ -71,7 +71,7 @@ wildlife_fr<-
     wildlife_fr<-
     wildlife_fr %>% dplyr::mutate(
       
-      option_def=c("Select this option if the species at the Incident is not in the list",  # Species
+      option_def=c("Sélectionnez cette option si l'espèce présente lors de l'incident ne figure pas dans la liste",  # Species
                    "", # Provide Species not listed
                    
                    #context
