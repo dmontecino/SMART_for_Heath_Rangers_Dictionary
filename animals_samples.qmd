@@ -1,4 +1,4 @@
-# Animal and Samples {.unnumbered}
+# Animal and Samples Category
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
