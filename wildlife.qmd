@@ -1,4 +1,4 @@
-# Wildlife {.unnumbered}
+# Wildlife Category
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 

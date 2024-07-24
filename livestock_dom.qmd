@@ -1,4 +1,4 @@
-# Livestock - Domestic Animals {.unnumbered}
+# Livestock - Domestic Animals Category
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
