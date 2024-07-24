@@ -3,10 +3,11 @@ project:
 
 book:
   site-url: https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary
-  title: "Dictionary SMART for Health - Rangers"
+  title: "Manual and Dictionary SMART for Health - Rangers"
   author: "Wildlife Conservation Society - Health Program"
   date: "20/04/2024"
   chapters:
+    - Manual.qmd
     - index.qmd
     - site_description.qmd
     - wildlife.qmd
@@ -31,7 +32,7 @@ babelquarto:
     text: "ខ្មែរ"
   mainlanguage: 'en'
   languages: ['es', 'fr', 'lo', 'km']
-title-es: Diccionario SMART para Salud - Guardaparques
+title-es: Manual y Diccionario SMART para Salud - Guardaparques
 title-lo: ວັດຈະນານຸກົມ SMART ສໍາລັບແຜນງານສຸຂະພາບ - ທີມງານລາດຕະເວນ
 title-km: វចនានុក្រមរបស់កម្មវិធី SMART សម្រាប់សុខភាពសត្វ  - 
 title-fr: Dictionnaire de SMART Santé - Rangers
