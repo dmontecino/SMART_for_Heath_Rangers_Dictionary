@@ -46,9 +46,122 @@ create_abs_lang_link <- function(path, base_link) {
 }
 
 
+
+
+
+
+
 babelquarto::render_book(file.path(project_dir))
 
+#save the manual as a pdf
+renderthis::to_pdf("_book/Manual.html")
+renderthis::to_pdf("_book/es/Manual.es.html")
+
+#save the data dictionary as a pdf
+renderthis::to_pdf("_book/Dictionary.html")
+renderthis::to_pdf("_book/es/Dictionary.es.html")
+
+
+
+
+
+# Edit the file path to download the correct manual pdf 
+library(stringr)
+
+languages<-c('en', 'es')
+nlanguages<-length(languages)
+
+# i=2
+
+for(i in languages){
+if(i =="en"){
+  # Define the input and output file paths
+  input_file <- "_book/Manual.html"
+  output_file <- "_book/Manual.html"}else{
+    
+    input_file <- paste0("_book/", i, "/Manual.",  i, ".html")
+    output_file <- paste0("_book/", i, "/Manual.",  i, ".html")}
+
+
+# Read the original HTML content from the file
+original_html <- readLines(input_file, warn = FALSE)
+
+# Combine the read lines into a single string
+original_html_string <- paste(original_html, collapse = "\n")
+
+if(i=="en"){
+new_href <- paste0("/Manual.","pdf")}else{
+new_href <- paste0("/Manual.", i, ".pdf")}
+
+# # Define the input HTML content
+# original_html <- '<a href="./Manual-y-Diccionario-SMART-para-Salud---Guardaparques.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>'
+
+# Define the regular expression pattern to extract the desired part
+pattern <- 'href="./([^"]+).pdf"'
+
+# Extract the desired substring using str_match
+matches <- paste0(str_match(original_html_string, pattern)[1,2], ".pdf")
+
+# Replace the href value using stringr's str_replace function
+modified_html_string <- gsub(pattern = matches,
+                             replacement = new_href,
+                             x = original_html_string)
+
+writeLines(modified_html_string, output_file)
+}
+
+
+
+
+# Edit the file path to download the correct dictionary pdf 
+
+for(i in languages){
+  if(i =="en"){
+    # Define the input and output file paths
+    input_file <- "_book/Dictionary.html"
+    output_file <- "_book/Dictionary.html"}else{
+      
+      input_file <- paste0("_book/", i, "/Dictionary.",  i, ".html")
+      output_file <- paste0("_book/", i, "/Dictionary.",  i, ".html")}
+  
+  
+  # Read the original HTML content from the file
+  original_html <- readLines(input_file, warn = FALSE)
+  
+  # Combine the read lines into a single string
+  original_html_string <- paste(original_html, collapse = "\n")
+  
+  if(i=="en"){
+    new_href <- paste0("/Dictionary.","pdf")}else{
+      new_href <- paste0("/Dictionary.", i, ".pdf")}
+  
+  # # Define the input HTML content
+  # original_html <- '<a href="./Manual-y-Diccionario-SMART-para-Salud---Guardaparques.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>'
+  
+  # Define the regular expression pattern to extract the desired part
+  pattern <- 'href="./([^"]+).pdf"'
+  
+  # Extract the desired substring using str_match
+  matches <- paste0(str_match(original_html_string, pattern)[1,2], ".pdf")
+  
+  # Replace the href value using stringr's str_replace function
+  modified_html_string <- gsub(pattern = matches,
+                               replacement = new_href,
+                               x = original_html_string)
+  
+  writeLines(modified_html_string, output_file)
+}
+
+
+
+
 #move the files in _book to docs
+
+
+
+
+
+
 
 #run the function
 
@@ -64,98 +177,3 @@ create_abs_lang_link(path = "docs", base_link = "")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Export the flextable objects as xlsx. 
-
-#1. Create each "out" object using the chapters' qmd files. 
-
-# library(devtools)
-
-# Then install and load the YesSiR package
-# devtools::install_github("Sebastien-Le/YesSiR")
-# library(YesSiR)
-
-
-
-
-# The chapters in english
-names_chapter_english<-c("site_description", "wildlife", "livestock_dom", "animals_samples")
-
-
-
-# Execute the R code within each .qmd file
-
-for(i in names_chapter_english){
-rmd <- parsermd::parse_rmd(paste0(project_dir, i, ".qmd"))
-rmd<-parsermd::rmd_select(rmd, i) %>% parsermd::as_document()
-chunk <- rmd[-grep("```", rmd)]
-chunk
-#> [1] "library(tidyr)"   "library(stringr)" ""                
-
-eval(parse(text = chunk))
-
-YesSiR::exportxlsx(table=out, 
-                   # filename ="site_description", 
-                   path = paste0(project_dir, "Partial_dictionaries_lao_khmer/Reference_english/", i, ".xlsx"))
-
-}
-
-
-
-# The chapters in lao
-names_chapter_lao<-c("site_description", "wildlife", "livestock_dom", "animals_samples")
-
-
-
-# Execute the R code within each .qmd file
-
-for(i in names_chapter_lao){
-  rmd <- parsermd::parse_rmd(paste0(project_dir, i, ".lo.qmd"))
-  rmd<-parsermd::rmd_select(rmd, i) %>% parsermd::as_document()
-  chunk <- rmd[-grep("```", rmd)]
-  chunk
-  #> [1] "library(tidyr)"   "library(stringr)" ""                
-  
-  eval(parse(text = chunk))
-  
-  YesSiR::exportxlsx(table=out, 
-                     # filename ="site_description", 
-                     path = paste0(project_dir, "Partial_dictionaries_lao_khmer/Lao/", i, "_lao.xlsx"))
-  
-}
-
-
-
-# The chapters in kh
-names_chapter_kh<-c("site_description", "wildlife", "livestock_dom", "animals_samples")
-
-
-
-# Execute the R code within each .qmd file
-
-for(i in names_chapter_kh){
-  rmd <- parsermd::parse_rmd(paste0(project_dir, i, ".km.qmd"))
-  rmd<-parsermd::rmd_select(rmd, i) %>% parsermd::as_document()
-  chunk <- rmd[-grep("```", rmd)]
-  chunk
-  #> [1] "library(tidyr)"   "library(stringr)" ""                
-  
-  eval(parse(text = chunk))
-  
-  YesSiR::exportxlsx(table=out, 
-                     # filename ="site_description", 
-                     path = paste0(project_dir, "Partial_dictionaries_lao_khmer/Cambodia/", i, "_khmer.xlsx"))
-  
-}

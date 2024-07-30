@@ -7,7 +7,7 @@
         <language code="lo" is_default="false"/>
         <language code="km" is_default="false"/>
     </languages>
-    <name language_code="es" value="Observaciones y Especimenes - Parcial" source="CM"/>
+    <name language_code="es" value="Observaciones y Especimenes - Final" source="CM"/>
     <name language_code="en" value="Observations and Specimens - Final" source="CM"/>
     <name language_code="lo" value="" source="CM"/>
     <nodes>
@@ -39,8 +39,8 @@
                 <name language_code="fr" value="Autres résultats" source="DM"/>
                 <name language_code="es" value="Otros Hallazgos" source="DM"/>
                 <name language_code="en" value="Other Findings" source="DM"/>
-                <name language_code="lo" value="ສິ່ງທີ່ພົບເຫັນອື່ນໆ" source="DM"/>
                 <name language_code="km" value="ការរកឃើញផ្សេងទៀត" source="DM"/>
+                <name language_code="lo" value="ສິ່ງທີ່ພົບເຫັນອື່ນໆ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:m:findings_whn or otherfindings_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -65,8 +65,8 @@
                 <name language_code="fr" value="Fournir des espèces non répertoriées" source="DM"/>
                 <name language_code="es" value="Escriba Especie No Listada" source="DM"/>
                 <name language_code="en" value="Provide Species Not Listed" source="DM"/>
-                <name language_code="km" value="ផ្តល់ឈ្មោះប្រភេទសត្វដែលមិនមាននៅក្នុងបញ្ជី" source="DM"/>
                 <name language_code="lo" value="ລະບຸຊື່ຊະນິດທີ່ບໍ່ມີຢູ່ໃນລາຍການ" source="DM"/>
+                <name language_code="km" value="ផ្តល់ឈ្មោះប្រភេទសត្វដែលមិនមាននៅក្នុងបញ្ជី" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:l:species_whn = speciesnotlisted_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -117,17 +117,17 @@
                 <name language_code="fr" value="Autres anomalies malades ou blessés" source="DM"/>
                 <name language_code="es" value="Otras Anomalias En Enfermos o Lesionados" source="DM"/>
                 <name language_code="en" value="Other Anomalies Sick or Injured" source="DM"/>
-                <name language_code="lo" value="ຄວາມຜິດປົກກະຕິອື່ນໆ ທີ່ພົບໃນສັດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
                 <name language_code="km" value="ភាពមិនប្រក្រដីផ្សេងតៀតចំពោះសត្វឈឺ" source="DM"/>
+                <name language_code="lo" value="ຄວາມຜິດປົກກະຕິອື່ນໆ ທີ່ພົບໃນສັດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:m:anomaliesinsickorinjuredanimals_whn or other_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
-            <attribute attributeKey="potentialcausediseaseorinjury_whn" dmUuid="5116a7eddf904ff8b6d390d3ac1e061e" id="8c34be31-e7a2-4895-b3dd-bc89484290d5" configId="94276a96-ca09-4c38-a3db-c3f2823fc6a0" type="MLIST" required="false" isCustomImage="false">
+            <attribute attributeKey="potentialcausediseaseorinjury_whn" dmUuid="5116a7eddf904ff8b6d390d3ac1e061e" id="8c34be31-e7a2-4895-b3dd-bc89484290d5" configId="94276a96-ca09-4c38-a3db-c3f2823fc6a0" type="MLIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Cause potentielle maladie ou blessure" source="DM"/>
                 <name language_code="es" value="Causa Potencial de Enfermedad o Lesion" source="DM"/>
                 <name language_code="en" value="Potential Cause Disease or Injury" source="DM"/>
-                <name language_code="lo" value="ສາເຫດສົງໄສທີ່ອາດເຮັດໃຫ້ສັດເປັນພະຍາດ ຫຼື ບາດເຈັບ" source="DM"/>
                 <name language_code="km" value="មូលហេតុដែលអាចកើតមានជំងឺ ឬរបួស" source="DM"/>
+                <name language_code="lo" value="ສາເຫດສົງໄສທີ່ອາດເຮັດໃຫ້ສັດເປັນພະຍາດ ຫຼື ບາດເຈັບ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:n:numbersickorinjured_whn &gt; 0.0" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -135,8 +135,8 @@
                 <name language_code="fr" value="Nombre d'animaux morts" source="DM"/>
                 <name language_code="es" value="Numero Animales Muertos" source="DM"/>
                 <name language_code="en" value="Number Dead Animals" source="DM"/>
-                <name language_code="lo" value="ຈໍານວນສັດຕາຍ" source="DM"/>
                 <name language_code="km" value="ចំនួនសត្វស្លាប់" source="DM"/>
+                <name language_code="lo" value="ຈໍານວນສັດຕາຍ" source="DM"/>
                 <option id="DEFAULT_VALUE" doubleValue="0.0"/>
                 <option id="NUMERIC" doubleValue="0.0"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
@@ -147,8 +147,8 @@
                 <name language_code="fr" value="Etat des animaux morts" source="DM"/>
                 <name language_code="es" value="Condicion Animales Muertos" source="DM"/>
                 <name language_code="en" value="Condition Dead Animals" source="DM"/>
-                <name language_code="lo" value="ສະພາບສັດຕາຍ" source="DM"/>
                 <name language_code="km" value="ស្ថានភាពសត្វងាប់" source="DM"/>
+                <name language_code="lo" value="ສະພາບສັດຕາຍ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:n:numberdead_whn &gt; 0" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -156,8 +156,8 @@
                 <name language_code="fr" value="Anomalies sur des cadavres" source="DM"/>
                 <name language_code="es" value="Problemas en Animales Muertos" source="DM"/>
                 <name language_code="en" value="Anomalies in Dead Animals" source="DM"/>
-                <name language_code="km" value="សភាពធម្មតានៃសត្វស្លាប់" source="DM"/>
                 <name language_code="lo" value="ຄວາມຜິດປົກກະຕິທີ່ພົບໃນສັດຕາຍ" source="DM"/>
+                <name language_code="km" value="សភាពធម្មតានៃសត្វស្លាប់" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:n:numberdead_whn &gt; 0" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -183,8 +183,8 @@
                 <name language_code="fr" value="Attaque de carnivore" source="DM"/>
                 <name language_code="es" value="Ataque de Carnivoro" source="DM"/>
                 <name language_code="en" value="Carnivore Attack" source="DM"/>
-                <name language_code="km" value="វាយប្រហារដោយសត្វស៊ីសាច់ជាអាហារ" source="DM"/>
                 <name language_code="lo" value="ການໂຈມຕີຂອງສັດກິນຊີ້ນ" source="DM"/>
+                <name language_code="km" value="វាយប្រហារដោយសត្វស៊ីសាច់ជាអាហារ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="( attribute:m:potentialcausediseaseorinjury_whn or predation_whn ) or ( attribute:m:potentialcausedeath_whn or predation_whn )" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
                 <option id="MULTISELECT" doubleValue="0.0"/>
@@ -203,8 +203,8 @@
             <name language_code="fr" value="Bétail et Animaux Domestiques" source="DM"/>
             <name language_code="es" value="Ganado - Especies Domesticas" source="DM"/>
             <name language_code="en" value="Livestock - Domestic Species" source="DM"/>
-            <name language_code="km" value="បសុសត្វ(សត្វស្រុក)" source="DM"/>
             <name language_code="lo" value="ສັດລ້ຽງ-ສັດບ້ານ" source="DM"/>
+            <name language_code="km" value="បសុសត្វ(សត្វស្រុក)" source="DM"/>
             <attribute attributeKey="livestockdomesticspecies_whn" dmUuid="cac06864132f43828981af07298a2458" id="189e5122-a07c-4b8a-97c7-27ee47d5fedc" configId="73c95e3d-8dfe-4da4-9fa0-b5867bc5dea5" type="LIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Espèces" source="DM"/>
                 <name language_code="es" value="Especie" source="DM"/>
@@ -261,17 +261,17 @@
                 <name language_code="fr" value="Autres anomalies malades ou blessés" source="DM"/>
                 <name language_code="es" value="Otras Anomalias En Enfermos o Lesionados" source="DM"/>
                 <name language_code="en" value="Other Anomalies Sick or Injured" source="DM"/>
-                <name language_code="lo" value="ຄວາມຜິດປົກກະຕິອື່ນໆ ທີ່ພົບໃນສັດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
                 <name language_code="km" value="ភាពមិនប្រក្រដីផ្សេងតៀតចំពោះសត្វឈឺ" source="DM"/>
+                <name language_code="lo" value="ຄວາມຜິດປົກກະຕິອື່ນໆ ທີ່ພົບໃນສັດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:m:anomaliesinsickorinjuredanimals_whn or other_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
-            <attribute attributeKey="potentialcausediseaseorinjury_whn" dmUuid="5116a7eddf904ff8b6d390d3ac1e061e" id="8edb872f-ce9c-4710-ab60-173b58a89258" configId="94276a96-ca09-4c38-a3db-c3f2823fc6a0" type="MLIST" required="false" isCustomImage="false">
+            <attribute attributeKey="potentialcausediseaseorinjury_whn" dmUuid="5116a7eddf904ff8b6d390d3ac1e061e" id="8edb872f-ce9c-4710-ab60-173b58a89258" configId="94276a96-ca09-4c38-a3db-c3f2823fc6a0" type="MLIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Cause potentielle maladie ou blessure" source="DM"/>
                 <name language_code="es" value="Causa Potencial de Enfermedad o Lesion" source="DM"/>
                 <name language_code="en" value="Potential Cause Disease or Injury" source="DM"/>
-                <name language_code="lo" value="ສາເຫດສົງໄສທີ່ອາດເຮັດໃຫ້ສັດເປັນພະຍາດ ຫຼື ບາດເຈັບ" source="DM"/>
                 <name language_code="km" value="មូលហេតុដែលអាចកើតមានជំងឺ ឬរបួស" source="DM"/>
+                <name language_code="lo" value="ສາເຫດສົງໄສທີ່ອາດເຮັດໃຫ້ສັດເປັນພະຍາດ ຫຼື ບາດເຈັບ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:n:numbersickorinjured_whn &gt; 0" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -279,8 +279,8 @@
                 <name language_code="fr" value="Nombre d'animaux morts" source="DM"/>
                 <name language_code="es" value="Numero Animales Muertos" source="DM"/>
                 <name language_code="en" value="Number Dead Animals" source="DM"/>
-                <name language_code="lo" value="ຈໍານວນສັດຕາຍ" source="DM"/>
                 <name language_code="km" value="ចំនួនសត្វស្លាប់" source="DM"/>
+                <name language_code="lo" value="ຈໍານວນສັດຕາຍ" source="DM"/>
                 <option id="DEFAULT_VALUE" doubleValue="0.0"/>
                 <option id="NUMERIC" doubleValue="0.0"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
@@ -291,8 +291,8 @@
                 <name language_code="fr" value="Etat des animaux morts" source="DM"/>
                 <name language_code="es" value="Condicion Animales Muertos" source="DM"/>
                 <name language_code="en" value="Condition Dead Animals" source="DM"/>
-                <name language_code="lo" value="ສະພາບສັດຕາຍ" source="DM"/>
                 <name language_code="km" value="ស្ថានភាពសត្វងាប់" source="DM"/>
+                <name language_code="lo" value="ສະພາບສັດຕາຍ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:n:numberdead_whn &gt; 0" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -300,8 +300,8 @@
                 <name language_code="fr" value="Anomalies sur des cadavres" source="DM"/>
                 <name language_code="es" value="Problemas en Animales Muertos" source="DM"/>
                 <name language_code="en" value="Anomalies in Dead Animals" source="DM"/>
-                <name language_code="km" value="សភាពធម្មតានៃសត្វស្លាប់" source="DM"/>
                 <name language_code="lo" value="ຄວາມຜິດປົກກະຕິທີ່ພົບໃນສັດຕາຍ" source="DM"/>
+                <name language_code="km" value="សភាពធម្មតានៃសត្វស្លាប់" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:n:numberdead_whn &gt; 0" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
             </attribute>
@@ -335,10 +335,10 @@
         </node>
         <node categoryKey="animalandsamples_whn" categoryHkey="animalandsamples_whn." dmUuid="b65cf6304b454c54be334a789e96c918" photoAllowed="true" photoRequired="false" id="427c3a8f-9bf9-43e9-97b6-e667ad89effc" collectMultipleObs="true" useSingleGpsPoint="false" isCustomImage="false">
             <name language_code="fr" value="Animal et Echantillons" source="DM"/>
-            <name language_code="es" value="" source="CM"/>
+            <name language_code="es" value="Animal y Muestras" source="CM"/>
             <name language_code="en" value="Animal and Samples" source="DM"/>
-            <name language_code="km" value="សត្វ និងសំណាក" source="DM"/>
             <name language_code="lo" value="ສັດ ແລະ ຕົວຢ່າງ" source="DM"/>
+            <name language_code="km" value="សត្វ និងសំណាក" source="DM"/>
             <attribute attributeKey="species_whn" dmUuid="f90d0f2e40a346cb9838eb8ea2922cbf" id="f0e4802d-3d39-4110-a9a5-307e51275ac8" configId="3ba4446c-44d7-4821-83d5-0a54d73647c4" type="LIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Espèces" source="DM"/>
                 <name language_code="es" value="Especie" source="DM"/>
@@ -353,67 +353,75 @@
                 <name language_code="fr" value="Fournir des espèces non répertoriées" source="DM"/>
                 <name language_code="es" value="Escriba Especie No Listada" source="DM"/>
                 <name language_code="en" value="Provide Species Not Listed" source="DM"/>
-                <name language_code="km" value="ផ្តល់ឈ្មោះប្រភេទសត្វដែលមិនមាននៅក្នុងបញ្ជី" source="DM"/>
                 <name language_code="lo" value="ລະບຸຊື່ຊະນິດທີ່ບໍ່ມີຢູ່ໃນລາຍການ" source="DM"/>
-                <option id="IS_VISIBLE" doubleValue="1.0"/>
+                <name language_code="km" value="ផ្តល់ឈ្មោះប្រភេទសត្វដែលមិនមាននៅក្នុងបញ្ជី" source="DM"/>
+                <option id="IS_VISIBLE" stringValue="attribute:l:species_whn = speciesnotlisted_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
             </attribute>
             <attribute attributeKey="animalid_whn" dmUuid="9ab898fcc2204e41a19477180b2fc601" id="ce4d2305-c3f8-428f-b0d1-c98a794e0e24" type="TEXT" required="true" isCustomImage="false">
                 <name language_code="fr" value="ID animal" source="DM"/>
                 <name language_code="es" value="Identificador Individuo" source="DM"/>
                 <name language_code="en" value="Animal ID" source="DM"/>
-                <name language_code="lo" value="ລະຫັດໝາຍສັດ" source="DM"/>
                 <name language_code="km" value="អត្តសញ្ញាណរបស់សត្វ" source="DM"/>
+                <name language_code="lo" value="ລະຫັດໝາຍສັດ" source="DM"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
             </attribute>
-            <attribute attributeKey="captivitycategory_whn" dmUuid="1aca7b2834cd4e0b96a9617bc93e646a" id="5a139ef8-ab99-457e-9db2-55612c5fa819" configId="1c9fcb99-96c7-4a8f-95f8-ee8628a1192d" type="LIST" required="true" isCustomImage="false">
-                <name language_code="fr" value="Catégorie de captivité" source="DM"/>
-                <name language_code="es" value="Categoria de Cautiverio" source="DM"/>
-                <name language_code="en" value="Captivity Category" source="DM"/>
-                <name language_code="km" value="ប្រភេទនៃការចាប់សត្វ" source="DM"/>
-                <name language_code="lo" value="ຮູບແບບການຈັບສັດ" source="DM"/>
+            <attribute attributeKey="context_whn" dmUuid="bd9be20607394fc3a406b1aba66739cf" id="a82a1b07-3c6b-4ed2-a698-c7f0019748a1" configId="d591b11e-3c42-48a7-8957-74c1fe9e79d4" type="MLIST" required="true" isCustomImage="false">
+                <name language_code="fr" value="Contexte" source="CM"/>
+                <name language_code="es" value="Contexto" source="CM"/>
+                <name language_code="en" value="Context" source="CM"/>
+                <name language_code="km" value="បរិបទ" source="CM"/>
+                <name language_code="lo" value="ບໍລິບົດ" source="CM"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
-                <option id="MULTISELECT" doubleValue="0.0"/>
             </attribute>
             <attribute attributeKey="conditionfound_whn" dmUuid="94c4c0ff4f744496a07b0247dec09ec2" id="0e3e7d6e-6f54-4ff6-9ead-9d8a36e474b8" configId="bde1a10f-c224-4ef5-85d6-eb15431a9418" type="LIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Etat" source="DM"/>
-                <name language_code="es" value="Condicion al Hallazgo" source="DM"/>
-                <name language_code="en" value="Condition Found" source="DM"/>
-                <name language_code="km" value="ស្ថានភាពនៅពេលជួបសត្វ" source="DM"/>
+                <name language_code="es" value="Condicion" source="CM"/>
+                <name language_code="en" value="Initial Health Status" source="CM"/>
                 <name language_code="lo" value="ສະພາບສັດຕອນພົບເຫັນ" source="DM"/>
+                <name language_code="km" value="ស្ថានភាពនៅពេលជួបសត្វ" source="DM"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
                 <option id="MULTISELECT" doubleValue="0.0"/>
             </attribute>
             <attribute attributeKey="ageofanimal_whn" dmUuid="907e987b4ee64167917826f5683c9dee" id="8854d64a-7412-448a-b2d1-d8052c0f00a8" configId="ff97a80d-a37b-4df3-9eb8-6979373aaad3" type="LIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Age de l'animal" source="DM"/>
-                <name language_code="es" value="Edad del Animal" source="DM"/>
-                <name language_code="en" value="Age of Animal" source="DM"/>
-                <name language_code="lo" value="ອາຍຸຂອງສັດ" source="DM"/>
+                <name language_code="es" value="Edad" source="CM"/>
+                <name language_code="en" value="Age" source="CM"/>
                 <name language_code="km" value="អាយុ" source="DM"/>
+                <name language_code="lo" value="ອາຍຸຂອງສັດ" source="DM"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
                 <option id="MULTISELECT" doubleValue="0.0"/>
             </attribute>
             <attribute attributeKey="sexofanimal_whn" dmUuid="85ad12ae6c7143b6a0e1d8b98282446d" id="d9304840-e6c4-4e6f-9f3e-c4b9e212fc54" configId="df5f6cb1-7b3a-48cd-b86c-d69e7ab0b8f8" type="LIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Sexe de l'animal" source="DM"/>
-                <name language_code="es" value="Sexo del Animal" source="DM"/>
-                <name language_code="en" value="Sex of Animal" source="DM"/>
-                <name language_code="lo" value="ເພດຂອງສັດ" source="DM"/>
+                <name language_code="es" value="Sexo" source="CM"/>
+                <name language_code="en" value="Sex" source="CM"/>
                 <name language_code="km" value="ភេទ" source="DM"/>
+                <name language_code="lo" value="ເພດຂອງສັດ" source="DM"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
                 <option id="MULTISELECT" doubleValue="0.0"/>
             </attribute>
+            <attribute attributeKey="conditiondeadanimals_whn" dmUuid="a94fb52afcc743c6a1369b67dfee6357" id="5bbd02a5-0249-4116-aa35-6c0377c9996d" configId="e1195a80-8b18-40bd-91f2-f58c5e115205" type="MLIST" required="true" isCustomImage="false">
+                <name language_code="fr" value="Etat des animaux morts" source="CM"/>
+                <name language_code="es" value="Condicion Animal Muerto" source="CM"/>
+                <name language_code="en" value="Condition Dead Animal" source="CM"/>
+                <name language_code="lo" value="ສະພາບສັດຕາຍ" source="CM"/>
+                <name language_code="km" value="ស្ថានភាពសត្វងាប់" source="CM"/>
+                <option id="IS_VISIBLE" stringValue="attribute:l:conditionfound_whn = founddead_whn" doubleValue="2.0"/>
+                <option id="ENTER_ONCE" stringValue="START"/>
+            </attribute>
             <attribute attributeKey="anomaliesinsickinjuredordeadanimals_whn" dmUuid="8dc0fcf7024d4c6d88905ff6f1373a35" id="30a45dd1-6ebd-44c3-a9ca-87f1a22b802b" configId="413ccb0f-e299-4e2a-9500-91d5207eed44" type="MLIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Anomalies chez les animaux malades, blessés ou morts" source="DM"/>
-                <name language_code="es" value="Problemas en Animales Enfermos, Lesionados, o Muertos" source="DM"/>
-                <name language_code="en" value="Anomalies in Sick, Injured, or Dead Animals" source="DM"/>
-                <name language_code="lo" value="ຄວາມຜິດປົກກະຕິ ທີ່ພົບຢູ່ນໍາສັດທີ່ເຈັບປ່ວຍ, ບາດເຈັບ ຫຼື ຕາຍ" source="DM"/>
+                <name language_code="es" value="Problemas Observados" source="CM"/>
+                <name language_code="en" value="Anomalies Observed" source="CM"/>
                 <name language_code="km" value="ភាពមិនប្រក្រតីសត្វឈឺ របួស ឬស្លាប់" source="DM"/>
-                <option id="IS_VISIBLE" stringValue="attribute:l:conditionfound_whn = founddead_whn or attribute:l:conditionfound_whn = foundlivesickorinjured_whn" doubleValue="2.0"/>
+                <name language_code="lo" value="ຄວາມຜິດປົກກະຕິ ທີ່ພົບຢູ່ນໍາສັດທີ່ເຈັບປ່ວຍ, ບາດເຈັບ ຫຼື ຕາຍ" source="DM"/>
+                <option id="IS_VISIBLE" stringValue="attribute:l:conditionfound_whn = founddead_whn or attribute:l:conditionfound_whn = foundlivesickorinjured_whn or attribute:l:conditionfound_whn = animalparts_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
             </attribute>
             <attribute attributeKey="otheranomalies_whn" dmUuid="8a7f5888dde5480eb75f0b837f3f3677" id="f426bc46-f7c7-4541-bb47-2e48a6c8f83a" type="TEXT" required="true" isCustomImage="false">
@@ -425,14 +433,13 @@
                 <option id="IS_VISIBLE" stringValue="attribute:m:anomaliesinsickinjuredordeadanimals_whn or other_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
             </attribute>
-            <attribute attributeKey="suspectcauseofdeathdiseaseorinjury_whn" dmUuid="20756b8f2d8a4d80a1533af8e25ebef1" id="b317ef23-e1da-4463-96b5-7ce318d4b6d4" configId="10d25993-3f24-4233-be3c-9e5f75609618" type="TREE" required="true" isCustomImage="false">
-                <name language_code="fr" value="Cause suspecte du décès, de la maladie ou de la blessure" source="DM"/>
-                <name language_code="es" value="Causa Potential de Muerte, Enfermedad, o Lesion" source="DM"/>
-                <name language_code="en" value="Suspect Cause of Death, Disease, or Injury" source="DM"/>
-                <name language_code="lo" value="ສາເຫດສົງໄສ ທີ່ເຮັດໃຫ້ສັດ ຕາຍ, ເປັນພະຍາດ ຫຼື ບາດເຈັບ" source="DM"/>
-                <name language_code="km" value="ការសង្ស័យអំពីមូលហេតុបណ្ដាលឲ្យសត្វងាប់ ឈឺ ឬរងរបួស" source="DM"/>
-                <option id="IS_VISIBLE" stringValue="attribute:l:conditionfound_whn = founddead_whn or attribute:l:conditionfound_whn = foundlivesickorinjured_whn" doubleValue="2.0"/>
-                <option id="FLATTEN_TREE" doubleValue="0.0"/>
+            <attribute attributeKey="potentialcauseofdeathdiseaseorinjury_whn" dmUuid="698955ddc2b04cbc9b378af41ce8ef78" id="294ffecb-8693-4e18-b47d-88efc416bd67" configId="0a34565a-e305-40ab-93c8-a4f3ce5176c3" type="MLIST" required="true" isCustomImage="false">
+                <name language_code="fr" value="Cause potentielle de d�c�s, maladie ou blessure" source="CM"/>
+                <name language_code="es" value="Causa Potencial" source="CM"/>
+                <name language_code="en" value="Potential Cause" source="CM"/>
+                <name language_code="lo" value="ສາເຫດເປັນໄປໄດ້ ທີ່ເຮັດໃຫ້ສັດຕາຍ, ເປັນພະຍາດ, ຫຼື ບາດເຈັບ" source="CM"/>
+                <name language_code="km" value="មូលហេតុធ្វើឲ្យរបូស ឬស្លាប់" source="CM"/>
+                <option id="IS_VISIBLE" stringValue="attribute:l:conditionfound_whn = founddead_whn or attribute:l:conditionfound_whn = foundlivesickorinjured_whn or attribute:l:conditionfound_whn = animalparts_whn" doubleValue="2.0"/>
                 <option id="ENTER_ONCE" stringValue="START"/>
             </attribute>
             <attribute attributeKey="sampleid_whn" dmUuid="582312b226e54bb8870ed6d4a57b97a2" id="2b0f05c0-ce03-47fc-9966-f01da289e2d4" type="TEXT" required="true" isCustomImage="false">
@@ -448,26 +455,26 @@
                 <name language_code="fr" value="Type de l'échantillon" source="DM"/>
                 <name language_code="es" value="Tipo de Muestra" source="DM"/>
                 <name language_code="en" value="Sample Type" source="DM"/>
-                <name language_code="lo" value="ປະເພດຕົວຢ່າງ" source="DM"/>
                 <name language_code="km" value="ប្រភេទនៃសំណាកសត្វ" source="DM"/>
+                <name language_code="lo" value="ປະເພດຕົວຢ່າງ" source="DM"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
                 <option id="MULTISELECT" doubleValue="0.0"/>
             </attribute>
             <attribute attributeKey="collecteddirectlyfromanimal_whn" dmUuid="30c6b6ef70af491092a03a3add1516fd" id="b736b874-87fa-4514-be52-0ec6eeeb2c25" configId="f334a1c5-adc1-40de-82f9-68aac995b255" type="LIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="Collecté directement auprès d'un animal" source="DM"/>
-                <name language_code="es" value="Colectado Directamente del Animal" source="DM"/>
-                <name language_code="en" value="Collected Directly From Animal" source="DM"/>
-                <name language_code="km" value="ប្រមូលដោយផ្ទាល់ពីសត្វ" source="DM"/>
+                <name language_code="es" value="Colectado Directamente desde el Animal?" source="CM"/>
+                <name language_code="en" value="Collected Directly From Animal?" source="CM"/>
                 <name language_code="lo" value="ເກັບເອົາຈາກໂຕສັດໂດຍກົງ" source="DM"/>
+                <name language_code="km" value="ប្រមូលដោយផ្ទាល់ពីសត្វ" source="DM"/>
                 <option id="IS_VISIBLE" doubleValue="1.0"/>
                 <option id="ENTER_ONCE" stringValue="NONE"/>
                 <option id="MULTISELECT" doubleValue="0.0"/>
             </attribute>
             <attribute attributeKey="wasthecarcasscollected_whn" dmUuid="73f6aa5f4fac4df89eda4da697b8abbd" id="b323737d-ac8e-4b44-ad23-01480ae5f818" configId="bcfde609-d15b-4fc9-bb06-ceb54aa3212b" type="LIST" required="true" isCustomImage="false">
                 <name language_code="fr" value="La carcasse a-t-elle été récupérée" source="DM"/>
-                <name language_code="es" value="Se Recolecto el Cadaver" source="DM"/>
-                <name language_code="en" value="Was The  Carcass Collected" source="DM"/>
+                <name language_code="es" value="Se Recolecto el Cadaver?" source="CM"/>
+                <name language_code="en" value="Was The Carcass Collected?" source="CM"/>
                 <name language_code="lo" value="ຊາກສັດໄດ້ຖືກເກັບບໍ່" source="DM"/>
                 <name language_code="km" value="តើមានបានយកសពសត្វនោះមកឬទេ" source="DM"/>
                 <option id="IS_VISIBLE" stringValue="attribute:l:conditionfound_whn = founddead_whn or attribute:l:conditionfound_whn = animalparts_whn" doubleValue="2.0"/>
@@ -491,8 +498,8 @@
             <name language_code="fr" value="Traqués et déplacés" source="DM"/>
             <name language_code="es" value="Cazado y Desplazado" source="DM"/>
             <name language_code="en" value="Hunted and Displaced" source="DM"/>
-            <name language_code="km" value="ប្រមាញ់ និងសត្វនៅនឹងកន្លែង" source="DM"/>
             <name language_code="lo" value="ຖືກລ່າ ແລະ ຖືກເຄື່ອນຍ້າຍແລ້ວ" source="DM"/>
+            <name language_code="km" value="ប្រមាញ់ និងសត្វនៅនឹងកន្លែង" source="DM"/>
         </listItem>
         <listItem keyRef="huntednotdisplaced_whn" dmUuid="aa9473dfa46847ffad4c6a4585088295" isActive="true" id="3ba44249-a032-4653-9ca6-affc91397851" isCustomImage="false">
             <name language_code="fr" value="Chassé et non déplacé" source="DM"/>
@@ -505,8 +512,8 @@
             <name language_code="fr" value="Centre de secours/réadaptation" source="DM"/>
             <name language_code="es" value="Centro de Rescate/Rehabilitacion" source="DM"/>
             <name language_code="en" value="Rescue/Rehabilitation Center" source="DM"/>
-            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
             <name language_code="lo" value="ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ" source="DM"/>
+            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
         </listItem>
         <listItem keyRef="freeranging_whn" dmUuid="f4a208c4c1bd45508d51a4e98ec3278d" isActive="true" id="d4b18d1e-3c7b-43ba-b253-e986db079474" isCustomImage="false">
             <name language_code="fr" value="En liberté" source="DM"/>
@@ -519,36 +526,36 @@
             <name language_code="fr" value="Ferme" source="DM"/>
             <name language_code="es" value="Granja" source="DM"/>
             <name language_code="en" value="Farm" source="DM"/>
-            <name language_code="km" value="កសិដ្ឋាន" source="DM"/>
             <name language_code="lo" value="ຟາມ" source="DM"/>
+            <name language_code="km" value="កសិដ្ឋាន" source="DM"/>
         </listItem>
         <listItem keyRef="household_whn" dmUuid="c5f66adf80144268be56152e9e42012f" isActive="true" id="2a4e2a95-bfa4-4aed-b0a3-d3927cf5a406" isCustomImage="false">
             <name language_code="fr" value="Ménage" source="DM"/>
             <name language_code="es" value="Habitacion Domiciliaria" source="DM"/>
             <name language_code="en" value="Household" source="DM"/>
-            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
             <name language_code="km" value="លក្ខណគ្រួសារ" source="DM"/>
+            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
         </listItem>
         <listItem keyRef="researchorconservationcapture_whn" dmUuid="0d2c1212eca847aca7ae9a97b915722d" isActive="true" id="a0507dea-13c2-4d64-b305-979a6525dfac" isCustomImage="false">
             <name language_code="fr" value="Recherche ou capture pour conservation" source="DM"/>
             <name language_code="es" value="Investigacion o Captura de Conservacion" source="DM"/>
             <name language_code="en" value="Research or Conservation Capture" source="DM"/>
-            <name language_code="lo" value="ການຈັບສັດ ເພື່ອການຄົ້ນຄວ້າ ຫຼື ອະນຸລັກ" source="DM"/>
             <name language_code="km" value="បានសត្វតាមរយៈការស្រាវជ្រាវ ឬ អភិរក្ស" source="DM"/>
+            <name language_code="lo" value="ການຈັບສັດ ເພື່ອການຄົ້ນຄວ້າ ຫຼື ອະນຸລັກ" source="DM"/>
         </listItem>
         <listItem keyRef="market_whn" dmUuid="0ad0142420964d2e848e0cfc0b7a94a1" isActive="true" id="ed19b642-7d7c-43be-babc-b8387acd572d" isCustomImage="false">
             <name language_code="fr" value="Marché" source="DM"/>
             <name language_code="es" value="Mercado" source="DM"/>
             <name language_code="en" value="Market" source="DM"/>
-            <name language_code="km" value="ផ្សារ" source="DM"/>
             <name language_code="lo" value="ຕະຫຼາດ" source="DM"/>
+            <name language_code="km" value="ផ្សារ" source="DM"/>
         </listItem>
         <listItem keyRef="tradepost_whn" dmUuid="f084be7908c54ffcb13554eb44358290" isActive="true" id="d4e7969e-111a-4047-94db-71d44060862a" isCustomImage="false">
             <name language_code="fr" value="Poste commercial" source="DM"/>
             <name language_code="es" value="Puesto de Venta" source="DM"/>
             <name language_code="en" value="Tradepost" source="DM"/>
-            <name language_code="lo" value="ຈຸດຊື້ຂາຍສັດ" source="DM"/>
             <name language_code="km" value="កន្លែងជួញដូរឬដោះដូរ" source="DM"/>
+            <name language_code="lo" value="ຈຸດຊື້ຂາຍສັດ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="7f0dd3ab-ef12-4547-b5bf-2a965815439c" attributeKey="typeoflandscape_whn" displayMode="TEXT" isDefault="true" attributeUuid="fd537d61466a4ab58bede99835d99953">
@@ -585,22 +592,22 @@
             <name language_code="fr" value="For�t d�frich�e" source="DM"/>
             <name language_code="es" value="Bosque Siempreverde" source="DM"/>
             <name language_code="en" value="Evergreen Forest" source="DM"/>
-            <name language_code="lo" value="ປ່າດົງດິບ" source="DM"/>
             <name language_code="km" value="ព្រៃស្រោង" source="DM"/>
+            <name language_code="lo" value="ປ່າດົງດິບ" source="DM"/>
         </listItem>
         <listItem keyRef="clearedforest_whn" dmUuid="581f7160662048e2882f7381c2960e46" isActive="true" id="a6627a6b-87ce-40de-ac3b-7e00db8ec62a" isCustomImage="false">
             <name language_code="fr" value="For�t d�frich�e" source="DM"/>
             <name language_code="es" value="Bosque Talado" source="DM"/>
             <name language_code="en" value="Cleared Forest" source="DM"/>
-            <name language_code="lo" value="ປ່າໂຄກຫ່າງ" source="DM"/>
             <name language_code="km" value="ព្រៃ​ឈូស​ឆាយ" source="DM"/>
+            <name language_code="lo" value="ປ່າໂຄກຫ່າງ" source="DM"/>
         </listItem>
         <listItem keyRef="oceanshore_whn" dmUuid="60cdba5e043b4e2f949c167a7d333a7e" isActive="true" id="56183e59-146d-45ce-b43a-bb5a27d6f707" isCustomImage="false">
             <name language_code="fr" value="Rivage de l'oc�an" source="DM"/>
             <name language_code="es" value="Costa Oceanica" source="DM"/>
             <name language_code="en" value="Ocean Shore" source="DM"/>
-            <name language_code="lo" value="ແຄມມະຫາສະໝຸດ" source="DM"/>
             <name language_code="km" value="ឆ្នេរសមុទ្រ" source="DM"/>
+            <name language_code="lo" value="ແຄມມະຫາສະໝຸດ" source="DM"/>
         </listItem>
         <listItem keyRef="cave_whn" dmUuid="30a2479ee2ac47498348db9608488cfd" isActive="true" id="e45f0cc1-a29f-460e-81fd-468ecdfcacae" isCustomImage="false">
             <name language_code="fr" value="Cave" source="DM"/>
@@ -613,8 +620,8 @@
             <name language_code="fr" value="Steppe (savane)" source="DM"/>
             <name language_code="es" value="Estepa" source="DM"/>
             <name language_code="en" value="Steppe" source="DM"/>
-            <name language_code="lo" value="Steppe" source="DM"/>
             <name language_code="km" value="តំបន់វាលរាប" source="DM"/>
+            <name language_code="lo" value="Steppe" source="DM"/>
         </listItem>
         <listItem keyRef="farm_whn" dmUuid="cd0f4a4442fa4dbaa75910c148dbdcc8" isActive="true" id="16cd8869-ca7a-4a4f-b757-5184c833987f" isCustomImage="false">
             <name language_code="fr" value="Ferme" source="DM"/>
@@ -627,36 +634,36 @@
             <name language_code="fr" value="M�nage" source="DM"/>
             <name language_code="es" value="Habitacion Humana" source="DM"/>
             <name language_code="en" value="Household" source="DM"/>
-            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
             <name language_code="km" value="លក្ខណគ្រួសារ" source="DM"/>
+            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
         </listItem>
         <listItem keyRef="wetland_whn" dmUuid="e3f939d931ff4d08aeb783b30526855d" isActive="true" id="6912e04c-b064-45e8-ac5b-0b074ca8a8f0" isCustomImage="false">
             <name language_code="fr" value="Zone humide" source="DM"/>
             <name language_code="es" value="Humedal" source="DM"/>
             <name language_code="en" value="Wetland" source="DM"/>
-            <name language_code="lo" value="ບຶງ ຫຼື ໜອງນໍ້າ" source="DM"/>
             <name language_code="km" value="តំបន់ដីសើម" source="DM"/>
+            <name language_code="lo" value="ບຶງ ຫຼື ໜອງນໍ້າ" source="DM"/>
         </listItem>
         <listItem keyRef="lake_whn" dmUuid="4521bbc3fcf648baa1434f6ec6e01679" isActive="true" id="e6020bc8-477d-4606-90fc-932afd112f18" isCustomImage="false">
             <name language_code="fr" value="Lac" source="DM"/>
             <name language_code="es" value="Lago" source="DM"/>
             <name language_code="en" value="Lake" source="DM"/>
-            <name language_code="km" value="បឹង" source="DM"/>
             <name language_code="lo" value="ທະເລສາບ" source="DM"/>
+            <name language_code="km" value="បឹង" source="DM"/>
         </listItem>
         <listItem keyRef="market_whn" dmUuid="c30de354474e48ff943e2a812c4bd86e" isActive="true" id="f38a5b28-7193-45b1-b74b-bd21887b67b9" isCustomImage="false">
             <name language_code="fr" value="March�" source="DM"/>
             <name language_code="es" value="Mercado" source="DM"/>
             <name language_code="en" value="Market" source="DM"/>
-            <name language_code="km" value="ផ្សារ" source="DM"/>
             <name language_code="lo" value="ຕະຫຼາດ" source="DM"/>
+            <name language_code="km" value="ផ្សារ" source="DM"/>
         </listItem>
         <listItem keyRef="montane_whn" dmUuid="e151529b27e84058846bec14da3d33a5" isActive="true" id="366976f6-7d2d-4e42-8f94-5bd0ed6e4a00" isCustomImage="false">
             <name language_code="fr" value="Montagne" source="DM"/>
             <name language_code="es" value="Montana" source="DM"/>
             <name language_code="en" value="Montane" source="DM"/>
-            <name language_code="lo" value="ປ່າເຂດພູສູງ" source="DM"/>
             <name language_code="km" value="តំបន់ភ្នំ" source="DM"/>
+            <name language_code="lo" value="ປ່າເຂດພູສູງ" source="DM"/>
         </listItem>
         <listItem keyRef="ocean_whn" dmUuid="db60fec916c54d8388c3bb2379a9b791" isActive="true" id="060034c0-3a35-4a57-9bac-2bfde1749e47" isCustomImage="false">
             <name language_code="fr" value="Oc�an" source="DM"/>
@@ -669,8 +676,8 @@
             <name language_code="fr" value="P�riurbain/Rural" source="DM"/>
             <name language_code="es" value="Periurbano/Rural" source="DM"/>
             <name language_code="en" value="Periurban/Rural" source="DM"/>
-            <name language_code="km" value="តំបនជាយក្រុង/ជនបទ​" source="DM"/>
             <name language_code="lo" value="ເຂດນອກເມືອງ/ຊົນນະບົດ" source="DM"/>
+            <name language_code="km" value="តំបនជាយក្រុង/ជនបទ​" source="DM"/>
         </listItem>
         <listItem keyRef="meadow_whn" dmUuid="c2a4131a9205490e91b33403850633ae" isActive="true" id="e29f17be-1d19-4b95-bf83-58a979f5d84a" isCustomImage="false">
             <name language_code="fr" value="Prairie" source="DM"/>
@@ -683,15 +690,15 @@
             <name language_code="fr" value="Plaine inond�e" source="DM"/>
             <name language_code="es" value="Planicie Inundada" source="DM"/>
             <name language_code="en" value="Flooded Plain" source="DM"/>
-            <name language_code="lo" value="ເຂດທົ່ງພຽງຖືກນໍ້າຖ້ວມ" source="DM"/>
             <name language_code="km" value="វាលទំនាបលិចទឹក" source="DM"/>
+            <name language_code="lo" value="ເຂດທົ່ງພຽງຖືກນໍ້າຖ້ວມ" source="DM"/>
         </listItem>
         <listItem keyRef="beach_whn" dmUuid="09685286760944d8b6eeaece568d370e" isActive="true" id="47376c50-8942-47a4-aff4-c9fac39db992" isCustomImage="false">
             <name language_code="fr" value="Plage" source="DM"/>
             <name language_code="es" value="Playa" source="DM"/>
             <name language_code="en" value="Beach" source="DM"/>
-            <name language_code="lo" value="ຫາດຊາຍ" source="DM"/>
             <name language_code="km" value="ឆ្នេរ" source="DM"/>
+            <name language_code="lo" value="ຫາດຊາຍ" source="DM"/>
         </listItem>
         <listItem keyRef="grassland_whn" dmUuid="c017016d1ad248ca96b3d6ee95a49928" isActive="true" id="b30be1d7-92cf-408c-b1dc-d25451301140" isCustomImage="false">
             <name language_code="fr" value="Savane" source="DM"/>
@@ -725,8 +732,8 @@
             <name language_code="fr" value="Sac pour animaux de compagnie" source="DM"/>
             <name language_code="es" value="Turbera" source="DM"/>
             <name language_code="en" value="Peatbog" source="DM"/>
-            <name language_code="lo" value="ພື້ນທີ່ນໍ້າຂັງ" source="DM"/>
             <name language_code="km" value="តំបន់វាលភក់" source="DM"/>
+            <name language_code="lo" value="ພື້ນທີ່ນໍ້າຂັງ" source="DM"/>
         </listItem>
         <listItem keyRef="urban_whn" dmUuid="87586d3573064fc089ed14610e99e4bf" isActive="true" id="a286b109-f643-48a2-91a3-6771061a92c4" isCustomImage="false">
             <name language_code="fr" value="Urbaine" source="DM"/>
@@ -739,8 +746,8 @@
             <name language_code="fr" value="Zoo/Centre de secours" source="DM"/>
             <name language_code="es" value="Zoo/Centro de Rescate" source="DM"/>
             <name language_code="en" value="Zoo/Rescue Center" source="DM"/>
-            <name language_code="km" value="សួនសត្វ/មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
             <name language_code="lo" value="ສວນສັດ/ສູນຊ່ວຍເຫຼືອສັດ" source="DM"/>
+            <name language_code="km" value="សួនសត្វ/មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="3c88ef43-2e43-468e-854a-b3eba6e646bb" attributeKey="findings_whn" displayMode="TEXT" isDefault="true" attributeUuid="8f7ba20c00694a4ba64d3516e23ab566">
@@ -749,15 +756,15 @@
             <name language_code="fr" value="Aucun résultat" source="DM"/>
             <name language_code="es" value="No Hay Hallazgos" source="DM"/>
             <name language_code="en" value="No Findings" source="DM"/>
-            <name language_code="lo" value="ບໍ່ພົບເຫັນສິ່ງຜິດປົກກະຕິ" source="DM"/>
             <name language_code="km" value="មិនមានការរកឃើញ" source="DM"/>
+            <name language_code="lo" value="ບໍ່ພົບເຫັນສິ່ງຜິດປົກກະຕິ" source="DM"/>
         </listItem>
         <listItem keyRef="floodedarea_whn" dmUuid="7e2c08ee157a43948e7dc80f9210b257" isActive="true" id="774be48d-15a0-4748-8d01-9c18e7e01783" isCustomImage="false">
             <name language_code="fr" value="Zone inondée" source="DM"/>
             <name language_code="es" value="Area Inundada" source="DM"/>
             <name language_code="en" value="Flooded Area" source="DM"/>
-            <name language_code="km" value="តំបន់លិចទឹក" source="DM"/>
             <name language_code="lo" value="ພື້ນທີ່ຖືກນໍ້າຖ້ວມ" source="DM"/>
+            <name language_code="km" value="តំបន់លិចទឹក" source="DM"/>
         </listItem>
         <listItem keyRef="garbage_whn" dmUuid="78d553715b764b67a8aba2c5ea2804a4" isActive="true" id="422543ef-bdc8-43d9-a0b3-61fe00ed173d" isCustomImage="false">
             <name language_code="fr" value="Ordures" source="DM"/>
@@ -770,15 +777,15 @@
             <name language_code="fr" value="Brûlure" source="DM"/>
             <name language_code="es" value="Quema" source="DM"/>
             <name language_code="en" value="Burning" source="DM"/>
-            <name language_code="lo" value="ການຈູດປ່າ" source="DM"/>
             <name language_code="km" value="ដុត" source="DM"/>
+            <name language_code="lo" value="ການຈູດປ່າ" source="DM"/>
         </listItem>
         <listItem keyRef="carcassdisposal_whn" dmUuid="8097716332224ff98fc4b996006bd3c1" isActive="true" id="1931afb9-7142-45f8-8f49-28f8dac110bd" isCustomImage="false">
             <name language_code="fr" value="Élimination des carcasses" source="DM"/>
             <name language_code="es" value="Deposito de Cadaveres" source="DM"/>
             <name language_code="en" value="Carcass disposal" source="DM"/>
-            <name language_code="lo" value="ການຖິ້ມຊາກສັດ" source="DM"/>
             <name language_code="km" value="ការចោលសាកសព" source="DM"/>
+            <name language_code="lo" value="ການຖິ້ມຊາກສັດ" source="DM"/>
         </listItem>
         <listItem keyRef="sewagedischarge_whn" dmUuid="1bcec1ed76274335ad6c6f91466a839e" isActive="true" id="ee40f6b9-d2b4-4ff8-a1d7-92e99c120ea1" isCustomImage="false">
             <name language_code="fr" value="Rejet des eaux usées" source="DM"/>
@@ -798,8 +805,8 @@
             <name language_code="fr" value="Produits chimiques" source="DM"/>
             <name language_code="es" value="Quimicos" source="DM"/>
             <name language_code="en" value="Chemicals" source="DM"/>
-            <name language_code="lo" value="ສານເຄມີ" source="DM"/>
             <name language_code="km" value="គីមី" source="DM"/>
+            <name language_code="lo" value="ສານເຄມີ" source="DM"/>
         </listItem>
         <listItem keyRef="smokeorsmog_whn" dmUuid="5c2f39234e5d49c898cae2b1b9c75a76" isActive="true" id="bb573401-2bf2-4192-bec5-7527f0bb34a7" isCustomImage="false">
             <name language_code="fr" value="Fumée ou smog (en vapeur)" source="DM"/>
@@ -846,8 +853,8 @@
             <name language_code="fr" value="Traqués et déplacés" source="DM"/>
             <name language_code="es" value="Cazado y Desplazado" source="DM"/>
             <name language_code="en" value="Hunted and Displaced" source="DM"/>
-            <name language_code="km" value="ប្រមាញ់ និងសត្វនៅនឹងកន្លែង" source="DM"/>
             <name language_code="lo" value="ຖືກລ່າ ແລະ ຖືກເຄື່ອນຍ້າຍແລ້ວ" source="DM"/>
+            <name language_code="km" value="ប្រមាញ់ និងសត្វនៅនឹងកន្លែង" source="DM"/>
         </listItem>
         <listItem keyRef="huntednotdisplaced_whn" dmUuid="aa9473dfa46847ffad4c6a4585088295" isActive="true" id="0a16b7b5-39df-4eaf-9396-48874907cd94" isCustomImage="false">
             <name language_code="fr" value="Chassé et non déplacé" source="DM"/>
@@ -860,43 +867,43 @@
             <name language_code="fr" value="Centre de secours/réadaptation" source="DM"/>
             <name language_code="es" value="Centro de Rescate/Rehabilitacion" source="DM"/>
             <name language_code="en" value="Rescue/Rehabilitation Center" source="DM"/>
-            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
             <name language_code="lo" value="ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ" source="DM"/>
+            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
         </listItem>
         <listItem keyRef="farm_whn" dmUuid="bf80e59cd79f45f0a86f9de3684b1fc3" isActive="true" id="2f4371b6-7bd4-4293-a19a-ea718dbe5869" isCustomImage="false">
             <name language_code="fr" value="Ferme" source="DM"/>
             <name language_code="es" value="Granja" source="DM"/>
             <name language_code="en" value="Farm" source="DM"/>
-            <name language_code="km" value="កសិដ្ឋាន" source="DM"/>
             <name language_code="lo" value="ຟາມ" source="DM"/>
+            <name language_code="km" value="កសិដ្ឋាន" source="DM"/>
         </listItem>
         <listItem keyRef="household_whn" dmUuid="c5f66adf80144268be56152e9e42012f" isActive="true" id="5f4fbf63-a4fa-465c-a3d8-007308929f67" isCustomImage="false">
             <name language_code="fr" value="Ménage" source="DM"/>
             <name language_code="es" value="Habitacion Domiciliaria" source="DM"/>
             <name language_code="en" value="Household" source="DM"/>
-            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
             <name language_code="km" value="លក្ខណគ្រួសារ" source="DM"/>
+            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
         </listItem>
         <listItem keyRef="researchorconservationcapture_whn" dmUuid="0d2c1212eca847aca7ae9a97b915722d" isActive="true" id="b6001511-32c2-45cd-a36f-10a73a57fd88" isCustomImage="false">
             <name language_code="fr" value="Recherche ou capture pour conservation" source="DM"/>
             <name language_code="es" value="Investigacion o Captura de Conservacion" source="DM"/>
             <name language_code="en" value="Research or Conservation Capture" source="DM"/>
-            <name language_code="lo" value="ການຈັບສັດ ເພື່ອການຄົ້ນຄວ້າ ຫຼື ອະນຸລັກ" source="DM"/>
             <name language_code="km" value="បានសត្វតាមរយៈការស្រាវជ្រាវ ឬ អភិរក្ស" source="DM"/>
+            <name language_code="lo" value="ການຈັບສັດ ເພື່ອການຄົ້ນຄວ້າ ຫຼື ອະນຸລັກ" source="DM"/>
         </listItem>
         <listItem keyRef="market_whn" dmUuid="0ad0142420964d2e848e0cfc0b7a94a1" isActive="true" id="44562140-a3a2-47fe-a549-1e2143f9c137" isCustomImage="false">
             <name language_code="fr" value="Marché" source="DM"/>
             <name language_code="es" value="Mercado" source="DM"/>
             <name language_code="en" value="Market" source="DM"/>
-            <name language_code="km" value="ផ្សារ" source="DM"/>
             <name language_code="lo" value="ຕະຫຼາດ" source="DM"/>
+            <name language_code="km" value="ផ្សារ" source="DM"/>
         </listItem>
         <listItem keyRef="tradepost_whn" dmUuid="f084be7908c54ffcb13554eb44358290" isActive="true" id="6205c6a8-abe4-49c6-97b1-9c1b7a960c3e" isCustomImage="false">
             <name language_code="fr" value="Poste commercial" source="DM"/>
             <name language_code="es" value="Puesto de Venta" source="DM"/>
             <name language_code="en" value="Tradepost" source="DM"/>
-            <name language_code="lo" value="ຈຸດຊື້ຂາຍສັດ" source="DM"/>
             <name language_code="km" value="កន្លែងជួញដូរឬដោះដូរ" source="DM"/>
+            <name language_code="lo" value="ຈຸດຊື້ຂາຍສັດ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="413ccb0f-e299-4e2a-9500-91d5207eed44" attributeKey="anomaliesinsickinjuredordeadanimals_whn" displayMode="TEXT" isDefault="true" attributeUuid="8dc0fcf7024d4c6d88905ff6f1373a35">
@@ -912,29 +919,29 @@
             <name language_code="fr" value="Comportement anormal" source="DM"/>
             <name language_code="es" value="Comportamiento Anormal" source="DM"/>
             <name language_code="en" value="Abnormal Behavior" source="DM"/>
-            <name language_code="km" value="អាកប្បកិរិយាខុសប្រក្រតី" source="DM"/>
             <name language_code="lo" value="ມີພຶດຕິກໍາຜິດປົກກະຕິ" source="DM"/>
+            <name language_code="km" value="អាកប្បកិរិយាខុសប្រក្រតី" source="DM"/>
         </listItem>
         <listItem keyRef="abnormalgascontent_whn" dmUuid="cbee4cd170264982875c19aa4cf57d05" isActive="true" id="2dd88bcf-d1de-4c01-90ee-d5545f45016d" isCustomImage="false">
             <name language_code="fr" value="Teneur anormale en gaz" source="DM"/>
             <name language_code="es" value="Acumulacion Anormal de Gas" source="DM"/>
             <name language_code="en" value="Abnormal Gas Content" source="DM"/>
-            <name language_code="km" value="ភាពខុសប្រក្រតីនៃ ហ្គាស (ហើមពោះ)" source="DM"/>
             <name language_code="lo" value="ມີແກັດໃນທ້ອງ" source="DM"/>
+            <name language_code="km" value="ភាពខុសប្រក្រតីនៃ ហ្គាស (ហើមពោះ)" source="DM"/>
         </listItem>
         <listItem keyRef="badsmell_whn" dmUuid="53019356b2bb4b9086ca2dfb4091f08d" isActive="true" id="c5c651cb-e8cb-4eba-ba2c-a295e2f4585e" isCustomImage="false">
             <name language_code="fr" value="Mauvaise odeur" source="DM"/>
             <name language_code="es" value="Mal Olor" source="DM"/>
             <name language_code="en" value="Bad Smell" source="DM"/>
-            <name language_code="lo" value="ມີກິ່ນເໝັນ" source="DM"/>
             <name language_code="km" value="ក្លិនអាក្រក់" source="DM"/>
+            <name language_code="lo" value="ມີກິ່ນເໝັນ" source="DM"/>
         </listItem>
         <listItem keyRef="bleedingwoundbruises_whn" dmUuid="53660c24de9e4dadb56c4d90a81210f9" isActive="true" id="aff4abe9-c24a-4e93-889c-2e6df0cc6d6c" isCustomImage="false">
             <name language_code="fr" value="Saignement, plaie, contusions" source="DM"/>
             <name language_code="es" value="Sangramiento, Heridas, Moretones" source="DM"/>
             <name language_code="en" value="Bleeding, Wound, Bruises" source="DM"/>
-            <name language_code="lo" value="ເລືອດໄຫຼ, ບາດແຜ, ຮອຍຊໍ້າ" source="DM"/>
             <name language_code="km" value="ហូរឈាម របួស និង ជាំឈាម" source="DM"/>
+            <name language_code="lo" value="ເລືອດໄຫຼ, ບາດແຜ, ຮອຍຊໍ້າ" source="DM"/>
         </listItem>
         <listItem keyRef="bodypartmissing_whn" dmUuid="c6432903d1584dce8915ced9e990b67a" isActive="true" id="2c45aeb5-c2ed-488a-ac00-65af0d12976c" isCustomImage="false">
             <name language_code="fr" value="Partie du corps manquante" source="DM"/>
@@ -947,8 +954,8 @@
             <name language_code="fr" value="Diarhee ou vomissement" source="DM"/>
             <name language_code="es" value="Diarrea o Vomito" source="DM"/>
             <name language_code="en" value="Diarrhea or Vomiting" source="DM"/>
-            <name language_code="km" value="រាក ឬ ក្អួត" source="DM"/>
             <name language_code="lo" value="ຖອກທ້ອງ ຫຼື ຮາກ" source="DM"/>
+            <name language_code="km" value="រាក ឬ ក្អួត" source="DM"/>
         </listItem>
         <listItem keyRef="difficultbreathingorcoughing_whn" dmUuid="09383ee32c8443d498fd7bb7a0eda25c" isActive="true" id="d8103df6-18ad-4b9a-9145-2a7ae7be20a9" isCustomImage="false">
             <name language_code="fr" value="Respiration difficile, toux" source="DM"/>
@@ -982,8 +989,8 @@
             <name language_code="fr" value="Problème bebout marcher voler" source="DM"/>
             <name language_code="es" value="Problema para Pararse, Caminar, o Volar" source="DM"/>
             <name language_code="en" value="Problem Standing Walking Flying" source="DM"/>
-            <name language_code="lo" value="ມີບັນຫາໃນການ ຢືນ, ຍ່າງ, ບິນ" source="DM"/>
             <name language_code="km" value="បញ្ហាក្នុងការឈរ ដើរ ហើរ" source="DM"/>
+            <name language_code="lo" value="ມີບັນຫາໃນການ ຢືນ, ຍ່າງ, ບິນ" source="DM"/>
         </listItem>
         <listItem keyRef="skinabnormality_whn" dmUuid="8e8ec98af10d4e69863d3a977253562a" isActive="true" id="9d9d1039-1801-4712-86d6-1e59f1beb6fd" isCustomImage="false">
             <name language_code="fr" value="Peau anormale" source="DM"/>
@@ -996,30 +1003,30 @@
             <name language_code="fr" value="Mince ou maigre" source="DM"/>
             <name language_code="es" value="Muy Delgado o Desnutrido" source="DM"/>
             <name language_code="en" value="Thin Or Skinny" source="DM"/>
-            <name language_code="lo" value="ຈ່ອຍຜອມ" source="DM"/>
             <name language_code="km" value="ស្គម ឬ ស្បែកដណ្ដប់ឆ្អឹង" source="DM"/>
+            <name language_code="lo" value="ຈ່ອຍຜອມ" source="DM"/>
         </listItem>
         <listItem keyRef="whitishreddishyellowishdischarge_whn" dmUuid="da6ad952758240a98f522913a9396cbe" isActive="true" id="2c0ccf1a-17f0-43b1-82c7-fe88a47d43c9" isCustomImage="false">
             <name language_code="fr" value="Ecoulement blanchâtre, rougeâtre et jaune" source="DM"/>
             <name language_code="es" value="Fluido Rojizo o Amarillento" source="DM"/>
             <name language_code="en" value="Whitish, Reddish, Yellow Discharge" source="DM"/>
-            <name language_code="km" value="ហូរឈាម របួស និង ជាំឈាម" source="DM"/>
             <name language_code="lo" value="ມີທາດແຫຼວສີອອກແດງ/ເຫຼືອງ ໄຫຼອອກມາ" source="DM"/>
+            <name language_code="km" value="ហូរឈាម របួស និង ជាំឈាម" source="DM"/>
         </listItem>
         <listItem keyRef="other_whn" dmUuid="0c26bd4005eb4eacaf85ac17aa7aa7d1" isActive="true" id="5abd64f3-2d20-4db9-a51e-e280ac11dd99" isCustomImage="false">
             <name language_code="fr" value="Autres" source="DM"/>
             <name language_code="es" value="Otro" source="DM"/>
             <name language_code="en" value="Other" source="DM"/>
-            <name language_code="lo" value="ອື່ນໆ" source="DM"/>
             <name language_code="km" value="ផ្សេងៗ" source="DM"/>
+            <name language_code="lo" value="ອື່ນໆ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="e1195a80-8b18-40bd-91f2-f58c5e115205" attributeKey="conditiondeadanimals_whn" displayMode="TEXT" isDefault="true" attributeUuid="a94fb52afcc743c6a1369b67dfee6357">
         <name language_code="en" value="Condition Dead Animals" source="CM"/>
         <listItem keyRef="freshcarcasses_whn" dmUuid="646aa68aff424116859cfb4d7f4c902c" isActive="true" id="f39afe2f-bfdd-4342-9100-5df11b08b834" isCustomImage="false">
             <name language_code="fr" value="Carcasses fraîches" source="DM"/>
-            <name language_code="es" value="Cadaveres Frescos" source="DM"/>
-            <name language_code="en" value="Fresh Carcasses" source="DM"/>
+            <name language_code="es" value="Cadáver Fresco" source="CM"/>
+            <name language_code="en" value="Fresh Carcass" source="CM"/>
             <name language_code="lo" value="ຊາກສັດຕາຍໃໝ່" source="DM"/>
             <name language_code="km" value="នៅស្រស់" source="DM"/>
         </listItem>
@@ -1030,6 +1037,13 @@
             <name language_code="lo" value="ເລີ່ມໄຄ່ບວມ" source="DM"/>
             <name language_code="km" value="ចាប់ផ្ដើមរលួយ" source="DM"/>
         </listItem>
+        <listItem keyRef="leatheredskinandbones_whn" dmUuid="d91af0578e574bff8c8026fd612ccd12" isActive="true" id="05557c7a-d3a7-4df2-8825-a89bf424e3d6" isCustomImage="false">
+            <name language_code="fr" value="Peau et os" source="DM"/>
+            <name language_code="es" value="Piel Seca y Huesos" source="DM"/>
+            <name language_code="en" value="Leathered Skin and Bones" source="DM"/>
+            <name language_code="lo" value="ເຫຼືອແຕ່ໜັງແຫ້ງ ແລະ ກະດູກ" source="DM"/>
+            <name language_code="km" value="ស្បែក និង ឆ្អឹង" source="DM"/>
+        </listItem>
         <listItem keyRef="advanceddecomposition_whn" dmUuid="12fa59d697be4e45abb89a1c9883735e" isActive="true" id="ee96aa55-5537-4286-ad40-d17ff14cc804" isCustomImage="false">
             <name language_code="fr" value="Décomposition avancée" source="DM"/>
             <name language_code="es" value="Descomposicion Avanzada" source="DM"/>
@@ -1037,19 +1051,12 @@
             <name language_code="km" value="រលួយខ្លាំង" source="DM"/>
             <name language_code="lo" value="ເນົ່າເປື່ອຍ" source="DM"/>
         </listItem>
-        <listItem keyRef="smoked_whn" dmUuid="936e55e6b23741a6a9bc144008b846a2" isActive="true" id="845f1ea0-9a4b-4fbf-85c6-d943c8d69763" isCustomImage="false">
+        <listItem keyRef="smoked_whn" dmUuid="936e55e6b23741a6a9bc144008b846a2" isActive="false" id="845f1ea0-9a4b-4fbf-85c6-d943c8d69763" isCustomImage="false">
             <name language_code="fr" value="Fumée" source="DM"/>
             <name language_code="es" value="Ahumado" source="DM"/>
             <name language_code="en" value="Smoked" source="DM"/>
             <name language_code="lo" value="ສັດສູບຢາ" source="DM"/>
             <name language_code="km" value="ក្រៀម" source="DM"/>
-        </listItem>
-        <listItem keyRef="leatheredskinandbones_whn" dmUuid="d91af0578e574bff8c8026fd612ccd12" isActive="true" id="05557c7a-d3a7-4df2-8825-a89bf424e3d6" isCustomImage="false">
-            <name language_code="fr" value="Peau et os" source="DM"/>
-            <name language_code="es" value="Piel Seca y Huesos" source="DM"/>
-            <name language_code="en" value="Leathered Skin and Bones" source="DM"/>
-            <name language_code="km" value="ស្បែក និង ឆ្អឹង" source="DM"/>
-            <name language_code="lo" value="ເຫຼືອແຕ່ໜັງແຫ້ງ ແລະ ກະດູກ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="7966e0aa-6bf0-47a1-9d00-7029da227e29" attributeKey="anomaliesinsickorinjuredanimals_whn" displayMode="TEXT" isDefault="true" attributeUuid="ea3533ff28294e39972c6d7f6f6d14a5">
@@ -1058,8 +1065,8 @@
             <name language_code="fr" value="Aucune anomalie évidente" source="DM"/>
             <name language_code="es" value="Sin Problemas Obvios" source="DM"/>
             <name language_code="en" value="No Obvious Anomalies" source="DM"/>
-            <name language_code="lo" value="ບໍ່ເຫັນຄວາມຜິດປົກກະຕິທີ່ສະແດງອອກຊັດເຈນ" source="DM"/>
             <name language_code="km" value="គ្មានសភាពមិនប្រក្រតី" source="DM"/>
+            <name language_code="lo" value="ບໍ່ເຫັນຄວາມຜິດປົກກະຕິທີ່ສະແດງອອກຊັດເຈນ" source="DM"/>
         </listItem>
         <listItem keyRef="abnormalgascontent_whn" dmUuid="1d4f307cfd7f4996ababe3963c61fa3b" isActive="true" id="4844b728-1db1-4c9e-8ca0-fd3b144bb426" isCustomImage="false">
             <name language_code="fr" value="Teneur anormale en gaz" source="DM"/>
@@ -1072,29 +1079,29 @@
             <name language_code="fr" value="Comportement anormal" source="DM"/>
             <name language_code="es" value="Comportamiento Anormal" source="DM"/>
             <name language_code="en" value="Abnormal Behavior" source="DM"/>
-            <name language_code="km" value="អាកប្បកិរិយាខុសប្រក្រតី" source="DM"/>
             <name language_code="lo" value="ມີພຶດຕິກໍາຜິດປົກກະຕິ" source="DM"/>
+            <name language_code="km" value="អាកប្បកិរិយាខុសប្រក្រតី" source="DM"/>
         </listItem>
         <listItem keyRef="badsmell_whn" dmUuid="09a214bb91bd4af1bdf045829cf3db53" isActive="true" id="ec2fe383-54fa-45ad-960c-76d05a268752" isCustomImage="false">
             <name language_code="fr" value="Mauvaise odeur" source="DM"/>
             <name language_code="es" value="Mal Olor" source="DM"/>
             <name language_code="en" value="Bad Smell" source="DM"/>
-            <name language_code="lo" value="ມີກິ່ນເໝັນ" source="DM"/>
             <name language_code="km" value="ក្លិនអាក្រក់" source="DM"/>
+            <name language_code="lo" value="ມີກິ່ນເໝັນ" source="DM"/>
         </listItem>
         <listItem keyRef="bleedingwoundbruises_whn" dmUuid="619671031bd845db8ae65b287bc92439" isActive="true" id="4a3a8547-7314-403e-9791-b7928f7dcc6c" isCustomImage="false">
             <name language_code="fr" value="Saignement, plaie, contusions" source="DM"/>
             <name language_code="es" value="Sangramiento, Heridas, Moretones" source="DM"/>
             <name language_code="en" value="Bleeding, Wound, Bruises" source="DM"/>
-            <name language_code="km" value="ហូរឈាម របួស និង ជាំឈាម" source="DM"/>
             <name language_code="lo" value="ເລືອດໄຫຼ, ບາດແຜ, ຮອຍຊໍ້າ" source="DM"/>
+            <name language_code="km" value="ហូរឈាម របួស និង ជាំឈាម" source="DM"/>
         </listItem>
         <listItem keyRef="bodypartmissing_whn" dmUuid="f60255bc0b5e44cb9d273cf98ab6a588" isActive="true" id="fb3586e1-0d8b-4541-9b5f-23cadea9aa1f" isCustomImage="false">
             <name language_code="fr" value="Partie du corps manquante" source="DM"/>
             <name language_code="es" value="Perdida de Parte del Cuerpo" source="DM"/>
             <name language_code="en" value="Body Part Missing" source="DM"/>
-            <name language_code="lo" value="ບໍ່ເຫັນພາກສ່ວນຂອງຮ່າງກາຍ" source="DM"/>
             <name language_code="km" value="បាត់ផ្នែកខ្លះនៃរាងកាយ" source="DM"/>
+            <name language_code="lo" value="ບໍ່ເຫັນພາກສ່ວນຂອງຮ່າງກາຍ" source="DM"/>
         </listItem>
         <listItem keyRef="diarrheaorvomiting_whn" dmUuid="315aaffe14b94a3cba17ee2d67c9c507" isActive="true" id="239d416b-ffef-4fd1-b283-d52c0670ef6f" isCustomImage="false">
             <name language_code="fr" value="Diarhee ou vomissement" source="DM"/>
@@ -1107,8 +1114,8 @@
             <name language_code="fr" value="Respiration difficile, toux" source="DM"/>
             <name language_code="es" value="Respiracion Dificultosa Tos" source="DM"/>
             <name language_code="en" value="Difficult Breathing Coughing" source="DM"/>
-            <name language_code="km" value="ពិបាកដកដង្ហើម ក្អក" source="DM"/>
             <name language_code="lo" value="ຫາຍໃຈຍາກ ຫຼື ໄອ" source="DM"/>
+            <name language_code="km" value="ពិបាកដកដង្ហើម ក្អក" source="DM"/>
         </listItem>
         <listItem keyRef="fracturedeformationinflamationprolapse_whn" dmUuid="1973ec52e0ce4bbfba41a88d835f4327" isActive="true" id="fcce6709-a018-437d-9887-fdcd560cf34b" isCustomImage="false">
             <name language_code="fr" value="Fracture, déformation, inflammation, prolapsus" source="DM"/>
@@ -1135,8 +1142,8 @@
             <name language_code="fr" value="Problème bebout marcher voler" source="DM"/>
             <name language_code="es" value="Problema para Pararse, Caminar, o Volar" source="DM"/>
             <name language_code="en" value="Problem Standing Walking Flying" source="DM"/>
-            <name language_code="km" value="បញ្ហាក្នុងការឈរ ដើរ ហើរ" source="DM"/>
             <name language_code="lo" value="ມີບັນຫາໃນການ ຢືນ, ຍ່າງ, ບິນ" source="DM"/>
+            <name language_code="km" value="បញ្ហាក្នុងការឈរ ដើរ ហើរ" source="DM"/>
         </listItem>
         <listItem keyRef="skinabnormality_whn" dmUuid="1d2be9cd13da410eba845ac236f881eb" isActive="true" id="153db0f0-ad13-4157-a217-7308c7e97500" isCustomImage="false">
             <name language_code="fr" value="Peau anormale" source="DM"/>
@@ -1149,15 +1156,15 @@
             <name language_code="fr" value="Mince ou maigre" source="DM"/>
             <name language_code="es" value="Muy Delgado o Desnutrido" source="DM"/>
             <name language_code="en" value="Thin or Skinny" source="DM"/>
-            <name language_code="km" value="ស្គម ឬ ស្បែកដណ្ដប់ឆ្អឹង" source="DM"/>
             <name language_code="lo" value="ຈ່ອຍຜອມ" source="DM"/>
+            <name language_code="km" value="ស្គម ឬ ស្បែកដណ្ដប់ឆ្អឹង" source="DM"/>
         </listItem>
         <listItem keyRef="reddishyellowdischarge_whn" dmUuid="1608bd3d3892433ab198c675c0a0ea36" isActive="true" id="086ac3c2-a990-44ef-9909-77d2fbf1e932" isCustomImage="false">
             <name language_code="fr" value="Ecoulement blanchâtre, rougeâtre et jaune" source="DM"/>
             <name language_code="es" value="Fluido Rojizo o Amarillento" source="DM"/>
             <name language_code="en" value="Withish, Reddish, Yellow Discharge" source="DM"/>
-            <name language_code="km" value="ហៀរវត្ថុធាតុរាវចេញតាមគ្រាប់រន្ធ" source="DM"/>
             <name language_code="lo" value="ມີທາດແຫຼວສີອອກແດງ/ເຫຼືອງ ໄຫຼອອກມາ" source="DM"/>
+            <name language_code="km" value="ហៀរវត្ថុធាតុរាវចេញតាមគ្រាប់រន្ធ" source="DM"/>
         </listItem>
         <listItem keyRef="other_whn" dmUuid="4a1eee69dffb494695252bc654566d1c" isActive="true" id="fd00b007-adc1-4e20-b731-36e69d7d0120" isCustomImage="false">
             <name language_code="fr" value="Autres" source="DM"/>
@@ -1180,15 +1187,15 @@
             <name language_code="fr" value="Comportement anormal" source="DM"/>
             <name language_code="es" value="Comportamiento Anormal" source="DM"/>
             <name language_code="en" value="Abnormal Behavior" source="DM"/>
-            <name language_code="lo" value="ມີພຶດຕິກໍາຜິດປົກກະຕິ" source="DM"/>
             <name language_code="km" value="អាកប្បកិរិយាខុសប្រក្រតី" source="DM"/>
+            <name language_code="lo" value="ມີພຶດຕິກໍາຜິດປົກກະຕິ" source="DM"/>
         </listItem>
         <listItem keyRef="abnormalgascontent_whn" dmUuid="ee7f9a661ccb4633ad44a994998f4ad6" isActive="true" id="52bd4e0c-fedd-44c1-9a02-fe1ccec77c53" isCustomImage="false">
             <name language_code="fr" value="Teneur anormale en gaz" source="DM"/>
             <name language_code="es" value="Acumulacion Anormal de Gas" source="DM"/>
             <name language_code="en" value="Abnormal Gas Content" source="DM"/>
-            <name language_code="lo" value="ມີແກັສໃນທ້ອງ" source="DM"/>
             <name language_code="km" value="ពោះប៉ោងធំខុសប្រក្រតី" source="DM"/>
+            <name language_code="lo" value="ມີແກັສໃນທ້ອງ" source="DM"/>
         </listItem>
         <listItem keyRef="badsmell_whn" dmUuid="77380f42d0294ad990434c8f855c215c" isActive="true" id="20ebcbcf-3eb3-4e8d-9bc3-0e9d0396c207" isCustomImage="false">
             <name language_code="fr" value="Mauvaise odeur" source="DM"/>
@@ -1201,15 +1208,15 @@
             <name language_code="fr" value="Saignement, plaie, contusions" source="DM"/>
             <name language_code="es" value="Sangramiento, Heridas, Moretones" source="DM"/>
             <name language_code="en" value="Bleeding, Wound, Bruises" source="DM"/>
-            <name language_code="km" value="ហូរឈាម របួស និង ជាំឈាម" source="DM"/>
             <name language_code="lo" value="ເລືອດໄຫຼ, ບາດແຜ, ຮອຍຊໍ້າ" source="DM"/>
+            <name language_code="km" value="ហូរឈាម របួស និង ជាំឈាម" source="DM"/>
         </listItem>
         <listItem keyRef="bodypartmissing_whn" dmUuid="8a05413aafef46ea9ce5b3d30464a44a" isActive="true" id="1e066e67-8638-42a6-a22f-1f51870f2c15" isCustomImage="false">
             <name language_code="fr" value="Partie du corps manquante" source="DM"/>
             <name language_code="es" value="Perdida de Parte del Cuerpo" source="DM"/>
             <name language_code="en" value="Body Part Missing" source="DM"/>
-            <name language_code="lo" value="ບໍ່ເຫັນພາກສ່ວນຂອງຮ່າງກາຍ" source="DM"/>
             <name language_code="km" value="បាត់ផ្នែកខ្លះនៃរាងកាយ" source="DM"/>
+            <name language_code="lo" value="ບໍ່ເຫັນພາກສ່ວນຂອງຮ່າງກາຍ" source="DM"/>
         </listItem>
         <listItem keyRef="diarrheaorvomiting_whn" dmUuid="09137680c8cd477d931e4afe9a9e9906" isActive="true" id="302dc80f-ddb8-48eb-9be1-fb14c84bf3d8" isCustomImage="false">
             <name language_code="fr" value="Diarhee ou vomissement" source="DM"/>
@@ -1222,15 +1229,15 @@
             <name language_code="fr" value="Respiration difficile, toux" source="DM"/>
             <name language_code="es" value="Respiracion Dificultosa Tos" source="DM"/>
             <name language_code="en" value="Difficult Breathing Coughing" source="DM"/>
-            <name language_code="km" value="ពិបាកដកដង្ហើម ក្អក" source="DM"/>
             <name language_code="lo" value="ຫາຍໃຈຍາກ ຫຼື ໄອ" source="DM"/>
+            <name language_code="km" value="ពិបាកដកដង្ហើម ក្អក" source="DM"/>
         </listItem>
         <listItem keyRef="fracturedeformationinflamationprolapse_whn" dmUuid="e57a54f2c2b94002818a5bd291f312b8" isActive="true" id="adf6adaf-da16-46a8-8a6c-06c364311df9" isCustomImage="false">
             <name language_code="fr" value="Fracture, déformation, inflammation, prolapsus" source="DM"/>
             <name language_code="es" value="Fractura, Deformacion, Inflamacion, Prolapso" source="DM"/>
             <name language_code="en" value="Fracture, Deformation, Inflamation, Prolapse" source="DM"/>
-            <name language_code="km" value="បាក់ឆ្អឹង ខួចទ្រង់ទ្រាយ រលាក ហើម" source="DM"/>
             <name language_code="lo" value="ກະດູກຫັກ, ພິການ, ໄຄ່, ມີອະໄວຍະວະເພດຢ່ອນອອກມາ" source="DM"/>
+            <name language_code="km" value="បាក់ឆ្អឹង ខួចទ្រង់ទ្រាយ រលាក ហើម" source="DM"/>
         </listItem>
         <listItem keyRef="lossofhairandfeathers_whn" dmUuid="cf162d1f1c6e4950930e06639e93c890" isActive="true" id="bed964c9-7a41-4f35-b1a7-cc5f84443458" isCustomImage="false">
             <name language_code="fr" value="Perte de poils ou plumes" source="DM"/>
@@ -1250,22 +1257,22 @@
             <name language_code="fr" value="Problème Debout Marcher Voler" source="DM"/>
             <name language_code="es" value="Problema para Pararse, Caminar, o Volar" source="DM"/>
             <name language_code="en" value="Problem Standing Walking Flying" source="DM"/>
-            <name language_code="km" value="មានបញ្ហាក្នុងការឈរ ដើរ និង ហើរ" source="DM"/>
             <name language_code="lo" value="ມີບັນຫາໃນການ ຢືນ, ຍ່າງ, ບິນ" source="DM"/>
+            <name language_code="km" value="មានបញ្ហាក្នុងការឈរ ដើរ និង ហើរ" source="DM"/>
         </listItem>
         <listItem keyRef="skinabnormality_whn" dmUuid="0a1076c7a6024444909c9377bf7211a4" isActive="true" id="3c61992e-2a99-4bad-9509-ed3e567c8eda" isCustomImage="false">
             <name language_code="fr" value="Peau anormale" source="DM"/>
             <name language_code="es" value="Piel Anormal" source="DM"/>
             <name language_code="en" value="Skin Abnormality" source="DM"/>
-            <name language_code="lo" value="ຜິວໜັງຜິດປົກກະຕິ" source="DM"/>
             <name language_code="km" value="សភាពមិនប្រក្រតីនៃស្បែក" source="DM"/>
+            <name language_code="lo" value="ຜິວໜັງຜິດປົກກະຕິ" source="DM"/>
         </listItem>
         <listItem keyRef="thinorskinny_whn" dmUuid="23df3c7996fd4815b7357910f35b10ae" isActive="true" id="baa6cc21-1545-4a06-9a7f-d8e6fe0bad63" isCustomImage="false">
             <name language_code="fr" value="Mince ou maigre" source="DM"/>
             <name language_code="es" value="Muy Delgado o Desnutrido" source="DM"/>
             <name language_code="en" value="Thin or Skinny" source="DM"/>
-            <name language_code="lo" value="ຈ່ອຍຜອມ" source="DM"/>
             <name language_code="km" value="ស្គម ឬ ស្បែកដណ្ដប់ឆ្អឹង" source="DM"/>
+            <name language_code="lo" value="ຈ່ອຍຜອມ" source="DM"/>
         </listItem>
         <listItem keyRef="reddishyellowdischarge_whn" dmUuid="9ff7e1f9380f41aba9630205a6ee9bbd" isActive="true" id="ac9f7cf8-1e76-457a-ac0c-fd48422f846f" isCustomImage="false">
             <name language_code="fr" value="Ecoulement blanchâtre, rougeâtre et jaune" source="DM"/>
@@ -1302,22 +1309,22 @@
             <name language_code="fr" value="Noyé" source="DM"/>
             <name language_code="es" value="Ahogado" source="DM"/>
             <name language_code="en" value="Drowned" source="DM"/>
-            <name language_code="km" value="លង់ទឹក" source="DM"/>
             <name language_code="lo" value="ຈົມນໍ້າຕາຍ" source="DM"/>
+            <name language_code="km" value="លង់ទឹក" source="DM"/>
         </listItem>
         <listItem keyRef="electrocution_whn" dmUuid="0c14ef94dafd4f4a9d0bf0e995cd3804" isActive="true" id="e250bc4c-95cb-4128-9b40-2b43c2e4fd92" isCustomImage="false">
             <name language_code="fr" value="Electrocution" source="DM"/>
             <name language_code="es" value="Golpe Electrico" source="DM"/>
             <name language_code="en" value="Electrocution" source="DM"/>
-            <name language_code="lo" value="ໄຟຟ້າຊ໋ອດ" source="DM"/>
             <name language_code="km" value="ឧបករណ៍ឆក់" source="DM"/>
+            <name language_code="lo" value="ໄຟຟ້າຊ໋ອດ" source="DM"/>
         </listItem>
         <listItem keyRef="entagled_whn" dmUuid="478c0a2a655747d88c17aec11d2e3cb6" isActive="true" id="95f21239-b7fe-4e12-a0f7-3ed5db4aa0ee" isCustomImage="false">
             <name language_code="fr" value="Enchevêtreé" source="DM"/>
             <name language_code="es" value="Enredado" source="DM"/>
             <name language_code="en" value="Entagled" source="DM"/>
-            <name language_code="lo" value="ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ" source="DM"/>
             <name language_code="km" value="ជាប់វ័ណ្ត" source="DM"/>
+            <name language_code="lo" value="ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ" source="DM"/>
         </listItem>
         <listItem keyRef="fishinggear_whn" dmUuid="a561a59f707c4842a043cc8eb2c696bb" isActive="true" id="a3a61a63-d1a9-4154-a2be-e61bf3be9fb8" isCustomImage="false">
             <name language_code="fr" value="Equipement de pêche" source="DM"/>
@@ -1344,8 +1351,8 @@
             <name language_code="fr" value="Vieux" source="DM"/>
             <name language_code="es" value="Edad Avanzada" source="DM"/>
             <name language_code="en" value="Old Age" source="DM"/>
-            <name language_code="lo" value="ອາຍຸແກ່" source="DM"/>
             <name language_code="km" value="ចាស់" source="DM"/>
+            <name language_code="lo" value="ອາຍຸແກ່" source="DM"/>
         </listItem>
         <listItem keyRef="othernoninfectiousdisease_whn" dmUuid="6a4cd90ddc5c4744afa8fa3d7b317003" isActive="true" id="bf006ed5-4976-4816-b1d8-591d3d214125" isCustomImage="false">
             <name language_code="fr" value="Autres maladies non infectieuses" source="DM"/>
@@ -1365,8 +1372,8 @@
             <name language_code="fr" value="Prédation" source="DM"/>
             <name language_code="es" value="Depredacion" source="DM"/>
             <name language_code="en" value="Predation" source="DM"/>
-            <name language_code="lo" value="ການລ່າເຫຍື່ອ" source="DM"/>
             <name language_code="km" value="រងការប្រមាញ់" source="DM"/>
+            <name language_code="lo" value="ການລ່າເຫຍື່ອ" source="DM"/>
         </listItem>
         <listItem keyRef="stranded_whn" dmUuid="873f722011bc427a828443b26643f7d2" isActive="true" id="d91484b8-e325-4ce6-b1b2-5ea1612700f0" isCustomImage="false">
             <name language_code="fr" value="Échoué" source="DM"/>
@@ -1400,15 +1407,15 @@
             <name language_code="fr" value="Traumatisme ou collision" source="DM"/>
             <name language_code="es" value="Trauma o Colision" source="DM"/>
             <name language_code="en" value="Trauma or Collision" source="DM"/>
-            <name language_code="km" value="ការប៉ះទង្គិច" source="DM"/>
             <name language_code="lo" value="ບາດແຜ ຫຼື ການຕໍ່ສູ້ກັນ" source="DM"/>
+            <name language_code="km" value="ការប៉ះទង្គិច" source="DM"/>
         </listItem>
         <listItem keyRef="vehicleaccident_whn" dmUuid="e222064697c34aa684d1cba7bfd3195b" isActive="true" id="6fba2212-571d-4f34-98b7-6787e015eb6e" isCustomImage="false">
             <name language_code="fr" value="Accident de véhicule" source="DM"/>
             <name language_code="es" value="Accidente Vehicular" source="DM"/>
             <name language_code="en" value="Vehicle Accident" source="DM"/>
-            <name language_code="km" value="គ្រោះថ្នាក់រថយន្ត" source="DM"/>
             <name language_code="lo" value="ອຸບັດຕິເຫດລົດຕໍາ" source="DM"/>
+            <name language_code="km" value="គ្រោះថ្នាក់រថយន្ត" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="f622ce2b-e2be-4118-8df0-418571bcecc5" attributeKey="potentialcausedeath_whn" displayMode="TEXT" isDefault="true" attributeUuid="721e55304cce4913bd0abc44b8a5b88b">
@@ -1417,22 +1424,22 @@
             <name language_code="fr" value="Inconnu" source="DM"/>
             <name language_code="es" value="Desconocido" source="DM"/>
             <name language_code="en" value="Unknown" source="DM"/>
-            <name language_code="km" value="មិនដឹង" source="DM"/>
             <name language_code="lo" value="ບໍ່ຮູ້" source="DM"/>
+            <name language_code="km" value="មិនដឹង" source="DM"/>
         </listItem>
         <listItem keyRef="drowned_whn" dmUuid="8d5fa1c90edb4273878a2eb344b8b11f" isActive="true" id="b95a7e1a-e92f-47cb-97ff-d032105f3655" isCustomImage="false">
             <name language_code="fr" value="Noyé" source="DM"/>
             <name language_code="es" value="Ahogado" source="DM"/>
             <name language_code="en" value="Drowned" source="DM"/>
-            <name language_code="lo" value="ຈົມນໍ້າຕາຍ" source="DM"/>
             <name language_code="km" value="លង់ទឹក" source="DM"/>
+            <name language_code="lo" value="ຈົມນໍ້າຕາຍ" source="DM"/>
         </listItem>
         <listItem keyRef="dehydration_whn" dmUuid="70117764beb046a9871950fb2487a7ec" isActive="true" id="1e778c02-14dc-4ba6-9eef-9c958d295046" isCustomImage="false">
             <name language_code="fr" value="Déshydratation" source="DM"/>
             <name language_code="es" value="Deshidratacion" source="DM"/>
             <name language_code="en" value="Dehydration" source="DM"/>
-            <name language_code="km" value="ប្រភេទសត្វ" source="DM"/>
             <name language_code="lo" value="ການຂາດນໍ້າໃນຮ່າງກາຍ" source="DM"/>
+            <name language_code="km" value="ប្រភេទសត្វ" source="DM"/>
         </listItem>
         <listItem keyRef="electrocution_whn" dmUuid="57db2f4e4dc94710af823c857817802a" isActive="true" id="8f246344-4310-4867-82a9-1cf930ad4314" isCustomImage="false">
             <name language_code="fr" value="Electrocution" source="DM"/>
@@ -1445,8 +1452,8 @@
             <name language_code="fr" value="Enchevêtré" source="DM"/>
             <name language_code="es" value="Enmallado/Enredado" source="DM"/>
             <name language_code="en" value="Entangled" source="DM"/>
-            <name language_code="lo" value="ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ" source="DM"/>
             <name language_code="km" value="ជាប់វ័ណ្ត" source="DM"/>
+            <name language_code="lo" value="ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ" source="DM"/>
         </listItem>
         <listItem keyRef="fishinggear_whn" dmUuid="10a0b19e540f443884d3eeddb4f824f5" isActive="true" id="e458c4ef-9858-4114-a856-359a592e93a3" isCustomImage="false">
             <name language_code="fr" value="Equipement de pêche" source="DM"/>
@@ -1466,22 +1473,22 @@
             <name language_code="fr" value="Maladie infectieuse" source="DM"/>
             <name language_code="es" value="Enfermedad Infecciosa" source="DM"/>
             <name language_code="en" value="Infectious Disease" source="DM"/>
-            <name language_code="km" value="ជំងឺឆ្លង" source="DM"/>
             <name language_code="lo" value="ພະຍາດຕິດຕໍ່" source="DM"/>
+            <name language_code="km" value="ជំងឺឆ្លង" source="DM"/>
         </listItem>
         <listItem keyRef="oldage_whn" dmUuid="7051abe734a1422391ed34dd475fb39c" isActive="true" id="1581c573-caa5-4455-bda2-bacd5370c531" isCustomImage="false">
             <name language_code="fr" value="Vieux" source="DM"/>
             <name language_code="es" value="Edad Avanzada" source="DM"/>
             <name language_code="en" value="Old Age" source="DM"/>
-            <name language_code="km" value="ចាស់" source="DM"/>
             <name language_code="lo" value="ອາຍຸແກ່" source="DM"/>
+            <name language_code="km" value="ចាស់" source="DM"/>
         </listItem>
         <listItem keyRef="othernoninfectiousdisease_whn" dmUuid="1f4d13d0eb4341979ccb05880fbca88d" isActive="true" id="5216f61e-d002-406a-a786-a05c7cf65cce" isCustomImage="false">
             <name language_code="fr" value="Autres maladies non infectieuses" source="DM"/>
             <name language_code="es" value="Otra Enfermedad No Infecciosa" source="DM"/>
             <name language_code="en" value="Other Non-infectious Disease" source="DM"/>
-            <name language_code="km" value="ឈឺផ្សេងទៀត ដែលមិនមែនជំងឺឆ្លង" source="DM"/>
             <name language_code="lo" value="ພະຍາດບໍ່ຕິດຕໍ່ອື່ນໆ" source="DM"/>
+            <name language_code="km" value="ឈឺផ្សេងទៀត ដែលមិនមែនជំងឺឆ្លង" source="DM"/>
         </listItem>
         <listItem keyRef="poisonortoxin_whn" dmUuid="dbebe329cc8a48109ea89076c0fbbc7f" isActive="true" id="98b29862-0028-438d-8d90-1119696e66fd" isCustomImage="false">
             <name language_code="fr" value="Empoisonnement ou toxine" source="DM"/>
@@ -1494,15 +1501,15 @@
             <name language_code="fr" value="Prédation" source="DM"/>
             <name language_code="es" value="Depredacion" source="DM"/>
             <name language_code="en" value="Predation" source="DM"/>
-            <name language_code="lo" value="ການລ່າເຫຍື່ອ" source="DM"/>
             <name language_code="km" value="រងការប្រមាញ់" source="DM"/>
+            <name language_code="lo" value="ການລ່າເຫຍື່ອ" source="DM"/>
         </listItem>
         <listItem keyRef="starvation_whn" dmUuid="29264e834dc74a01bc6bd34969751c39" isActive="true" id="05ffe25d-89e5-4700-ba62-ee393e47f35b" isCustomImage="false">
             <name language_code="fr" value="Famine" source="DM"/>
             <name language_code="es" value="Desnutricion" source="DM"/>
             <name language_code="en" value="Starvation" source="DM"/>
-            <name language_code="lo" value="ຄວາມອຶດຫິວ" source="DM"/>
             <name language_code="km" value="ស្លាប់ដោយការអត់ឃ្លាន" source="DM"/>
+            <name language_code="lo" value="ຄວາມອຶດຫິວ" source="DM"/>
         </listItem>
         <listItem keyRef="stranded_whn" dmUuid="02e938b9079a49aba1043f99b757d572" isActive="true" id="8668c360-0534-4508-b5f6-34cb98f927ed" isCustomImage="false">
             <name language_code="fr" value="Échoué" source="DM"/>
@@ -1529,15 +1536,15 @@
             <name language_code="fr" value="Traumatisme ou collision" source="DM"/>
             <name language_code="es" value="Trauma o Colision" source="DM"/>
             <name language_code="en" value="Trauma or Collision" source="DM"/>
-            <name language_code="lo" value="ບາດແຜ ຫຼື ການຕໍ່ສູ້ກັນ" source="DM"/>
             <name language_code="km" value="ការប៉ះទង្គិច" source="DM"/>
+            <name language_code="lo" value="ບາດແຜ ຫຼື ການຕໍ່ສູ້ກັນ" source="DM"/>
         </listItem>
         <listItem keyRef="vehicleaccident_whn" dmUuid="286c8bb07e5e462dbf32a21c3e9f265a" isActive="true" id="4446747a-9b7d-406f-860a-5be881e518d5" isCustomImage="false">
             <name language_code="fr" value="Accident de véhicule" source="DM"/>
             <name language_code="es" value="Accidente Vehicular" source="DM"/>
             <name language_code="en" value="Vehicle Accident" source="DM"/>
-            <name language_code="km" value="គ្រោះថ្នាក់ចរាចរណ៍" source="DM"/>
             <name language_code="lo" value="ອຸບັດຕິເຫດລົດຕໍາ" source="DM"/>
+            <name language_code="km" value="គ្រោះថ្នាក់ចរាចរណ៍" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="0a34565a-e305-40ab-93c8-a4f3ce5176c3" attributeKey="potentialcauseofdeathdiseaseorinjury_whn" displayMode="TEXT" isDefault="true" attributeUuid="698955ddc2b04cbc9b378af41ce8ef78">
@@ -1546,15 +1553,15 @@
             <name language_code="fr" value="Inconnu" source="DM"/>
             <name language_code="es" value="Desconocido" source="DM"/>
             <name language_code="en" value="Unknown" source="DM"/>
-            <name language_code="km" value="មិនដឹង" source="DM"/>
             <name language_code="lo" value="ບໍ່ຮູ້" source="DM"/>
+            <name language_code="km" value="មិនដឹង" source="DM"/>
         </listItem>
         <listItem keyRef="drowned_whn" dmUuid="bd0a6b75586e48a58ea510d7a825a8b9" isActive="true" id="88b0c092-cd04-4bd0-9f3c-819174581a05" isCustomImage="false">
             <name language_code="fr" value="Noy�" source="DM"/>
             <name language_code="es" value="Ahogado" source="DM"/>
             <name language_code="en" value="Drowned" source="DM"/>
-            <name language_code="km" value="លង់ទឹក" source="DM"/>
             <name language_code="lo" value="ຈົມນໍ້າຕາຍ" source="DM"/>
+            <name language_code="km" value="លង់ទឹក" source="DM"/>
         </listItem>
         <listItem keyRef="electrocution_whn" dmUuid="f7c2b28b5fcc403ab0c6320a3269e498" isActive="true" id="d7d0e55a-283f-4868-9cab-8a5405bcaa7e" isCustomImage="false">
             <name language_code="fr" value="Electrocution" source="DM"/>
@@ -1574,15 +1581,15 @@
             <name language_code="fr" value="Equipement de p�che" source="DM"/>
             <name language_code="es" value="Equipo de Pesca" source="DM"/>
             <name language_code="en" value="Fishing Gear" source="DM"/>
-            <name language_code="km" value="ឧបករណ៍នេសាទ" source="DM"/>
             <name language_code="lo" value="ອຸປະກອນຫາປາ" source="DM"/>
+            <name language_code="km" value="ឧបករណ៍នេសាទ" source="DM"/>
         </listItem>
         <listItem keyRef="infectiousdisease_whn" dmUuid="471579d552304e6f89d0e7bce4795821" isActive="true" id="aeaad7b3-891c-484c-86b5-4d397c40f10c" isCustomImage="false">
             <name language_code="fr" value="Maladie infectieuse" source="DM"/>
             <name language_code="es" value="Enfermedad Infecciosa" source="DM"/>
             <name language_code="en" value="Infectious Disease" source="DM"/>
-            <name language_code="km" value="ជំងឺឆ្លង" source="DM"/>
             <name language_code="lo" value="ພະຍາດຕິດຕໍ່" source="DM"/>
+            <name language_code="km" value="ជំងឺឆ្លង" source="DM"/>
         </listItem>
         <listItem keyRef="oldage_whn" dmUuid="9132e12a2eaf48b197d4d348a86363a6" isActive="true" id="4eda52f2-eb41-4aa3-921d-8d321fee6917" isCustomImage="false">
             <name language_code="fr" value="Vieux" source="DM"/>
@@ -1595,22 +1602,22 @@
             <name language_code="fr" value="Autres maladies non infectieuses" source="DM"/>
             <name language_code="es" value="Otra Enfermedad No Infecciosa" source="DM"/>
             <name language_code="en" value="Other Non-Infectious Disease" source="DM"/>
-            <name language_code="lo" value="ພະຍາດບໍ່ຕິດຕໍ່ອື່ນໆ" source="DM"/>
             <name language_code="km" value="ជំងឺមិនឆ្លងផ្សេងៗ" source="DM"/>
+            <name language_code="lo" value="ພະຍາດບໍ່ຕິດຕໍ່ອື່ນໆ" source="DM"/>
         </listItem>
         <listItem keyRef="traditionalweapon_whn" dmUuid="260efa463501414fbec344bcc16f2ad8" isActive="true" id="8ea6d90f-39ff-421c-b025-9488a07fb464" isCustomImage="false">
             <name language_code="fr" value="Arme traditionnelle" source="DM"/>
             <name language_code="es" value="Arma Tradicional" source="DM"/>
             <name language_code="en" value="Traditional weapon" source="DM"/>
-            <name language_code="km" value="ឧបករណ៍បរបាញ់បុរាណ" source="DM"/>
             <name language_code="lo" value="ປະເພນີການລ່າສັດ" source="DM"/>
+            <name language_code="km" value="ឧបករណ៍បរបាញ់បុរាណ" source="DM"/>
         </listItem>
         <listItem keyRef="poisonortoxin_whn" dmUuid="f5b18c6f91194dc7854288708da8d414" isActive="true" id="e6bad944-c295-48e5-9a16-7964a6a62e5f" isCustomImage="false">
             <name language_code="fr" value="Empoisonnement ou toxine" source="DM"/>
             <name language_code="es" value="Veneno o Toxina" source="DM"/>
             <name language_code="en" value="Poison or Toxin" source="DM"/>
-            <name language_code="lo" value="ທາດເບື່ອ ຫຼື ສານຜິດ" source="DM"/>
             <name language_code="km" value="ការបំពុល ឬ ជាតិពុល" source="DM"/>
+            <name language_code="lo" value="ທາດເບື່ອ ຫຼື ສານຜິດ" source="DM"/>
         </listItem>
         <listItem keyRef="predation_whn" dmUuid="f73ac08bcb7542d8b2656bf6179a22ba" isActive="true" id="d47920f9-7c74-4e98-81e6-c41d24493132" isCustomImage="false">
             <name language_code="fr" value="Pr�dation" source="DM"/>
@@ -1630,8 +1637,8 @@
             <name language_code="fr" value="Famine" source="DM"/>
             <name language_code="es" value="Desnutricion" source="DM"/>
             <name language_code="en" value="Starvation" source="DM"/>
-            <name language_code="lo" value="ສາຕະກະໄພ" source="DM"/>
             <name language_code="km" value="Starvation" source="DM"/>
+            <name language_code="lo" value="ສາຕະກະໄພ" source="DM"/>
         </listItem>
         <listItem keyRef="traporsnare_whn" dmUuid="f83250c1bd874f919550421073fe3b12" isActive="true" id="f930264d-6e39-4aa2-ac1f-6708e74938b5" isCustomImage="false">
             <name language_code="fr" value="Pi�ge" source="DM"/>
@@ -1644,8 +1651,8 @@
             <name language_code="fr" value="D�shydratation" source="DM"/>
             <name language_code="es" value="Deshidratacion" source="DM"/>
             <name language_code="en" value="Dehydration" source="DM"/>
-            <name language_code="lo" value="ການຂາດນໍ້າໃນຮ່າງກາຍ" source="DM"/>
             <name language_code="km" value="ការខ្សោះជាតិទឹក" source="DM"/>
+            <name language_code="lo" value="ການຂາດນໍ້າໃນຮ່າງກາຍ" source="DM"/>
         </listItem>
         <listItem keyRef="traumaorcollision_whn" dmUuid="bc984f4c558448dd8b826d37e2b9eb7a" isActive="true" id="e9d5e179-5541-4955-a4fd-1a127c8f0eec" isCustomImage="false">
             <name language_code="fr" value="Traumatisme ou collision" source="DM"/>
@@ -1665,8 +1672,8 @@
             <name language_code="fr" value="Accident de v�hicule" source="DM"/>
             <name language_code="es" value="Accidente Vehicular" source="DM"/>
             <name language_code="en" value="Vehicle Accident" source="DM"/>
-            <name language_code="lo" value="ອຸບັດຕິເຫດລົດຕໍາ" source="DM"/>
             <name language_code="km" value="គ្រោះថ្នាក់រថយន្ត" source="DM"/>
+            <name language_code="lo" value="ອຸບັດຕິເຫດລົດຕໍາ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="f9c4c445-00b5-4986-bcf4-a5b0e23f4451" attributeKey="carnivoreattack_whn" displayMode="TEXT" isDefault="true" attributeUuid="af3106982470498fba95ddb74a8ec017">
@@ -1682,8 +1689,8 @@
             <name language_code="fr" value="Chat" source="DM"/>
             <name language_code="es" value="Gato" source="DM"/>
             <name language_code="en" value="Cat" source="DM"/>
-            <name language_code="lo" value="ແມວ" source="DM"/>
             <name language_code="km" value="ឆ្មា" source="DM"/>
+            <name language_code="lo" value="ແມວ" source="DM"/>
         </listItem>
         <listItem keyRef="wildcarnivore_whn" dmUuid="7fb07807e250471b900011c22e7e52f7" isActive="true" id="3c9cbcdf-f7f5-4aff-8d81-b507f44a766a" isCustomImage="false">
             <name language_code="fr" value="Carnivore sauvage" source="DM"/>
@@ -1696,8 +1703,8 @@
             <name language_code="fr" value="Oui, mais carnivore inconnu" source="DM"/>
             <name language_code="es" value="Si Pero Carnivoro Desconocido" source="DM"/>
             <name language_code="en" value="Yes, But Unknown Carnivore" source="DM"/>
-            <name language_code="lo" value="ແມ່ນ, ແຕ່ບໍ່ຮູ້ແມ່ນສັດກິນຊີ້ນປະເພດໃດ" source="DM"/>
             <name language_code="km" value="បាទ/ចាស​ ប៉ុន្តែមិនស្គាល់សត្វដែលស៊ីសាច់ជាអាហារ" source="DM"/>
+            <name language_code="lo" value="ແມ່ນ, ແຕ່ບໍ່ຮູ້ແມ່ນສັດກິນຊີ້ນປະເພດໃດ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="73c95e3d-8dfe-4da4-9fa0-b5867bc5dea5" attributeKey="livestockdomesticspecies_whn" displayMode="TEXT" isDefault="true" attributeUuid="cac06864132f43828981af07298a2458">
@@ -1727,8 +1734,8 @@
             <name language_code="fr" value="Cheval" source="DM"/>
             <name language_code="es" value="Caballo" source="DM"/>
             <name language_code="en" value="Horse" source="DM"/>
-            <name language_code="lo" value="ມ້າ" source="DM"/>
             <name language_code="km" value="សេះ" source="DM"/>
+            <name language_code="lo" value="ມ້າ" source="DM"/>
         </listItem>
         <listItem keyRef="pig_whn" dmUuid="222448ff097742b9ba5a0a2ae2f68364" isActive="true" id="9c066627-6c0a-4ccd-a6d3-3e3262cc99dd" isCustomImage="false">
             <name language_code="fr" value="Cochon" source="DM"/>
@@ -1769,15 +1776,15 @@
             <name language_code="fr" value="Autres mammifères" source="DM"/>
             <name language_code="es" value="Otro Especie Domestica" source="DM"/>
             <name language_code="en" value="Other Mammal" source="DM"/>
-            <name language_code="km" value="ថនិកសត្វផ្សេងទៀត" source="DM"/>
             <name language_code="lo" value="ສັດລ້ຽງລູກດ້ວຍນໍ້ານົມຊະນິດອື່ນ" source="DM"/>
+            <name language_code="km" value="ថនិកសត្វផ្សេងទៀត" source="DM"/>
         </listItem>
         <listItem keyRef="otherfowlspecies_whn" dmUuid="09d93d2679b440e383a7414a61666780" isActive="true" id="acde033c-2c2c-4340-a572-a0e8f4be26ce" isCustomImage="false">
             <name language_code="fr" value="Autres espèces de volailles" source="DM"/>
             <name language_code="es" value="Otra Especie Ave" source="DM"/>
             <name language_code="en" value="Other Fowl Species" source="DM"/>
-            <name language_code="lo" value="ສັດປີກຊະນິດອື່ນ" source="DM"/>
             <name language_code="km" value="ប្រភេទសត្វស្លាបផ្សេងទៀត" source="DM"/>
+            <name language_code="lo" value="ສັດປີກຊະນິດອື່ນ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="42130e9d-dba6-466e-92da-a48143e7e919" attributeKey="species_whn" displayMode="TEXT" isDefault="false" attributeUuid="f90d0f2e40a346cb9838eb8ea2922cbf">
@@ -1796,22 +1803,22 @@
             <name language_code="fr" value="En liberté" source="DM"/>
             <name language_code="es" value="Vida Libre" source="DM"/>
             <name language_code="en" value="Free-ranging" source="DM"/>
-            <name language_code="lo" value="ຢູ່ຕາມທໍາມະຊາດ" source="DM"/>
             <name language_code="km" value="រស់នៅដោយសេរី" source="DM"/>
+            <name language_code="lo" value="ຢູ່ຕາມທໍາມະຊາດ" source="DM"/>
         </listItem>
         <listItem keyRef="huntedanddisplaced_whn" dmUuid="69306038a0054b2abea5ffbe1ed53d7a" isActive="true" id="744e35ae-e08e-4428-bcd7-90d5a6161439" isCustomImage="false">
             <name language_code="fr" value="Traqués et déplacés" source="DM"/>
             <name language_code="es" value="Cazado y Desplazado" source="DM"/>
             <name language_code="en" value="Hunted And Displaced" source="DM"/>
-            <name language_code="lo" value="ຖືກລ່າ ແລະ ຖືກເຄື່ອນຍ້າຍແລ້ວ" source="DM"/>
             <name language_code="km" value="ប្រមាញ់ និងសត្វនៅនឹងកន្លែង" source="DM"/>
+            <name language_code="lo" value="ຖືກລ່າ ແລະ ຖືກເຄື່ອນຍ້າຍແລ້ວ" source="DM"/>
         </listItem>
         <listItem keyRef="huntednotdisplaced_whn" dmUuid="f8531d85727c4b4aac91fe2bc0e28402" isActive="true" id="c1a2fe6f-0598-49ca-abe2-9ec0f9d6a03b" isCustomImage="false">
             <name language_code="fr" value="Chassé et non déplacé" source="DM"/>
             <name language_code="es" value="Cazado y No Desplazado" source="DM"/>
             <name language_code="en" value="Hunted and Not Displaced" source="DM"/>
-            <name language_code="km" value="ប្រមាញ់ និងសត្វមិននៅនឹងកន្លែង" source="DM"/>
             <name language_code="lo" value="ຖືກລ່າ ແລະ ຍັງບໍ່ທັນຖືກເຄື່ອນຍ້າຍ" source="DM"/>
+            <name language_code="km" value="ប្រមាញ់ និងសត្វមិននៅនឹងកន្លែង" source="DM"/>
         </listItem>
         <listItem keyRef="farm_whn" dmUuid="9ce06f71bae1436288461daa96f6ac7a" isActive="true" id="60d22007-5ec4-4f4a-8271-d30e4aaf20bf" isCustomImage="false">
             <name language_code="fr" value="Ferme" source="DM"/>
@@ -1824,29 +1831,29 @@
             <name language_code="fr" value="Ménage" source="DM"/>
             <name language_code="es" value="Habitacion Domiciliaria" source="DM"/>
             <name language_code="en" value="Household" source="DM"/>
-            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
             <name language_code="km" value="លក្ខណៈគ្រួសារ" source="DM"/>
+            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
         </listItem>
         <listItem keyRef="market_whn" dmUuid="8a23739fd6894b38a36943a97ef1006c" isActive="true" id="a42b4d9f-9a2d-4912-b7f3-61d0b94a532a" isCustomImage="false">
             <name language_code="fr" value="Marché" source="DM"/>
             <name language_code="es" value="Mercado" source="DM"/>
             <name language_code="en" value="Market" source="DM"/>
-            <name language_code="lo" value="ຕະຫຼາດ" source="DM"/>
             <name language_code="km" value="ផ្សារ" source="DM"/>
+            <name language_code="lo" value="ຕະຫຼາດ" source="DM"/>
         </listItem>
         <listItem keyRef="rescuerehabilitationcenter_whn" dmUuid="4e7793c5c1b74ae4b1807507cc3f9925" isActive="true" id="729a6bd9-ab92-4abd-aaaa-b7dbf6ab7df8" isCustomImage="false">
             <name language_code="fr" value="Centre de secours/réadaptation" source="DM"/>
             <name language_code="es" value="Centro de Rehabilitacion/Rescate" source="DM"/>
             <name language_code="en" value="Rescue/Rehabilitation Center" source="DM"/>
-            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
             <name language_code="lo" value="ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ" source="DM"/>
+            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
         </listItem>
         <listItem keyRef="researchorconservationcapture_whn" dmUuid="f55b3f3d005f4f0fb1a04898e71ffbdb" isActive="true" id="56c8e6d5-26ec-45e1-af1c-c2f413dc337d" isCustomImage="false">
             <name language_code="fr" value="Recherche ou capture pour conservation" source="DM"/>
             <name language_code="es" value="Investigacion o Captura de Conservacion" source="DM"/>
             <name language_code="en" value="Research or Conservation Capture" source="DM"/>
-            <name language_code="km" value="បានសត្វតាមរយៈការស្រាវជ្រាវ ឬ អភិរក្ស" source="DM"/>
             <name language_code="lo" value="ການຈັບສັດ ເພື່ອການຄົ້ນຄວ້າ ຫຼື ອະນຸລັກ" source="DM"/>
+            <name language_code="km" value="បានសត្វតាមរយៈការស្រាវជ្រាវ ឬ អភិរក្ស" source="DM"/>
         </listItem>
         <listItem keyRef="tradepost_whn" dmUuid="c674d2af95134db2ae3255b306864cde" isActive="true" id="ad63430d-734f-4380-bdd9-af7779e805a0" isCustomImage="false">
             <name language_code="fr" value="Poste commercial" source="DM"/>
@@ -1876,15 +1883,15 @@
             <name language_code="fr" value="Trouvé vivant en bonne santé" source="DM"/>
             <name language_code="es" value="Encontrado Vivo y Sano" source="DM"/>
             <name language_code="en" value="Found Live Healthy" source="DM"/>
-            <name language_code="lo" value="ພົບມີຊີວິດແຂງແຮງດີ" source="DM"/>
             <name language_code="km" value="ជួបសត្វរស់នៅសុខភាពល្អធម្មតា" source="DM"/>
+            <name language_code="lo" value="ພົບມີຊີວິດແຂງແຮງດີ" source="DM"/>
         </listItem>
         <listItem keyRef="foundlivesickorinjured_whn" dmUuid="08001c0ffba740548f4f3d136c44b1e2" isActive="true" id="7db76418-b82c-43dd-9163-3ea2ab651e31" isCustomImage="false">
             <name language_code="fr" value="Trouvé vivant, malade ou blessé" source="DM"/>
             <name language_code="es" value="Encontrado Vivo Enfermo o Herido" source="DM"/>
             <name language_code="en" value="Found Live Sick or Injured" source="DM"/>
-            <name language_code="lo" value="ພໍເຫັືມີຊີວິດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
             <name language_code="km" value="ជួបសត្វកំពុងឈឺ ឬរបួស" source="DM"/>
+            <name language_code="lo" value="ພໍເຫັືມີຊີວິດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="8c893e68-1241-4cf4-b978-cb6c86f5d535" attributeKey="ageofanimal_whn" displayMode="TEXT" isDefault="true" attributeUuid="907e987b4ee64167917826f5683c9dee">
@@ -1907,8 +1914,8 @@
             <name language_code="fr" value="Fœtus" source="DM"/>
             <name language_code="es" value="Feto" source="DM"/>
             <name language_code="en" value="Fetus" source="DM"/>
-            <name language_code="lo" value="ໂຕອ່ອນຢູ່ໃນທ້ອງ" source="DM"/>
             <name language_code="km" value="កូន (គត៌)" source="DM"/>
+            <name language_code="lo" value="ໂຕອ່ອນຢູ່ໃນທ້ອງ" source="DM"/>
         </listItem>
         <listItem keyRef="unknown_whn" dmUuid="3dab22244b4b40b59f101e236a93ab11" isActive="true" id="8d104015-af3d-4b9c-a108-b7afabee6e7c" isCustomImage="false">
             <name language_code="fr" value="Inconnu" source="DM"/>
@@ -1924,15 +1931,15 @@
             <name language_code="fr" value="Mâle" source="DM"/>
             <name language_code="es" value="Macho" source="DM"/>
             <name language_code="en" value="Male" source="DM"/>
-            <name language_code="km" value="សត្វឈ្មោល" source="DM"/>
             <name language_code="lo" value="ໂຕຜູ້" source="DM"/>
+            <name language_code="km" value="សត្វឈ្មោល" source="DM"/>
         </listItem>
         <listItem keyRef="female_whn" dmUuid="f0a144fe71ae49b890f66eb21b73d6c6" isActive="true" id="a7671bf5-f733-4c15-9fdc-8de4824867ec" isCustomImage="false">
             <name language_code="fr" value="Femelle" source="DM"/>
             <name language_code="es" value="Hembra" source="DM"/>
             <name language_code="en" value="Female" source="DM"/>
-            <name language_code="km" value="សត្វញី" source="DM"/>
             <name language_code="lo" value="ໂຕແມ່" source="DM"/>
+            <name language_code="km" value="សត្វញី" source="DM"/>
         </listItem>
         <listItem keyRef="unknown_whn" dmUuid="f2aa43614e8146309d9ccb6ceb893058" isActive="true" id="eab4a047-b551-4ed6-9f92-7ed6c58a9ae9" isCustomImage="false">
             <name language_code="fr" value="Inconnu" source="DM"/>
@@ -1947,8 +1954,8 @@
             <name language_code="fr" value="Animal en bonne santé" source="DM"/>
             <name language_code="es" value="Individuo Sano" source="DM"/>
             <name language_code="en" value="Healthy Animal" source="DM"/>
-            <name language_code="lo" value="ສັດມີຊີວິດແຂງແຮງດີ" source="DM"/>
             <name language_code="km" value="មានសុខភាពល្អ" source="DM"/>
+            <name language_code="lo" value="ສັດມີຊີວິດແຂງແຮງດີ" source="DM"/>
         </treeNode>
         <treeNode keyRef="oldage_whn" hkeyRef="oldage_whn." dmUuid="d881ee7001e14e5397f112799f08b804" isActive="true" id="1927b7c0-e5d6-45ad-a4b3-d0e0dc08fac1" isCustomImage="false">
             <name language_code="fr" value="Vieux" source="DM"/>
@@ -1961,28 +1968,28 @@
             <name language_code="fr" value="Prédation" source="DM"/>
             <name language_code="es" value="Depredacion" source="DM"/>
             <name language_code="en" value="Predation" source="DM"/>
-            <name language_code="km" value="រងការប្រមាញ់" source="DM"/>
             <name language_code="lo" value="ການລ່າເຫຍື່ອ" source="DM"/>
+            <name language_code="km" value="រងការប្រមាញ់" source="DM"/>
             <children keyRef="wildcarnivore_whn" hkeyRef="predation_whn.wildcarnivore_whn." dmUuid="25b4f3e7fafc4706abcfd85ce467ce2d" isActive="true" id="c5129154-32fd-43fa-9510-c3280a162008" isCustomImage="false">
                 <name language_code="fr" value="Carnivore sauvage" source="DM"/>
                 <name language_code="es" value="Carnivoro Silvestre" source="DM"/>
                 <name language_code="en" value="Wild Carnivore" source="DM"/>
-                <name language_code="km" value="សត្វព្រៃដែលស៊ីសាច់ជាអាហារ" source="DM"/>
                 <name language_code="lo" value="ສັດປ່າຈໍາພວກກິນຊີ້ນ" source="DM"/>
+                <name language_code="km" value="សត្វព្រៃដែលស៊ីសាច់ជាអាហារ" source="DM"/>
             </children>
             <children keyRef="cat_whn" hkeyRef="predation_whn.cat_whn." dmUuid="17634d68d47d48c8a469fd1f0c303a3d" isActive="true" id="c16ac3e8-7b88-4454-a688-82d89761bef2" isCustomImage="false">
                 <name language_code="fr" value="Chat" source="DM"/>
                 <name language_code="es" value="Gato" source="DM"/>
                 <name language_code="en" value="Cat" source="DM"/>
-                <name language_code="lo" value="ແມວ" source="DM"/>
                 <name language_code="km" value="ឆ្មារ" source="DM"/>
+                <name language_code="lo" value="ແມວ" source="DM"/>
             </children>
             <children keyRef="dog_whn" hkeyRef="predation_whn.dog_whn." dmUuid="d111b17c14f7458eb09c7efdd243c4da" isActive="true" id="749b1ee5-6dec-4a61-819e-c72f0f9993fe" isCustomImage="false">
                 <name language_code="fr" value="Chien" source="DM"/>
                 <name language_code="es" value="Perro" source="DM"/>
                 <name language_code="en" value="Dog" source="DM"/>
-                <name language_code="km" value="ឆ្កែ" source="DM"/>
                 <name language_code="lo" value="ໝາ" source="DM"/>
+                <name language_code="km" value="ឆ្កែ" source="DM"/>
             </children>
             <children keyRef="yesbutunknowncarnivore_whn" hkeyRef="predation_whn.yesbutunknowncarnivore_whn." dmUuid="71a47439ecdc4bba9d30e34922db6c1a" isActive="true" id="e76af5f9-b872-448f-a8c4-7a4926465e85" isCustomImage="false">
                 <name language_code="fr" value="Oui, mais carnivore inconnu" source="DM"/>
@@ -2002,8 +2009,8 @@
                 <name language_code="fr" value="Ecrasé par un véhicule" source="DM"/>
                 <name language_code="es" value="Atropellado por Automovil" source="DM"/>
                 <name language_code="en" value="Run Over By A Vehicle" source="DM"/>
-                <name language_code="km" value="យានយន្តបុក ឬកិន" source="DM"/>
                 <name language_code="lo" value="ລົດຢຽບ" source="DM"/>
+                <name language_code="km" value="យានយន្តបុក ឬកិន" source="DM"/>
             </children>
             <children keyRef="boatstrike_whn" hkeyRef="accident_whn.boatstrike_whn." dmUuid="fe7716e330144e378338594f81444437" isActive="true" id="03fb5582-c05c-4d0b-bff3-59d973c3ee61" isCustomImage="false">
                 <name language_code="fr" value="Grève de bateau" source="DM"/>
@@ -2016,15 +2023,15 @@
                 <name language_code="fr" value="Bâtiment ou structure" source="DM"/>
                 <name language_code="es" value="Edificio o Estructura" source="DM"/>
                 <name language_code="en" value="Building or Structure" source="DM"/>
-                <name language_code="lo" value="ອາຄານ ຫຼື ໂຄງສ້າງ" source="DM"/>
                 <name language_code="km" value="សំណង់ផ្សេងៗបាក់សង្កត់" source="DM"/>
+                <name language_code="lo" value="ອາຄານ ຫຼື ໂຄງສ້າງ" source="DM"/>
             </children>
             <children keyRef="drowned_whn" hkeyRef="accident_whn.drowned_whn." dmUuid="7648b0517f934844ac47185d485c54ce" isActive="true" id="c1b6e989-3d1f-4e50-8b22-36c0fcb63cc1" isCustomImage="false">
                 <name language_code="fr" value="Noyé" source="DM"/>
                 <name language_code="es" value="Ahogado" source="DM"/>
                 <name language_code="en" value="Drowned" source="DM"/>
-                <name language_code="km" value="លង់ទឹក" source="DM"/>
                 <name language_code="lo" value="ຈົມນໍ້າ" source="DM"/>
+                <name language_code="km" value="លង់ទឹក" source="DM"/>
             </children>
             <children keyRef="electrocuted_whn" hkeyRef="accident_whn.electrocuted_whn." dmUuid="67ea25a9a8f64e62b4760d0ad1aad89a" isActive="true" id="79f413a2-b3b9-48ec-9b98-6685ce93d1c2" isCustomImage="false">
                 <name language_code="fr" value="Electrocuté" source="DM"/>
@@ -2037,8 +2044,8 @@
                 <name language_code="fr" value="Equipement de pêche" source="DM"/>
                 <name language_code="es" value="Equipo de Pesca" source="DM"/>
                 <name language_code="en" value="Fishing Gear" source="DM"/>
-                <name language_code="lo" value="ອຸປະກອນຕຶກປາ" source="DM"/>
                 <name language_code="km" value="ដោយឧបករណ៍នេសាទ" source="DM"/>
+                <name language_code="lo" value="ອຸປະກອນຕຶກປາ" source="DM"/>
             </children>
             <children keyRef="net_whn" hkeyRef="accident_whn.net_whn." dmUuid="a3dc763b0c94438ea816388a47c1f103" isActive="true" id="ec8e39e5-39d5-4896-b04a-ada1ef73008d" isCustomImage="false">
                 <name language_code="fr" value="Filet" source="DM"/>
@@ -2051,8 +2058,8 @@
                 <name language_code="fr" value="Autres traumatismes" source="DM"/>
                 <name language_code="es" value="Otro Trauma" source="DM"/>
                 <name language_code="en" value="Other Trauma" source="DM"/>
-                <name language_code="lo" value="ບາດແຜອື່ນໆ" source="DM"/>
                 <name language_code="km" value="ផ្សេងៗទៀត" source="DM"/>
+                <name language_code="lo" value="ບາດແຜອື່ນໆ" source="DM"/>
             </children>
             <children keyRef="problemwithcaptureorimmobilization_whn" hkeyRef="accident_whn.problemwithcaptureorimmobilization_whn." dmUuid="eae8cbb01c434eaba77de51de01b1f11" isActive="true" id="3867fe1f-3a8b-42ab-b2c4-89b6b63a239b" isCustomImage="false">
                 <name language_code="fr" value="Problème de capture ou d'immobilisation" source="DM"/>
@@ -2065,15 +2072,15 @@
                 <name language_code="fr" value="Enchevêtré" source="DM"/>
                 <name language_code="es" value="Enredado o enmallado" source="DM"/>
                 <name language_code="en" value="Entangled" source="DM"/>
-                <name language_code="km" value="ជាប់វ័ណ្ត" source="DM"/>
                 <name language_code="lo" value="ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ" source="DM"/>
+                <name language_code="km" value="ជាប់វ័ណ្ត" source="DM"/>
             </children>
             <children keyRef="stranded_whn" hkeyRef="accident_whn.stranded_whn." dmUuid="0708b129673c45a6a241b3d6962fb25d" isActive="true" id="dcb42722-e309-41ee-a6f0-b8f3ac21447e" isCustomImage="false">
                 <name language_code="fr" value="Échoué" source="DM"/>
                 <name language_code="es" value="Varamiento" source="DM"/>
                 <name language_code="en" value="Stranded" source="DM"/>
-                <name language_code="lo" value="ຕິດຄ້າງຢູ່ດອນ ຫຼື ເກາະ" source="DM"/>
                 <name language_code="km" value="ជាប់គាំង/ជាប់ផុង" source="DM"/>
+                <name language_code="lo" value="ຕິດຄ້າງຢູ່ດອນ ຫຼື ເກາະ" source="DM"/>
             </children>
         </treeNode>
         <treeNode keyRef="huntorcontrol_whn" hkeyRef="huntorcontrol_whn." dmUuid="47d8cf9c0f5e4ebba5abadb7e8949600" isActive="true" id="689f5bd7-578f-48bf-81fd-44484e1639df" isCustomImage="false">
@@ -2107,8 +2114,8 @@
                 <name language_code="fr" value="Coup de feu" source="DM"/>
                 <name language_code="es" value="Disparo de Arma" source="DM"/>
                 <name language_code="en" value="Gunshot" source="DM"/>
-                <name language_code="km" value="ត្រូវគ្រាប់កាំភ្លើង" source="DM"/>
                 <name language_code="lo" value="ປືນຍິງ" source="DM"/>
+                <name language_code="km" value="ត្រូវគ្រាប់កាំភ្លើង" source="DM"/>
             </children>
             <children keyRef="trapsnare_whn" hkeyRef="huntorcontrol_whn.trapsnare_whn." dmUuid="7973f59dce27492fbea570fda2c16a1b" isActive="true" id="2cb0c730-f615-42ba-af65-5d5a91a441cb" isCustomImage="false">
                 <name language_code="fr" value="Piège" source="DM"/>
@@ -2121,30 +2128,30 @@
                 <name language_code="fr" value="Filet" source="DM"/>
                 <name language_code="es" value="Red" source="DM"/>
                 <name language_code="en" value="Net" source="DM"/>
-                <name language_code="km" value="ដោយប្រើសំណាញ់ មង" source="DM"/>
                 <name language_code="lo" value="ຕາໜ່າງ ຫຼື ມອງ" source="DM"/>
+                <name language_code="km" value="ដោយប្រើសំណាញ់ មង" source="DM"/>
             </children>
             <children keyRef="traditionalhunting_whn" hkeyRef="huntorcontrol_whn.traditionalhunting_whn." dmUuid="b3128c31b9c74ca3996cef327320e93b" isActive="true" id="a28402a0-439d-4b13-8459-032a716b4881" isCustomImage="false">
                 <name language_code="fr" value="Chasse traditionnelle" source="DM"/>
                 <name language_code="es" value="Caza Traditional" source="DM"/>
                 <name language_code="en" value="Traditional Hunting" source="DM"/>
-                <name language_code="km" value="ឧបករណ៍បរបាញ់បុរាណ" source="DM"/>
                 <name language_code="lo" value="ປະເພນີການລ່າສັດ" source="DM"/>
+                <name language_code="km" value="ឧបករណ៍បរបាញ់បុរាណ" source="DM"/>
             </children>
             <children keyRef="otherweapon_whn" hkeyRef="huntorcontrol_whn.otherweapon_whn." dmUuid="e23db105c5a7462d8c7eec0ec7f96782" isActive="true" id="a93966a2-efab-4197-b6ff-4e04b7ff3807" isCustomImage="false">
                 <name language_code="fr" value="Autres armes" source="DM"/>
                 <name language_code="es" value="Otra Arma" source="DM"/>
                 <name language_code="en" value="Other Weapon" source="DM"/>
-                <name language_code="km" value="ដោយអាវុធផ្សេងៗទៀត" source="DM"/>
                 <name language_code="lo" value="ອາວຸດອື່ນໆ" source="DM"/>
+                <name language_code="km" value="ដោយអាវុធផ្សេងៗទៀត" source="DM"/>
             </children>
         </treeNode>
         <treeNode keyRef="infectiousdisease_whn" hkeyRef="infectiousdisease_whn." dmUuid="655b702c3f394fae90ced7222c0c1b7f" isActive="true" id="f056267b-8aa0-4872-ad04-410a6a1b4c7a" isCustomImage="false">
             <name language_code="fr" value="Maladie infectieuse" source="DM"/>
             <name language_code="es" value="Enfermedad Infecciosa" source="DM"/>
             <name language_code="en" value="Infectious Disease" source="DM"/>
-            <name language_code="lo" value="ພະຍາດຕິດຕໍ່" source="DM"/>
             <name language_code="km" value="ជំងឺឆ្លង" source="DM"/>
+            <name language_code="lo" value="ພະຍາດຕິດຕໍ່" source="DM"/>
         </treeNode>
         <treeNode keyRef="poisoningortoxin_whn" hkeyRef="poisoningortoxin_whn." dmUuid="cca0f353a697486396ac03f30844f052" isActive="true" id="e1b2486b-de58-4c81-9935-cc9bcaa61e09" isCustomImage="false">
             <name language_code="fr" value="Empoisonnement ou toxine" source="DM"/>
@@ -2157,8 +2164,8 @@
             <name language_code="fr" value="Euthanasie" source="DM"/>
             <name language_code="es" value="Eutanasia" source="DM"/>
             <name language_code="en" value="Euthanasia" source="DM"/>
-            <name language_code="lo" value="ການຂ້າເພື່ອຢຸດຄວາມເຈັບປວດທໍລະມານ" source="DM"/>
             <name language_code="km" value="សត្វងាប់ដោយធម្មជាតិ" source="DM"/>
+            <name language_code="lo" value="ການຂ້າເພື່ອຢຸດຄວາມເຈັບປວດທໍລະມານ" source="DM"/>
         </treeNode>
         <treeNode keyRef="unknown_whn" hkeyRef="unknown_whn." dmUuid="0fbbf2006e2c4a2f8fbef62174cb125a" isActive="true" id="d501c734-dc07-4ec6-9ead-0773630054f0" isCustomImage="false">
             <name language_code="fr" value="Inconnu" source="DM"/>
@@ -2205,22 +2212,22 @@
             <name language_code="fr" value="Sac d'air" source="DM"/>
             <name language_code="es" value="Saco Aereo" source="DM"/>
             <name language_code="en" value="Air Sac" source="DM"/>
-            <name language_code="km" value="ថង់ខ្យល់" source="DM"/>
             <name language_code="lo" value="ຖົງອາກາດ" source="DM"/>
+            <name language_code="km" value="ថង់ខ្យល់" source="DM"/>
         </listItem>
         <listItem keyRef="bloodclot_whn" dmUuid="60c22a0c67774d038629579458b3b5f6" isActive="true" id="2a350143-e83c-41b3-988d-c449fa51335a" isCustomImage="false">
             <name language_code="fr" value="Caillot de sang" source="DM"/>
             <name language_code="es" value="Coagulo" source="DM"/>
             <name language_code="en" value="Bloodclot" source="DM"/>
-            <name language_code="km" value="កំណកឈាម" source="DM"/>
             <name language_code="lo" value="ກ້ອນເລືອດກ້າມ" source="DM"/>
+            <name language_code="km" value="កំណកឈាម" source="DM"/>
         </listItem>
         <listItem keyRef="bone_whn" dmUuid="beba206942e84d9b9e306e43a5506e83" isActive="true" id="8d2921c7-3e05-4fe5-9b3f-79edd977f431" isCustomImage="false">
             <name language_code="fr" value="Os" source="DM"/>
             <name language_code="es" value="Hueso" source="DM"/>
             <name language_code="en" value="Bone" source="DM"/>
-            <name language_code="km" value="ឆ្អឹង" source="DM"/>
             <name language_code="lo" value="ກະດູກ" source="DM"/>
+            <name language_code="km" value="ឆ្អឹង" source="DM"/>
         </listItem>
         <listItem keyRef="bonemarrow_whn" dmUuid="6d6d70a7c6d9423d80fa0aefad60dbc3" isActive="true" id="02ef00a4-a9d2-45f7-9290-575076e865fc" isCustomImage="false">
             <name language_code="fr" value="Moelle" source="DM"/>
@@ -2233,8 +2240,8 @@
             <name language_code="fr" value="Cerveau" source="DM"/>
             <name language_code="es" value="Cerebro" source="DM"/>
             <name language_code="en" value="Brain" source="DM"/>
-            <name language_code="lo" value="ສະໝອງ" source="DM"/>
             <name language_code="km" value="ខួរក្បាល" source="DM"/>
+            <name language_code="lo" value="ສະໝອງ" source="DM"/>
         </listItem>
         <listItem keyRef="cerebrospinalfluid" dmUuid="340d9c48342d4c4c8eea6f7ad2fb68bc" isActive="true" id="f73dafdc-031b-4e23-9902-c8c4e3ca9d5c" isCustomImage="false">
             <name language_code="fr" value="Liquide cérébro-spinal" source="DM"/>
@@ -2268,29 +2275,29 @@
             <name language_code="fr" value="Viande sèche" source="DM"/>
             <name language_code="es" value="Carne Seca" source="DM"/>
             <name language_code="en" value="Dry Meat" source="DM"/>
-            <name language_code="km" value="សាច់សត្វដែលស្ងួត" source="DM"/>
             <name language_code="lo" value="ຊີ້ນແຫ້ງ" source="DM"/>
+            <name language_code="km" value="សាច់សត្វដែលស្ងួត" source="DM"/>
         </listItem>
         <listItem keyRef="esophagus_whn" dmUuid="ad73aa7f47cb4d569aabf1e97d3b39f7" isActive="true" id="be86d7ec-6637-4c5e-aa92-e59764a219cc" isCustomImage="false">
             <name language_code="fr" value="Œsophage" source="DM"/>
             <name language_code="es" value="Esofago" source="DM"/>
             <name language_code="en" value="Esoohagus" source="DM"/>
-            <name language_code="km" value="បំពង់អាហារ" source="DM"/>
             <name language_code="lo" value="ຫຼອດອາຫານ" source="DM"/>
+            <name language_code="km" value="បំពង់អាហារ" source="DM"/>
         </listItem>
         <listItem keyRef="eye_whn" dmUuid="08420855cc4c4b339ac988faf981664a" isActive="true" id="8efef497-1fce-4e49-8e0f-f20c661414d1" isCustomImage="false">
             <name language_code="fr" value="Œil" source="DM"/>
             <name language_code="es" value="Ojo" source="DM"/>
             <name language_code="en" value="Eye" source="DM"/>
-            <name language_code="km" value="ភ្នែក" source="DM"/>
             <name language_code="lo" value="ຕາ" source="DM"/>
+            <name language_code="km" value="ភ្នែក" source="DM"/>
         </listItem>
         <listItem keyRef="feather_whn" dmUuid="bc79953d4f4f4591a41654d5e523acbf" isActive="true" id="ead38ff9-8e55-4cdd-b072-615697657402" isCustomImage="false">
             <name language_code="fr" value="Plume" source="DM"/>
             <name language_code="es" value="Pluma" source="DM"/>
             <name language_code="en" value="Feather" source="DM"/>
-            <name language_code="km" value="ស្លាប" source="DM"/>
             <name language_code="lo" value="ຂົນສັດປີກ" source="DM"/>
+            <name language_code="km" value="ស្លាប" source="DM"/>
         </listItem>
         <listItem keyRef="fetus_whn" dmUuid="3c73cb0142fe4d36811642e218b0f24e" isActive="true" id="e2879393-e993-4244-a3c2-8d83b8603933" isCustomImage="false">
             <name language_code="fr" value="Fœtus" source="DM"/>
@@ -2310,22 +2317,22 @@
             <name language_code="fr" value="Puces" source="DM"/>
             <name language_code="es" value="Pulgas" source="DM"/>
             <name language_code="en" value="Fleas" source="DM"/>
-            <name language_code="lo" value="ໝັດ, ໄຮ" source="DM"/>
             <name language_code="km" value="ចៃ" source="DM"/>
+            <name language_code="lo" value="ໝັດ, ໄຮ" source="DM"/>
         </listItem>
         <listItem keyRef="fluidbodycavity_whn" dmUuid="0818a9b927c84a81bcfb6d3721ef556c" isActive="true" id="77ec6db6-197a-4cd6-8706-942a9367ebed" isCustomImage="false">
             <name language_code="fr" value="Fluide de cavité corporelle" source="DM"/>
             <name language_code="es" value="Fluido Cavidad Corporal" source="DM"/>
             <name language_code="en" value="Body Cavity Fluid" source="DM"/>
-            <name language_code="lo" value="ນໍ້າ (ຊ່ອງທ້ອງ)" source="DM"/>
             <name language_code="km" value="សមាសធាតុរាវក្នុងប្រហោងនៃរាងកាយ" source="DM"/>
+            <name language_code="lo" value="ນໍ້າ (ຊ່ອງທ້ອງ)" source="DM"/>
         </listItem>
         <listItem keyRef="freshfeces_whn" dmUuid="e4c8324fe159410ea68491ff3f827f30" isActive="true" id="fb899f07-68e3-47de-9d5f-e3b7c50cf338" isCustomImage="false">
             <name language_code="fr" value="Fèces fraîches" source="DM"/>
             <name language_code="es" value="Fecas Frescas" source="DM"/>
             <name language_code="en" value="Fresh Feces" source="DM"/>
-            <name language_code="lo" value="ອາຈົມສົດ" source="DM"/>
             <name language_code="km" value="លាមកសត្វថ្មី" source="DM"/>
+            <name language_code="lo" value="ອາຈົມສົດ" source="DM"/>
         </listItem>
         <listItem keyRef="freshmeat_whn" dmUuid="55bfe946704e42718f552fce8ca06169" isActive="true" id="fdce4220-f7ac-4b4f-9e4a-ff8b2d16a8b7" isCustomImage="false">
             <name language_code="fr" value="Viande fraîche" source="DM"/>
@@ -2338,8 +2345,8 @@
             <name language_code="fr" value="Vésicule biliaire" source="DM"/>
             <name language_code="es" value="Vesicula Biliar" source="DM"/>
             <name language_code="en" value="Gall Bladder" source="DM"/>
-            <name language_code="km" value="ថង់ទឹកប្រម៉ាត់" source="DM"/>
             <name language_code="lo" value="ຖົງບີ" source="DM"/>
+            <name language_code="km" value="ថង់ទឹកប្រម៉ាត់" source="DM"/>
         </listItem>
         <listItem keyRef="gastriccontents_whn" dmUuid="d992115eb12d4f77b0b7834bddb7f164" isActive="true" id="4bc110a5-a56f-478a-8201-5e72558be277" isCustomImage="false">
             <name language_code="fr" value="Contenu gastrique" source="DM"/>
@@ -2359,15 +2366,15 @@
             <name language_code="fr" value="Poils" source="DM"/>
             <name language_code="es" value="Pelo" source="DM"/>
             <name language_code="en" value="Hair" source="DM"/>
-            <name language_code="km" value="រោម" source="DM"/>
             <name language_code="lo" value="ຂົນ" source="DM"/>
+            <name language_code="km" value="រោម" source="DM"/>
         </listItem>
         <listItem keyRef="jointfluid_whn" dmUuid="1ecf88cab08844f3a3701822780f5e29" isActive="true" id="ab8d235e-827a-476f-b8e5-baa66a8f45c7" isCustomImage="false">
             <name language_code="fr" value="Liquide articulaire" source="DM"/>
             <name language_code="es" value="Fluido Articular" source="DM"/>
             <name language_code="en" value="Joint Fluid" source="DM"/>
-            <name language_code="lo" value="ນໍ້າໃນຂໍ້ຕໍ່" source="DM"/>
             <name language_code="km" value="សារធាតុរាវក្នុងសន្លាក់" source="DM"/>
+            <name language_code="lo" value="ນໍ້າໃນຂໍ້ຕໍ່" source="DM"/>
         </listItem>
         <listItem keyRef="kidney_whn" dmUuid="7d042a88145b4565a8e0b913b570c4f3" isActive="true" id="0f2dd050-aec0-4594-af23-3c03cba4c52d" isCustomImage="false">
             <name language_code="fr" value="Rein" source="DM"/>
@@ -2380,22 +2387,22 @@
             <name language_code="fr" value="Gros intestin" source="DM"/>
             <name language_code="es" value="Intestino Grueso" source="DM"/>
             <name language_code="en" value="Large Intestine" source="DM"/>
-            <name language_code="lo" value="ລໍາໄສ້ໃຫຍ່" source="DM"/>
             <name language_code="km" value="ពោះវៀនធំ" source="DM"/>
+            <name language_code="lo" value="ລໍາໄສ້ໃຫຍ່" source="DM"/>
         </listItem>
         <listItem keyRef="lice_whn" dmUuid="7658de21a6004b6da15929a3def87750" isActive="true" id="adedc68a-dda0-4054-8017-e65435af29d5" isCustomImage="false">
             <name language_code="fr" value="Poux" source="DM"/>
             <name language_code="es" value="Piojos" source="DM"/>
             <name language_code="en" value="Lice" source="DM"/>
-            <name language_code="lo" value="ເຫົາ" source="DM"/>
             <name language_code="km" value="អំបាត់" source="DM"/>
+            <name language_code="lo" value="ເຫົາ" source="DM"/>
         </listItem>
         <listItem keyRef="liver_whn" dmUuid="49e685c7cf754bc2836b67e68ce899ef" isActive="true" id="9ed68c3a-8da6-40c6-a637-700d1b520653" isCustomImage="false">
             <name language_code="fr" value="Foie" source="DM"/>
             <name language_code="es" value="Higado" source="DM"/>
             <name language_code="en" value="Liver" source="DM"/>
-            <name language_code="lo" value="ຕັບ" source="DM"/>
             <name language_code="km" value="ថ្លើម" source="DM"/>
+            <name language_code="lo" value="ຕັບ" source="DM"/>
         </listItem>
         <listItem keyRef="lung_whn" dmUuid="9f3231e1042d4b908160e8effba1a562" isActive="true" id="569550c4-c6f2-443f-8e7b-e4656acd765e" isCustomImage="false">
             <name language_code="fr" value="Poumon" source="DM"/>
@@ -2408,15 +2415,15 @@
             <name language_code="fr" value="Ganglion lymphatique" source="DM"/>
             <name language_code="es" value="Linfonodo" source="DM"/>
             <name language_code="en" value="Lymphnode" source="DM"/>
-            <name language_code="km" value="ក្រលៀន" source="DM"/>
             <name language_code="lo" value="ຕ່ອມນໍ້າເຫຼືອງ" source="DM"/>
+            <name language_code="km" value="ក្រលៀន" source="DM"/>
         </listItem>
         <listItem keyRef="mammarygland_whn" dmUuid="9f80776698814f6b89d7b019820d37e9" isActive="true" id="2fd07896-dc74-4db9-9286-23e4e1abef3c" isCustomImage="false">
             <name language_code="fr" value="Glande mammaire" source="DM"/>
             <name language_code="es" value="Glandula Mamaria" source="DM"/>
             <name language_code="en" value="Mammary Gland" source="DM"/>
-            <name language_code="lo" value="ຕ່ອມຜະລິດນໍ້ານົມ" source="DM"/>
             <name language_code="km" value="ក្រពេញដោះ" source="DM"/>
+            <name language_code="lo" value="ຕ່ອມຜະລິດນໍ້ານົມ" source="DM"/>
         </listItem>
         <listItem keyRef="milk_whn" dmUuid="14d56ad81e4e46f19c4ea586de168a0f" isActive="true" id="44c6b3ee-1ec6-40c2-98ec-bf4f4eb623d3" isCustomImage="false">
             <name language_code="fr" value="Lait" source="DM"/>
@@ -2429,8 +2436,8 @@
             <name language_code="fr" value="Acariens" source="DM"/>
             <name language_code="es" value="Acaros" source="DM"/>
             <name language_code="en" value="Mites" source="DM"/>
-            <name language_code="lo" value="ໄຮອ່ອນ" source="DM"/>
             <name language_code="km" value="សត្វល្អិតជាប់ស្បែកផ្សេងទៀត" source="DM"/>
+            <name language_code="lo" value="ໄຮອ່ອນ" source="DM"/>
         </listItem>
         <listItem keyRef="mixedtissue_whn" dmUuid="6272afdcdefc41d5905cfffab4c3f861" isActive="true" id="77d2839a-3d17-409e-8c9d-15f9ad5df29d" isCustomImage="false">
             <name language_code="fr" value="Tissu mixte" source="DM"/>
@@ -2443,8 +2450,8 @@
             <name language_code="fr" value="Ecouvillon nasal" source="DM"/>
             <name language_code="es" value="Hisopado Nasal" source="DM"/>
             <name language_code="en" value="Nasal Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງຮູດັງ" source="DM"/>
             <name language_code="km" value="សំណាកយកពីច្រមុះ" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງຮູດັງ" source="DM"/>
         </listItem>
         <listItem keyRef="nerve_whn" dmUuid="78a844157ef347869a2840606a360541" isActive="true" id="025e0326-fc83-403d-8327-d0d30059a01b" isCustomImage="false">
             <name language_code="fr" value="Nerf" source="DM"/>
@@ -2457,15 +2464,15 @@
             <name language_code="fr" value="Ecouvillon oral" source="DM"/>
             <name language_code="es" value="Hisopado Oral" source="DM"/>
             <name language_code="en" value="Oral Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງປາກ" source="DM"/>
             <name language_code="km" value="ສະວັບທາງປາກ" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງປາກ" source="DM"/>
         </listItem>
         <listItem keyRef="oronasalswab_whn" dmUuid="853ae52de4604ac1a2368a272f14e37d" isActive="true" id="2460fb0f-dc07-4e65-b7fd-b275382db2e4" isCustomImage="false">
             <name language_code="fr" value="Ecouvillon oronasal" source="DM"/>
             <name language_code="es" value="Hisopado Oronasal" source="DM"/>
             <name language_code="en" value="Oronasal Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງປາກ-ດັງ" source="DM"/>
             <name language_code="km" value="សំណាកយកតាមមាត់ដល់ច្រមុះ" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງປາກ-ດັງ" source="DM"/>
         </listItem>
         <listItem keyRef="othertissue_whn" dmUuid="f874b6ae773a4646b39591f4312c11d6" isActive="true" id="e76fb508-1ded-42ff-bc36-6469cc90a4be" isCustomImage="false">
             <name language_code="fr" value="Autres tissus" source="DM"/>
@@ -2478,8 +2485,8 @@
             <name language_code="fr" value="Ovaire" source="DM"/>
             <name language_code="es" value="Ovario" source="DM"/>
             <name language_code="en" value="Ovary" source="DM"/>
-            <name language_code="lo" value="ຮວຍໄຂ່" source="DM"/>
             <name language_code="km" value="ក្រពេញអូវុល" source="DM"/>
+            <name language_code="lo" value="ຮວຍໄຂ່" source="DM"/>
         </listItem>
         <listItem keyRef="pancreas_whn" dmUuid="fabc15ea77b54bab82d08596bb02b03b" isActive="true" id="6adfcc20-c257-4e7c-82d2-6f50334d8c70" isCustomImage="false">
             <name language_code="fr" value="Pancréas" source="DM"/>
@@ -2499,8 +2506,8 @@
             <name language_code="fr" value="Plathelminthes" source="DM"/>
             <name language_code="es" value="Platelmintos" source="DM"/>
             <name language_code="en" value="Platyhelminths" source="DM"/>
-            <name language_code="km" value="ដង្កូវខ្លួនស្ដើងៗ" source="DM"/>
             <name language_code="lo" value="ພະຍາດໂຕແບນ" source="DM"/>
+            <name language_code="km" value="ដង្កូវខ្លួនស្ដើងៗ" source="DM"/>
         </listItem>
         <listItem keyRef="rectalcloacalswab_whn" dmUuid="6fc96a4e16324cc6adc3e26f7e6d67c0" isActive="true" id="3bbcc6d0-1ec8-4a14-9a8a-0ce354c263eb" isCustomImage="false">
             <name language_code="fr" value="Ecouvillonnage rectal ou cloacal" source="DM"/>
@@ -2513,8 +2520,8 @@
             <name language_code="fr" value="Vers ronds" source="DM"/>
             <name language_code="es" value="Gusanos Redondos" source="DM"/>
             <name language_code="en" value="Round Worms" source="DM"/>
-            <name language_code="lo" value="ພະຍາດໂຕກົມ" source="DM"/>
             <name language_code="km" value="ព្រូន" source="DM"/>
+            <name language_code="lo" value="ພະຍາດໂຕກົມ" source="DM"/>
         </listItem>
         <listItem keyRef="saltedmeat_whn" dmUuid="d3e19fece9724dd5be16d2d02238e98e" isActive="true" id="0b137bbd-1d2c-4197-82bd-f00c6b1aa536" isCustomImage="false">
             <name language_code="fr" value="Viande salée" source="DM"/>
@@ -2541,8 +2548,8 @@
             <name language_code="fr" value="Peau" source="DM"/>
             <name language_code="es" value="Piel" source="DM"/>
             <name language_code="en" value="Skin" source="DM"/>
-            <name language_code="km" value="ស្បែក" source="DM"/>
             <name language_code="lo" value="ໜັງ" source="DM"/>
+            <name language_code="km" value="ស្បែក" source="DM"/>
         </listItem>
         <listItem keyRef="smallintestine_whn" dmUuid="b155e7071f0b4c67b9f54e0657e7049e" isActive="true" id="2edffe8e-2b2e-4e92-88d2-d602126ae607" isCustomImage="false">
             <name language_code="fr" value="Intestin grêle" source="DM"/>
@@ -2569,22 +2576,22 @@
             <name language_code="fr" value="Estomac" source="DM"/>
             <name language_code="es" value="Estomago" source="DM"/>
             <name language_code="en" value="Stomach" source="DM"/>
-            <name language_code="lo" value="ກະເພາະອາຫານ" source="DM"/>
             <name language_code="km" value="ក្រពះ" source="DM"/>
+            <name language_code="lo" value="ກະເພາະອາຫານ" source="DM"/>
         </listItem>
         <listItem keyRef="testes_whn" dmUuid="fa83fd13e5234fd0a63707ec9aee86c5" isActive="true" id="0797168f-4ba4-4074-b7ec-114d7fe21a78" isCustomImage="false">
             <name language_code="fr" value="Testicules" source="DM"/>
             <name language_code="es" value="Testiculos" source="DM"/>
             <name language_code="en" value="Testes" source="DM"/>
-            <name language_code="lo" value="ໄຂ່ຫໍາ" source="DM"/>
             <name language_code="km" value="ពងស្វាស" source="DM"/>
+            <name language_code="lo" value="ໄຂ່ຫໍາ" source="DM"/>
         </listItem>
         <listItem keyRef="thyroidgland_whn" dmUuid="7b731874860d468d8b1bf9c0644a260d" isActive="true" id="a782ce15-c0da-40e9-a074-d5eacb021c6f" isCustomImage="false">
             <name language_code="fr" value="Glande thyroïde" source="DM"/>
             <name language_code="es" value="Glandula Tiroides" source="DM"/>
             <name language_code="en" value="Thyroid Gland" source="DM"/>
-            <name language_code="km" value="ក្រពេញទីរ៉ូអ៊ីដ" source="DM"/>
             <name language_code="lo" value="ຕ່ອມຄໍຫອຍ" source="DM"/>
+            <name language_code="km" value="ក្រពេញទីរ៉ូអ៊ីដ" source="DM"/>
         </listItem>
         <listItem keyRef="ticks_whn" dmUuid="85f273a145c94be1b3bf6c161b5953b1" isActive="true" id="fcdfa158-17a3-47c0-91c0-d8deb5852fd1" isCustomImage="false">
             <name language_code="fr" value="Tiques" source="DM"/>
@@ -2604,22 +2611,22 @@
             <name language_code="fr" value="Dent" source="DM"/>
             <name language_code="es" value="Diente" source="DM"/>
             <name language_code="en" value="Tooth" source="DM"/>
-            <name language_code="lo" value="ແຂ້ວ" source="DM"/>
             <name language_code="km" value="ធ្មេញ" source="DM"/>
+            <name language_code="lo" value="ແຂ້ວ" source="DM"/>
         </listItem>
         <listItem keyRef="trachea_whn" dmUuid="f9c21db472904d7b8347b80913932ee0" isActive="true" id="ce528d5e-37de-4e93-997d-06ecd1bdba68" isCustomImage="false">
             <name language_code="fr" value="Trachée" source="DM"/>
             <name language_code="es" value="Traquea" source="DM"/>
             <name language_code="en" value="Trachea" source="DM"/>
-            <name language_code="lo" value="ຫຼອດລົມ" source="DM"/>
             <name language_code="km" value="បំពង់ខ្យល់" source="DM"/>
+            <name language_code="lo" value="ຫຼອດລົມ" source="DM"/>
         </listItem>
         <listItem keyRef="umbilicus_whn" dmUuid="efe9cfccc6c644fe99880bd6d40f37c6" isActive="true" id="05e30b13-1dcf-4f14-8a3f-5520cc4d47d4" isCustomImage="false">
             <name language_code="fr" value="Ombilic" source="DM"/>
             <name language_code="es" value="Ombligo" source="DM"/>
             <name language_code="en" value="Umbilicus" source="DM"/>
-            <name language_code="km" value="ផ្សិតឬផ្ចិត" source="DM"/>
             <name language_code="lo" value="ສະບື" source="DM"/>
+            <name language_code="km" value="ផ្សិតឬផ្ចិត" source="DM"/>
         </listItem>
         <listItem keyRef="unclassifiedparasite_whn" dmUuid="cedd3273ce8c4a5e8f0bebcac1ff6f33" isActive="true" id="0e2d46f8-e851-425d-b847-22554565ea9e" isCustomImage="false">
             <name language_code="fr" value="Parasite non classé" source="DM"/>
@@ -2646,8 +2653,8 @@
             <name language_code="fr" value="Ecouvillon urogénital" source="DM"/>
             <name language_code="es" value="Hisopado Urogenital" source="DM"/>
             <name language_code="en" value="Urogenital Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງທໍ່ຍ່ຽວ" source="DM"/>
             <name language_code="km" value="ទឹកកាមសត្វឈ្មោល" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງທໍ່ຍ່ຽວ" source="DM"/>
         </listItem>
         <listItem keyRef="uterus_whn" dmUuid="032633bb58584c9389e7604aa9d0d889" isActive="true" id="144d7688-fe72-41c4-8b02-2f2fd1eef8ae" isCustomImage="false">
             <name language_code="fr" value="Utérus" source="DM"/>
@@ -2667,8 +2674,8 @@
             <name language_code="fr" value="Sang total" source="DM"/>
             <name language_code="es" value="Sangre Entera" source="DM"/>
             <name language_code="en" value="Whole Blood" source="DM"/>
-            <name language_code="lo" value="ເລືອດລວມ" source="DM"/>
             <name language_code="km" value="ឈាម" source="DM"/>
+            <name language_code="lo" value="ເລືອດລວມ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="c10df7b7-a18f-4d32-aecc-e70e9c708ebe" attributeKey="collecteddirectlyfromanimal_whn" displayMode="TEXT" isDefault="true" attributeUuid="30c6b6ef70af491092a03a3add1516fd">
@@ -2714,29 +2721,29 @@
             <name language_code="fr" value="En liberté" source="DM"/>
             <name language_code="es" value="Vida Libre" source="DM"/>
             <name language_code="en" value="Free-ranging" source="DM"/>
-            <name language_code="lo" value="ຢູ່ຕາມທໍາມະຊາດ" source="DM"/>
             <name language_code="km" value="រស់នៅដោយសេរី" source="DM"/>
+            <name language_code="lo" value="ຢູ່ຕາມທໍາມະຊາດ" source="DM"/>
         </listItem>
         <listItem keyRef="huntedanddisplaced_whn" dmUuid="69306038a0054b2abea5ffbe1ed53d7a" isActive="true" id="4feac019-cc62-4352-a18b-23ca79c8bfdf" isCustomImage="false">
             <name language_code="fr" value="Traqués et déplacés" source="DM"/>
             <name language_code="es" value="Cazado y Desplazado" source="DM"/>
             <name language_code="en" value="Hunted And Displaced" source="DM"/>
-            <name language_code="lo" value="ຖືກລ່າ ແລະ ຖືກເຄື່ອນຍ້າຍແລ້ວ" source="DM"/>
             <name language_code="km" value="ប្រមាញ់ និងសត្វនៅនឹងកន្លែង" source="DM"/>
+            <name language_code="lo" value="ຖືກລ່າ ແລະ ຖືກເຄື່ອນຍ້າຍແລ້ວ" source="DM"/>
         </listItem>
         <listItem keyRef="huntednotdisplaced_whn" dmUuid="f8531d85727c4b4aac91fe2bc0e28402" isActive="true" id="adfdcbf5-627b-4110-b3e3-a7d698a4aeae" isCustomImage="false">
             <name language_code="fr" value="Chassé et non déplacé" source="DM"/>
             <name language_code="es" value="Cazado y No Desplazado" source="DM"/>
             <name language_code="en" value="Hunted and Not Displaced" source="DM"/>
-            <name language_code="km" value="ប្រមាញ់ និងសត្វមិននៅនឹងកន្លែង" source="DM"/>
             <name language_code="lo" value="ຖືກລ່າ ແລະ ຍັງບໍ່ທັນຖືກເຄື່ອນຍ້າຍ" source="DM"/>
+            <name language_code="km" value="ប្រមាញ់ និងសត្វមិននៅនឹងកន្លែង" source="DM"/>
         </listItem>
         <listItem keyRef="rescuerehabilitationcenter_whn" dmUuid="4e7793c5c1b74ae4b1807507cc3f9925" isActive="true" id="b5845840-ca6b-44c3-8774-9fabfacbbafc" isCustomImage="false">
             <name language_code="fr" value="Centre de secours/réadaptation" source="DM"/>
             <name language_code="es" value="Centro de Rehabilitacion/Rescate" source="DM"/>
             <name language_code="en" value="Rescue/Rehabilitation Center" source="DM"/>
-            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
             <name language_code="lo" value="ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ" source="DM"/>
+            <name language_code="km" value="មជ្ឈមណ្ឌលសង្គ្រោះសត្វ" source="DM"/>
         </listItem>
         <listItem keyRef="farm_whn" dmUuid="9ce06f71bae1436288461daa96f6ac7a" isActive="true" id="6f2d2d08-d3d0-441b-bb04-ca55d5c858c2" isCustomImage="false">
             <name language_code="fr" value="Ferme" source="DM"/>
@@ -2749,22 +2756,22 @@
             <name language_code="fr" value="Ménage" source="DM"/>
             <name language_code="es" value="Habitacion Domiciliaria" source="DM"/>
             <name language_code="en" value="Household" source="DM"/>
-            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
             <name language_code="km" value="លក្ខណៈគ្រួសារ" source="DM"/>
+            <name language_code="lo" value="ຄົວເຮືອນ" source="DM"/>
         </listItem>
         <listItem keyRef="researchorconservationcapture_whn" dmUuid="f55b3f3d005f4f0fb1a04898e71ffbdb" isActive="true" id="8e51ac15-b514-4491-af29-6a4c35c7fc68" isCustomImage="false">
             <name language_code="fr" value="Recherche ou capture pour conservation" source="DM"/>
             <name language_code="es" value="Investigacion o Captura de Conservacion" source="DM"/>
             <name language_code="en" value="Research or Conservation Capture" source="DM"/>
-            <name language_code="km" value="បានសត្វតាមរយៈការស្រាវជ្រាវ ឬ អភិរក្ស" source="DM"/>
             <name language_code="lo" value="ການຈັບສັດ ເພື່ອການຄົ້ນຄວ້າ ຫຼື ອະນຸລັກ" source="DM"/>
+            <name language_code="km" value="បានសត្វតាមរយៈការស្រាវជ្រាវ ឬ អភិរក្ស" source="DM"/>
         </listItem>
         <listItem keyRef="market_whn" dmUuid="8a23739fd6894b38a36943a97ef1006c" isActive="true" id="14145634-7526-4fa7-9f72-d1ee078fc5a8" isCustomImage="false">
             <name language_code="fr" value="Marché" source="DM"/>
             <name language_code="es" value="Mercado" source="DM"/>
             <name language_code="en" value="Market" source="DM"/>
-            <name language_code="lo" value="ຕະຫຼາດ" source="DM"/>
             <name language_code="km" value="ផ្សារ" source="DM"/>
+            <name language_code="lo" value="ຕະຫຼາດ" source="DM"/>
         </listItem>
         <listItem keyRef="tradepost_whn" dmUuid="c674d2af95134db2ae3255b306864cde" isActive="true" id="eb73d807-cd16-42ec-8eb9-42412fc7519b" isCustomImage="false">
             <name language_code="fr" value="Poste commercial" source="DM"/>
@@ -2790,15 +2797,15 @@
             <name language_code="fr" value="Trouvé vivant, malade ou blessé" source="DM"/>
             <name language_code="es" value="Encontrado Vivo Enfermo o Herido" source="DM"/>
             <name language_code="en" value="Found Live Sick or Injured" source="DM"/>
-            <name language_code="lo" value="ພໍເຫັືມີຊີວິດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
             <name language_code="km" value="ជួបសត្វកំពុងឈឺ ឬរបួស" source="DM"/>
+            <name language_code="lo" value="ພໍເຫັືມີຊີວິດ ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ" source="DM"/>
         </listItem>
         <listItem keyRef="foundlivehealthy_whn" dmUuid="7031163036c14477b3672252f79efd77" isActive="true" id="9b710b78-cc18-4102-aa42-26c2b97d0fd7" isCustomImage="false">
             <name language_code="fr" value="Trouvé vivant en bonne santé" source="DM"/>
             <name language_code="es" value="Encontrado Vivo y Sano" source="DM"/>
             <name language_code="en" value="Found Live Healthy" source="DM"/>
-            <name language_code="lo" value="ພົບມີຊີວິດແຂງແຮງດີ" source="DM"/>
             <name language_code="km" value="ជួបសត្វរស់នៅសុខភាពល្អធម្មតា" source="DM"/>
+            <name language_code="lo" value="ພົບມີຊີວິດແຂງແຮງດີ" source="DM"/>
         </listItem>
         <listItem keyRef="animalparts_whn" dmUuid="3d743006164744a7bfc9f8185f5622c5" isActive="true" id="e6aa1edb-0b24-4a76-a33b-0e54a66d4754" isCustomImage="false">
             <name language_code="fr" value="Parties d'animaux" source="DM"/>
@@ -2828,8 +2835,8 @@
             <name language_code="fr" value="Fœtus" source="DM"/>
             <name language_code="es" value="Feto" source="DM"/>
             <name language_code="en" value="Fetus" source="DM"/>
-            <name language_code="lo" value="ໂຕອ່ອນຢູ່ໃນທ້ອງ" source="DM"/>
             <name language_code="km" value="កូន (គត៌)" source="DM"/>
+            <name language_code="lo" value="ໂຕອ່ອນຢູ່ໃນທ້ອງ" source="DM"/>
         </listItem>
         <listItem keyRef="unknown_whn" dmUuid="3dab22244b4b40b59f101e236a93ab11" isActive="true" id="decf7c04-bb2e-48cd-8ae3-5608254ff0b5" isCustomImage="false">
             <name language_code="fr" value="Inconnu" source="DM"/>
@@ -2852,28 +2859,28 @@
             <name language_code="fr" value="Femelle" source="DM"/>
             <name language_code="es" value="Hembra" source="DM"/>
             <name language_code="en" value="Female" source="DM"/>
-            <name language_code="km" value="សត្វញី" source="DM"/>
             <name language_code="lo" value="ໂຕແມ່" source="DM"/>
+            <name language_code="km" value="សត្វញី" source="DM"/>
         </listItem>
         <listItem keyRef="male_whn" dmUuid="efd305fbc6fe43aaa1e2404890ebcc7b" isActive="true" id="0202eb1e-fdb3-4bac-aaf0-755927773c19" isCustomImage="false">
             <name language_code="fr" value="Mâle" source="DM"/>
             <name language_code="es" value="Macho" source="DM"/>
             <name language_code="en" value="Male" source="DM"/>
-            <name language_code="km" value="សត្វឈ្មោល" source="DM"/>
             <name language_code="lo" value="ໂຕຜູ້" source="DM"/>
+            <name language_code="km" value="សត្វឈ្មោល" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="10d25993-3f24-4233-be3c-9e5f75609618" attributeKey="suspectcauseofdeathdiseaseorinjury_whn" displayMode="TEXT" isDefault="true" attributeUuid="20756b8f2d8a4d80a1533af8e25ebef1">
         <name language_code="es" value="Causa Potencial de Muerte" source="CM"/>
         <name language_code="en" value="Suspect Cause of Death" source="CM"/>
-        <name language_code="lo" value="Suspect cause of Death" source="CM"/>
         <name language_code="km" value="Suspect Cause of Death" source="CM"/>
+        <name language_code="lo" value="Suspect cause of Death" source="CM"/>
         <treeNode keyRef="healthyanimal_whn" hkeyRef="healthyanimal_whn." dmUuid="809bd684721541089567355a9af22827" isActive="true" id="6010dcc3-e966-4b24-899c-62a09c44f6d2" isCustomImage="false">
             <name language_code="fr" value="Animal en bonne santé" source="DM"/>
             <name language_code="es" value="Individuo Sano" source="DM"/>
             <name language_code="en" value="Healthy Animal" source="DM"/>
-            <name language_code="lo" value="ສັດມີຊີວິດແຂງແຮງດີ" source="DM"/>
             <name language_code="km" value="មានសុខភាពល្អ" source="DM"/>
+            <name language_code="lo" value="ສັດມີຊີວິດແຂງແຮງດີ" source="DM"/>
         </treeNode>
         <treeNode keyRef="accident_whn" hkeyRef="accident_whn." dmUuid="67aba24c962f43c88e80ae8628229209" isActive="true" id="6ca79cac-ec1b-4134-847e-a2551e0e095d" isCustomImage="false">
             <name language_code="fr" value="Accident" source="DM"/>
@@ -2892,15 +2899,15 @@
                 <name language_code="fr" value="Bâtiment ou structure" source="DM"/>
                 <name language_code="es" value="Edificio o Estructura" source="DM"/>
                 <name language_code="en" value="Building or Structure" source="DM"/>
-                <name language_code="lo" value="ອາຄານ ຫຼື ໂຄງສ້າງ" source="DM"/>
                 <name language_code="km" value="សំណង់ផ្សេងៗបាក់សង្កត់" source="DM"/>
+                <name language_code="lo" value="ອາຄານ ຫຼື ໂຄງສ້າງ" source="DM"/>
             </children>
             <children keyRef="drowned_whn" hkeyRef="accident_whn.drowned_whn." dmUuid="7648b0517f934844ac47185d485c54ce" isActive="true" id="3e196a56-dbda-4fca-badf-724257fc905e" isCustomImage="false">
                 <name language_code="fr" value="Noyé" source="DM"/>
                 <name language_code="es" value="Ahogado" source="DM"/>
                 <name language_code="en" value="Drowned" source="DM"/>
-                <name language_code="km" value="លង់ទឹក" source="DM"/>
                 <name language_code="lo" value="ຈົມນໍ້າ" source="DM"/>
+                <name language_code="km" value="លង់ទឹក" source="DM"/>
             </children>
             <children keyRef="electrocuted_whn" hkeyRef="accident_whn.electrocuted_whn." dmUuid="67ea25a9a8f64e62b4760d0ad1aad89a" isActive="true" id="6b09d1b6-129f-4e1c-b3af-03c5f95f02a6" isCustomImage="false">
                 <name language_code="fr" value="Electrocuté" source="DM"/>
@@ -2913,15 +2920,15 @@
                 <name language_code="fr" value="Enchevêtré" source="DM"/>
                 <name language_code="es" value="Enredado o enmallado" source="DM"/>
                 <name language_code="en" value="Entangled" source="DM"/>
-                <name language_code="km" value="ជាប់វ័ណ្ត" source="DM"/>
                 <name language_code="lo" value="ມີເຊືອກ ຫຼື ແຮ້ວ ກ້ຽວພັນໂຕສັດ" source="DM"/>
+                <name language_code="km" value="ជាប់វ័ណ្ត" source="DM"/>
             </children>
             <children keyRef="fishinggear_whn" hkeyRef="accident_whn.fishinggear_whn." dmUuid="2b5c2602b50d4e7aae9e93c51d50b0fd" isActive="true" id="1e24a20a-9b10-47e0-a9ea-dddd9afee484" isCustomImage="false">
                 <name language_code="fr" value="Equipement de pêche" source="DM"/>
                 <name language_code="es" value="Equipo de Pesca" source="DM"/>
                 <name language_code="en" value="Fishing Gear" source="DM"/>
-                <name language_code="lo" value="ອຸປະກອນຕຶກປາ" source="DM"/>
                 <name language_code="km" value="ដោយឧបករណ៍នេសាទ" source="DM"/>
+                <name language_code="lo" value="ອຸປະກອນຕຶກປາ" source="DM"/>
             </children>
             <children keyRef="net_whn" hkeyRef="accident_whn.net_whn." dmUuid="a3dc763b0c94438ea816388a47c1f103" isActive="true" id="b453c0e3-4069-4402-ae21-a3fcaf97ddd2" isCustomImage="false">
                 <name language_code="fr" value="Filet" source="DM"/>
@@ -2934,8 +2941,8 @@
                 <name language_code="fr" value="Autres traumatismes" source="DM"/>
                 <name language_code="es" value="Otro Trauma" source="DM"/>
                 <name language_code="en" value="Other Trauma" source="DM"/>
-                <name language_code="lo" value="ບາດແຜອື່ນໆ" source="DM"/>
                 <name language_code="km" value="ផ្សេងៗទៀត" source="DM"/>
+                <name language_code="lo" value="ບາດແຜອື່ນໆ" source="DM"/>
             </children>
             <children keyRef="problemwithcaptureorimmobilization_whn" hkeyRef="accident_whn.problemwithcaptureorimmobilization_whn." dmUuid="eae8cbb01c434eaba77de51de01b1f11" isActive="true" id="57cb4bd5-d51c-4184-972d-977ab40ff45e" isCustomImage="false">
                 <name language_code="fr" value="Problème de capture ou d'immobilisation" source="DM"/>
@@ -2948,37 +2955,37 @@
                 <name language_code="fr" value="Ecrasé par un véhicule" source="DM"/>
                 <name language_code="es" value="Atropellado por Automovil" source="DM"/>
                 <name language_code="en" value="Run Over By A Vehicle" source="DM"/>
-                <name language_code="km" value="យានយន្តបុក ឬកិន" source="DM"/>
                 <name language_code="lo" value="ລົດຢຽບ" source="DM"/>
+                <name language_code="km" value="យានយន្តបុក ឬកិន" source="DM"/>
             </children>
             <children keyRef="stranded_whn" hkeyRef="accident_whn.stranded_whn." dmUuid="0708b129673c45a6a241b3d6962fb25d" isActive="true" id="49665b40-ea78-4aa8-8f16-16c45717076d" isCustomImage="false">
                 <name language_code="fr" value="Échoué" source="DM"/>
                 <name language_code="es" value="Varamiento" source="DM"/>
                 <name language_code="en" value="Stranded" source="DM"/>
-                <name language_code="lo" value="ຕິດຄ້າງຢູ່ດອນ ຫຼື ເກາະ" source="DM"/>
                 <name language_code="km" value="ជាប់គាំង/ជាប់ផុង" source="DM"/>
+                <name language_code="lo" value="ຕິດຄ້າງຢູ່ດອນ ຫຼື ເກາະ" source="DM"/>
             </children>
         </treeNode>
         <treeNode keyRef="dehydration_whn" hkeyRef="dehydration_whn." dmUuid="1c39cd76e0a04e61b6136dca330df7e7" isActive="true" id="05b89103-35f1-4217-81a4-3b029d294350" isCustomImage="false">
             <name language_code="fr" value="Déshydratation" source="DM"/>
             <name language_code="es" value="Deshidratacion" source="DM"/>
             <name language_code="en" value="Dehydration" source="DM"/>
-            <name language_code="lo" value="ການຂາດນໍ້າໃນຮ່າງກາຍ" source="DM"/>
             <name language_code="km" value="ខ្សោះជាតិទឹក" source="DM"/>
+            <name language_code="lo" value="ການຂາດນໍ້າໃນຮ່າງກາຍ" source="DM"/>
         </treeNode>
         <treeNode keyRef="starvation_whn" hkeyRef="starvation_whn." dmUuid="0220be07abd94a5e8ac86e1e9ee63dbd" isActive="true" id="d4f340f6-0182-4627-9a71-c6fc59587dec" isCustomImage="false">
             <name language_code="fr" value="Famine" source="DM"/>
             <name language_code="es" value="Desnutricion" source="DM"/>
             <name language_code="en" value="Starvation" source="DM"/>
-            <name language_code="km" value="ស្លាប់ដោយការអត់ឃ្លាន" source="DM"/>
             <name language_code="lo" value="ຄວາມອຶດຫິວ" source="DM"/>
+            <name language_code="km" value="ស្លាប់ដោយការអត់ឃ្លាន" source="DM"/>
         </treeNode>
         <treeNode keyRef="euthanasia_whn" hkeyRef="euthanasia_whn." dmUuid="0aeca93c42e24b05a1d5e0f543c4f421" isActive="true" id="da2d9243-579c-4a66-b34e-3f8ae339f62d" isCustomImage="false">
             <name language_code="fr" value="Euthanasie" source="DM"/>
             <name language_code="es" value="Eutanasia" source="DM"/>
             <name language_code="en" value="Euthanasia" source="DM"/>
-            <name language_code="lo" value="ການຂ້າເພື່ອຢຸດຄວາມເຈັບປວດທໍລະມານ" source="DM"/>
             <name language_code="km" value="សត្វងាប់ដោយធម្មជាតិ" source="DM"/>
+            <name language_code="lo" value="ການຂ້າເພື່ອຢຸດຄວາມເຈັບປວດທໍລະມານ" source="DM"/>
         </treeNode>
         <treeNode keyRef="huntorcontrol_whn" hkeyRef="huntorcontrol_whn." dmUuid="47d8cf9c0f5e4ebba5abadb7e8949600" isActive="true" id="600b7e0a-ebf1-4c3e-bb0b-7f1d30bc2f78" isCustomImage="false">
             <name language_code="fr" value="Chasser ou contrôler" source="DM"/>
@@ -2997,22 +3004,22 @@
                 <name language_code="fr" value="Coup de feu" source="DM"/>
                 <name language_code="es" value="Disparo de Arma" source="DM"/>
                 <name language_code="en" value="Gunshot" source="DM"/>
-                <name language_code="km" value="ត្រូវគ្រាប់កាំភ្លើង" source="DM"/>
                 <name language_code="lo" value="ປືນຍິງ" source="DM"/>
+                <name language_code="km" value="ត្រូវគ្រាប់កាំភ្លើង" source="DM"/>
             </children>
             <children keyRef="net_whn" hkeyRef="huntorcontrol_whn.net_whn." dmUuid="6a927d8a72e543cdb56de52a101ccede" isActive="true" id="eaa1e5b3-7d56-4fb1-bb08-155dfb2b3a7e" isCustomImage="false">
                 <name language_code="fr" value="Filet" source="DM"/>
                 <name language_code="es" value="Red" source="DM"/>
                 <name language_code="en" value="Net" source="DM"/>
-                <name language_code="km" value="ដោយប្រើសំណាញ់ មង" source="DM"/>
                 <name language_code="lo" value="ຕາໜ່າງ ຫຼື ມອງ" source="DM"/>
+                <name language_code="km" value="ដោយប្រើសំណាញ់ មង" source="DM"/>
             </children>
             <children keyRef="otherweapon_whn" hkeyRef="huntorcontrol_whn.otherweapon_whn." dmUuid="e23db105c5a7462d8c7eec0ec7f96782" isActive="true" id="9e204d5c-bc29-4ce4-874b-12186607cbf2" isCustomImage="false">
                 <name language_code="fr" value="Autres armes" source="DM"/>
                 <name language_code="es" value="Otra Arma" source="DM"/>
                 <name language_code="en" value="Other Weapon" source="DM"/>
-                <name language_code="km" value="ដោយអាវុធផ្សេងៗទៀត" source="DM"/>
                 <name language_code="lo" value="ອາວຸດອື່ນໆ" source="DM"/>
+                <name language_code="km" value="ដោយអាវុធផ្សេងៗទៀត" source="DM"/>
             </children>
             <children keyRef="problemanimalcontrol_whn" hkeyRef="huntorcontrol_whn.problemanimalcontrol_whn." dmUuid="b8540b8a46e3459f8e5190510ec469d7" isActive="true" id="126842bf-d146-4d01-a143-f10400effa38" isCustomImage="false">
                 <name language_code="fr" value="Contrôle des animaux à problèmes" source="DM"/>
@@ -3032,8 +3039,8 @@
                 <name language_code="fr" value="Chasse traditionnelle" source="DM"/>
                 <name language_code="es" value="Caza Traditional" source="DM"/>
                 <name language_code="en" value="Traditional Hunting" source="DM"/>
-                <name language_code="km" value="ឧបករណ៍បរបាញ់បុរាណ" source="DM"/>
                 <name language_code="lo" value="ປະເພນີການລ່າສັດ" source="DM"/>
+                <name language_code="km" value="ឧបករណ៍បរបាញ់បុរាណ" source="DM"/>
             </children>
             <children keyRef="trapsnare_whn" hkeyRef="huntorcontrol_whn.trapsnare_whn." dmUuid="7973f59dce27492fbea570fda2c16a1b" isActive="true" id="6c1e07ad-f6af-4514-a5df-37c0c4b19ba1" isCustomImage="false">
                 <name language_code="fr" value="Piège" source="DM"/>
@@ -3047,8 +3054,8 @@
             <name language_code="fr" value="Maladie infectieuse" source="DM"/>
             <name language_code="es" value="Enfermedad Infecciosa" source="DM"/>
             <name language_code="en" value="Infectious Disease" source="DM"/>
-            <name language_code="lo" value="ພະຍາດຕິດຕໍ່" source="DM"/>
             <name language_code="km" value="ជំងឺឆ្លង" source="DM"/>
+            <name language_code="lo" value="ພະຍາດຕິດຕໍ່" source="DM"/>
         </treeNode>
         <treeNode keyRef="oldage_whn" hkeyRef="oldage_whn." dmUuid="d881ee7001e14e5397f112799f08b804" isActive="true" id="e988502a-af13-4656-aa3f-5c2880a4fcac" isCustomImage="false">
             <name language_code="fr" value="Vieux" source="DM"/>
@@ -3068,28 +3075,28 @@
             <name language_code="fr" value="Prédation" source="DM"/>
             <name language_code="es" value="Depredacion" source="DM"/>
             <name language_code="en" value="Predation" source="DM"/>
-            <name language_code="km" value="រងការប្រមាញ់" source="DM"/>
             <name language_code="lo" value="ການລ່າເຫຍື່ອ" source="DM"/>
+            <name language_code="km" value="រងការប្រមាញ់" source="DM"/>
             <children keyRef="cat_whn" hkeyRef="predation_whn.cat_whn." dmUuid="17634d68d47d48c8a469fd1f0c303a3d" isActive="true" id="13b8b0e8-d384-49bc-9293-11cb9e99eb65" isCustomImage="false">
                 <name language_code="fr" value="Chat" source="DM"/>
                 <name language_code="es" value="Gato" source="DM"/>
                 <name language_code="en" value="Cat" source="DM"/>
-                <name language_code="lo" value="ແມວ" source="DM"/>
                 <name language_code="km" value="ឆ្មារ" source="DM"/>
+                <name language_code="lo" value="ແມວ" source="DM"/>
             </children>
             <children keyRef="dog_whn" hkeyRef="predation_whn.dog_whn." dmUuid="d111b17c14f7458eb09c7efdd243c4da" isActive="true" id="c12afc6c-3086-4c63-a01f-a5d6b0c762fb" isCustomImage="false">
                 <name language_code="fr" value="Chien" source="DM"/>
                 <name language_code="es" value="Perro" source="DM"/>
                 <name language_code="en" value="Dog" source="DM"/>
-                <name language_code="km" value="ឆ្កែ" source="DM"/>
                 <name language_code="lo" value="ໝາ" source="DM"/>
+                <name language_code="km" value="ឆ្កែ" source="DM"/>
             </children>
             <children keyRef="wildcarnivore_whn" hkeyRef="predation_whn.wildcarnivore_whn." dmUuid="25b4f3e7fafc4706abcfd85ce467ce2d" isActive="true" id="7fcf011c-2413-45d5-8efa-4e14fece3997" isCustomImage="false">
                 <name language_code="fr" value="Carnivore sauvage" source="DM"/>
                 <name language_code="es" value="Carnivoro Silvestre" source="DM"/>
                 <name language_code="en" value="Wild Carnivore" source="DM"/>
-                <name language_code="km" value="សត្វព្រៃដែលស៊ីសាច់ជាអាហារ" source="DM"/>
                 <name language_code="lo" value="ສັດປ່າຈໍາພວກກິນຊີ້ນ" source="DM"/>
+                <name language_code="km" value="សត្វព្រៃដែលស៊ីសាច់ជាអាហារ" source="DM"/>
             </children>
             <children keyRef="yesbutunknowncarnivore_whn" hkeyRef="predation_whn.yesbutunknowncarnivore_whn." dmUuid="71a47439ecdc4bba9d30e34922db6c1a" isActive="true" id="bfe70f28-3d99-4aba-8ea6-3d94e3851809" isCustomImage="false">
                 <name language_code="fr" value="Oui, mais carnivore inconnu" source="DM"/>
@@ -3144,29 +3151,29 @@
             <name language_code="fr" value="Sac d'air" source="DM"/>
             <name language_code="es" value="Saco Aereo" source="DM"/>
             <name language_code="en" value="Air Sac" source="DM"/>
-            <name language_code="km" value="ថង់ខ្យល់" source="DM"/>
             <name language_code="lo" value="ຖົງອາກາດ" source="DM"/>
+            <name language_code="km" value="ថង់ខ្យល់" source="DM"/>
         </listItem>
         <listItem keyRef="bloodclot_whn" dmUuid="60c22a0c67774d038629579458b3b5f6" isActive="true" id="ea67e5e0-a50c-41dd-b46b-dce1b34ab061" isCustomImage="false">
             <name language_code="fr" value="Caillot de sang" source="DM"/>
             <name language_code="es" value="Coagulo" source="DM"/>
             <name language_code="en" value="Bloodclot" source="DM"/>
-            <name language_code="km" value="កំណកឈាម" source="DM"/>
             <name language_code="lo" value="ກ້ອນເລືອດກ້າມ" source="DM"/>
+            <name language_code="km" value="កំណកឈាម" source="DM"/>
         </listItem>
         <listItem keyRef="fluidbodycavity_whn" dmUuid="0818a9b927c84a81bcfb6d3721ef556c" isActive="true" id="4ba0050a-b911-4803-9480-e18f13fb5108" isCustomImage="false">
             <name language_code="fr" value="Fluide de cavité corporelle" source="DM"/>
             <name language_code="es" value="Fluido Cavidad Corporal" source="DM"/>
             <name language_code="en" value="Body Cavity Fluid" source="DM"/>
-            <name language_code="lo" value="ນໍ້າ (ຊ່ອງທ້ອງ)" source="DM"/>
             <name language_code="km" value="សមាសធាតុរាវក្នុងប្រហោងនៃរាងកាយ" source="DM"/>
+            <name language_code="lo" value="ນໍ້າ (ຊ່ອງທ້ອງ)" source="DM"/>
         </listItem>
         <listItem keyRef="bone_whn" dmUuid="beba206942e84d9b9e306e43a5506e83" isActive="true" id="0217f5e9-7210-4084-bb85-a51ae1a075c4" isCustomImage="false">
             <name language_code="fr" value="Os" source="DM"/>
             <name language_code="es" value="Hueso" source="DM"/>
             <name language_code="en" value="Bone" source="DM"/>
-            <name language_code="km" value="ឆ្អឹង" source="DM"/>
             <name language_code="lo" value="ກະດູກ" source="DM"/>
+            <name language_code="km" value="ឆ្អឹង" source="DM"/>
         </listItem>
         <listItem keyRef="bonemarrow_whn" dmUuid="6d6d70a7c6d9423d80fa0aefad60dbc3" isActive="true" id="a662ff48-26bd-45dd-a4f3-2530226487e9" isCustomImage="false">
             <name language_code="fr" value="Moelle" source="DM"/>
@@ -3179,8 +3186,8 @@
             <name language_code="fr" value="Cerveau" source="DM"/>
             <name language_code="es" value="Cerebro" source="DM"/>
             <name language_code="en" value="Brain" source="DM"/>
-            <name language_code="lo" value="ສະໝອງ" source="DM"/>
             <name language_code="km" value="ខួរក្បាល" source="DM"/>
+            <name language_code="lo" value="ສະໝອງ" source="DM"/>
         </listItem>
         <listItem keyRef="cerebrospinalfluid" dmUuid="340d9c48342d4c4c8eea6f7ad2fb68bc" isActive="true" id="f1e042d8-95ab-42dd-bc8d-8eb8da81fe5e" isCustomImage="false">
             <name language_code="fr" value="Liquide cérébro-spinal" source="DM"/>
@@ -3214,29 +3221,29 @@
             <name language_code="fr" value="Viande sèche" source="DM"/>
             <name language_code="es" value="Carne Seca" source="DM"/>
             <name language_code="en" value="Dry Meat" source="DM"/>
-            <name language_code="km" value="សាច់សត្វដែលស្ងួត" source="DM"/>
             <name language_code="lo" value="ຊີ້ນແຫ້ງ" source="DM"/>
+            <name language_code="km" value="សាច់សត្វដែលស្ងួត" source="DM"/>
         </listItem>
         <listItem keyRef="esophagus_whn" dmUuid="ad73aa7f47cb4d569aabf1e97d3b39f7" isActive="true" id="913feb1c-f5ed-466b-b6de-d18c0da324da" isCustomImage="false">
             <name language_code="fr" value="Œsophage" source="DM"/>
             <name language_code="es" value="Esofago" source="DM"/>
             <name language_code="en" value="Esoohagus" source="DM"/>
-            <name language_code="km" value="បំពង់អាហារ" source="DM"/>
             <name language_code="lo" value="ຫຼອດອາຫານ" source="DM"/>
+            <name language_code="km" value="បំពង់អាហារ" source="DM"/>
         </listItem>
         <listItem keyRef="eye_whn" dmUuid="08420855cc4c4b339ac988faf981664a" isActive="true" id="79c9b5c0-cc19-482e-9cca-9c3b7523e506" isCustomImage="false">
             <name language_code="fr" value="Œil" source="DM"/>
             <name language_code="es" value="Ojo" source="DM"/>
             <name language_code="en" value="Eye" source="DM"/>
-            <name language_code="km" value="ភ្នែក" source="DM"/>
             <name language_code="lo" value="ຕາ" source="DM"/>
+            <name language_code="km" value="ភ្នែក" source="DM"/>
         </listItem>
         <listItem keyRef="feather_whn" dmUuid="bc79953d4f4f4591a41654d5e523acbf" isActive="true" id="5d5473a9-d91f-43ba-b638-07c93079dd0f" isCustomImage="false">
             <name language_code="fr" value="Plume" source="DM"/>
             <name language_code="es" value="Pluma" source="DM"/>
             <name language_code="en" value="Feather" source="DM"/>
-            <name language_code="km" value="ស្លាប" source="DM"/>
             <name language_code="lo" value="ຂົນສັດປີກ" source="DM"/>
+            <name language_code="km" value="ស្លាប" source="DM"/>
         </listItem>
         <listItem keyRef="fetus_whn" dmUuid="3c73cb0142fe4d36811642e218b0f24e" isActive="true" id="d415ace5-f145-4dc8-9b3b-afe119ac3e3a" isCustomImage="false">
             <name language_code="fr" value="Fœtus" source="DM"/>
@@ -3256,15 +3263,15 @@
             <name language_code="fr" value="Puces" source="DM"/>
             <name language_code="es" value="Pulgas" source="DM"/>
             <name language_code="en" value="Fleas" source="DM"/>
-            <name language_code="lo" value="ໝັດ, ໄຮ" source="DM"/>
             <name language_code="km" value="ចៃ" source="DM"/>
+            <name language_code="lo" value="ໝັດ, ໄຮ" source="DM"/>
         </listItem>
         <listItem keyRef="freshfeces_whn" dmUuid="e4c8324fe159410ea68491ff3f827f30" isActive="true" id="cdad6391-b091-42a5-80af-6ce3deeb1aa1" isCustomImage="false">
             <name language_code="fr" value="Fèces fraîches" source="DM"/>
             <name language_code="es" value="Fecas Frescas" source="DM"/>
             <name language_code="en" value="Fresh Feces" source="DM"/>
-            <name language_code="lo" value="ອາຈົມສົດ" source="DM"/>
             <name language_code="km" value="លាមកសត្វថ្មី" source="DM"/>
+            <name language_code="lo" value="ອາຈົມສົດ" source="DM"/>
         </listItem>
         <listItem keyRef="freshmeat_whn" dmUuid="55bfe946704e42718f552fce8ca06169" isActive="true" id="82ea9555-1269-46f8-872c-9308dd21a559" isCustomImage="false">
             <name language_code="fr" value="Viande fraîche" source="DM"/>
@@ -3277,8 +3284,8 @@
             <name language_code="fr" value="Vésicule biliaire" source="DM"/>
             <name language_code="es" value="Vesicula Biliar" source="DM"/>
             <name language_code="en" value="Gall Bladder" source="DM"/>
-            <name language_code="km" value="ថង់ទឹកប្រម៉ាត់" source="DM"/>
             <name language_code="lo" value="ຖົງບີ" source="DM"/>
+            <name language_code="km" value="ថង់ទឹកប្រម៉ាត់" source="DM"/>
         </listItem>
         <listItem keyRef="gastriccontents_whn" dmUuid="d992115eb12d4f77b0b7834bddb7f164" isActive="true" id="a28d3562-c567-48dd-b953-83c03fdf8e2b" isCustomImage="false">
             <name language_code="fr" value="Contenu gastrique" source="DM"/>
@@ -3291,8 +3298,8 @@
             <name language_code="fr" value="Poils" source="DM"/>
             <name language_code="es" value="Pelo" source="DM"/>
             <name language_code="en" value="Hair" source="DM"/>
-            <name language_code="km" value="រោម" source="DM"/>
             <name language_code="lo" value="ຂົນ" source="DM"/>
+            <name language_code="km" value="រោម" source="DM"/>
         </listItem>
         <listItem keyRef="heart_whn" dmUuid="3c718cd325674d0b8ecf686aa1d5d863" isActive="true" id="4056b590-1ee3-4569-8643-42409624e3c5" isCustomImage="false">
             <name language_code="fr" value="Cœur" source="DM"/>
@@ -3305,8 +3312,8 @@
             <name language_code="fr" value="Liquide articulaire" source="DM"/>
             <name language_code="es" value="Fluido Articular" source="DM"/>
             <name language_code="en" value="Joint Fluid" source="DM"/>
-            <name language_code="lo" value="ນໍ້າໃນຂໍ້ຕໍ່" source="DM"/>
             <name language_code="km" value="សារធាតុរាវក្នុងសន្លាក់" source="DM"/>
+            <name language_code="lo" value="ນໍ້າໃນຂໍ້ຕໍ່" source="DM"/>
         </listItem>
         <listItem keyRef="kidney_whn" dmUuid="7d042a88145b4565a8e0b913b570c4f3" isActive="true" id="43ff7446-d820-49c1-b949-ed8bec059960" isCustomImage="false">
             <name language_code="fr" value="Rein" source="DM"/>
@@ -3319,22 +3326,22 @@
             <name language_code="fr" value="Gros intestin" source="DM"/>
             <name language_code="es" value="Intestino Grueso" source="DM"/>
             <name language_code="en" value="Large Intestine" source="DM"/>
-            <name language_code="lo" value="ລໍາໄສ້ໃຫຍ່" source="DM"/>
             <name language_code="km" value="ពោះវៀនធំ" source="DM"/>
+            <name language_code="lo" value="ລໍາໄສ້ໃຫຍ່" source="DM"/>
         </listItem>
         <listItem keyRef="lice_whn" dmUuid="7658de21a6004b6da15929a3def87750" isActive="true" id="5d3cf64a-1e90-4e6e-8175-9d695445e7fa" isCustomImage="false">
             <name language_code="fr" value="Poux" source="DM"/>
             <name language_code="es" value="Piojos" source="DM"/>
             <name language_code="en" value="Lice" source="DM"/>
-            <name language_code="lo" value="ເຫົາ" source="DM"/>
             <name language_code="km" value="អំបាត់" source="DM"/>
+            <name language_code="lo" value="ເຫົາ" source="DM"/>
         </listItem>
         <listItem keyRef="liver_whn" dmUuid="49e685c7cf754bc2836b67e68ce899ef" isActive="true" id="418f479a-d14c-48e1-830a-3e038dbc56eb" isCustomImage="false">
             <name language_code="fr" value="Foie" source="DM"/>
             <name language_code="es" value="Higado" source="DM"/>
             <name language_code="en" value="Liver" source="DM"/>
-            <name language_code="lo" value="ຕັບ" source="DM"/>
             <name language_code="km" value="ថ្លើម" source="DM"/>
+            <name language_code="lo" value="ຕັບ" source="DM"/>
         </listItem>
         <listItem keyRef="lung_whn" dmUuid="9f3231e1042d4b908160e8effba1a562" isActive="true" id="fb2ab8a3-8ee0-4a26-8ea3-6c8727d50822" isCustomImage="false">
             <name language_code="fr" value="Poumon" source="DM"/>
@@ -3347,15 +3354,15 @@
             <name language_code="fr" value="Ganglion lymphatique" source="DM"/>
             <name language_code="es" value="Linfonodo" source="DM"/>
             <name language_code="en" value="Lymphnode" source="DM"/>
-            <name language_code="km" value="ក្រលៀន" source="DM"/>
             <name language_code="lo" value="ຕ່ອມນໍ້າເຫຼືອງ" source="DM"/>
+            <name language_code="km" value="ក្រលៀន" source="DM"/>
         </listItem>
         <listItem keyRef="mammarygland_whn" dmUuid="9f80776698814f6b89d7b019820d37e9" isActive="true" id="e1891689-56e3-4890-9865-96b210b2bd89" isCustomImage="false">
             <name language_code="fr" value="Glande mammaire" source="DM"/>
             <name language_code="es" value="Glandula Mamaria" source="DM"/>
             <name language_code="en" value="Mammary Gland" source="DM"/>
-            <name language_code="lo" value="ຕ່ອມຜະລິດນໍ້ານົມ" source="DM"/>
             <name language_code="km" value="ក្រពេញដោះ" source="DM"/>
+            <name language_code="lo" value="ຕ່ອມຜະລິດນໍ້ານົມ" source="DM"/>
         </listItem>
         <listItem keyRef="milk_whn" dmUuid="14d56ad81e4e46f19c4ea586de168a0f" isActive="true" id="dfe07707-af0d-4d0d-b428-3d5d7bd97aa3" isCustomImage="false">
             <name language_code="fr" value="Lait" source="DM"/>
@@ -3368,8 +3375,8 @@
             <name language_code="fr" value="Acariens" source="DM"/>
             <name language_code="es" value="Acaros" source="DM"/>
             <name language_code="en" value="Mites" source="DM"/>
-            <name language_code="lo" value="ໄຮອ່ອນ" source="DM"/>
             <name language_code="km" value="សត្វល្អិតជាប់ស្បែកផ្សេងទៀត" source="DM"/>
+            <name language_code="lo" value="ໄຮອ່ອນ" source="DM"/>
         </listItem>
         <listItem keyRef="mixedtissue_whn" dmUuid="6272afdcdefc41d5905cfffab4c3f861" isActive="true" id="f93dd666-c973-47cb-be0c-243b6399ca92" isCustomImage="false">
             <name language_code="fr" value="Tissu mixte" source="DM"/>
@@ -3382,8 +3389,8 @@
             <name language_code="fr" value="Ecouvillon nasal" source="DM"/>
             <name language_code="es" value="Hisopado Nasal" source="DM"/>
             <name language_code="en" value="Nasal Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງຮູດັງ" source="DM"/>
             <name language_code="km" value="សំណាកយកពីច្រមុះ" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງຮູດັງ" source="DM"/>
         </listItem>
         <listItem keyRef="nerve_whn" dmUuid="78a844157ef347869a2840606a360541" isActive="true" id="8398bdf8-0d62-47c6-82b4-7bc34e0d9967" isCustomImage="false">
             <name language_code="fr" value="Nerf" source="DM"/>
@@ -3396,15 +3403,15 @@
             <name language_code="fr" value="Ecouvillon oral" source="DM"/>
             <name language_code="es" value="Hisopado Oral" source="DM"/>
             <name language_code="en" value="Oral Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງປາກ" source="DM"/>
             <name language_code="km" value="ສະວັບທາງປາກ" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງປາກ" source="DM"/>
         </listItem>
         <listItem keyRef="oronasalswab_whn" dmUuid="853ae52de4604ac1a2368a272f14e37d" isActive="true" id="a4daa173-49fe-4902-9d48-f8bf520424df" isCustomImage="false">
             <name language_code="fr" value="Ecouvillon oronasal" source="DM"/>
             <name language_code="es" value="Hisopado Oronasal" source="DM"/>
             <name language_code="en" value="Oronasal Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງປາກ-ດັງ" source="DM"/>
             <name language_code="km" value="សំណាកយកតាមមាត់ដល់ច្រមុះ" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງປາກ-ດັງ" source="DM"/>
         </listItem>
         <listItem keyRef="othertissue_whn" dmUuid="f874b6ae773a4646b39591f4312c11d6" isActive="true" id="2c290e68-87b4-4c34-9dc0-15f3492a990d" isCustomImage="false">
             <name language_code="fr" value="Autres tissus" source="DM"/>
@@ -3417,8 +3424,8 @@
             <name language_code="fr" value="Ovaire" source="DM"/>
             <name language_code="es" value="Ovario" source="DM"/>
             <name language_code="en" value="Ovary" source="DM"/>
-            <name language_code="lo" value="ຮວຍໄຂ່" source="DM"/>
             <name language_code="km" value="ក្រពេញអូវុល" source="DM"/>
+            <name language_code="lo" value="ຮວຍໄຂ່" source="DM"/>
         </listItem>
         <listItem keyRef="pancreas_whn" dmUuid="fabc15ea77b54bab82d08596bb02b03b" isActive="true" id="bb933c26-6d81-4dd5-8ada-76ad1b1fb503" isCustomImage="false">
             <name language_code="fr" value="Pancréas" source="DM"/>
@@ -3438,8 +3445,8 @@
             <name language_code="fr" value="Plathelminthes" source="DM"/>
             <name language_code="es" value="Platelmintos" source="DM"/>
             <name language_code="en" value="Platyhelminths" source="DM"/>
-            <name language_code="km" value="ដង្កូវខ្លួនស្ដើងៗ" source="DM"/>
             <name language_code="lo" value="ພະຍາດໂຕແບນ" source="DM"/>
+            <name language_code="km" value="ដង្កូវខ្លួនស្ដើងៗ" source="DM"/>
         </listItem>
         <listItem keyRef="rectalcloacalswab_whn" dmUuid="6fc96a4e16324cc6adc3e26f7e6d67c0" isActive="true" id="84da9236-1946-4071-b8e4-55378fb58529" isCustomImage="false">
             <name language_code="fr" value="Ecouvillonnage rectal ou cloacal" source="DM"/>
@@ -3452,8 +3459,8 @@
             <name language_code="fr" value="Vers ronds" source="DM"/>
             <name language_code="es" value="Gusanos Redondos" source="DM"/>
             <name language_code="en" value="Round Worms" source="DM"/>
-            <name language_code="lo" value="ພະຍາດໂຕກົມ" source="DM"/>
             <name language_code="km" value="ព្រូន" source="DM"/>
+            <name language_code="lo" value="ພະຍາດໂຕກົມ" source="DM"/>
         </listItem>
         <listItem keyRef="saltedmeat_whn" dmUuid="d3e19fece9724dd5be16d2d02238e98e" isActive="true" id="00faed81-e056-4349-b739-77e45958183b" isCustomImage="false">
             <name language_code="fr" value="Viande salée" source="DM"/>
@@ -3480,8 +3487,8 @@
             <name language_code="fr" value="Peau" source="DM"/>
             <name language_code="es" value="Piel" source="DM"/>
             <name language_code="en" value="Skin" source="DM"/>
-            <name language_code="km" value="ស្បែក" source="DM"/>
             <name language_code="lo" value="ໜັງ" source="DM"/>
+            <name language_code="km" value="ស្បែក" source="DM"/>
         </listItem>
         <listItem keyRef="smallintestine_whn" dmUuid="b155e7071f0b4c67b9f54e0657e7049e" isActive="true" id="554cca57-4898-4e5d-ba77-ad90ce17af7f" isCustomImage="false">
             <name language_code="fr" value="Intestin grêle" source="DM"/>
@@ -3508,22 +3515,22 @@
             <name language_code="fr" value="Estomac" source="DM"/>
             <name language_code="es" value="Estomago" source="DM"/>
             <name language_code="en" value="Stomach" source="DM"/>
-            <name language_code="lo" value="ກະເພາະອາຫານ" source="DM"/>
             <name language_code="km" value="ក្រពះ" source="DM"/>
+            <name language_code="lo" value="ກະເພາະອາຫານ" source="DM"/>
         </listItem>
         <listItem keyRef="testes_whn" dmUuid="fa83fd13e5234fd0a63707ec9aee86c5" isActive="true" id="9d13738f-d61d-4d2d-92ce-962bbc5a0ab0" isCustomImage="false">
             <name language_code="fr" value="Testicules" source="DM"/>
             <name language_code="es" value="Testiculos" source="DM"/>
             <name language_code="en" value="Testes" source="DM"/>
-            <name language_code="lo" value="ໄຂ່ຫໍາ" source="DM"/>
             <name language_code="km" value="ពងស្វាស" source="DM"/>
+            <name language_code="lo" value="ໄຂ່ຫໍາ" source="DM"/>
         </listItem>
         <listItem keyRef="thyroidgland_whn" dmUuid="7b731874860d468d8b1bf9c0644a260d" isActive="true" id="c9a26efc-aaf1-4532-a61b-705cc5073d39" isCustomImage="false">
             <name language_code="fr" value="Glande thyroïde" source="DM"/>
             <name language_code="es" value="Glandula Tiroides" source="DM"/>
             <name language_code="en" value="Thyroid Gland" source="DM"/>
-            <name language_code="km" value="ក្រពេញទីរ៉ូអ៊ីដ" source="DM"/>
             <name language_code="lo" value="ຕ່ອມຄໍຫອຍ" source="DM"/>
+            <name language_code="km" value="ក្រពេញទីរ៉ូអ៊ីដ" source="DM"/>
         </listItem>
         <listItem keyRef="ticks_whn" dmUuid="85f273a145c94be1b3bf6c161b5953b1" isActive="true" id="0266c251-9cc5-4290-8866-0c3ea901d443" isCustomImage="false">
             <name language_code="fr" value="Tiques" source="DM"/>
@@ -3543,22 +3550,22 @@
             <name language_code="fr" value="Dent" source="DM"/>
             <name language_code="es" value="Diente" source="DM"/>
             <name language_code="en" value="Tooth" source="DM"/>
-            <name language_code="lo" value="ແຂ້ວ" source="DM"/>
             <name language_code="km" value="ធ្មេញ" source="DM"/>
+            <name language_code="lo" value="ແຂ້ວ" source="DM"/>
         </listItem>
         <listItem keyRef="trachea_whn" dmUuid="f9c21db472904d7b8347b80913932ee0" isActive="true" id="201736dc-b853-4105-a326-7204cdc356d6" isCustomImage="false">
             <name language_code="fr" value="Trachée" source="DM"/>
             <name language_code="es" value="Traquea" source="DM"/>
             <name language_code="en" value="Trachea" source="DM"/>
-            <name language_code="lo" value="ຫຼອດລົມ" source="DM"/>
             <name language_code="km" value="បំពង់ខ្យល់" source="DM"/>
+            <name language_code="lo" value="ຫຼອດລົມ" source="DM"/>
         </listItem>
         <listItem keyRef="umbilicus_whn" dmUuid="efe9cfccc6c644fe99880bd6d40f37c6" isActive="true" id="763a0f07-63be-418f-95a4-6ca49761f3c9" isCustomImage="false">
             <name language_code="fr" value="Ombilic" source="DM"/>
             <name language_code="es" value="Ombligo" source="DM"/>
             <name language_code="en" value="Umbilicus" source="DM"/>
-            <name language_code="km" value="ផ្សិតឬផ្ចិត" source="DM"/>
             <name language_code="lo" value="ສະບື" source="DM"/>
+            <name language_code="km" value="ផ្សិតឬផ្ចិត" source="DM"/>
         </listItem>
         <listItem keyRef="unclassifiedparasite_whn" dmUuid="cedd3273ce8c4a5e8f0bebcac1ff6f33" isActive="true" id="7624dceb-8206-427d-8f86-29c661e7bc3a" isCustomImage="false">
             <name language_code="fr" value="Parasite non classé" source="DM"/>
@@ -3585,8 +3592,8 @@
             <name language_code="fr" value="Ecouvillon urogénital" source="DM"/>
             <name language_code="es" value="Hisopado Urogenital" source="DM"/>
             <name language_code="en" value="Urogenital Swab" source="DM"/>
-            <name language_code="lo" value="ສະວັບທາງທໍ່ຍ່ຽວ" source="DM"/>
             <name language_code="km" value="ទឹកកាមសត្វឈ្មោល" source="DM"/>
+            <name language_code="lo" value="ສະວັບທາງທໍ່ຍ່ຽວ" source="DM"/>
         </listItem>
         <listItem keyRef="uterus_whn" dmUuid="032633bb58584c9389e7604aa9d0d889" isActive="true" id="cb2b6e51-6d31-4ec2-8700-f111d29a4a2f" isCustomImage="false">
             <name language_code="fr" value="Utérus" source="DM"/>
@@ -3606,8 +3613,8 @@
             <name language_code="fr" value="Sang total" source="DM"/>
             <name language_code="es" value="Sangre Entera" source="DM"/>
             <name language_code="en" value="Whole Blood" source="DM"/>
-            <name language_code="lo" value="ເລືອດລວມ" source="DM"/>
             <name language_code="km" value="ឈាម" source="DM"/>
+            <name language_code="lo" value="ເລືອດລວມ" source="DM"/>
         </listItem>
     </attributeConfig>
     <attributeConfig id="f334a1c5-adc1-40de-82f9-68aac995b255" attributeKey="collecteddirectlyfromanimal_whn" displayMode="TEXT" isDefault="true" attributeUuid="30c6b6ef70af491092a03a3add1516fd">
