@@ -1,3 +1,14 @@
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"), 
+               alt = 'logo', 
+               style = 'position:absolute; 
+                        top:0; 
+                        right:0; 
+                        padding:10px;',
+               width = "300px", 
+               heigth = "300px")
+```
+
 # Introduction {.unnumbered}
 
 Ceci est le Dictionnaire de SMART Santé - Rangers.

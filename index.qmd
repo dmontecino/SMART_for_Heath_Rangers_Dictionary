@@ -1,5 +1,16 @@
-# Dictionary SMART for Health - Rangers {.unnumbered}
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"), 
+               alt = 'logo', 
+               style = 'position:absolute; 
+                        top:0; 
+                        right:0; 
+                        padding:10px;',
+               width = "300px", 
+               heigth = "300px")
+```
 
-This is the Dictionary of SMART for Health - Rangers.
+# Introduction {.unnumbered}
 
-To view the definition of an Attribute or Option in particular, please select the appropriate language on left corner and then select the Category containing the Attribute(s) and the Option(s) to check from the menu below the list of versions in different languages.
+This is the Manual and Dictionary of SMART for Health - Rangers.
+
+To view the definition of an Attribute or Option in particular, please select the appropriate language on left, click on "Dictionary SMART for Health - Rangers" and then select the Category containing the Attribute(s) and the Option(s) to check from the menu on the right.
