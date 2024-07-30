@@ -1,16 +1,27 @@
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"), 
+               alt = 'logo', 
+               style = 'position:absolute; 
+                        top:0;
+                        right:0; 
+                        padding:70px;',
+               width = "300px", 
+               heigth = "300px")
+```
+
 # Manual SMART for Health - Rangers {.unnumbered}
 
 Version 1.3.0 July, 2024
 
-This manual describes SMART for Health for Rangers Collecting Specimens and explains its proper use.
+This manual describes SMART for Health for Rangers recording wildlife morbidity and mortality and collecting specimens from the field and explains its proper use.
 
-The current manual applies to SMART version 7. For more information about the Spatial Monitoring and Reporting Tool (SMART) please visit https://smartconservationtools.org/. To learn more about how to use SMART Desktop and Connect please visit https://smartconservationtools.org/.
+The current manual applies to the Spatial Monitoring and Reporting Tool (SMART) version 7. For more information about the SMART please visit <https://smartconservationtools.org/>. To learn more about how to use SMART Desktop and Connect please visit <https://smartconservationtools.org/>.
 
 ## Introduction {.unnumbered}
 
 The Spatial Monitoring and Reporting Tool (SMART) is an approach originally designed to support law enforcement in protected areas. SMART provides a set of technological tools: SMART Desktop, SMART Mobile, and SMART Connect. SMART Mobile is a smartphone app that supports smooth and standardized data collection in the field, keeps track of the spatiotemporal coordinates of the users and of the data being collected, allows the collection of image and audio data in the field, and allows real-time communication of data to out-of-the-field focal points through SMART Connect when internet connection is available. This real-time connection provides the opportunity to promptly react to detected events.
 
-The WCS -- Health Program has created a SMART data model to track wildlife health events and the specimens collected from these events (SMART for Health). This data model can be extended as a "SMART Patrol Package" and installed in the SMART Mobile app to support the collection of information from these events (e.g., wildlife mass mortalities or surveillance activities in wet markets). Here we describe how a portion of the SMART for Health data model can be used by rangers using SMART Mobile to record their observations of dead, sick, or injured wildlife and track the specimens collected when these animals are found. The purpose of this manual is to explain ranger use of SMART for Health in the field; therefore, the manual **does not explain** how to install SMART Desktop, Mobile, or Connect or how to load SMART for Health in the mobile devices.
+The WCS - Health Program has created a SMART data model to track wildlife health events and the specimens collected from these events (SMART for Health). This data model can be understood as reference to be integrated into "SMART Patrol Packages" used in protected areas and installed in SMART Mobile to support the collection of information from these Events. Here we describe how SMART for Health data model can be used by rangers to record their observations of dead, sick, or injured wildlife and track the specimens collected when these animals are found. The purpose of this manual is to explain the use of SMART for Health in the field; therefore, the manual **does not explain** how to install SMART Desktop, Mobile, or Connect or how to load SMART for Health in the mobile devices.
 
 In this manual, we capitalize nouns such as **Attributes, Categories, Incidents**, and others when they refer to SMART components.
 
@@ -18,11 +29,17 @@ In this manual, we capitalize nouns such as **Attributes, Categories, Incidents*
 
 A summary of the data structure in SMART is provided below.
 
-![](Pictures_for%20_manual/Picture1.png)
-
 SMART Incidents within a SMART Patrol:
 
-![](Pictures_for%20_manual/Picture2.png)
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture1.png)
+<p>
+
+Or SMART Incidents outside of a SMART Patrol:
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture2.png
+<p>
 
 Starting at the bottom of either approach, SMART for Health facilitates the collection of field observations (**SMART Observations**) to describe the categories of information that compose a **Wildlife Health Event**. These **Events** are recorded as rangers find **dead, sick, or injured animals during their** **patrols.**
 
@@ -44,23 +61,25 @@ A **SMART Observation** is a specific class of information within a **SMART Inci
 
 ### SMART Category
 
-A **SMART Category** is a set of **SMART Attributes** that request information about a specific category of information within a Wildlife Health Event.
+A **SMART Category** is a set of **SMART Attributes** that request information about a specific topic within a Wildlife Health Event.
 
 ### SMART Attribute
 
-When a SMART Category is selected, a set of fields are displayed on the screen corresponding to specific data items requested within a Category. Each one of them is a SMART Attribute. Attributes are mandatory or optional. Mandatory Attributes are identified with a grey asterisk and they are required to complete the collection of the SMART Observation. Mandatory Attributes with missing information will turn red if the check mark symbol on the top-right is clicked on.
+When a SMART Category is selected, a set of fields are displayed on the screen corresponding to specific data items requested within a Category. Each one of them is a SMART Attribute. Attributes are mandatory or optional. Mandatory Attributes are identified with a grey asterisk and they must be completed to record the SMART Observation. Mandatory Attributes with missing information will turn red if the check mark symbol on the top-right of the screen is clicked on.
 
 ### SMART Attribute and Sub-Attribute Options
 
-Attribute Options are the preset choices used to answer an Attribute or Sub-Attribute.
+Attribute Options are the preset choices used to answer a list or multilist Attribute or Sub-Attribute.
 
 ## Wildlife Health Event
 
-A **Wildlife Health Event** is a discrete spatiotemporal set of field findings that are relevant for the goals of wildlife health surveillance. **A standalone group of healthy animals is not a Wildlife Health Event**. **However, when rangers find a group of dead, sick, or injured animals, the healthy animals present nearby are important to document.**
+A **Wildlife Health Event** is a discrete spatiotemporal set of field findings that are relevant for the goals of wildlife health surveillance. **A standalone group of healthy animals is not a Wildlife Health Event**. **However, when rangers find a group of dead, sick, or injured animals, the healthy animals present at the Event are important to document.**
 
 A Wildlife Health Event for rangers is defined as "the presence of at least one observably unhealthy animal (sick, injured, or dead), irrespective of the cause, at a specific location and point in time, along with all other 'healthy' animals and potentially relevant environmental features at the same specific spatiotemporal location. The animals can be wild or domestic and free-ranging, hunted, or captive".
 
 Wildlife Health Event examples include: (1) a group of dead, sick, and healthy waterfowl on the shore of a pond, (2) the identification of poisoned carnivores, and (3) an injured herbivore.
+
+**If it is epidemiologically relevant, a Wildlife Health Event may include livestock or domestic species!** For example, rangers find a group of dead wild ungulates and they suspect the cause was an infectious disease. In the same area where they found the dead ungulates, the rangers also observed livestock roaming. In this case, the livestock could be a potential source of the suspected infectious disease for the wild ungulates.
 
 ## Wildlife Health Events in SMART
 
@@ -68,44 +87,158 @@ A **Wildlife Health Event (see below) is documented as a SMART Incident** within
 
 The diagram below shows the referential **SMART Categories** of information to record Wildlife Health Events and their hierarchy.
 
-![](Pictures_for%20_manual/Picture3.png)
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture3.png)
+<p>
 
-The **SMART Categories in the referential SMART for Health** in **SMART Mobile** look loke this:
+The **SMART Categories in the referential SMART for Health** in **SMART Mobile** look like this:
 
-![](Pictures_for%20_manual/20240723_225012909_iOS.png){width="240"}
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture4.png){width="280"}
+<p>
 
-### Description of the SMART Categories in SMART for Health
+## SMART Categories in SMART for Health
 
-#### General Information (Event level)
+### Site Description (Event level)
 
-This Category is used to collect information about environmental damage where the Wildlife Health Event is observed if any.
+This Category is used to collect information about environmental threats where the Wildlife Health Event is observed if any.
 
-#### Wildlife (Species level)
+### Wildlife (Species level)
 
 This Category is used to describe wildlife species at the Wildlife Health Event. This Category should be use once per species observed per Event. For example, if three species of waterfowl are observed in a Wildlife Health Event, this Category should be used three times to document the species involved in the Event (once per species).
 
-#### Livestock -- Domestic Species (Species level)
+### Livestock - Domestic Species (Species level)
 
 This Category is used to describe all domestic animals observed. This Category should be used once per domestic species observed in a Wildlife Health Event.
 
-#### Animal and Samples (Individual animal level and its samples)
+### Animal and Samples (Individual animal level and its samples)
 
-This Category describes specific individual animals belonging to any of the species documented for the Wildlife Health Event and the samples collected from them. in the case of rangers, individual level data are collected only from those animals providing samples.
+This Category describes specific individual animals belonging to any of the species documented for the Wildlife Health Event and the samples collected from them.
 
 In summary, the figure below shows how Observations of a Wildlife Health Event are collected as a **SMART Incident**.
 
-![](Pictures_for%20_manual/Picture4.png)
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture5.png)
+<p>
 
 The description of Attributes, Sub-Attributes, and Options across the Categories used in SMART for Health is provided in the data dictionary accessible [here](https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/).
 
 ## Using SMART for Health
 
-The following section explains how to use the referential SMART for Health patrol package to record Wildlife Health Events. Once a Wildlife Health Event is detected during a patrol, the SMART for Health user should click on the "Incident" button of the Patrol screen.
-
-![](Pictures_for _manual/Picture5.png){width="240"}
-
 To document a Wildlife Health Event, SMART for Health users add Observations using the different Categories.
 
-1.  **Click on the \"Make Observation\"** option of the \"Incident\" screen. Selecting this option opens the menu of Categories:
+### Add an Observation to the Incident
 
-    ![](Pictures_for _manual/Picture6.png){width="522"}
+**Click on the "Make Observation"** option of the "Incident" screen. Selecting this option opens the menu of Categories:
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture6.png){width="560"}
+<p>
+
+### Record Relevant Environmental Findings at the Event Site
+
+Click on the **Site Description** Category if a relevant environmental process is found at the Event and fill in the "**Findings**" Attribute. Multiple types of sources can be selected in this Attribute.
+
+If "**Other Findings**" is selected by itself or together with other environmental processes, then a new Attribute "**Other Findings**" provide the space to write another anthropogenic activity not present in the list. Once the Attributes are satisfactorily completed, click on the check mark on the top-right corner of the screen.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture7.png){width="840"}
+<p>
+
+If you want to clear the data added to an Attribute, click on the Attribute, hold and slide to the left, and click "Yes". Take photographs of the area if relevant. If you want to cancel the addition of a Category to the Incident, select the left arrow in the top-left corner of the screen. If you already added the Category to the Incident but want to remove it, click on the Category to be removed, hold and slide to the left, and confirm the deletion.
+
+### Record the Species Observed
+
+The "**Wildlife**" and "**Livestock - Domestic Species**" Categories are used to record the species in a Wildlife Health Event. At least one animal of a species must be observed in order to add species level information ("Wildlife" or "Livestock - Domestic Species"). For example, if a single sick lion is observed in a Wildlife Health Event, then this species must be documented using the "**Wildlife**" Category once. If twenty lions are observed in a Wildlife Health Event, then this species must be documented using the "**Wildlife**" Category once. If two wildlife species are observed in a Wildlife Health Event, then the "**Wildlife**" Category should be used twice to document each one of these species.
+
+First, select the "**Wildlife**" or "**Livestock - Domestic Species**" Categories depending on the species of animal to record. Then, select the adequate option from the "Species" Attribute. In the case of the "Wildlife" Category, if the species or a higher level taxonomy is known but it is not listed in the "Species' Attribute, it is possible to select the"**Species not Listed**" option. Consequently, the Attribute "**Provide Species Not Listed**" will become available to type the species common or scientific name, or any taxonomy level known (e.g. the taxonomic genus, family, order, or class).
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture8.png){width="280"}
+<p>
+
+Complete the "**Context**" Attribute. This is a multilist Attribute and it is used to understand the capture, captivity, or hunting conditions of the animals. Select "Free-ranging" if the animals being recorded are not captured at all. Choose "Hunted and not Displaced" when the individuals of the species observed are hunted or captured and at the original hunting location. For example, in a snare in the field. Choose "Hunted and Displaced" when the individuals of the species observed are hunted or captured and moved from the original point of capture. Choose from the remaining Options ("Farm", "Household", "Zoo", etc.) when the individuals of the species observed are in a captivity facility.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture9.png){width="280"}
+<p>
+
+Provide the number of healthy, sick or injured, and dead animals belonging to the same species no matter their age or sex using the "**Number Healthy Animals"**,"**Number Sick or Injured Animals"**, and "**Number of Dead Animals"** Attributes. The count of individuals per health status per species must include the animals that provide samples and that are documented using the"**Animal and Samples**" Category.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture10.png){width="280"}
+<p>
+
+The addition of at least one sick or injured animal brings to the screen the "**Anomalies in Sick or Injured Animals**" and the "**Potential Cause Disease or Injury**" Attributes. Complete these Attributes by selecting one or more options about what is observed in the animals of the species recorded and what could be the cause of disease or injury. If no obvious anomalies are observed or a potential cause of disease or injury is not identifiable, then select "No obvious anomalies" and "Unknown", respectively.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture11.png){width="280"}
+<p>
+
+If an **anomaly** is **not present** **in the list of options** in the "Anomalies in Sick or Injured Animals" Attribute, then select "**Other**" and a new Attribute "**Other Anomalies**" will become available to write the non-listed anomaly. If "Predation" is selected as the potential cause of disease or injury for wildlife, then the Attribute "Carnivore Attack" becomes available in the screen to provide the type of potential carnivore attacker. For the definition of the **Attributes** and **Options** go to the Dictionary Section.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture12.png){width="840"}
+<p>
+
+Provide any extra information using the "**Other Relevant Information**" text Attribute.
+
+Similarly, the addition of at least one dead animal brings to the screen the "**Anomalies in Dead Animals**" and the "**Potential Cause of Death**" Attributes. Complete these Attributes as explained above. Moreover, the Attribute "**Condition Dead Animals**" will become available to document the freshness of the carcasses recorded. Just like the "**Anomalies in Sick or Injured Animals**", "**Anomalies in Dead Animals**", "**Potential Cause of Disease or Injury**", and "**Potential Cause of Death**", this is a multilist Attribute as many carcasses of the same species in different rotting stages could be found in the same Wildlife Health Event. Select the corresponding options.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture13.png){width="1120"}
+<p>
+
+Take photographs of the animals as needed by clicking on the photograph camera icon on the top-left corner of the Attribute screen. The camera on the device will turn on to take photographs.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture14.png){width="280"}
+<p>
+
+### Record Individual Animals and Their Samples
+
+Individual Animal data are needed only for those healthy, sick or injured, and dead animals that provide samples or when the health monitoring mandate expects the collection of health information at the individual level. Add as many Observations using the "**Animal and Samples**" Category as individual animals are documented. Animals recorded individually must **also** be included in the count of healthy, sick, injured, or dead animals of the corresponding species documented through the "**Wildlife"** or"**Livestock - Domestic Species**" Categories . For example, if samples were collected from a single sick lion, but two individuals of this species were observed at the Wildlife Health Event, then the "**Wildlife**" Category is used to document the two animals of the Lion species. The "**Animal and Samples**" Category is used to document the sampled lion.
+
+Click on the "**Animal and Samples**" Category and complete the Attributes. For a definition of the Attributes and Options see the Data Dictionary.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture15.png){width="560"}
+<p>
+
+The "**Species**" and "**Context**" Attributes are the same as in the "**Wildlife**" and "**Livestock - Domestic Species**" Categories. Complete the "**Animal ID**" field following a standard structure. The "**Initial Health Status**" Attribute is a single choice Attribute and it requests the health status at initial observation of the animal ("Found Dead", "Found Live Healthy", "Found Live Sick or Injured", and "Animal Parts"). Selecting any of these Options, except "Found Live Healthy", will make the Attributes "**Anomalies Observed**" and "**Potential Cause**" to become available in the screen. Complete these Attributes following the explanation for the "**Anomalies in Sick or Injured Animals**" and "**Potential Cause of Disease or Injury**" Attributes provided in the section "Record the Species Observed" above. Selecting the Option "**Found Dead**" will also make the Attribute "**Condition Dead Animal**" appear on the screen. Complete this Attribute as explained in the previous section but this time selecting a single choice only. Provide the "**Age**", and "**Sex**" of the individual animal by selecting one Option in each Attribute.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture16.png){width="280"}
+<p>
+
+If samples are collected from an animal, then the sample information can be nested in the corresponding individual using the "**Records**" Attribute. Once this button is clicked, a new screen will request to "Add Record". Click on this button to add the first sample using the Sub-Attributes "**Sample ID**", "**Sample Type**", and "**Collected Directly from Animal**". The "**Sample ID**" Sub-Attribute is to provide a code following an established standard to uniquely identify the sample of the animal. Select a single option from the "**Sample Type**" Sub-Attribute to document the type of tissue collected from the animal. Finally, report if the sample was directly collected from the animal or not by completing the Sub-Attribute "**Collected Directly from Animal**".
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture17.png){width="840"}
+<p>
+
+Click on the check mark on the top-right corner of the screen to confirm the addition of the sample. Click on the "Add Record" again in the "Records" screen to document a new sample of the same individual. As new samples are added, the "Records" screen will show the list of samples. See the Data Dictionary for more details.
+
+<p style="text-align: center;">
+![](Pictures_for_manual/Picture18.png){width="280"}
+<p>
+
+After all samples collected from an animal have been documented, click on the check mark on the top-right corner of the screen to confirm their addition. If you want to leave the "Records" screen without confirming the addition of samples, select the left arrow in the top-left corner of the screen. If you want to delete a sample from the list, click on the Record, hold, swipe to the left, and confirm the deletion. Once the user is back in the "Animal and Samples" screen, the "Records" Attribute will indicate the number of samples added for the individual.
+
+If the "Health Status" selected is "Found Dead" then the Attribute "**Was the Carcass Collected?**" needs to be completed (see image above). This Attribute is to track if the carcass of the animal was brought to headquarters or to another facility where it can be stored or a necropsy can be conducted. Finally, use the Attribute"**Other Relevant Information**" to report any other important data. Once the Attributes have been completed, click on the check mark in the top-right corner of the "Animal and Samples" screen and the new **Observation** ("Animal and Samples") will be listed for the current Event.
+
+### Example
+
+A Wildlife Disease Event with:
+
+-   One or more relevant environmental findings
+
+-   A wildlife species (captive or not) and a livestock or domestic species (captive or not)
+
+-   Two sampled individuals of any of the species recorded
+
+looks like this:
+
+<p style="text-align: center;">
+![](Pictures_for_manual/picture19.png){width="280"}
+<p>
