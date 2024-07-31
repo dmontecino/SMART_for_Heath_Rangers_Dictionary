@@ -21,7 +21,7 @@ The current manual applies to the Spatial Monitoring and Reporting Tool (SMART) 
 
 The Spatial Monitoring and Reporting Tool (SMART) is an approach originally designed to support law enforcement in protected areas. SMART provides a set of technological tools: SMART Desktop, SMART Mobile, and SMART Connect. SMART Mobile is a smartphone app that supports smooth and standardized data collection in the field, keeps track of the spatiotemporal coordinates of the users and of the data being collected, allows the collection of image and audio data in the field, and allows real-time communication of data to out-of-the-field focal points through SMART Connect when internet connection is available. This real-time connection provides the opportunity to promptly react to detected events.
 
-The WCS - Health Program has created a SMART data model to track wildlife health events and the specimens collected from these events (SMART for Health). This data model can be understood as reference to be integrated into "SMART Patrol Packages" used in protected areas and installed in SMART Mobile to support the collection of information from these Events. Here we describe how SMART for Health data model can be used by rangers to record their observations of dead, sick, or injured wildlife and track the specimens collected when these animals are found. The purpose of this manual is to explain the use of SMART for Health in the field; therefore, the manual **does not explain** how to install SMART Desktop, Mobile, or Connect or how to load SMART for Health in the mobile devices.
+The WCS - Health Program has created a SMART data model to track Wildlife Health Events and the specimens collected from these Events (SMART for Health). This data model can be understood as reference to be integrated into "SMART Patrol Packages" used in protected areas and installed in SMART Mobile to support the collection of information from these Events. Here we describe how SMART for Health data model can be used by rangers to record their observations of dead, sick, or injured wildlife and track the specimens collected when these animals are found. The purpose of this manual is to explain the use of SMART for Health in the field; therefore, the manual **does not explain** how to install SMART Desktop, Mobile, or Connect or how to load SMART for Health in the mobile devices.
 
 In this manual, we capitalize nouns such as **Attributes, Categories, Incidents**, and others when they refer to SMART components.
 
@@ -121,7 +121,7 @@ In summary, the figure below shows how Observations of a Wildlife Health Event a
 ![](Pictures_for_manual/Picture5.png)
 <p>
 
-The description of Attributes, Sub-Attributes, and Options across the Categories used in SMART for Health is provided in the data dictionary accessible [here](https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/).
+The description of Attributes, Sub-Attributes, and Options across the Categories used in SMART for Health is provided in the data dictionary accessible [here](https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/Dictionary.html).
 
 ## Using SMART for Health
 
@@ -129,7 +129,7 @@ To document a Wildlife Health Event, SMART for Health users add Observations usi
 
 ### Add an Observation to the Incident
 
-**Click on the "Make Observation"** option of the "Incident" screen. Selecting this option opens the menu of Categories:
+**Click on the "Make Observation"**. Selecting this option opens the menu of Categories:
 
 <p style="text-align: center;">
 ![](Pictures_for_manual/Picture6.png){width="560"}
@@ -175,7 +175,7 @@ The addition of at least one sick or injured animal brings to the screen the "**
 ![](Pictures_for_manual/Picture11.png){width="280"}
 <p>
 
-If an **anomaly** is **not present** **in the list of options** in the "Anomalies in Sick or Injured Animals" Attribute, then select "**Other**" and a new Attribute "**Other Anomalies**" will become available to write the non-listed anomaly. If "Predation" is selected as the potential cause of disease or injury for wildlife, then the Attribute "Carnivore Attack" becomes available in the screen to provide the type of potential carnivore attacker. For the definition of the **Attributes** and **Options** go to the Dictionary Section.
+If an **anomaly** is **not present** **in the list of options** in the "Anomalies in Sick or Injured Animals" Attribute, then select "**Other**" and a new Attribute "**Other Anomalies**" will become available to write the non-listed anomaly. If "Predation" is selected as the potential cause of disease or injury for wildlife, then the Attribute "**Carnivore Attack**" becomes available in the screen to provide the type of potential carnivore attacker. For the definition of the **Attributes** and **Options** go to the Dictionary Section.
 
 <p style="text-align: center;">
 ![](Pictures_for_manual/Picture12.png){width="840"}

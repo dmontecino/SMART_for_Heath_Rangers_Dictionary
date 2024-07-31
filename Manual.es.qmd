@@ -119,13 +119,15 @@ En resumen, la siguiente figura, muestra como las Observaciones de un Evento San
 ![](Pictures_for_manual/Spanish/Picture5.png)
 <p>
 
+La descripción de los Atributos, Sub-Atributos, y Opciones en las Categorías utilizadas en SMART Salud se encuentra en el diccionario de datos accesible [aquí](https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/Dictionary.es.html).
+
 ## Uso de SMART for Health / SMART Salud
 
 Para documentar un Evento de Salud de la Vida Silvestre, los usuarios de SMART for Health deben agregar Observaciones usando las diferentes Categorías.
 
 ### Agregar una Observación al Incidente
 
-**Haga clic en la opción "Obsevar"** en la pantalla de "Incidente". Seleccionar esta opción abre el menú de Categorías:
+**Haga clic en la opción "Obsevar"**. Seleccionar esta opción abre el menú de Categorías:
 
 <p style="text-align: center;">
 ![](Pictures_for_manual/Spanish/Picture6.png){width="540"}
@@ -171,7 +173,7 @@ La adición de al menos un animal enfermo o herido trae a la pantalla los Atribu
 ![](Pictures_for_manual/Spanish/Picture11.png){width="280"}
 <p>
 
-Si una **anomalía no está presente en la lista de opciones** en el Atributo "Problemas en Animales Enfermos o Lesionados", seleccione "Otro" y un nuevo Atributo "Otras Anomalías en Enfermos o Lesionados" estará disponible para escribir el problema no listado. Si se selecciona "Depredación" como la posible causa de enfermedad o lesión en los animales silvestres, entonces el Atributo "Ataque de Carnívoro" estará disponible en la pantalla para proporcionar el tipo de posible atacante carnívoro. Para la definición de los **Atributos** y **Opciones** vaya a la Sección de Diccionario.
+Si una **anomalía no está presente en la lista de opciones** en el Atributo "Problemas en Animales Enfermos o Lesionados", seleccione "Otro" y un nuevo Atributo "Otras Anomalías en Enfermos o Lesionados" estará disponible para escribir el problema no listado. Si se selecciona "Depredación" como la posible causa de enfermedad o lesión en los animales silvestres, entonces el Atributo "88Ataque de Carnívoro88" estará disponible en la pantalla para proporcionar el tipo de posible atacante carnívoro. Para la definición de los **Atributos** y **Opciones** vaya a la Sección de Diccionario.
 
 <p style="text-align: center;">
 ![](Pictures_for_manual/Spanish/Picture12.png){width="840"}
