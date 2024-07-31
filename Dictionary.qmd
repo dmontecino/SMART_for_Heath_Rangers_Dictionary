@@ -383,7 +383,7 @@ animals_samples_en<-
                     
                     rep("The anomalies in the animal observed at the Event. Multiple options can be selected", nrow(en[en$att_key=="anomaliesinsickinjuredordeadanimals_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    "A text field to register the anomalies in the animal observed at the Event that are not present in the 'Anomalies in Sick, Injured, or Dead Animals' Attribute", 
+                    "A text field to register the anomalies in the animal observed at the Event that are not present in the 'Anomalies Observed' Attribute", 
                     
                     rep("The potential cause of death, disease, or injury in the animal observed at the Event. Multiple options can be selected", nrow(en[en$att_key=="potentialcauseofdeathdiseaseorinjury_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
