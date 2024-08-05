@@ -124,7 +124,9 @@ wildlife_lo<-
   
 
   out
-# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+  library(xlsx)
+  write.xlsx(out, file = "/Users/DMontecino/Downloads/wildlife_lao.csv")
 
 ```
 

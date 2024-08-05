@@ -75,9 +75,14 @@ ul.task-list li input[type="checkbox"] {
         <div id="quarto-search" class="" title="Buscar"></div>
         </div>
         </div>
-    <div class="sidebar-menu-container" id="languages-links"><ul class="list-unstyled mt-1" id="language-links-ul"><li id="language-link-li-en">
+    <div class="sidebar-menu-container" id="languages-links"><ul class="list-unstyled mt-1" id="language-links-ul">
+<li id="language-link-li-en">
 <i class="bi bi-globe2"></i><span> </span><a class="toc-action" href="https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/Manual.html" id="language-link-en">English</a>
-</li></ul></div>
+</li>
+<li id="language-link-li-fr">
+<i class="bi bi-globe2"></i><span> </span><a class="toc-action" href="https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/fr/Manual.fr.html" id="language-link-fr">Français</a>
+</li>
+</ul></div>
 <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
 <li class="sidebar-item">
@@ -115,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#observaci%C3%B3n-smart" id="toc-observación-smart" class="nav-link" data-scroll-target="#observación-smart">Observación SMART</a></li>
   <li><a href="#smart-category" id="toc-smart-category" class="nav-link" data-scroll-target="#smart-category">SMART Category</a></li>
   <li><a href="#atributo-smart" id="toc-atributo-smart" class="nav-link" data-scroll-target="#atributo-smart">Atributo SMART</a></li>
-  <li><a href="#opciones-de-atributos-y-sub-atributos-smart" id="toc-opciones-de-atributos-y-sub-atributos-smart" class="nav-link" data-scroll-target="#opciones-de-atributos-y-sub-atributos-smart">Opciones de Atributos y Sub-Atributos SMART</a></li>
+  <li><a href="#opciones-de-atributos-y-atributos-de-registros-smart" id="toc-opciones-de-atributos-y-atributos-de-registros-smart" class="nav-link" data-scroll-target="#opciones-de-atributos-y-atributos-de-registros-smart">Opciones de Atributos y Atributos de Registros SMART</a></li>
   </ul>
 </li>
   <li><a href="#evento-de-salud-en-fauna-silvestre" id="toc-evento-de-salud-en-fauna-silvestre" class="nav-link" data-scroll-target="#evento-de-salud-en-fauna-silvestre">Evento de Salud en Fauna Silvestre</a></li>
@@ -165,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>Versión 1.3.0 July, 2024</p>
-<p>Este manual describe SMART for Health para Guardaparques que registran morbilidad y mortalidad de fauna silvestre y colectan especímenes en campo, y explica su uso adecuado.</p>
+<p>Este manual describe SMART for Health para Guardaparques que registran morbilidad y mortalidad de fauna silvestre y colectan especímenes en campo. El Manual explica su uso adecuado en SMART Mobile.</p>
 <p>Este manual es compatible con el Spatial Monitoring and Reporting Tool (SMART) version 7. Para más información sobre SMART, visite https://smartconservationtools.org/. Para aprender más sobre cómo usar SMART Desktop y Connect, visite https://smartconservationtools.org/.</p>
 <section id="introducción" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="introducción">Introducción</h2>
 <p>El Spatial Monitoring and Reporting Tool (SMART) es un enfoque diseñado originalmente para apoyar la aplicación de la ley en áreas protegidas. SMART proporciona un conjunto de herramientas tecnológicas: SMART Desktop, SMART Mobile y SMART Connect. SMART Mobile es una aplicación para dispositivos inteligentes móviles que permite una recopilación fluida y estandarizada de datos en el campo, rastrea las coordenadas espacio-temporales de los usuarios y de los datos recopilados, permite el registro de imágenes y audio en el campo, y permite la comunicación en tiempo real de información a puntos focales fuera del campo a través de SMART Connect cuando hay conexión a internet disponible. Esta conexión en tiempo real proporciona la oportunidad de reaccionar rápidamente a los eventos detectados.</p>
@@ -175,12 +180,14 @@ ul.task-list li input[type="checkbox"] {
 <p>A continuación se proporciona un resumen de la estructura de datos en SMART.</p>
 <p>Incidentes SMART dentro de una Patrulla SMART:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture1.png" class="img-fluid"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture1.png" class="img-fluid"></p>
 <p>
 </p>
 <p>O Incidentes SMART fuera de una Patrulla SMART:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture2.png" class="img-fluid"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture2.png" class="img-fluid"></p>
 <p>
 </p>
 <p>Comenzando desde la parte inferior de ambas opciones, SMART for Health facilita la recopilación de observaciones de campo (<strong>Observaciones SMART</strong>) para describir las categorías de información que componen un <strong>Evento de Salud en Fauna Silvestre</strong>. Estos <strong>Eventos</strong> se registran cuando los rangers encuentran animales <strong>muertos, enfermos o heridos durante sus patrullas</strong>.</p>
@@ -196,22 +203,24 @@ ul.task-list li input[type="checkbox"] {
 <p>Una <strong>Categoría SMART</strong> es un conjunto de <strong>Atributos SMART</strong> que solicitan información de un ítem específico de un Evento de Salud en Fauna Silvestre.</p>
 </section><section id="atributo-smart" class="level3"><h3 class="anchored" data-anchor-id="atributo-smart">Atributo SMART</h3>
 <p>Cuando se selecciona una Categoría SMART, un conjunto de campos correspondientes a elementos de datos específicos solicitados dentro de una Categoría aparecen en la pantalla. Cada uno de ellos es un Atributo SMART. Los Atributos son obligatorios u opcionales. Los Atributos obligatorios se identifican con un asterisco gris y se deben completar para poder registrar la Observación SMART. Los Atributos obligatorios con información faltante se volverán rojos si se hace click en la marca de verificación en la esquina superior derecha de la pantalla.</p>
-</section><section id="opciones-de-atributos-y-sub-atributos-smart" class="level3"><h3 class="anchored" data-anchor-id="opciones-de-atributos-y-sub-atributos-smart">Opciones de Atributos y Sub-Atributos SMART</h3>
-<p>Las Opciones de Atributo son las opciones preestablecidas utilizadas para responder a un Atributo o Sub-Atributo de tipo lista o multilista.</p>
+</section><section id="opciones-de-atributos-y-atributos-de-registros-smart" class="level3"><h3 class="anchored" data-anchor-id="opciones-de-atributos-y-atributos-de-registros-smart">Opciones de Atributos y Atributos de Registros SMART</h3>
+<p>Las Opciones de Atributo son las opciones preestablecidas utilizadas para responder a un Atributo o Atributo de Registro de tipo lista o multilista.</p>
 </section></section><section id="evento-de-salud-en-fauna-silvestre" class="level2"><h2 class="anchored" data-anchor-id="evento-de-salud-en-fauna-silvestre">Evento de Salud en Fauna Silvestre</h2>
 <p>Un <strong>Evento de Salud en Fauna Silvestre</strong> es un conjunto de hallazgos de campo que son relevantes para los objetivos de la vigilancia sanitaria en fauna silvestre. <strong>Un grupo de animales sanos por si mismos no es un Evento de Salud en Fauna Silvestre. Sin embargo, cuando los guardaparques encuentran un grupo de animales muertos, enfermos, o heridos, los animales sanos presentes en el Evento son importantes de documentar.</strong> Un Evento de Salud en Fauna Silvestre para los guardaparques se define como “la presencia de al menos un animal evidentemente no sano (enfermo, herido o muerto), independientemente de la causa, en un lugar y tiempo específico, junto con todos los demás animales ‘sanos’ y las características ambientales potencialmente relevantes en el mismo lugar espacio-temporal. Los animales pueden pertenecer a especies silvestres o domésticas y estar en libertad, cazados o en cautiverio”.</p>
 <p>Ejemplos de Eventos de Salud en Fauna Silvestre incluyen: (1) un grupo de aves acuáticas muertas, enfermas y sanas en la orilla de un lago, (2) la identificación de carnívoros envenenados, y (3) un herbívoro herido.</p>
 <p><strong>¡Si es epidemiológicamente relevante, un Evento de Salud en Fauna Silvestre puede incluir ganado o especies domésticas!</strong> Por ejemplo, guardaparques encuentran un grupo de ungulados silvestres muertos y sospechan que la causa fue una enfermedad infecciosa. En la misma área donde encontraron los ungulados muertos, los guardaparques también observaron ganado deambulando. En este caso, el ganado podría ser una fuente potencial de la enfermedad infecciosa sospechada para los ungulados silvestres</p>
 </section><section id="eventos-de-salud-en-fauna-silvestre-en-smart" class="level2"><h2 class="anchored" data-anchor-id="eventos-de-salud-en-fauna-silvestre-en-smart">Eventos de Salud en Fauna Silvestre en SMART</h2>
 <p>Un <strong>Evento de Salud en Fauna Silvestre (ver abajo) se documenta como un Incidente SMART</strong> dentro de una <strong>Patrulla SMART</strong>. Un Evento de Salud en Fauna Silvestre se registra recopilando <strong>Observaciones SMART</strong> completando <strong>Categorías SMART</strong> y sus Atributos SMART presentes en el <strong>Paquete de Patrullaje SMART for Health</strong> referencial para <strong>SMART Mobile</strong>. En el paquete de patrullaje referencial SMART for Health, las Categorías SMART son “Hallazgos en el Lugar”, “Fauna Silvestre”, “Ganado - Especies Domésticas” y “Animal y Muestras”.</p>
-<p>El siguiente diagrama muestra las <strong>Categorías SMART</strong> de información referenciales para el registro de Eventos de Salud en Fauna Silvestre y su jerarquía.</p>
+<p>El siguiente diagrama muestra las <strong>Categorías SMART</strong> de información referenciales para el registro de Eventos de Salud en Fauna Silvestre y su jerarquía:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture3.png" class="img-fluid"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture3.png" class="img-fluid"></p>
 <p>
 </p>
 <p>Las <strong>Categorías SMART en el paquete referencial SMART for Health</strong> en <strong>SMART Mobile</strong> se ven así:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture4.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture4.png" class="img-fluid" width="280"></p>
 <p>
 </p></section><section id="categorías-smart-en-smart-for-health" class="level2"><h2 class="anchored" data-anchor-id="categorías-smart-en-smart-for-health">Categorías SMART en SMART for Health</h2>
 <section id="hallazgos-en-el-sitio-nivel-de-evento" class="level3"><h3 class="anchored" data-anchor-id="hallazgos-en-el-sitio-nivel-de-evento">Hallazgos en el Sitio (nivel de Evento)</h3>
@@ -222,85 +231,100 @@ ul.task-list li input[type="checkbox"] {
 <p>Esta Categoría se utiliza para describir todos los animales domésticos observados. Esta Categoría debe utilizarse una vez por especie doméstica observada en un Evento de Salud en Fauna Silvestre.</p>
 </section><section id="animal-y-muestras-nivel-de-animal-individual-y-sus-muestras" class="level3"><h3 class="anchored" data-anchor-id="animal-y-muestras-nivel-de-animal-individual-y-sus-muestras">Animal y Muestras (nivel de animal individual y sus muestras)</h3>
 <p>Esta Categoría describe animales individuales pertenecientes a cualquiera de las especies documentadas en las Categorías de Vida Silvestre y Ganado - Especies Domésticas, así como las muestras tomadas de estos animales.</p>
-<p>En resumen, la siguiente figura, muestra como las Observaciones de un Evento Sanitario en Fauna Silvestre son colectadas como un <strong>Incidente SMART</strong>.</p>
+<p>En resumen, la siguiente figura, muestra como las Observaciones de un Evento Sanitario en Fauna Silvestre son colectadas como un <strong>Incidente SMART</strong>:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture5.png" class="img-fluid"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture5.png" class="img-fluid"></p>
 <p>
-</p></section></section><section id="uso-de-smart-for-health-smart-salud" class="level2"><h2 class="anchored" data-anchor-id="uso-de-smart-for-health-smart-salud">Uso de SMART for Health / SMART Salud</h2>
+</p>
+<p>La descripción de los Atributos, Atributos de Registros, y Opciones en las Categorías utilizadas en SMART Salud se encuentra en el diccionario de datos accesible <a href="https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/Dictionary.es.html">aquí</a>.</p>
+</section></section><section id="uso-de-smart-for-health-smart-salud" class="level2"><h2 class="anchored" data-anchor-id="uso-de-smart-for-health-smart-salud">Uso de SMART for Health / SMART Salud</h2>
 <p>Para documentar un Evento de Salud de la Vida Silvestre, los usuarios de SMART for Health deben agregar Observaciones usando las diferentes Categorías.</p>
 <section id="agregar-una-observación-al-incidente" class="level3"><h3 class="anchored" data-anchor-id="agregar-una-observación-al-incidente">Agregar una Observación al Incidente</h3>
-<p><strong>Haga clic en la opción “Obsevar”</strong> en la pantalla de “Incidente”. Seleccionar esta opción abre el menú de Categorías:</p>
+<p><strong>Haga clic en la opción “Obsevar”</strong>. Seleccionar esta opción abre el menú de Categorías:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture6.png" class="img-fluid" width="540"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture6.png" class="img-fluid" width="540"></p>
 <p>
 </p></section><section id="registrar-hallazgos-ambientales-relevantes-en-el-sitio-del-evento" class="level3"><h3 class="anchored" data-anchor-id="registrar-hallazgos-ambientales-relevantes-en-el-sitio-del-evento">Registrar Hallazgos Ambientales Relevantes en el Sitio del Evento</h3>
 <p>Haga click en la Categoría <strong>Hallazgos en el Lugar</strong> si un proceso ambiental relevante es encontrado en el lugar del Evento y complete el Atributo “<strong>Hallazgos</strong>”. Es posible seleccionar múltiples tipos de fuentes en este Atributo.</p>
-<p>Si se selecciona “<strong>Otros Hallazgos</strong>” por si solo o junto con otros procesos ambientales, entonces un nuevo Atributo “<strong>Otros Hallazgos</strong>” da la opción para escribir proceso no presente en la lista. Una vez que los Atributos de esta Categoría estén completados satisfactoriamente, haga click en la marca de verificación en la esquina superior derecha de la pantalla.</p>
+<p>Si se selecciona “<strong>Otros Hallazgos</strong>” por si solo o junto con otros procesos ambientales, entonces un nuevo Atributo “<strong>Otros Hallazgos</strong>” da la opción para escribir proceso no presente en la lista. Una vez que los Atributos de esta Categoría estén completados satisfactoriamente, haga click en la marca de verificación en la esquina superior derecha de la pantalla:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture7.png" class="img-fluid" width="840"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture7.png" class="img-fluid" width="840"></p>
 <p>
 </p>
 <p>Si desea borrar los datos agregados a un Atributo, haga click en el Atributo, mantengalo presionado, deslize hacia la izquierda, y haga click en “Sí”. Tome fotografías del área si es relevante. Si desea cancelar la adición de una Categoría al Incidente, seleccione la flecha a la izquierda en la esquina superior izquierda de la pantalla. Si ya agregó la Categoría al Incidente pero desea eliminarla, haga click en la Categoría a eliminar, mantengala presionada, deslize hacia la izquierda, y confirme la eliminación.</p>
 </section><section id="registrar-las-especies-observadas" class="level3"><h3 class="anchored" data-anchor-id="registrar-las-especies-observadas">Registrar las Especies Observadas</h3>
 <p>Las Categorías “<strong>Fauna Silvestre</strong>” y “<strong>Ganado - Especies Domésticas</strong>” se utilizan para registrar las especies en un Evento de Salud en Fauna Silvestre. Se debe observar al menos un animal de una especie para agregar información a nivel de especie (“Fauna Silvestre” o “Ganado - Especies Domésticas”). Por ejemplo, si se observa un solo León enfermo en un Evento de Salud en Fauna Silvestre, entonces esta especie debe documentarse utilizando la Categoría “<strong>Fauna Silvestre</strong>” una vez. Si se observan veinte leones en un Evento de Salud en Fauna Silvestre, entonces esta especie debe documentarse utilizando la Categoría “<strong>Fauna Silvestre</strong>” una vez. Si se observan dos especies de fauna silvestre en un Evento de Salud en Fauna Silvestre, entonces se debe usar la Categoría “<strong>Fauna Silvestre</strong>” dos veces para asi documentar cada una de estas especies.</p>
-<p>Primero, seleccione la Categoría “<strong>Fauna Silvestre</strong>” o “<strong>Ganado - Especies Domésticas</strong>” dependiendo de la especie de animal a registrar. Luego, selecciona la opción adecuada del Atributo “Especie”. En el caso de la Categoría “Fauna Silvestre”, si la especie o un nivel taxonómico superior es conocido pero no está listada en el Atributo “Especie”, es posible seleccionar la opción “<strong>Especie no listada</strong>”. En seguida, el Atributo “<strong>Proporcionar Especie no Listada</strong>” estará disponible para escribir el nombre común o científico de la especie, o cualquier nivel taxonómico conocido (por ejemplo, el género, familia, orden, o clase taxonómica).</p>
+<p>Primero, seleccione la Categoría “<strong>Fauna Silvestre</strong>” o “<strong>Ganado - Especies Domésticas</strong>” dependiendo de la especie de animal a registrar. Luego, selecciona la opción adecuada del Atributo “Especie”. En el caso de la Categoría “Fauna Silvestre”, si la especie o un nivel taxonómico superior es conocido pero no está listada en el Atributo “Especie”, es posible seleccionar la opción “<strong>Especie no listada</strong>”. En seguida, el Atributo “<strong>Proporcionar Especie no Listada</strong>” estará disponible para escribir el nombre común o científico de la especie, o cualquier nivel taxonómico conocido (por ejemplo, el género, familia, orden, o clase taxonómica):</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture8.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture8.png" class="img-fluid" width="280"></p>
 <p>
 </p>
-<p>Complete el Atributo “<strong>Contexto</strong>”. Este es un Atributo de lista múltiple y se utiliza para registrar las condiciones de captura, cautiverio o caza de los animales. Seleccione “Libre” si los animales registrados no están capturados en absoluto. Elija “Cazados y no Desplazados” cuando los individuos de la especie observada estan cazados o capturados y se encuentran en el lugar original de caza. Por ejemplo, en una trampa en el campo. Elija “Cazados y desplazados” cuando los individuos de la especie observada estan cazados o capturados y han sido movidos del punto original de captura. Elija entre las opciones restantes (“Granja”, “Hogar”, “Zoológico”, etc.) cuando los individuos de la especie observada están en cautiverio.</p>
+<p>Complete el Atributo “<strong>Contexto</strong>”. Este es un Atributo de lista múltiple y se utiliza para registrar las condiciones de captura, cautiverio o caza de los animales. Seleccione “Libre” si los animales registrados no están capturados en absoluto. Elija “Cazados y no Desplazados” cuando los individuos de la especie observada estan cazados o capturados y se encuentran en el lugar original de caza. Por ejemplo, en una trampa en el campo. Elija “Cazados y desplazados” cuando los individuos de la especie observada estan cazados o capturados y han sido movidos del punto original de captura. Elija entre las opciones restantes (“Granja”, “Hogar”, “Zoológico”, etc.) cuando los individuos de la especie observada están en cautiverio:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture9.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture9.png" class="img-fluid" width="280"></p>
 <p>
 </p>
-<p>Proporcione el número de animales sanos, enfermos o heridos, muertos pertenecientes a la misma especie sin importar su edad o sexo usando los Atributos <strong>Número de Animales Sanos</strong>, <strong>Número Animales Enfermos o Lesionados</strong> y <strong>Número Animales Muertos</strong>. El conteo de individuos por estado de salud por especie debe incluir los animales que proporcionan muestras y que están documentados usando la Categoría “<strong>Animal y Muestras</strong>”.</p>
+<p>Proporcione el número de animales sanos, enfermos o heridos, muertos pertenecientes a la misma especie sin importar su edad o sexo usando los Atributos <strong>Número de Animales Sanos</strong>, <strong>Número Animales Enfermos o Lesionados</strong> y <strong>Número Animales Muertos</strong>. El conteo de individuos por estado de salud por especie debe incluir los animales que proporcionan muestras y que están documentados usando la Categoría “<strong>Animal y Muestras</strong>”:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture10.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture10.png" class="img-fluid" width="280"></p>
 <p>
 </p>
-<p>La adición de al menos un animal enfermo o herido trae a la pantalla los Atributos “<strong>Problemas en Animales Enfermos o Lesionados</strong>” y “<strong>Causa Potencial de Enfermedad o Lesión</strong>”. Complete estos Atributos seleccionando una o más opciones sobre lo que se observa en los animales de la especie registrada y lo que podría ser la causa de la enfermedad o lesión. Si no se observan problemas obvios o no se identifica una posible causa de enfermedad o lesión, seleccione “Sin Problemas Obvios” y “Desconocido” respectivamente.</p>
+<p>La adición de al menos un animal enfermo o herido trae a la pantalla los Atributos “<strong>Problemas en Animales Enfermos o Lesionados</strong>” y “<strong>Causa Potencial de Enfermedad o Lesión</strong>”. Complete estos Atributos seleccionando una o más opciones sobre lo que se observa en los animales de la especie registrada y lo que podría ser la causa de la enfermedad o lesión. Si no se observan problemas obvios o no se identifica una posible causa de enfermedad o lesión, seleccione “Sin Problemas Obvios” y “Desconocido” respectivamente:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture11.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture11.png" class="img-fluid" width="280"></p>
 <p>
 </p>
-<p>Si una <strong>anomalía no está presente en la lista de opciones</strong> en el Atributo “Problemas en Animales Enfermos o Lesionados”, seleccione “Otro” y un nuevo Atributo “Otras Anomalías en Enfermos o Lesionados” estará disponible para escribir el problema no listado. Si se selecciona “Depredación” como la posible causa de enfermedad o lesión en los animales silvestres, entonces el Atributo “Ataque de Carnívoro” estará disponible en la pantalla para proporcionar el tipo de posible atacante carnívoro. Para la definición de los <strong>Atributos</strong> y <strong>Opciones</strong> vaya a la Sección de Diccionario.</p>
+<p>Si una <strong>anomalía no está presente en la lista de opciones</strong> en el Atributo “Problemas en Animales Enfermos o Lesionados”, seleccione “Otro” y un nuevo Atributo “Otras Anomalías en Enfermos o Lesionados” estará disponible para escribir el problema no listado. Si se selecciona “Depredación” como la posible causa de enfermedad o lesión en los animales silvestres, entonces el Atributo “88Ataque de Carnívoro88” estará disponible en la pantalla para proporcionar el tipo de posible atacante carnívoro:</p>
 <p style="text-align: center;">
 </p>
 <p><img src="Pictures_for_manual/Spanish/Picture12.png" class="img-fluid" width="840"></p>
 <p>Proporcione cualquier otra información adicional usando el Atributo de texto “<strong>Otra Información Relevante</strong>”.</p>
-<p>De manera similar, la adición de al menos un animal muerto trae a la pantalla los Atributos “<strong>Problemas en Animales Muertos</strong>” y “<strong>Posible Causa de Muerte</strong>”. Complete estos Atributos como se explicó anteriormente. Además, el Atributo “<strong>Condición Animales Muertos</strong>” se hará disponible también para documentar el estado de frescura de los cadáveres registrados. Al igual que “<strong>Problemas en Animales Enfermos o Lesionados</strong>”, “<strong>Problemas en Animales Muertos</strong>”, “<strong>Posible Causa de Enfermedad o Lesión</strong>”, y “<strong>Posible Causa de Muerte</strong>”, este es un Atributo de lista múltiple, ya que muchos cadáveres de la misma especie en diferentes etapas de descomposición podrían encontrarse en el mismo Evento de Salud en Fauna Silvestre. Seleccione las opciones correspondientes.</p>
+<p>De manera similar, la adición de al menos un animal muerto trae a la pantalla los Atributos “<strong>Problemas en Animales Muertos</strong>” y “<strong>Posible Causa de Muerte</strong>”. Complete estos Atributos como se explicó anteriormente. Además, el Atributo “<strong>Condición Animales Muertos</strong>” se hará disponible también para documentar el estado de frescura de los cadáveres registrados. Al igual que “<strong>Problemas en Animales Enfermos o Lesionados</strong>”, “<strong>Problemas en Animales Muertos</strong>”, “<strong>Posible Causa de Enfermedad o Lesión</strong>”, y “<strong>Posible Causa de Muerte</strong>”, este es un Atributo de lista múltiple, ya que muchos cadáveres de la misma especie en diferentes etapas de descomposición podrían encontrarse en el mismo Evento de Salud en Fauna Silvestre. Seleccione las opciones correspondientes:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture13.png" class="img-fluid" width="1120"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture13.png" class="img-fluid" width="1120"></p>
 <p>
 </p>
-<p>Tome fotografías de los animales según sea necesario haciendo click en el ícono de la cámara fotográfica en la esquina superior izquierda de la pantalla de Atributos. La cámara del dispositivo se encenderá para tomar fotografías.</p>
+<p>Tome fotografías de los animales según sea necesario haciendo click en el ícono de la cámara fotográfica en la esquina superior izquierda de la pantalla de Atributos. La cámara del dispositivo se encenderá para tomar fotografías:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture14.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture14.png" class="img-fluid" width="280"></p>
 <p>
 </p></section><section id="registrar-animales-individuales-y-sus-muestras" class="level3"><h3 class="anchored" data-anchor-id="registrar-animales-individuales-y-sus-muestras">Registrar Animales Individuales y Sus Muestras</h3>
 <p>Los datos de animales individuales son colectados en el caso de animales sanos, enfermos, lesionados, o muertos que son fuente de especímenes o cuando el mandato de vigilancia sanitaria en fauna requiere el registro the información sanitaria a nivel individual. Agregue tantas Obsevaciones utilizando la Categoría “Animal y Muestras” como animales individuales sean documentados. Los animales registrados individualmente <strong>también</strong> deben ser incluídos en la cuenta de animales sanos, enfermos, lesionados, o muertos de la especie correspondiente documentados utilizando las Categorías “<strong>Fauna Silvestre</strong>” o “<strong>Ganado - Especies Domésticas</strong>”. Por ejemplo, si especímenes fueron colectados desde un león, pero dos individuos de esta especie fueron observados en el Evento Sanitario en Fauna Silvestre, entonces la Categoría “<strong>Fauna Silvestre</strong>” se utiliza para documentar a los dos individuos de la especie León. La Categoría “<strong>Animales y Muestras</strong>” se utiliza luego para documentar al león muestrado.</p>
-<p>Haga click en la Categoría “<strong>Animal y Muestras</strong>” y complete los Atributos. Para una definición de los Atributos y Opciones, vea el Diccionario de Datos.</p>
+<p>Haga click en la Categoría “<strong>Animal y Muestras</strong>” y complete los Atributos:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture15.png" class="img-fluid" width="560"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture15.png" class="img-fluid" width="560"></p>
 <p>
 </p>
-<p>Los Atributos “<strong>Especie</strong>” y “<strong>Contexto</strong>” son los mismos que en las Categorías “<strong>Fauna Silvestre</strong>” y “<strong>Ganado - Especies Domésticas</strong>”. Complete el campo “<strong>Identificador Individuo</strong>” siguiendo una estructura estandarizada. El Atributo “<strong>Condición</strong>” es un Attributo de selección única y que solicita la condición sanitaria inicial del animal (“Encontrado Muerto”, “Encontrado Vivo Enfermo o Herido”, “Encontrado Vivo Sano”, y “Partes de Animal”). La selección de cualquiera de esta Opciones, excepto “Encontrado Vivo y Sano”, hará que los Atributos “<strong>Problemas Observados</strong>” y “<strong>Causa Potencial</strong>” esten disponibles en la pantalla. Complete estos Atributos siguiendo la explicación para los Atributos “<strong>Problemas en Animales Enfermos o Lesionados</strong>” y “<strong>Causa Potencial de Enfermedad o Lesion</strong>” entregada en la sección “Registrar Especies Observadas” arriba. La selección de la Opción “<strong>Encontrado Muerto</strong>” tambiên hará que el Atributo “<strong>Condición Animal Muerto</strong>” aparezca en la pantalla. Complete este Atributo como se explica en la sección anterior pero esta vez elija solo una Opción. Complete la “<strong>Edad</strong>” y “<strong>Sexo</strong>” del animal seleccionando una Opción en cada Atributo.</p>
+<p>Los Atributos “<strong>Especie</strong>” y “<strong>Contexto</strong>” son los mismos que en las Categorías “<strong>Fauna Silvestre</strong>” y “<strong>Ganado - Especies Domésticas</strong>”. Complete el campo “<strong>Identificador Individuo</strong>” siguiendo una estructura estandarizada. El Atributo “<strong>Condición</strong>” es un Attributo de selección única y que solicita la condición sanitaria inicial del animal (“Encontrado Muerto”, “Encontrado Vivo Enfermo o Herido”, “Encontrado Vivo Sano”, y “Partes de Animal”). La selección de cualquiera de esta Opciones, excepto “Encontrado Vivo y Sano”, hará que los Atributos “<strong>Problemas Observados</strong>” y “<strong>Causa Potencial</strong>” esten disponibles en la pantalla. Complete estos Atributos siguiendo la explicación para los Atributos “<strong>Problemas en Animales Enfermos o Lesionados</strong>” y “<strong>Causa Potencial de Enfermedad o Lesion</strong>” entregada en la sección “Registrar Especies Observadas” arriba. La selección de la Opción “<strong>Encontrado Muerto</strong>” tambiên hará que el Atributo “<strong>Condición Animal Muerto</strong>” aparezca en la pantalla. Complete este Atributo como se explica en la sección anterior pero esta vez elija solo una Opción. Complete la “<strong>Edad</strong>” y “<strong>Sexo</strong>” del animal seleccionando una Opción en cada Atributo:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture16.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture16.png" class="img-fluid" width="280"></p>
 <p>
 </p>
-<p>Si especímenes son colectados desde un animal, entonces la información de la muestra puede ser anidada bajo el individuo correspondiente utilizando el Atributo “<strong>Registros</strong>”. Una vez que se hace click en este botón, una nueva pantalla solicitarà “Añadir registro”. Haga click en este botón para agregar el primer espécimen utilizando los Sub-Atributos “<strong>Identificador de Muestra</strong>”, “<strong>Tipo de Muestra</strong>”, y “<strong>Colectado Directamente desde el Animal?</strong>”. El Sub-Atributo “<strong>Identificador de Muestra</strong>” para proveer un código siguiendo un sistema estandarizado establecido e identificar específicamente la muestra del animal. Seleccione una única opción del Sub-Atributo “<strong>Tipo de Muestra</strong>” para documentar el tipo de tejido colectado desde el animal. Finalmente, reporte si el espécimen fue directamente colectado desde el animal o no completando el Sub-Atributo “<strong>Colectado Directamente desde el Animal?</strong>”.</p>
+<p>Si especímenes son colectados desde un animal, entonces la información de la muestra puede ser anidada bajo el individuo correspondiente utilizando el Atributo “<strong>Registros</strong>”. Una vez que se hace click en este botón, una nueva pantalla solicitarà “Añadir registro”. Haga click en este botón para agregar el primer espécimen utilizando los Atributos de Registros “<strong>Identificador de Muestra</strong>”, “<strong>Tipo de Muestra</strong>”, y “<strong>Colectado Directamente desde el Animal?</strong>”. El Atributo de Registro “<strong>Identificador de Muestra</strong>” para proveer un código siguiendo un sistema estandarizado establecido e identificar específicamente la muestra del animal. Seleccione una única opción del Atributo de Registro “<strong>Tipo de Muestra</strong>” para documentar el tipo de tejido colectado desde el animal. Finalmente, reporte si el espécimen fue directamente colectado desde el animal o no completando el Atributo de Registro “<strong>Colectado Directamente desde el Animal?</strong>”:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture17.png" class="img-fluid" width="840"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture17.png" class="img-fluid" width="840"></p>
 <p>
 </p>
-<p>Haga click en la marca de confirmación en la esquina superior derecha de la pantalla para confirmar la adición del espécimen. Haga click nuevamente en “Añadir registro” en la pantala “Registros” para document un nuevo espécimen del mismo individuo. A medida que nuevos especímenes son agregados, la pantalla “Registros” mostrará la lista de especímenes. Vea el Diccionario de Datos para más detalles.</p>
+<p>Haga click en la marca de confirmación en la esquina superior derecha de la pantalla para confirmar la adición del espécimen. Haga click nuevamente en “Añadir registro” en la pantala “Registros” para document un nuevo espécimen del mismo individuo. A medida que nuevos especímenes son agregados, la pantalla “Registros” mostrará la lista de especímenes:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture18.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture18.png" class="img-fluid" width="280"></p>
 <p>
 </p>
 <p>Luego de que todos los especímenes colectados desde un animal han sido documentados, haga click en la marca de confirmación en la esquina superior derecha de la pantalla para retificar su adición. Si desea salir de la pantalla “Registros” sin confirmar la adición de los especímenes, seleccione la flecha a la izquierda en la esquina superior izquierda de la pantalla. Si quiere borrar un espécimen de la lista, haga click en el “Registro”, mantenga apretado, desplace a la izquierda, y confirme la eliminación. Una vez que el usuario este de vuelta en la pantalla “Animal y Muestras”, el Atributo “Registros” indicará el número total de muestras añadidas para el individuo.</p>
-<p>Si la “Condición” seleccionada es “Encontrado Muerto” entonces el Atributo “<strong>Se Recolectó el Cadáver?</strong>” debe ser completado (mire la imagen abajo). Este Atributo es para hacer siguimiento al cadáver del animal fue traído al cuartel del área protegida o a otra instalación donde puede ser almacenado o donde se pueda realizar una necropsia. Finalmente, use el Atributo “<strong>Otra Información Relevante</strong>” para reportar otros datos relevantes. Una vez que los Atributos han sido completados, haga click en la marca de confirmación en la esquina superior derecha de la pantalla “Animal y Muestras” y la nueva Observacion (“Animal and Samples”) estará listada para el Evento actual.</p>
+<p>Si la “Condición” seleccionada es “Encontrado Muerto” entonces el Atributo “<strong>Se Recolectó el Cadáver?</strong>” debe ser completado (mire la imagen abajo). Este Atributo es para hacer siguimiento al cadáver del animal fue traído al cuartel del área protegida o a otra instalación donde puede ser almacenado o donde se pueda realizar una necropsia. Finalmente, use el Atributo “<strong>Otra Información Relevante</strong>” para reportar otros datos relevantes. Una vez que los Atributos han sido completados, haga click en la marca de confirmación en la esquina superior derecha de la pantalla “Animal y Muestras” y la nueva Observacion (“Animal and Samples”) estará listada para el Evento actual. Para una definición de los Atributos y Opciones, vea el Diccionario de Datos.</p>
 </section><section id="ejemplo" class="level3"><h3 class="anchored" data-anchor-id="ejemplo">Ejemplo</h3>
 <p>Un Evento Sanitario en Fauna Silvestre con:</p>
 <ul>
@@ -310,7 +334,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>se ve así:</p>
 <p style="text-align: center;">
-<img src="Pictures_for_manual/Spanish/Picture19.png" class="img-fluid" width="280"></p>
+</p>
+<p><img src="Pictures_for_manual/Spanish/Picture19.png" class="img-fluid" width="280"></p>
 <p>
 </p>
 
