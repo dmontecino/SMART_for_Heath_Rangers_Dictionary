@@ -11,7 +11,7 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
 
 # Dictionary SMART for Health - Rangers {.unnumbered}
 
-Versión 1.3.0 July, 2024
+Version 1.3.0 July, 2024
 
 To view the definition of an Attribute or Option in particular, please select the appropriate language on the left side and then select the Category containing the Attribute(s) and the Option(s) to check from the menu on the right side.
 
