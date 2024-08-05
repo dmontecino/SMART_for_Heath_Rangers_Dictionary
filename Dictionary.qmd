@@ -371,7 +371,7 @@ animals_samples_en<-
                     
                     rep("The code to identify the animal observed at the Event individually", nrow(en[en$att_key=="animalid_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The captivity category of the animal observed at the Event", nrow(en[en$att_key=="context_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("The captivity Category of the animal observed at the Event", nrow(en[en$att_key=="context_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
                     rep("The health condition in which the animal is found at the Event", nrow(en[en$att_key=="conditionfound_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
                     
@@ -415,8 +415,8 @@ animals_samples_en<-
     #   root_label=c(" ", # species
     #              "",  # provie species not listed
     #              " ",  # animal id
-    #              #captivity category
-    #              rep("", nrow(en[en$att_key=="captivitycategory_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
+    #              #captivity Category
+    #              rep("", nrow(en[en$att_key=="captivityCategory_whn" & en$cat_key_level_1=="animalandsamples_whn",])),
     #              rep(" ", nrow(en[en$att_key=="conditionfound_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # condition found
     #              rep("", nrow(en[en$att_key=="ageofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # age of animal
     #              rep(" ", nrow(en[en$att_key=="sexofanimal_whn" & en$cat_key_level_1=="animalandsamples_whn",])), # sex of animal
@@ -441,7 +441,7 @@ animals_samples_en<-
                    "", # Provide Species not listed
                    " ",#animalid_whn
                    
-                   #captivity category
+                   #captivity Category
                    "The animal observed at the Event is found in its habitat and not hunted, captured, captive, or restricted. The animal captured for health surveillance purposes is considered 'free-ranging'", # free-ranging
                    "The animal observed at the Event is hunted or captured at the time of the observation; however, it has been displaced from the original place of hunt or capture. For example, a caged animal in posession of a walking hunter in a protected area", #Hunted and Displaced             
                    "The animal observed at the Event is hunted or captured at the time of the observation; however, it has not been displaced from the original place of hunt or capture. For example, an animal observed in the trap set by a hunter", #Hunted and not Displaced  
