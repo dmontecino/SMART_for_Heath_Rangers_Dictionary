@@ -54,17 +54,21 @@ create_abs_lang_link <- function(path, base_link) {
 babelquarto::render_book(file.path(project_dir))
 
 
-#save the manual as a pdf
+#save the manual as a pdf. NOT WROKING BEACUSE OF A PACKAGE PROBLEM.
+# ope the htmls in Chrome and then select print and save as pdf. 
+# save witht the sanme Manual.pdf in the crresponding language folder.
 renderthis::to_pdf("_book/Manual.html")
 renderthis::to_pdf("_book/es/Manual.es.html")
 renderthis::to_pdf("_book/fr/Manual.fr.html")
-renderthis::to_pdf("_book/kh/Manual.kh.html")
+renderthis::to_pdf("_book/km/Manual.km.html")
 
-#save the data dictionary as a pdf
+#save the data dictionary as a pdf. NOT WROKING FOR A PACKAGE PROBLEM.
+# ope the htmls in Chrome and then select print and save as pdf. 
+# save witht the sanme Manual.pdf in the crresponding language folder.
 renderthis::to_pdf("_book/Dictionary.html")
 renderthis::to_pdf("_book/es/Dictionary.es.html")
 renderthis::to_pdf("_book/fr/Dictionary.fr.html")
-renderthis::to_pdf("_book/kh/Dictionary.kh.html")
+renderthis::to_pdf("_book/km/Dictionary.km.html")
 
 
 
@@ -73,7 +77,7 @@ renderthis::to_pdf("_book/kh/Dictionary.kh.html")
 # Edit the file path to download the correct manual pdf 
 library(stringr)
 
-languages<-c('en', 'es', 'fr', 'kh')
+languages<-c('en', 'es', 'fr', 'km')
 nlanguages<-length(languages)
 
 # i=2

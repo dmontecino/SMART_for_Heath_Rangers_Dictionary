@@ -9,8 +9,6 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
-# Introduction {.unnumbered}
-
 This is the Manual and Dictionary of SMART for Health - Rangers.
 
 To view the definition of an Attribute or Option in particular, please select the appropriate language on left, click on "Dictionary SMART for Health - Rangers" and then select the Category containing the Attribute(s) and the Option(s) to check from the menu on the right.

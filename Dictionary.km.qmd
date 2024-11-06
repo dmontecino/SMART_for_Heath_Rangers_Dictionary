@@ -27,11 +27,11 @@ Para ver la definición de un Atribute u Opción en particular, por favor selecc
 
 library(SMARTeR)
 library(flextable)
-source("temp_flat_conf_model.R")
+# source("temp_flat_conf_model.R")
 
 kh<-
-#SMARTeR::flat_conf_model(
-  temp_flat_conf_model(
+SMARTeR::flat_conf_model(
+  # temp_flat_conf_model(
   language_interest = "km",
   path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
     only_active = T)
@@ -218,13 +218,6 @@ wildlife_kh<-
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
-kh<-
-#SMARTeR::flat_conf_model(
-  temp_flat_conf_model(  
-  language_interest = "km",
-  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
-    only_active = T)
-
 ## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
 
 livestock_kh<-  
@@ -346,44 +339,44 @@ livestock_kh<-
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
 animals_samples_km<-  
-  km %>% 
+  kh %>% 
   dplyr::filter(cat_key_level_1=="animalandsamples_whn") %>% 
   dplyr::select(att_key, att_label, att_type, root_label, option_label) %>% 
   dplyr::mutate(attr_def=
                   c(
                     
-                    rep("ប្រភេទសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(km[km$att_key=="species_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ប្រភេទសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="species_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("បរិយាយប្រភេទសត្វដែលសង្កេតឃើញនៅកន្លែងកើតហេតុប្រសិនបើវាមិនត្រូវបានផ្តល់ឱ្យនៅក្នុងប្រអប់ព័ត៌មាន 'ប្រភេទសត្វ'", nrow(km[km$att_key=="providespeciesnotlisted_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("បរិយាយប្រភេទសត្វដែលសង្កេតឃើញនៅកន្លែងកើតហេតុប្រសិនបើវាមិនត្រូវបានផ្តល់ឱ្យនៅក្នុងប្រអប់ព័ត៌មាន 'ប្រភេទសត្វ'", nrow(kh[kh$att_key=="providespeciesnotlisted_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("លេខកូដដើម្បីកំណត់សម្គាល់សត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុនីមួយៗ", nrow(km[km$att_key=="animalid_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("លេខកូដដើម្បីកំណត់សម្គាល់សត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុនីមួយៗ", nrow(kh[kh$att_key=="animalid_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("ប្រភេទនៃការចាប់សត្វដែលសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(km[km$att_key=="context_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ប្រភេទនៃការចាប់សត្វដែលសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="context_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("ស្ថានភាពសុខភាពសត្វដែលបានរកឃើញនៅកន្លែងកើតហេតុ", nrow(km[km$att_key=="conditionfound_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ស្ថានភាពសុខភាពសត្វដែលបានរកឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="conditionfound_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("អាយុរបស់សត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(km[km$att_key=="ageofanimal_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("អាយុរបស់សត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="ageofanimal_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("ភេទរបស់សត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(km[km$att_key=="sexofanimal_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ភេទរបស់សត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="sexofanimal_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The condition of the dead animal found at the Event. Select one option", nrow(km[km$att_key=="conditiondeadanimals_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("The condition of the dead animal found at the Event. Select one option", nrow(kh[kh$att_key=="conditiondeadanimals_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("ភាពមិនប្រក្រតីនៃសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(km[km$att_key=="anomaliesinsickinjuredordeadanimals_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ភាពមិនប្រក្រតីនៃសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="anomaliesinsickinjuredordeadanimals_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
                     "បរិយាយពីភាពមិនប្រក្រតីរបស់សត្វដែលបានសង្កេតនៅកន្លែងកើតហេតុដែលមិនមាននៅក្នុងប្រអប់ព័ត៌មាន 'ភាពមិនប្រក្រតីសត្វឈឺ របួស ឬងាប់'", 
                     
-                    rep("The potential cause of death, disease, or injury in the animal observed at the Event. Multiple options can be selected", nrow(km[km$att_key=="potentialcauseofdeathdiseaseorinjury_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("The potential cause of death, disease, or injury in the animal observed at the Event. Multiple options can be selected", nrow(kh[kh$att_key=="potentialcauseofdeathdiseaseorinjury_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("លេខកូដដើម្បីកំណត់សម្គាល់សំណាកនីមួយៗដែលប្រមូលបានពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ​នីមួយៗ", nrow(km[km$att_key=="sampleid_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("លេខកូដដើម្បីកំណត់សម្គាល់សំណាកនីមួយៗដែលប្រមូលបានពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ​នីមួយៗ", nrow(kh[kh$att_key=="sampleid_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("ប្រភេទសំណាកដែលបានប្រមូលពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ​", nrow(km[km$att_key=="sampletype_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ប្រភេទសំណាកដែលបានប្រមូលពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ​", nrow(kh[kh$att_key=="sampletype_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                  rep("Answer to the question 'was the sample collected directly from the animal observed at the Event?'", nrow(km[km$att_key=="collecteddirectlyfromanimal_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                  rep("Answer to the question 'was the sample collected directly from the animal observed at the Event?'", nrow(kh[kh$att_key=="collecteddirectlyfromanimal_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                     rep("ឆ្លើយ​នឹង​សំណួរ 'តើ​បានប្រមូលសាកសព​សត្វ​ដែល​បានសង្កេត​ឃើញ​នៅ​កន្លែងកើតហេតុ​ដែរឬទេ?", nrow(km[km$att_key=="wasthecarcasscollected_whn" & km$cat_key_level_1=="animalandsamples_whn",])),
+                     rep("ឆ្លើយ​នឹង​សំណួរ 'តើ​បានប្រមូលសាកសព​សត្វ​ដែល​បានសង្កេត​ឃើញ​នៅ​កន្លែងកើតហេតុ​ដែរឬទេ?", nrow(kh[kh$att_key=="wasthecarcasscollected_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
                     
-                    rep("បរិយាយពីព័ត៌មានពាក់ព័ន្ធផ្សេងទៀតទាក់ទងនឹងសំណាកដែលបានប្រមូលពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(km[km$att_key=="otherrelevantinformation_whn" & km$cat_key_level_1=="animalandsamples_whn",])))) 
+                    rep("បរិយាយពីព័ត៌មានពាក់ព័ន្ធផ្សេងទៀតទាក់ទងនឹងសំណាកដែលបានប្រមូលពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="otherrelevantinformation_whn" & kh$cat_key_level_1=="animalandsamples_whn",])))) 
   
     animals_samples_km<-
     animals_samples_km %>% dplyr::select(

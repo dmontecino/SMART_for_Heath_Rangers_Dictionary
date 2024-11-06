@@ -9,7 +9,6 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
-# សេចក្តីផ្តើម៖  {.unnumbered}
 
 នេះជាវចនានុក្រមរបស់កម្មវិធី SMART សម្រាប់សុខភាពសត្វ  - ក្រុមល្បាត។
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.3)  27 JUL 2024 23:47
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.3)  5 NOV 2024 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,7 +892,7 @@ Language: nil 2024/06/26 v24.7 Nil language
 Package babel Info: Importing data for english
 (babel)             from babel-en.ini. Reported on input line 153.
 Package hyperref Info: Option `colorlinks' set `true' on input line 172.
-(./index.aux)
+No file index.aux.
 \openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
@@ -1165,6 +1165,9 @@ Package microtype Info: No adjustment of kerning.
 File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Modern Roman (RS)
 )
 Package hyperref Info: Link coloring ON on input line 178.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1212,24 +1215,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 186.
-(./index.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.475pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95099pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.66568pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4755pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 4.
-)
+No file index.toc.
 \tf@toc=\write4
 \openout4 = `index.toc'.
 
@@ -1242,156 +1228,13 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 [3
 
 ]
-
-[4
-
-]
-File: Pictures_for _manual/Picture1.png Graphic file (type bmp)
-<Pictures_for _manual/Picture1.png>
-
-Overfull \hbox (10.95404pt too wide) in paragraph at lines 271--272
-[][] 
- []
-
-File: Pictures_for _manual/Picture2.png Graphic file (type bmp)
-<Pictures_for _manual/Picture2.png>
-
-Overfull \hbox (10.95404pt too wide) in paragraph at lines 275--276
-[][] 
- []
-
-
-
-[5]
-
-[6]
-File: Pictures_for _manual/Picture3.png Graphic file (type bmp)
-<Pictures_for _manual/Picture3.png>
-
-
-[7]
-File: Pictures_for _manual/20240723_225012909_iOS.png Graphic file (type bmp)
-<Pictures_for _manual/20240723_225012909_iOS.png>
-
-
-[8]
-
-[9]
-File: Pictures_for _manual/Picture4.png Graphic file (type bmp)
-<Pictures_for _manual/Picture4.png>
-
-Overfull \hbox (10.9534pt too wide) in paragraph at lines 453--454
-[][] 
- []
-
-File: Pictures_for _manual/picture23 2024-07-26 21_54_02.png Graphic file (type bmp)
-<Pictures_for _manual/picture23 2024-07-26 21_54_02.png>
-
-
-[10]
-File: Pictures_for _manual/20240724_191157452_iOS.png Graphic file (type bmp)
-<Pictures_for _manual/20240724_191157452_iOS.png>
-
-
-[11]
-File: Pictures_for _manual/Picture7.png Graphic file (type bmp)
-<Pictures_for _manual/Picture7.png>
-
-
-[12]
-
-[13]
-File: Pictures_for _manual/Picture8.png Graphic file (type bmp)
-<Pictures_for _manual/Picture8.png>
-
-
-[14]
-File: Pictures_for _manual/Picture9.png Graphic file (type bmp)
-<Pictures_for _manual/Picture9.png>
-File: Pictures_for _manual/Picture11.png Graphic file (type bmp)
-<Pictures_for _manual/Picture11.png>
-
-
-[15]
-File: Pictures_for _manual/Picture12.png Graphic file (type bmp)
-<Pictures_for _manual/Picture12.png>
-
-
-[16]
-File: Pictures_for _manual/Picture13.png Graphic file (type bmp)
-<Pictures_for _manual/Picture13.png>
-
-Overfull \hbox (67.07693pt too wide) in paragraph at lines 584--585
-[][] 
- []
-
-
-
-[17]
-File: Pictures_for _manual/Picture14.png Graphic file (type bmp)
-<Pictures_for _manual/Picture14.png>
-
-Overfull \hbox (10.94017pt too wide) in paragraph at lines 601--602
-[][] 
- []
-
-
-
-[18]
-File: Pictures_for _manual/Picture10.png Graphic file (type bmp)
-<Pictures_for _manual/Picture10.png>
-
-
-[19]
-File: Pictures_for _manual/Picture16.png Graphic file (type bmp)
-<Pictures_for _manual/Picture16.png>
-
-
-[20]
-File: Pictures_for _manual/Picture17.png Graphic file (type bmp)
-<Pictures_for _manual/Picture17.png>
-
-
-[21]
-File: Pictures_for _manual/Picture18.png Graphic file (type bmp)
-<Pictures_for _manual/Picture18.png>
-
-Overfull \hbox (106.21545pt too wide) in paragraph at lines 670--671
-[][] 
- []
-
-
-
-[22]
-File: Pictures_for _manual/Picture19 2024-07-26 02_05_22.png Graphic file (type bmp)
-<Pictures_for _manual/Picture19 2024-07-26 02_05_22.png>
-
-
-[23]
-
-[24]
-File: Pictures_for _manual/picture20 2024-07-26 02_10_07.png Graphic file (type bmp)
-<Pictures_for _manual/picture20 2024-07-26 02_10_07.png>
-
-
-[25]
-
-[26]
-chapter 1.
-
-Class scrreprt Warning: \float@addtolists detected!
-(scrreprt)              Implementation of \float@addtolist became
-(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
-(scrreprt)              has been replaced by several more flexible
-(scrreprt)              features of package `tocbasic`.
-(scrreprt)              Since Version 3.12 support for deprecated
-(scrreprt)              \float@addtolist interface has been
-(scrreprt)              restricted to only some of the KOMA-Script
-(scrreprt)              features and been removed from others.
-(scrreprt)              Loading of package `scrhack' may help to
-(scrreprt)              avoid this warning, if you are using a
-(scrreprt)              a package that still implements the
-(scrreprt)              deprecated \float@addtolist interface.
-
-
-Overfull \hbox (152.49403pt too wide) in alignment at lines
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.665pt on input line 221.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.475pt on input line 221.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.95099pt on input line 221.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.66568pt on input line 221.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)       

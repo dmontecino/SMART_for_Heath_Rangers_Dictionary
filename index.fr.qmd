@@ -9,8 +9,6 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
-# Introduction {.unnumbered}
-
 Ceci est le Dictionnaire de SMART Santé - Rangers.
 
 Pour afficher la définition d'un attribut ou d'une option en particulier, veuillez sélectionner la langue appropriée dans le coin gauche, puis sélectionnez la catégorie contenant le(s) attribut(s) et la(les) option(s) à vérifier dans le menu ci-dessous la liste des versions dans différentes langues.
