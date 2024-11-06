@@ -54,17 +54,14 @@ create_abs_lang_link <- function(path, base_link) {
 babelquarto::render_book(file.path(project_dir))
 
 
-#save the manual as a pdf. NOT WROKING BEACUSE OF A PACKAGE PROBLEM.
-# ope the htmls in Chrome and then select print and save as pdf. 
-# save witht the sanme Manual.pdf in the crresponding language folder.
+#save the manual as a pdf. 
+
 renderthis::to_pdf("_book/Manual.html")
 renderthis::to_pdf("_book/es/Manual.es.html")
 renderthis::to_pdf("_book/fr/Manual.fr.html")
 renderthis::to_pdf("_book/km/Manual.km.html")
 
-#save the data dictionary as a pdf. NOT WROKING FOR A PACKAGE PROBLEM.
-# ope the htmls in Chrome and then select print and save as pdf. 
-# save witht the sanme Manual.pdf in the crresponding language folder.
+#save the data dictionary as a pdf. 
 renderthis::to_pdf("_book/Dictionary.html")
 renderthis::to_pdf("_book/es/Dictionary.es.html")
 renderthis::to_pdf("_book/fr/Dictionary.fr.html")
@@ -166,7 +163,16 @@ for(i in languages){
 
 #move the files in _book to docs
 
+source_dir <- "_book/"
+dest_dir <- "docs/"
 
+# Get a list of all files and folders in the source directory
+items_to_copy <- list.files(source_dir, full.names = TRUE)
+
+# Copy each item (file or folder) to the destination directory
+sapply(items_to_copy, function(item) {
+  file.copy(item, dest_dir, recursive = TRUE, overwrite = TRUE)
+})
 
 
 
