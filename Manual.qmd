@@ -32,13 +32,17 @@ A summary of the data structure in SMART is provided below.
 SMART Incidents within a SMART Patrol:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture1.png)
+
 <p>
 
 Or SMART Incidents outside of a SMART Patrol:
 
 <p style="text-align: center;">
-![](Pictures_for_manual/French/Picture2.png)
+
+![](Pictures_for_manual/Picture2.png)
+
 <p>
 
 Starting at the bottom of either approach, SMART for Health facilitates the collection of field observations (**SMART Observations**) to describe the categories of information that compose a **Wildlife Health Event**. These **Events** are recorded as rangers find **dead, sick, or injured animals during their** **patrols.**
@@ -88,13 +92,17 @@ A **Wildlife Health Event (see below) is documented as a SMART Incident** within
 The diagram below shows the referential **SMART Categories** of information to record Wildlife Health Events and their hierarchy:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture3.png)
+
 <p>
 
 The **SMART Categories in the referential SMART for Health** in **SMART Mobile** look like this:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture4.png){width="280"}
+
 <p>
 
 ## SMART Categories in SMART for Health
@@ -118,7 +126,9 @@ This Category describes specific individual animals belonging to any of the spec
 In summary, the figure below shows how Observations of a Wildlife Health Event are collected as a **SMART Incident**:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture5.png)
+
 <p>
 
 The description of Attributes, Record-level Attributes, and Options across the Categories used in SMART for Health is provided in the data dictionary accessible [here](https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary/Dictionary.html).
@@ -132,7 +142,9 @@ To document a Wildlife Health Event, SMART for Health users add Observations usi
 **Click on the "Make Observation"**. Selecting this option opens the menu of Categories:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture6.png){width="560"}
+
 <p>
 
 ### Record Relevant Environmental Findings at the Event Site
@@ -142,7 +154,9 @@ Click on the **Site Description** Category if a relevant environmental process i
 If "**Other Findings**" is selected by itself or together with other environmental processes, then a new Attribute "**Other Findings**" provide the space to write another anthropogenic activity not present in the list. Once the Attributes are satisfactorily completed, click on the check mark on the top-right corner of the screen:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture7.png){width="840"}
+
 <p>
 
 If you want to clear the data added to an Attribute, click on the Attribute, hold and slide to the left, and click "Yes". Take photographs of the area if relevant. If you want to cancel the addition of a Category to the Incident, select the left arrow in the top-left corner of the screen. If you already added the Category to the Incident but want to remove it, click on the Category to be removed, hold and slide to the left, and confirm the deletion.
@@ -154,31 +168,41 @@ The "**Wildlife**" and "**Livestock - Domestic Species**" Categories are used to
 First, select the "**Wildlife**" or "**Livestock - Domestic Species**" Categories depending on the species of animal to record. Then, select the adequate option from the "Species" Attribute. In the case of the "Wildlife" Category, if the species or a higher level taxonomy is known but it is not listed in the "Species' Attribute, it is possible to select the"**Species not Listed**" option. Consequently, the Attribute "**Provide Species Not Listed**" will become available to type the species common or scientific name, or any taxonomy level known (e.g. the taxonomic genus, family, order, or class):
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture8.png){width="280"}
+
 <p>
 
 Complete the "**Context**" Attribute. This is a multilist Attribute and it is used to understand the capture, captivity, or hunting conditions of the animals. Select "Free-ranging" if the animals being recorded are not captured at all. Choose "Hunted and not Displaced" when the individuals of the species observed are hunted or captured and at the original hunting location. For example, in a snare in the field. Choose "Hunted and Displaced" when the individuals of the species observed are hunted or captured and moved from the original point of capture. Choose from the remaining Options ("Farm", "Household", "Zoo", etc.) when the individuals of the species observed are in a captivity facility:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture9.png){width="280"}
+
 <p>
 
 Provide the number of healthy, sick or injured, and dead animals belonging to the same species no matter their age or sex using the "**Number Healthy Animals"**,"**Number Sick or Injured Animals"**, and "**Number of Dead Animals"** Attributes. The count of individuals per health status per species must include the animals that provide samples and that are documented using the"**Animal and Samples**" Category:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture10.png){width="280"}
+
 <p>
 
 The addition of at least one sick or injured animal brings to the screen the "**Anomalies in Sick or Injured Animals**" and the "**Potential Cause Disease or Injury**" Attributes. Complete these Attributes by selecting one or more options about what is observed in the animals of the species recorded and what could be the cause of disease or injury. If no obvious anomalies are observed or a potential cause of disease or injury is not identifiable, then select "No obvious anomalies" and "Unknown", respectively:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture11.png){width="280"}
+
 <p>
 
 If an **anomaly** is **not present in the list of options** in the "Anomalies in Sick or Injured Animals" Attribute, then select "**Other**" and a new Attribute "**Other Anomalies Sick or Injured**" will become available to write the non-listed anomaly. If "Predation" is selected as the potential cause of disease or injury for wildlife, then the Attribute "**Carnivore Attack**" becomes available in the screen to provide the type of potential carnivore attacker:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture12.png){width="840"}
+
 <p>
 
 Provide any extra information using the "**Other Relevant Information**" text Attribute.
@@ -186,13 +210,17 @@ Provide any extra information using the "**Other Relevant Information**" text At
 Similarly, the addition of at least one dead animal brings to the screen the "**Anomalies in Dead Animals**" and the "**Potential Cause of Death**" Attributes. Complete these Attributes as explained above. Moreover, the Attribute "**Condition Dead Animals**" will become available to document the freshness of the carcasses recorded. Just like the "**Anomalies in Sick or Injured Animals**", "**Anomalies in Dead Animals**", "**Potential Cause of Disease or Injury**", and "**Potential Cause of Death**", this is a multilist Attribute as many carcasses of the same species in different rotting stages could be found in the same Wildlife Health Event. Select the corresponding options:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture13.png){width="1120"}
+
 <p>
 
 Take photographs of the animals as needed by clicking on the photograph camera icon on the top-left corner of the Attribute screen. The camera on the device will turn on to take photographs:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture14.png){width="280"}
+
 <p>
 
 ### Record Individual Animals and Their Samples
@@ -202,25 +230,33 @@ Individual animal data are needed only for those healthy, sick or injured, and d
 Click on the "**Animal and Samples**" Category and complete the Attributes:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture15.png){width="560"}
+
 <p>
 
 The "**Species**" and "**Context**" Attributes are the same as in the "**Wildlife**" and "**Livestock - Domestic Species**" Categories. Complete the "**Animal ID**" field following a standard structure. The "**Initial Health Status**" Attribute is a single choice Attribute and it requests the health status at initial observation of the animal ("Found Dead", "Found Live Healthy", "Found Live Sick or Injured", and "Animal Parts"). Selecting any of these Options, except "Found Live Healthy", will make the Attributes "**Anomalies Observed**" and "**Potential Cause**" to become available in the screen. Complete these Attributes following the explanation for the "**Anomalies in Sick or Injured Animals**" and "**Potential Cause of Disease or Injury**" Attributes provided in the section "Record the Species Observed" above. Selecting the Option "**Found Dead**" will also make the Attribute "**Condition Dead Animal**" appear on the screen. Complete this Attribute as explained in the previous section but this time selecting a single choice only. Provide the "**Age**", and "**Sex**" of the individual animal by selecting one Option in each Attribute:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture16.png){width="280"}
+
 <p>
 
 If samples are collected from an animal, then the sample information can be nested in the corresponding individual using the "**Records**" Attribute. Once this button is clicked, a new screen will request to "Add Record". Click on this button to add the first sample using the Record-level Attributes "**Sample ID**", "**Sample Type**", and "**Collected Directly from Animal**". The "**Sample ID**" Record-level Attribute is to provide a code following an established standard to uniquely identify the sample of the animal. Select a single option from the "**Sample Type**" Record-level Attribute to document the type of tissue collected from the animal. Finally, report if the sample was directly collected from the animal or not by completing the Record-level Attribute "**Collected Directly from Animal**":
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture17.png){width="840"}
+
 <p>
 
 Click on the check mark on the top-right corner of the screen to confirm the addition of the sample. Click on the "Add Record" again in the "Records" screen to document a new sample of the same individual. As new samples are added, the "Records" screen will show the list of samples:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/Picture18.png){width="280"}
+
 <p>
 
 After all samples collected from an animal have been documented, click on the check mark on the top-right corner of the screen to confirm their addition. If you want to leave the "Records" screen without confirming the addition of samples, select the left arrow in the top-left corner of the screen. If you want to delete a sample from the list, click on the Record, hold, swipe to the left, and confirm the deletion. Once the user is back in the "Animal and Samples" screen, the "Records" Attribute will indicate the number of samples added for the individual.
@@ -240,5 +276,7 @@ A Wildlife Disease Event with:
 looks like this:
 
 <p style="text-align: center;">
+
 ![](Pictures_for_manual/picture19.png){width="280"}
+
 <p>
