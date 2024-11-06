@@ -27,6 +27,7 @@ Para ver la definición de un Atribute u Opción en particular, por favor selecc
 
 library(SMARTeR)
 library(flextable)
+source("temp_flat_conf_model.R")
 
 kh<-
 #SMARTeR::flat_conf_model(
