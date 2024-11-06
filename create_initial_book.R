@@ -58,11 +58,13 @@ babelquarto::render_book(file.path(project_dir))
 renderthis::to_pdf("_book/Manual.html")
 renderthis::to_pdf("_book/es/Manual.es.html")
 renderthis::to_pdf("_book/fr/Manual.fr.html")
+renderthis::to_pdf("_book/kh/Manual.kh.html")
 
 #save the data dictionary as a pdf
 renderthis::to_pdf("_book/Dictionary.html")
 renderthis::to_pdf("_book/es/Dictionary.es.html")
 renderthis::to_pdf("_book/fr/Dictionary.fr.html")
+renderthis::to_pdf("_book/kh/Dictionary.kh.html")
 
 
 
@@ -71,7 +73,7 @@ renderthis::to_pdf("_book/fr/Dictionary.fr.html")
 # Edit the file path to download the correct manual pdf 
 library(stringr)
 
-languages<-c('en', 'es', 'fr')
+languages<-c('en', 'es', 'fr', 'kh')
 nlanguages<-length(languages)
 
 # i=2
