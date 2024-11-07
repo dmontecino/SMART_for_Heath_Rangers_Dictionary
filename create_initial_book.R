@@ -46,12 +46,20 @@ create_abs_lang_link <- function(path, base_link) {
 }
 
 
-
-
-
-
+#> to add a new language copy the index.qmd, dictionary.qmd, manual.qmd and save them as a 
+#> new version as index.'2letterlanguagecode".qmd. Translate each of these files.
+#> Then add the components in the quarto.yaml file
+#> Then run the following line:
 
 babelquarto::render_book(file.path(project_dir))
+
+#> get the index.2languagecode.html created (also the dictionary and manual files) and open them in the
+#> editor here. for khmer, laotian, and pitentially other languages, edit the "Table of contents" 
+#> in english with the corresponding language. Save and close
+
+
+#> Run these lines adding a new line in each chunk with the corresponding folder 
+#> and source file
 
 
 #save the manual as a pdf. 
@@ -184,6 +192,8 @@ sapply(items_to_copy, function(item) {
 #run the function
 
 create_abs_lang_link(path = "docs", base_link = "")
+
+# commit in git and push the changes to github
 
 
 # then just create the github page following these instructions 
