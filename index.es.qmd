@@ -9,6 +9,8 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
+# Presentación
+
 Este es el Diccionario de SMART para Salud - Guardaparques.
 
 Para ver la definición de un Atributo u Opción en particular, por favor seleccione el lenguaje a la izquierda, haga click en "Diccionario SMART para Health - Guardaparques y luego seleccione la Categoría que contiene el Atributo y la Opción a revisar desde el menú a la derecha

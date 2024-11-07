@@ -42,22 +42,21 @@ babelquarto:
     text: "English"
   - name: fr
     text: "Français"
-  # - name: lo
-  #   text: "ລາວ"
+  - name: lo
+    text: "ລາວ"
   - name: km
     text: "ខ្មែរ"
   mainlanguage: 'en'
-  # languages: ['es', 'fr', 'lo', 'km']
-  languages: ['es', 'fr', 'km']
+  languages: ['es', 'fr', 'lo', 'km']
 title-es: Manual y Diccionario SMART para Salud - Guardaparques
-# title-lo: ວັດຈະນານຸກົມ SMART ສໍາລັບແຜນງານສຸຂະພາບ - ທີມງານລາດຕະເວນ
+title-lo: ວັດຈະນານຸກົມ SMART ສໍາລັບແຜນງານສຸຂະພາບ - ທີມງານລາດຕະເວນ
 title-km: សៀវភៅណែនាំ និងវចនានុក្រមរបស់កម្មវិធី SMART សម្រាប់សុខភាពសត្វ  - ប្រើប្រាស់ដោយអ្នកល្បាតព្រៃ
 title-fr: Manuel et Dictionnaire SMART pour la Santé - Ranger
 # description-es: Descripción
 # description-lo: Description
 # description-km: Description
 author-es: Wildlife Conservation Society - Health Program
-# author-lo: Wildlife Conservation Society - Health Program
+author-lo: Wildlife Conservation Society - Health Program
 author-km: Wildlife Conservation Society - Health Program
 author-fr: Wildlife Conservation Society - Health Program
 

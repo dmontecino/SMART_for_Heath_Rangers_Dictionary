@@ -1,0 +1,503 @@
+```{r, echo=FALSE}
+htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"), 
+               alt = 'logo', 
+               style = 'position:absolute; 
+                        top:0;
+                        right:0; 
+                        padding:70px;',
+               width = "300px", 
+               heigth = "300px")
+```
+
+# ລະບົບອັດສະລິຍະໃນການຕິດຕາມພະຍາດສັດ - ພະນັກງານປ່າໄມ້ {.unnumbered}
+
+Version 1.3.0 July, 2024
+
+ເພື່ອເບິ່ງຄໍານິຍາມຂອງຄຸນລັກສະນະຫຼືທາງເລືອກໂດຍສະເພາະ, ກະລຸນາເລືອກພາສາທີ່ເຫມາະສົມຢູ່ເບື້ອງຊ້າຍແລະຫຼັງຈາກນັ້ນເລືອກປະເພດທີ່ມີຄຸນລັກສະນະແລະຕົວເລືອກເພື່ອກວດເບິ່ງຈາກເມນູດ້ານຂວາ.
+
+## ຄຳອະທິບາຍສະຖານທີ່ 
+
+```{r, echo=FALSE, eval=T, message=FALSE}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+library(SMARTeR)
+library(flextable)
+
+la<-
+SMARTeR::flat_conf_model(
+  language_interest = "lo",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+site_description_la<-  
+  la %>% 
+  dplyr::filter(cat_label_level_1=="ອະທິບາຍສະຖານທີ່" &
+                  att_label!="ປະເພດຂອງພູມສັນຖານ") %>% 
+  dplyr::select(att_label, att_type, option_label) %>% 
+  dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+  dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
+  dplyr::rename("ປະເພດ" = "att_type") %>% 
+  dplyr::mutate(Definition=
+                  c(
+                  rep("ເລືອກໜຶ່ງ ຫຼື ຫຼາຍລາຍການທີ່ມີຢູ່ໃນເຫດການ. ຖ້າມີຈຸດເດັ່ນອື່ນໆທີ່ກ່ຽວຂ້ອງກັບເຫດການທີ່ບໍ່ມີໃນຕົວເລືອກ ທີ່ອາດພົບ ມີພະຍາດ ຫຼື ສົ່ງຜົນເຮັດໃຫ້ເສຍຊີວິດ, ທ່ານສາມາດເລືອກ 'ການຄົ້ນພົບອື່ນໆ' ແລະ ບ່ອນຕື່ມຂໍ້ມູນຈະປະກົດຂຶ້ນເພື່ອໃຫ້ຂຽນຄໍາອະທິບາຍ", 
+                      la %>% dplyr::filter(att_key=="findings_whn") %>% nrow()),
+                      "ອະທິບາຍກ່ຽວກັບລັກສະນະເດັ່ນອື່ນໆທີ່ກ່ຽວຂ້ອງກັບເຫດການ ທີ່ບໍ່ມີຕົວເລືອກຢູ່ໃນລາຍການ 'ສິ່ງທີ່ພົບເຫັນ' ທີ່ອາດມີ ພະຍາດ ຫຼື ຜົນກະທົບຕໍ່ການຕາຍ")) %>% 
+  dplyr::rename("ຄໍານິຍາມ" = "Definition")  
+
+    
+        
+# map(data_dictionary, \(x) do.call(rbind,x)) %>% list_rbind()
+    
+# data_dictionary<-map(data_dictionary, \(x) do.call(rbind,x)) 
+# 
+# for(i in seq_along(data_dictionary)){
+#   data_dictionary[[i]]$Component<-names(data_dictionary[i])}
+# 
+# data_dictionary<-data_dictionary %>% 
+#   list_rbind() %>% 
+#   select(Component, Variable, Label, Definition, Type, Mandatory)
+
+# need to find how to change the font size to improve the column width
+
+  # kableExtra::kable(data_dictionary, booktabs = TRUE)%>%
+  # kable_styling(bootstrap_options = c("basic"), font_size = 2) %>% 
+  #   kableExtra::column_spec(column = 1:5, border_right = T) 
+
+  
+  out<-  
+  flextable(site_description_la) %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
+  merge_v(j="ຄໍານິຍາມ") %>% 
+  theme_box() %>% 
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມ", width=7, unit = "cm")
+  
+  
+
+  out
+  
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
+## ສັດປ່າ {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+lo<-
+SMARTeR::flat_conf_model(
+  language_interest = "lo",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+wildlife_lo<-  
+  lo %>% 
+  dplyr::filter(cat_key_level_1=="wildlife_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("ຊະນິດສັດປ່າທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="species_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນເພື່ອລະບຸ ຊື່ຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຕົວເລືອກຢູ່ໃນລາຍການຂອງ 'ຊະນິດສັດ'", nrow(lo[lo$att_key=="providespeciesnotlisted_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ບໍລິບົດທີ່ສັດຖືກພົບເຫັນ ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="context_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຍັງມີຊີວິດແຂງແຮງດີ", nrow(lo[lo$att_key=="numberhealthy_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ", nrow(lo[lo$att_key=="numbersickorinjured_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ຄວາມຜິດປົກກະຕິທີ່ພົບນໍາໂຕສັດທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ທີ່ຢູ່ໃນເຫດການ ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="anomaliesinsickorinjuredanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນເພື່ອລະບຸຄວາມຜິດປົກກະຕິອື່ນໆທີ່ທ່ານສັງເກດເຫັນໃນສັດທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຕົວເລືອກຢູ່ໃນລາຍການຂອ 'ຄວາມຜິດປົກກະຕິທີ່ພົບໃນສັດທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ'", nrow(lo[lo$att_key=="otheranomaliessickorinjured_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ສາເຫດສົງໄສ ທີ່ເຮັດໃຫ້ສັດອາດເປັນພະຍາດ ຫຼື ບາດເຈັບ ໃນສັດທີ່ເຈັບປ່ວຍຫຼື ບາດເຈັບ ທີ່ທ່ານພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="potentialcausediseaseorinjury_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຕາຍ", nrow(lo[lo$att_key=="numberdead_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    
+                    rep("ຄວາມສົດໃໝ່ຂອງຊາກສັດທີ່ຖືກສັງເກດການ ຊຶ່ງສອດຄ່ອງກັນກັບຊະນິດສັດທີ່ໄດ້ຖືກບັນທຶກ. ສາມາດເລືອກໄດ້ຫຼາຍກວ່າໜຶ່ງໂຕເລືອກ. ໃຫ້ເລືອກເອົາ 'ບໍ່ມີສັດຕາຍ' ຖ້າຊະນິດສັດທີ່ສັງເກດການນັ້ນບໍ່ແມ່ນສັດຕາຍ" , nrow(lo[lo$att_key=="conditiondeadanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ຄວາມຜິດປົກກະຕິທີ່ສັງເກດເຫັນນໍາໂຕສັດທີ່ຕາຍ ຢູ່ໃນເຫດການ ສາມາດລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="anomaliesindeadanimals_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                   rep("ບ່ອນຕື່ມຂໍ້ມູນເພື່ອລະບຸຄວາມຜິດປົກກະຕິອື່ນໆທີ່ທ່ານສັງເກດເຫັນຢູ່ນໍາໂຕສັດທີ່ຕາຍ ຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຕົວເລືອກຢູ່ໃນລາຍການຂອງ 'ຄວາມຜິດປົກກະຕິທີ່ພົບໃນສັດຕາຍ'", nrow(lo[lo$att_key=="otheranomaliesdead_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ສາເຫດສົງໄສ ທີ່ອາດເຮັດໃຫ້ສັດຕາຍ ທີ່ທ່ານພົບເຫັນຢູ່ໃນເຫດການ ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="potentialcausedeath_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ປະເພດຂອງສັດກິນຊີ້ນທີ່ກ່ຽວຂ້ອງກັບການລ່າເຫຍື່ອ ຖ້າຫາກທ່ານສົາໄສວ່າສາເຫດຂອງການບາດເຈັບ ຫຼື ຕາຍຂອງສັດ ອາດເກີດຈາກການລ່າຈາກສັດກິນຊີ້ນ, ໃຫ້ທ່ານເລືອກຕົວເລືອກ 'ການລ່າເຫຍື່ອ'", nrow(lo[lo$att_key=="carnivoreattack_whn" & lo$cat_key_level_1=="wildlife_whn",])),
+                    
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອລະບຸຂໍ້ມູນອື່ນໆທີ່ມີຄວາມກ່ຽວຂ້ອງກັບສັດທີ່ທ່ານພົບເຫັນ", nrow(lo[lo$att_key=="otherrelevantinformation_whn" & lo$cat_key_level_1=="wildlife_whn",])))) 
+  
+    
+    wildlife_lo<-
+    wildlife_lo %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           option_label)
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    wildlife_lo<-
+    wildlife_lo %>% dplyr::mutate(
+      
+      option_def=c("ໃຊ້ໂຕເລືອກນີ້, ຖ້າສັດນັ້ນສາມາດຈັດຈໍາແນກຊື່ ໄດ້ຮອດລະດັບຊະນິດ, ແຕ່ຊະນິດດັ່ງກ່າວຍັງບໍ່ເຫັນມີຢູ່ໃນບັນຊີລາຍຊື່ຊະນິດສັດ ທີ່ຢູ່ໃນໂຄງຮ່າງການຈັດຈໍາແນກນັ້ນ",  # Species not listed
+                   "", # Provide Species not listed
+                   #context
+                   "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກພົບເຫັນຢູ່ໃນຖິ່ນອາໄສຂອງພວກມັນ ແລະ ບໍ່ໄດ້ຖືກລ່າ, ຈັບ, ກັກຂັງ ຫຼື ຈໍາກັດໃດໆ. ສັດເຫຼົ່ານີ້ ຖືກຈັບມາ ເພື່ອຈຸດປະສົງການເຝົ້າລະວັງດ້ານສຸຂະພາບ ແລະ ຍັງຖືວ່າເປັນການ 'ປ່ອຍອິດສະລະ'າ ເພື່ອຈຸດປະສົງການເຝົ້າລະວັງ", # free-ranging
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກລ່າ ຫຼື ຈັບ ໃນເວລາສັງເກດການ. ເຖິງຢ່າງໃດກໍຕາມ, ພວກມັນໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກສະຖານທີ່ເດີມທີ່ສັດຖືກລ່າ ຫຼື ຈັບ. ຕົວຢ່າງ: ພົບເຫັນມີສັດຖືກຂັງໄວ້ຢູ່ໃນກົງຂອງນັກລ່າທີ່ກຳລັງຍ່າງຢູ່ໃນເຂດປ່າສະຫງວນ", #Hunted and Displaced             
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຈັບ ໃນເວລາສັງເກດການ. ເຖິງຢ່າງໃດກໍຕາມ, ພວກມັນຍັງບໍ່ໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກສະຖານທີ່ເດີມທີ່ສັດຖືກລ່າ ຫຼື ຈັບ ຕົວຢ່າງ:ພົບເຫັນມີສັດຕິດກັບດັກ ຫຼື ຖືກແຮ້ວ ທີ່ນັກລ່າໄດ້ວາງກັບດັກ ຫຼື ແຮ້ວ ໄວ້", #Hunted and not Displaced  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນສູນຟື້ນຟູ/ສູນຊ່ວຍເຫຼືອສັດຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ", # Rescue/Rehabilitation Center
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຟາມັດທີ່ຢູ່ໃນຟາມ", # farm
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຄົວເຮືອນນສັດຢູ່ເຮືອນ", # household
+                  "ສັດ ຂອງຊະນິດທີ່ສັງເກດການ ແມ່ນສັດຢູ່ສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ", # Research or conservation capture
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຕະຫຼາດສັດຢູ່ຕະຫຼາດ", # market
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ຈຸດທີ່ມີການຄ້າຂາຍຈຸດຊື້ຂາຍແລກປ່ຽນ", # tradepost
+                  "", # Number healthy animals
+                  "", # Number sick or injured animals
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
+                  "", # Other anomalies sick or injured     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="potentialcausediseaseorinjury_whn",])),    
+                  "", # numberdead_whn     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="conditiondeadanimals_whn",])), # conditiondeadanimals_whn     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="anomaliesindeadanimals_whn",])), #Anomalies in Dead Animals
+                  "", # otheranomaliesdead_whn     
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="potentialcausedeath_whn",])), # potentialcausedeath_whn
+                  rep("", nrow(wildlife_lo[wildlife_lo$att_key=="carnivoreattack_whn",])), # carnivore attack
+                   ""))#other relevatn information
+                  
+                  
+    wildlife_lo<-
+    wildlife_lo %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+    dplyr::rename("ປະເພດ" = "att_type") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຄຸນລັກສະນະ" = "attr_def") %>% 
+    dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຕົວເລືອກ" = "option_def") 
+
+
+  
+  out<-  
+  flextable(wildlife_lo) %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
+  merge_v(j="ຄໍານິຍາມຂອງຄຸນລັກສະນະ") %>% 
+  theme_box() %>% 
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຄຸນລັກສະນະ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຕົວເລືອກ", width=7, unit = "cm")
+
+  
+
+  out
+
+```
+
+## ສັດລ້ຽງ - ຊະນິດສັດບ້ານ {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+# ------------------#
+# Create Dictionary #
+# ------------------#
+
+la<-
+SMARTeR::flat_conf_model(
+  language_interest = "lo",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+livestock_la<-  
+  la %>% 
+  dplyr::filter(cat_key_level_1=="livestockdomesticspecies_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("ສັດລ້ຽງ ຫຼື ຊະນິດສັດບ້ານ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(la[la$att_key=="livestockdomesticspecies_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ບໍລິບົດຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="context_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ຍັງມີຊີວິດແຂງແຮງດີ", nrow(la[la$att_key=="numberhealthy_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ຈໍານວນໂຕສັດ ຂອງຊະນິດທີ່ທ່ານສັງເກດການ ທີ່ເຈັບປ່ວຍ ຫຼື ບາດເຈັບ", nrow(la[la$att_key=="numbersickorinjured_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ຄວາມຜິດປົກກະຕິທີ່ພົບນໍາສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="anomaliesinsickorinjuredanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອລະບຸ ຄວາມຜິດປົກກະຕິທີ່ພົບນໍາສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ຢູ່ໃນເຫດການ ທີ່ບໍ່ມີຢູ່ໃນລາຍການຂອງ 'ຄວາມຜິດປົກກະຕິອື່ນໆທີ່ພົບນໍາສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ' ", nrow(la[la$att_key=="otheranomaliessickorinjured_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ສາເຫດທີ່ອາດເຮັດໃຫ້ສັດເປັນພະຍາດ ຫຼື ບາດເຈັບ ໃນສັດເຈັບປ່ວຍ ຫຼື ບາດເຈັບ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="potentialcausediseaseorinjury_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ຈໍານວນຂອງສັດທີ່ຕາຍ ທີ່ພົບເຫັນຢູ່ໃນເຫດການກດການ ທີ່ຕາຍ", nrow(la[la$att_key=="numberdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ຄວາມສົດໃໝ່ຂອງຊາກສັດທີ່ຖືກສັງເກດການ ຊຶ່ງສອດຄ່ອງກັນກັບຊະນິດສັດທີ່ໄດ້ຖືກບັນທຶກ. ສາມາດເລືອກໄດ້ຫຼາຍກວ່າໜຶ່ງໂຕເລືອກ. ໃຫ້ເລືອກເອົາ 'ບໍ່ມີສັດຕາຍ' ຖ້າຊະນິດສັດທີ່ສັງເກດການນັ້ນບໍ່ແມ່ນສັດຕາຍ", nrow(la[la$att_key=="conditiondeadanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ຄວາມຜິດປົກກະຕິທີ່ພົບນໍາສັດທີ່ຕາຍ ທີ່ຢູ່ໃນເຫດການ  ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="anomaliesindeadanimals_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                   rep("ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອລະບຸ ຄວາມຜິດປົກກະຕິອື່ນໆທີ່ພົບນໍາສັດຕາຍ ຢູ່ໃນເຫດການ ທີ່ບໍ່ມີຢູ່ໃນລາຍການຂອງ 'ຄວາມຜິດປົກກະຕິທີ່ພົບໃນສັດຕາຍ' ", nrow(la[la$att_key=="otheranomaliesdead_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ສາເຫດທີ່ອາດເຮັດໃຫ້ສັດຕາຍ ທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(la[la$att_key=="potentialcausedeath_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])),
+                    
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອລະບຸຂໍ້ມູນອື່ນໆທີ່ກ່ຽວຂ້ອງກັບສັດທີ່ພົບເຫັນບຊະນິດທີ່ຖືກສັງເກດການ", nrow(la[la$att_key=="otherrelevantinformation_whn" & la$cat_key_level_1=="livestockdomesticspecies_whn",])))) 
+  
+    livestock_la<-
+    livestock_la %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           option_label)
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    livestock_la<-
+    livestock_la %>% dplyr::mutate(
+      
+      option_def=c(rep("", nrow(livestock_la[livestock_la$att_key=="livestockdomesticspecies_whn",])),  # Species
+                   #context
+                    "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກພົບເຫັນຢູ່ໃນຖິ່ນອາໄສຂອງພວກມັນ ແລະ ບໍ່ໄດ້ຖືກລ່າ, ຈັບ, ກັກຂັງ ຫຼື ຈໍາກັດໃດໆ. ສັດເຫຼົ່ານີ້ ຖືກຈັບມາ ເພື່ອຈຸດປະສົງການເຝົ້າລະວັງດ້ານສຸຂະພາບ ແລະ ຍັງຖືວ່າເປັນການ'ປ່ອຍອິດສະລະ", # free-ranging'
+                   
+                    "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຈັບ ໃນເວລາສັງເກດການ. ເຖິງຢ່າງໃດກໍຕາມ, ພວກມັນໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກສະຖານທີ່ເດີມທີ່ສັດຖືກລ່າ ຫຼື ຈັບ. ຕົວຢ່າງ: ພົບເຫັນມີສັດຖືກຂັງໄວ້ຢູ່ໃນກົງຂອງນັກລ່າທີ່ກຳລັງຍ່າງຢູ່ໃນເຂດປ່າສະຫງວນ", #Hunted and Displaced             
+                   
+                   "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຈັບ ໃນເວລາສັງເກດການ. ເຖິງຢ່າງໃດກໍຕາມ, ພວກມັນຍັງບໍ່ໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກສະຖານທີ່ເດີມທີ່ສັດຖືກລ່າ ຫຼື ຈັບ. ຕົວຢ່າງ: ພົບເຫັນມີສັດຕິດກັບດັກ ຫຼື ຖືກແຮ້ວ ທີ່ນັກລ່າໄດ້ວາງກັບດັກ ຫຼື ແຮ້ວ ໄວ້", #Hunted and not Displaced  
+                   
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນສູນຟື້ນຟູ/ສູນຊ່ວຍເຫຼືອສັດ", # Rescue/Rehabilitation Center
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຟາມ", # farm
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຄົວເຮືອນ", # houshold
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກຈັບມາເພື່ອເປັນສ່ວນໜຶ່ງຂອງການຄົ້ນຄວ້າ ຫຼື ການອະນຸລັກ ທີ່ບໍ່ກ່ຽວຂ້ອງກັບການເຝົ້າລະວັງດ້ານສຸຂະພາບ", # Research or conservation capture
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຕະຫຼາດ", # market
+                  
+                  "ສັດຕາມຊະນິດພັນທີ່ໄດ້ບັນທຶກຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ຈຸດທີ່ມີການຄ້າຂາຍ", #tradepost
+                  
+                  "", # Number healthy animals
+                  "", # Number sick or injured animals
+                  rep("", nrow(livestock_la[livestock_la$att_key=="anomaliesinsickorinjuredanimals_whn",])), #Anomalies in Sick or Injured Animals
+                  " ", # Other anomalies sick or injured     
+                  rep("", nrow(livestock_la[livestock_la$att_key=="potentialcausediseaseorinjury_whn",])),    
+                  " ", # numberdead_whn     
+                  rep("", nrow(livestock_la[livestock_la$att_key=="conditiondeadanimals_whn",])), # conditiondeadanimals_whn     
+                  rep("  ", nrow(livestock_la[livestock_la$att_key=="anomaliesindeadanimals_whn",])), #Anomalies in Dead Animals
+                  "", # otheranomaliesdead_whn     
+                  rep(" ", nrow(livestock_la[livestock_la$att_key=="potentialcausedeath_whn",])), # potentialcausedeath_whn
+                   ""))#other relevatn information
+                  
+                  
+    livestock_la<-
+    livestock_la %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+    dplyr::rename("ປະເພດ" = "att_type") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຄຸນລັກສະນະ" = "attr_def") %>% 
+    dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຕົວເລືອກ" = "option_def") 
+
+
+  
+  out<-  
+  flextable(livestock_la) %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
+  merge_v(j="ຄໍານິຍາມຂອງຄຸນລັກສະນະ") %>% 
+  merge_v(j="ຄໍານິຍາມຂອງຕົວເລືອກ") %>%
+  theme_box() %>% 
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຄຸນລັກສະນະ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຕົວເລືອກ", width=7, unit = "cm")
+
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
+## ສັດ ແລະ ຕົວຢ່າງ {.unnumbered}
+
+```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
+
+lo<-SMARTeR::flat_conf_model(
+  language_interest = "lo",
+  path_conf_model = "configurable_model_smart_for_health_rangers/Observations_Specimens_Final_conf_model_smart_for_health_rangers.xml",
+    only_active = T)
+
+
+## Atribute definition. Only changethe definition in the corresponding language because I am using the keys to subset the specific componenets.
+
+animals_samples_lo<-  
+  lo %>% 
+  dplyr::filter(cat_key_level_1=="animalandsamples_whn") %>% 
+  dplyr::select(att_key, att_label, att_type, root_label, option_label) %>% 
+  dplyr::mutate(attr_def=
+                  c(
+                    
+                    rep("ຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="species_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນເພື່ອລະບຸຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຕົວເລືອກຢູ່ໃນລາຍການຂອງ 'ຊະນິດສັດ' ຂອງ 'ຊະນິດ'", nrow(lo[lo$att_key=="providespeciesnotlisted_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ລະຫັດ ເພື່ອໝາຍສັດທີ່ພົບເຫັນຢູ່ໃນແຕ່ລະເຫດການ", nrow(lo[lo$att_key=="animalid_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ຮູບແບບການຈັບສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="context_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ສະພາບຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="conditionfound_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ອາຍຸຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="ageofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ເພດຂອງສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="sexofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("algo", nrow(lo[lo$att_key=="conditiondeadanimals_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ຄວາມຜິດປົກກະຕິໃນຕົວສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="anomaliesinsickinjuredordeadanimals_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    "ບ່ອນຕື່ມຂໍ້ມູນ ເພື່ອບັນທຶກຄວາມຜິດປົກກະຕິໃນຕົວສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ແຕ່ບໍ່ມີຢູ່ໃນລາຍການຂອງ “ຄວາມຜິດປົກກະຕິ ທີ່ພົບຢູ່ນໍາສັດທີ່ເຈັບປ່ວຍ, ບາດເຈັບ ຫຼື ຕາຍ”", 
+                    
+                    rep("ສາເຫດສົງໄສ ທີ່ອາດເຮັດໃຫ້ສັດຕາຍ, ເປັນພະຍາດ ຫຼື ເຈັບປ່ວຍ ທີ່ທ່ານພົບເຫັນຢູ່ໃນເຫດການ. ສາມາດເລືອກໄດ້ຫຼາຍຕົວເລືອກກໄດ້ຫຼາຍຕົວເລືອກ", nrow(lo[lo$att_key=="potentialcauseofdeathdiseaseorinjury_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ລະຫັດ ເພື່ອໝາຍຕົວຢ່າງທີ່ເກັບຈາກສັດທີ່ພົບເຫັນຢູ່ໃນແຕ່ລະເຫດການ", nrow(lo[lo$att_key=="sampleid_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ປະເພດຕົວຢ່າງທີ່ເກັບຈາກສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="sampletype_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ຄໍາຕອບຕໍ່ຄໍາຖາມ 'ໄດ້ເກັບຕົວຢ່າງຈາກສັດທີ່ຖືກສັງເກດເຫັນໃນເຫດການໂດຍກົງຫຼືບໍ່?'", nrow(lo[lo$att_key=="collecteddirectlyfromanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                        
+                     rep("ຈົ່ງຕອບຄໍາຖາມ “ໄດ້ເກັບຕົວຢ່າງໂດຍກົງຈາກໂຕສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການຫຼືບໍ່?”", nrow(lo[lo$att_key=="wasthecarcasscollected_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+                    
+                    rep("ບ່ອນຕື່ມຂໍ້ມູນອື່ນໆທີ່ກ່ຽວຂ້ອງກັບຕົວຢ່າງທີ່ໄດ້ເກັບຈາກສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ", nrow(lo[lo$att_key=="otherrelevantinformation_whn" & lo$cat_key_level_1=="animalandsamples_whn",])))) 
+  
+    animals_samples_lo<-
+    animals_samples_lo %>% dplyr::select(
+                           att_key,
+                           att_label,
+                           att_type,
+                           attr_def, 
+                           root_label,
+                           option_label)
+    
+    
+# # Add the root definition. Also just add the translations 
+#     
+#     animals_samples_lo<-
+#     animals_samples_lo %>% dplyr::mutate(
+#         
+#       root_label=c(" ", # species
+#                  "",  # provie species not listed
+#                  " ",  # animal id
+#                  #captivity category
+#                  rep("", nrow(lo[lo$att_key=="captivitycategory_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+#                  rep(" ", nrow(lo[lo$att_key=="conditionfound_whn" & lo$cat_key_level_1=="animalandsamples_whn",])), # condition found
+#                  rep("", nrow(lo[lo$att_key=="ageofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])), # age of animal
+#                  rep(" ", nrow(lo[lo$att_key=="sexofanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])), # sex of animal
+#                  rep("", nrow(lo[lo$att_key=="anomaliesinsickinjuredordeadanimals_whn" & lo$cat_key_level_1=="animalandsamples_whn",])), # anomalies sick injured dead
+#                  " ", #other anomalies
+#                  lo[lo$att_key=="suspectcauseofdeathdiseaseorinjury_whn" & lo$cat_key_level_1=="animalandsamples_whn",]$root_label,
+#                  rep("", nrow(lo[lo$att_key=="wasthecarcasscollected_whn" & lo$cat_key_level_1=="animalandsamples_whn",])), # was the carcass collected
+#                  " ", # sample id
+#                  rep("", nrow(lo[lo$att_key=="sampletype_whn" & lo$cat_key_level_1=="animalandsamples_whn",])), # sample type
+#                  rep(" ", nrow(lo[lo$att_key=="collecteddirectlyfromanimal_whn" & lo$cat_key_level_1=="animalandsamples_whn",])),
+#                  "" # othe relevant information
+#       ))
+    
+    
+# Add the option definition. Also just add the translation because I am using the keys to get to specific components.    
+    
+    
+    animals_samples_lo<-
+    animals_samples_lo %>% dplyr::mutate(
+      
+      option_def=c("ເລືອກຕົວເລືອກນີ້, ຫາກຊະນິດສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ບໍ່ມີຢູ່ໃນລາຍການ",  # Species
+                   "", # Provide Species not listed
+                   " ",#animalid_whn
+                   
+                   #captivity category
+                   "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ທີ່ພົບຢູ່ຖິ່ນອາໄສຂອງມັນເອງ ຫຼື ບໍ່ຖືກລ່າ, ຖືກຈັບ, ຖືກຂັງ ຫຼື ຖືກຈໍາກັດໃດໆ. ສັດທີ່ຖືກຈັບເພື່ອຈຸດປະສົງໃນການເຝົ້າລະວັງດ້ານສຸຂະພາບແມ່ນຖືເປັນ “ການລ້ຽງແບບປ່ອຍອິດສະລະ”", # free-ranging
+                   "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຖືກຈັບ ໃນເວລາທີ່ພົບເຫັນ; ເຖິງຢ່າງໃດກໍຕາມ, ຖ້າວ່າມັນໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກຖິ່ນອາໄສເດີມ ດ້ວຍການລ່າ ຫຼື ຈັບ ເຊັ່ນ: ສັດທີ່ຖືກຂັງຢູ່ໃນກົງຂອງນາຍພານທີ່ຍ່າງຢູ່ໃນພື້ນທີ່ປ່າສະຫງວນ", #Hunted and Displaced             
+                   "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ທີ່ຖືກລ່າ ຫຼື ຖືກຈັບ ໃນເວລາທີ່ພົບເຫັນ; ເຖິງຢ່າງໃດກໍຕາມ, ຖ້າວ່າມັນບໍ່ໄດ້ຖືກເຄື່ອນຍ້າຍອອກຈາກຖິ່ນອາໄສເດີມ ດ້ວຍການລ່າ ຫຼື ຈັບ ເຊັ່ນ: ພົບເຫັນສັດຕິດຢູ່ໃນກັບດັກທີ່ນາຍພາຍວາງໄວ້", #Hunted and not Displaced  
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນສູນຟື້ນຟູ/ຊ່ວຍເຫຼືອສັດ", # Rescue/Rehabilitation Center
+                  
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຟາມ", # farm
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບຮັກສາໃນຄົວເຮືອນ", # household
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກຈັບມາເປັນສ່ວນໜຶ່ງຂອງການຄົ້້ນຄວ້າ ຫຼື ອະນຸລັກ ທີ່ບໍ່ກ່ຽວຂ້ອງກັບການເຝົ້າລະວັງດ້ານສຸຂະພາບ", # Research or conservation capture
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຕະຫຼາດ", # market
+                  "ສັດທີ່ພົບເຫັນຢູ່ໃນເຫດການ ຖືກເກັບໄວ້ຢູ່ໃນຈຸດທີ່ມີການຄ້າຂາຍ", #tradepost
+                  rep("", nrow(animals_samples_lo[animals_samples_lo$att_key=="conditionfound_whn",])), #Condition found
+                  rep(" ", nrow(animals_samples_lo[animals_samples_lo$att_key=="ageofanimal_whn",])),  #  Age of Animal
+                  rep("", nrow(animals_samples_lo[animals_samples_lo$att_key=="sexofanimal_whn",])),  #  Sex of Animal
+                  rep("", nrow(animals_samples_lo[animals_samples_lo$att_key=="conditiondeadanimals_whn",])), # Condition Dead Animals
+                  rep(" ", nrow(animals_samples_lo[animals_samples_lo$att_key=="anomaliesinsickinjuredordeadanimals_whn",])), #Anomalies in Sick injured or dead animal
+                  
+                  "", # other anomalies 
+                  
+                  rep(" ", nrow(animals_samples_lo[animals_samples_lo$att_key=="potentialcauseofdeathdiseaseorinjury_whn",])), # suspect cause of death disease or injury                   
+                  " ", # sample id  
+                  
+                  rep("", nrow(animals_samples_lo[animals_samples_lo$att_key=="sampletype_whn",])), # sample type
+                  
+                  rep(" ", nrow(animals_samples_lo[animals_samples_lo$att_key=="collecteddirectlyfromanimal_whn",])),
+                  
+                  rep("", nrow(animals_samples_lo[animals_samples_lo$att_key=="wasthecarcasscollected_whn",])), # was the carcass collected
+                  
+                  "" #other relevatn infomrmation
+                  ))
+                  
+    animals_samples_lo[which(animals_samples_lo$option_label=="NA"),]$option_label<-""
+                  
+    animals_samples_lo<-
+    animals_samples_lo %>% 
+    dplyr::select(-att_key) %>% 
+    dplyr::rename("ຄຸນລັກສະນະ" = "att_label") %>% 
+    dplyr::rename("ປະເພດ" = "att_type") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຄຸນລັກສະນະ" = "attr_def") %>% 
+    dplyr::rename("ໝວດ" = "root_label") %>%   
+    dplyr::rename("ຕົວເລືອກ" = "option_label") %>% 
+    dplyr::rename("ຄໍານິຍາມຂອງຕົວເລືອກ" = "option_def") 
+
+
+  
+  out<-  
+  flextable(animals_samples_lo) %>% 
+  merge_v(j="ຄຸນລັກສະນະ") %>% 
+  merge_v(j="ປະເພດ") %>% 
+  merge_v(j="ຄໍານິຍາມຂອງຄຸນລັກສະນະ") %>% 
+  merge_v(j="ໝວດ") %>% 
+  theme_box() %>% 
+  width(j = "ຄຸນລັກສະນະ", width=5, unit = "cm") %>% 
+  width(j = "ຕົວເລືອກ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຄຸນລັກສະນະ", width=7, unit = "cm") %>% 
+  width(j = "ຄໍານິຍາມຂອງຕົວເລືອກ", width=7, unit = "cm") %>% 
+  width(j = "ໝວດ", width=7, unit = "cm") 
+
+
+  
+
+  out
+# write_csv(data_dictionary, file = "data_dictionary_June_30_2023.csv")
+
+```
+
+
