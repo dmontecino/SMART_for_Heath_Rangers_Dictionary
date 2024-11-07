@@ -10,11 +10,11 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
-# Dictionary SMART for Health - Rangers {.unnumbered}
+# វចនានុក្រម SMART សម្រាប់សុខភាព - អ្នកការពារធម្មជាតិ {.unnumbered}
 
 Versión 1.3.0 Julio, 2024
 
-Para ver la definición de un Atribute u Opción en particular, por favor seleccione el lenguaje appropiado en el lado izquierdo y luego seleccione la Category que contiene el Atributo y las Opciones a revisar en el menu de la derecha.
+ដើម្បីមើលនិយមន័យនៃគុណលក្ខណៈឬជម្រើសជាក់លាក់ សូមជ្រើសរើសភាសាដែលសមស្របនៅខាងឆ្វេង ហើយបន្ទាប់មកជ្រើសរើសប្រភេទដែលមានគុណលក្ខណៈ និងជម្រើសដែលត្រូវពិនិត្យនៅក្នុងម៉ឺនុយខាងស្ដាំ។
 
 # ពណ៌នាអំពីទីតាំង {.unnumbered}
 
