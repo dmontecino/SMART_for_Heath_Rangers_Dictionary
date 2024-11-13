@@ -131,7 +131,7 @@ wildlife_en<-
                     rep("The number of dead animals of the corresponding species at the Event", nrow(en[en$att_key=="numberdead_whn" & en$cat_key_level_1=="wildlife_whn",])),
                     
                     
-                    rep("The condition of the dead animals of he corresponding species found at the Event. Multiple options can be selected", nrow(en[en$att_key=="conditiondeadanimals_whn" & en$cat_key_level_1=="wildlife_whn",])),
+                    rep("The condition of the dead animals of the corresponding species found at the Event. Multiple options can be selected", nrow(en[en$att_key=="conditiondeadanimals_whn" & en$cat_key_level_1=="wildlife_whn",])),
                     
                     rep("The anomalies observed in the dead animals of the corresponding species observed at the Event. Multiple options can be selected", nrow(en[en$att_key=="anomaliesindeadanimals_whn" & en$cat_key_level_1=="wildlife_whn",])),
                     

@@ -16,7 +16,7 @@ Versión 1.3.0 Julio, 2024
 
 ដើម្បីមើលនិយមន័យនៃគុណលក្ខណៈឬជម្រើសជាក់លាក់ សូមជ្រើសរើសភាសាដែលសមស្របនៅខាងឆ្វេង ហើយបន្ទាប់មកជ្រើសរើសប្រភេទដែលមានគុណលក្ខណៈ និងជម្រើសដែលត្រូវពិនិត្យនៅក្នុងម៉ឺនុយខាងស្ដាំ។
 
-# ពណ៌នាអំពីទីតាំង {.unnumbered}
+## ពណ៌នាអំពីទីតាំង
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
@@ -89,7 +89,7 @@ site_description_kh<-
 
 ```
 
-# សត្វព្ {.unnumbered}
+## សត្វព្រៃ
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
@@ -214,7 +214,7 @@ wildlife_kh<-
 
 ```
 
-# ប្រភេទសត្វស្រុកចិញ្ចឹម {.unnumbered}
+## សត្វស្រុក {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
@@ -334,7 +334,7 @@ livestock_kh<-
 
 ```
 
-# ສັດ ແລະ ຕົວຢ່າງ {.unnumbered}
+## សត្វ និងសំណាក {.unnumbered}
 
 ```{r, echo=FALSE, eval=T, message=FALSE, cache=T}
 
@@ -359,19 +359,19 @@ animals_samples_km<-
                     
                     rep("ភេទរបស់សត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ", nrow(kh[kh$att_key=="sexofanimal_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                    rep("The condition of the dead animal found at the Event. Select one option", nrow(kh[kh$att_key=="conditiondeadanimals_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("ស្ថានភាព​សត្វ​ងាប់​នៃ​ប្រភេទ​ដូចគ្នា​ដែល​បាន​រក​ឃើញ​នៅ​កន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="conditiondeadanimals_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
                     rep("ភាពមិនប្រក្រតីនៃសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="anomaliesinsickinjuredordeadanimals_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
                     "បរិយាយពីភាពមិនប្រក្រតីរបស់សត្វដែលបានសង្កេតនៅកន្លែងកើតហេតុដែលមិនមាននៅក្នុងប្រអប់ព័ត៌មាន 'ភាពមិនប្រក្រតីសត្វឈឺ របួស ឬងាប់'", 
                     
-                    rep("The potential cause of death, disease, or injury in the animal observed at the Event. Multiple options can be selected", nrow(kh[kh$att_key=="potentialcauseofdeathdiseaseorinjury_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
+                    rep("មូលហេតុដែលធ្វើអោយសត្វ ងាប់ កើតជំងឺ ឬរងរបួស ដែលសង្កេតឃើញនៅកន្លែងកើតហេតុ។ ជម្រើសជាច្រើនអាចត្រូវបានជ្រើសរើស", nrow(kh[kh$att_key=="potentialcauseofdeathdiseaseorinjury_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
                     rep("លេខកូដដើម្បីកំណត់សម្គាល់សំណាកនីមួយៗដែលប្រមូលបានពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ​នីមួយៗ", nrow(kh[kh$att_key=="sampleid_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
                     rep("ប្រភេទសំណាកដែលបានប្រមូលពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុ​", nrow(kh[kh$att_key=="sampletype_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
-                  rep("Answer to the question 'was the sample collected directly from the animal observed at the Event?'", nrow(kh[kh$att_key=="collecteddirectlyfromanimal_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
+                  rep("ឆ្លើយទៅនឹងសំណួរ 'តើសំណាកបានប្រមូលដោយផ្ទាល់ពីសត្វដែលបានសង្កេតឃើញនៅកន្លែងកើតហេតុដែរឬទេ?", nrow(kh[kh$att_key=="collecteddirectlyfromanimal_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
                      rep("ឆ្លើយ​នឹង​សំណួរ 'តើ​បានប្រមូលសាកសព​សត្វ​ដែល​បានសង្កេត​ឃើញ​នៅ​កន្លែងកើតហេតុ​ដែរឬទេ?", nrow(kh[kh$att_key=="wasthecarcasscollected_whn" & kh$cat_key_level_1=="animalandsamples_whn",])),
                     
