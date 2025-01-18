@@ -9,7 +9,7 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
-# Presentation
+# Presentation {.unnumbered}
 
 This is the Manual and Dictionary of SMART for Health - Rangers.
 
