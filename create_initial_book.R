@@ -175,7 +175,8 @@ for(i in languages){
 #move the files in _book to docs
 
 source_dir <- "_book/"
-dest_dir <- "/Users/DMontecino/Library/CloudStorage/OneDrive-WildlifeConservationSociety/DATABASE/WH_Database/docs/"
+dest_dir <- "docs/"
+
 
 # remove files in the destination folder
 unlink(file.path(dest_dir, "*"), recursive = TRUE)# list.files(dest_dir, full.names = TRUE, recursive = T)
