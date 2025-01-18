@@ -2,6 +2,8 @@ project:
   type: book
   output-dir: _book
 
+cache: false
+
 book:
   site-url: https://dmontecino.github.io/SMART_for_Heath_Rangers_Dictionary
   title: "Manual and Dictionary SMART for Health - Rangers"
