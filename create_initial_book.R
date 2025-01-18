@@ -195,7 +195,7 @@ sapply(items_to_copy, function(item) {
 
 #run the function
 
-create_abs_lang_link(path = "docs", base_link = "")
+# create_abs_lang_link(path = "docs", base_link = "")
 
 # commit in git and push the changes to github
 
