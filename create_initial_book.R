@@ -68,7 +68,7 @@ renderthis::to_pdf("_book/Manual.html")
 renderthis::to_pdf("_book/es/Manual.es.html")
 renderthis::to_pdf("_book/fr/Manual.fr.html")
 renderthis::to_pdf("_book/km/Manual.km.html")
-renderthis::to_pdf("_book/lo/Manual.lo.html")
+# renderthis::to_pdf("_book/lo/Manual.lo.html")
 
 
 #save the data dictionary as a pdf. 
@@ -76,7 +76,7 @@ renderthis::to_pdf("_book/Dictionary.html")
 renderthis::to_pdf("_book/es/Dictionary.es.html")
 renderthis::to_pdf("_book/fr/Dictionary.fr.html")
 renderthis::to_pdf("_book/km/Dictionary.km.html")
-renderthis::to_pdf("_book/lo/Dictionary.lo.html")
+# renderthis::to_pdf("_book/lo/Dictionary.lo.html")
 
 
 
@@ -85,7 +85,7 @@ renderthis::to_pdf("_book/lo/Dictionary.lo.html")
 # Edit the file path to download the correct manual pdf 
 library(stringr)
 
-languages<-c('en', 'es', 'fr', 'km', 'lo')
+languages<-c('en', 'es', 'fr', 'km')
 nlanguages<-length(languages)
 
 # i=2
@@ -175,7 +175,10 @@ for(i in languages){
 #move the files in _book to docs
 
 source_dir <- "_book/"
-dest_dir <- "docs/"
+dest_dir <- "/Users/DMontecino/Library/CloudStorage/OneDrive-WildlifeConservationSociety/DATABASE/WH_Database/docs/"
+
+# remove files in the destination folder
+unlink(file.path(dest_dir, "*"), recursive = TRUE)# list.files(dest_dir, full.names = TRUE, recursive = T)
 
 # Get a list of all files and folders in the source directory
 items_to_copy <- list.files(source_dir, full.names = TRUE)
