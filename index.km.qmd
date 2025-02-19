@@ -9,7 +9,7 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
-# បទបង្ហាញ
+# បទបង្ហាញ {.unnumbered}
  
 វចនានុក្រមអំពីកម្មវិធី SMART សម្រាប់តាមដានសុខភាពសត្វ - ឧទ្យានុរក្ស
 

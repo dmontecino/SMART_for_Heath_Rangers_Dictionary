@@ -9,7 +9,7 @@ htmltools::img(src = knitr::image_uri("Pictures_for_manual/WCS_LOGOTYPE.png"),
                heigth = "300px")
 ```
 
-# ການນໍາສະເຫນີ
+# ການນໍາສະເຫນີ {.unnumbered}
 
 ນີ້ແມ່ນຄູ່ມືແລະພາສານານຸກົມຂອງ SMART ສຳລັບສຸຂະພາບ - ພະລານເປ່ນ
 
